@@ -42,11 +42,9 @@ Global steering can distribute centralized steering files to entire teams via MD
 
 Click **Generate Steering Docs** in the Kiro panel to auto-generate three foundational files:
 
-| File | Purpose |
-|---|---|
-| `product.md` | Defines your product's purpose, target users, key features, and business objectives |
-| `tech.md` | Documents frameworks, libraries, development tools, and technical constraints |
-| `structure.md` | Outlines file organization, naming conventions, import patterns, and architectural decisions |
+- **Product Overview** (`product.md`) — Defines your product's purpose, target users, key features, and business objectives.
+- **Technology Stack** (`tech.md`) — Documents your chosen frameworks, libraries, development tools, and technical constraints.
+- **Project Structure** (`structure.md`) — Outlines file organization, naming conventions, import patterns, and architectural decisions.
 
 These foundation files are included in every interaction by default.
 

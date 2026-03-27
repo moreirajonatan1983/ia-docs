@@ -2906,11 +2906,9 @@ Los archivos de Steering globales se pueden distribuir a equipos completos a tra
 
 Cree archivos de Steering fundamentales en `.kiro/steering/` (Workspace) o `~/.kiro/steering` (global):
 
-| Archivo | Propósito |
-|---|---|
-| `producto.md` | Propósito del producto, usuarios objetivo, características clave y objetivos comerciales |
-| `tecnología.md` | frameworks, bibliotecas, herramientas de desarrollo y limitaciones técnicas |
-| `estructura.md` | Organización de archivos, convenciones de nomenclatura, patrones de importación y decisiones arquitectónicas |
+- **Descripción del producto** (`product.md`) — Define el propósito de tu producto, los usuarios objetivo, las funcionalidades clave y los objetivos de negocio.
+- **Stack tecnológico** (`tech.md`) — Documenta tu elección de frameworks, librerías, herramientas de desarrollo y limitaciones técnicas.
+- **Estructura del proyecto** (`structure.md`) — Describe la organización de archivos, convenciones de nombres, patrones de importación y decisiones arquitectónicas.
 
 Estos archivos básicos se incluyen en cada interacción de forma predeterminada.
 
@@ -2957,13 +2955,11 @@ Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGEN
 
 ### Estrategias comunes de archivos de Steering
 
-| Archivo | Contenido |
-|---|---|
-| `api-estándares.md` | Convenciones REST, formatos de respuesta de error, flujos de autenticación |
-| `testing-standards.md` | Patrones de pruebas unitarias, estrategias de integración, mocks, cobertura |
-| `código-convenciones.md` | Patrones de nombres, organización de archivos, decisiones arquitectónicas |
-| `políticas-de-seguridad.md` | Requisitos de autenticación, validación de datos, codificación segura |
-| `despliegue-flujo de trabajo.md` | Procedimientos de compilación, configuraciones del entorno, detalles de CI/CD |
+- **Estándares API** (`api-standards.md`) — Define convenciones REST, formatos de respuesta de error, flujos de autenticación y estrategias de versionado.
+- **Enfoque de Testing** (`testing-standards.md`) — Establece patrones de pruebas unitarias, estrategias de pruebas de integración, enfoques de mocking y expectativas de cobertura.
+- **Estilo de Código** (`code-conventions.md`) — Especifica convenciones de nombres, organización de archivos, orden de imports y decisiones arquitectónicas.
+- **Reglas de Seguridad** (`security-policies.md`) — Documenta requerimientos de autenticación, reglas de validación de datos, estándares de sanitización de inputs y medidas de prevención de vulnerabilidades.
+- **Proceso de Deployment** (`deployment-workflow.md`) — Describe los procedimientos de build, configuraciones de entorno, pasos de despliegue y estrategias de rollback.
 
 ---
 

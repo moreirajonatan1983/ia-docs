@@ -42,11 +42,9 @@ Los archivos de Steering globales se pueden distribuir a equipos completos a tra
 
 Cree archivos de Steering fundamentales en `.kiro/steering/` (Workspace) o `~/.kiro/steering` (global):
 
-| Archivo | Propósito |
-|---|---|
-| `producto.md` | Propósito del producto, usuarios objetivo, características clave y objetivos comerciales |
-| `tecnología.md` | frameworks, bibliotecas, herramientas de desarrollo y limitaciones técnicas |
-| `estructura.md` | Organización de archivos, convenciones de nomenclatura, patrones de importación y decisiones arquitectónicas |
+- **Descripción del producto** (`product.md`) — Define el propósito de tu producto, los usuarios objetivo, las funcionalidades clave y los objetivos de negocio.
+- **Stack tecnológico** (`tech.md`) — Documenta tu elección de frameworks, librerías, herramientas de desarrollo y limitaciones técnicas.
+- **Estructura del proyecto** (`structure.md`) — Describe la organización de archivos, convenciones de nombres, patrones de importación y decisiones arquitectónicas.
 
 Estos archivos básicos se incluyen en cada interacción de forma predeterminada.
 

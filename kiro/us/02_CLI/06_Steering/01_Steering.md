@@ -42,11 +42,9 @@ Global steering files can be distributed to entire teams via MDM solutions, Grou
 
 Create foundational steering files in `.kiro/steering/` (workspace) or `~/.kiro/steering` (global):
 
-| File | Purpose |
-|---|---|
-| `product.md` | Product purpose, target users, key features, and business objectives |
-| `tech.md` | Frameworks, libraries, development tools, and technical constraints |
-| `structure.md` | File organization, naming conventions, import patterns, and architectural decisions |
+- **Product Overview** (`product.md`) — Defines your product's purpose, target users, key features, and business objectives.
+- **Technology Stack** (`tech.md`) — Documents your chosen frameworks, libraries, development tools, and technical constraints.
+- **Project Structure** (`structure.md`) — Outlines file organization, naming conventions, import patterns, and architectural decisions.
 
 These foundation files are included in every interaction by default.
 
