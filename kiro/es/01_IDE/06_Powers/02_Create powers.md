@@ -40,7 +40,7 @@ keywords: ["database", "postgres", "auth", "storage", "realtime", "backend", "su
 
 La sección de onboarding corre cuando alguien usa tu poder por primera vez. Usala para validar dependencias, explicar pasos de configuración o crear hooks de espacio de trabajo.
 
-```rebaja
+```markdown
 # Incorporación
 
 ## Paso 1: Validar el funcionamiento de las herramientas
@@ -57,9 +57,9 @@ Kiro sigue estas instrucciones automáticamente: verifica que Docker esté corri
 
 ### Instrucciones de dirección
 
-**Enfoque simple** (sin archivos de dirección separados): Incluye toda la guía directamente en `POWER.md` después de la sección de incorporación.
+**Enfoque simple** (sin archivos de Steering separados): Incluye toda la guía directamente en `POWER.md` después de la sección de incorporación.
 
-**Enfoque avanzado** (múltiples Steering Files): Para herramientas con muchos flujos de trabajo distintos, mapeá cada flujo de trabajo a un archivo de dirección específico:
+**Enfoque avanzado** (múltiples Steering Files): Para herramientas con muchos flujos de trabajo distintos, mapeá cada flujo de trabajo a un archivo de Steering específico:
 
 ```markdown
 # When to Load Steering Files
@@ -117,7 +117,7 @@ power-supabase/
 
 | Tipo | Estructura |
 |---|---|
-| **Simple** (archivos de dirección sin) | `POWER.md` + `mcp.json` (opcional) |
+| **Simple** (archivos de Steering sin) | `POWER.md` + `mcp.json` (opcional) |
 | **Con dirección de herramienta única** | `POWER.md` + `mcp.json` + `dirección/schema-patterns.md` |
 | **Multiherramienta** | `POWER.md` + `mcp.json` + Múltiples archivos en `steering/` |
 | **Solo documentación** | `POWER.md` + `steering/` (sin servidores MCP) |

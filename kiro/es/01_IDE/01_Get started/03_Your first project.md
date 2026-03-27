@@ -4,7 +4,7 @@
 
 ---
 
-Esta guía lo guía a través de las características esenciales de Kiro trabajando con un proyecto real. Aprenderá a utilizar **archivos de dirección**, **especificaciones**, **hooks** y **servidores MCP** para mejorar su flujo de trabajo de desarrollo.
+Esta guía lo guía a través de las características esenciales de Kiro trabajando con un proyecto real. Aprenderá a utilizar **archivos de Steering**, **especificaciones**, **hooks** y **servidores MCP** para mejorar su flujo de trabajo de desarrollo.
 
 ---
 
@@ -37,11 +37,11 @@ Antes de comenzar, asegúrese de tener:
 
 ---
 
-## Configurar archivos de dirección
+## Configurar archivos de Steering
 
-Los archivos de dirección brindan contexto sobre su proyecto, lo que ayuda a Kiro a comprender su código base, convenciones y requisitos.
+Los archivos de Steering brindan contexto sobre su proyecto, lo que ayuda a Kiro a comprender su código base, convenciones y requisitos.
 
-Para comenzar, elija **Generar documentos de dirección** en el panel Kiro. Kiro genera documentos de dirección del proyecto almacenados en `.kiro/steering/` que guían el comportamiento de Kiro.
+Para comenzar, elija **Generar documentos de Steering** en el panel Kiro. Kiro genera documentos de Steering del proyecto almacenados en `.kiro/steering/` que guían el comportamiento de Kiro.
 
 Contienen información sobre:
 
@@ -49,7 +49,7 @@ Contienen información sobre:
 - Pila técnica y marcos.
 - Estructura y convenciones del proyecto.
 
-También puede crear archivos de dirección personalizados haciendo clic en el botón **+** en la sección de dirección y agregar cosas como estándares de codificación, flujos de trabajo y mejores prácticas del equipo. [Más información sobre la dirección aquí →](https://kiro.dev/docs/steering/)
+También puede crear archivos de Steering personalizados haciendo clic en el botón **+** en la sección de dirección y agregar cosas como estándares de codificación, flujos de trabajo y mejores prácticas del equipo. [Más información sobre la dirección aquí →](https://kiro.dev/docs/steering/)
 
 ![Dirección Kiro](https://kiro.dev/videos/kiro-steering.mp4)
 

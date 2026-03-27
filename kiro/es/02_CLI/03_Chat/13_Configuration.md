@@ -26,8 +26,8 @@ Kiro CLI puede configurarse en tres ámbitos para adaptarse a tus preferencias y
 | `.kiro/prompts` | Indicaciones del proyecto |
 | `~/.kiro/agentes` | Agentes Globales |
 | `.kiro/agentes` | Agentes de Proyectos |
-| `~/.kiro/dirección` | Dirección Global |
-| `.kiro/dirección` | Dirección de Proyectos |
+| `~/.kiro/steering` | Steering Global |
+| `.kiro/steering` | Steering de Proyectos |
 | `~/.kiro/settings/cli.json` | Configuración CLI global |
 
 ---

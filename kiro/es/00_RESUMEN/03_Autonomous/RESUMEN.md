@@ -176,8 +176,8 @@ Linkeá documentación relacionada, ejemplos, o código existente que deba infor
 **Definición de criterios de aceptación**  
 Lista de condiciones específicas que deben cumplirse para que la tarea se considere completa.
 
-**Usá archivos de dirección**  
-El Kiro Self Agent busca automáticamente archivos de dirección en la carpeta `.kiro/steering/` en la raíz de tu repositorio. Estos archivos Markdown definen los estándares, arquitectura y convenciones de tu equipo, asegurando que el agente siga consistentemente tus patrones establecidos. Son especialmente útiles para:
+**Usá archivos de Steering**  
+El Kiro Self Agent busca automáticamente archivos de Steering en la carpeta `.kiro/steering/` en la raíz de tu repositorio. Estos archivos Markdown definen los estándares, arquitectura y convenciones de tu equipo, asegurando que el agente siga consistentemente tus patrones establecidos. Son especialmente útiles para:
 - Convenciones de código
 - Patrones arquitectónicos
 - Preferencias del stack tecnológico

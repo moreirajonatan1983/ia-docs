@@ -131,7 +131,7 @@ Obtiene contenido de URL específicas.
 | `auto` | Kiro elige el mejor modo |
 | `crudo` | HTML sin procesar |
 | `texto` | Texto plano extraido |
-| `rebaja` | Convertir a Markdown |
+| `markdown` | Convertir a Markdown |
 
 **Configuración:**
 ```json

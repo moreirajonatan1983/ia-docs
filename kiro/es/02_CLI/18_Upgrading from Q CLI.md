@@ -22,7 +22,7 @@ Kiro CLI es la **próxima evolución de Q CLI**. Tus flujos de trabajo existente
 | **Autenticación** | ID de constructor + Centro de identidad IAM | ID de constructor + Centro de identidad IAM + **Google + GitHub** |
 | **Agente por defecto** | `q_default` | `kiro_default` |
 | **Carpeta de configuración** | `~/.aws/amazonq/` | `~/.kiro/` |
-| **Dirección/Reglas** | `~/.aws/amazonq/rules/` | `~/.kiro/dirección/` |
+| **Steering/Reglas** | `~/.aws/amazonq/rules/` | `~/.kiro/steering/` |
 | **Nombres de herramientas** | `fs_read`, `fs_write`, `execute_bash`, `use_aws`, `report_issue` | `leer`, `escribir`, `shell`, `aws`, `report` (retrocompatibles) |
 | **Licencia del software** | Apache 2.0 | Licencia de propiedad intelectual de AWS |
 | **Registros** | Varia | `$TMPDIR/kiro-log` |
@@ -53,8 +53,8 @@ Al instalar Kiro CLI por primera vez, se ejecuta una **migración automática**:
 | Mensajes (espacio de trabajo) | `.amazonq/prompts/` | `.kiro/prompts/` |
 | Agentes (globales) | `~/.aws/amazonq/cli-agents/` | `~/.kiro/agents/` |
 | Agentes (espacio de trabajo) | `.amazonq/cli-agents/` | `.kiro/agentes/` |
-| Dirección/Reglas (global) | `~/.aws/amazonq/rules/` | `~/.kiro/dirección/` |
-| Dirección/Reglas (espacio de trabajo) | `.amazonq/rules/` | `.kiro/dirección/` |
+| Steering/Reglas (global) | `~/.aws/amazonq/rules/` | `~/.kiro/steering/` |
+| Steering/Reglas (espacio de trabajo) | `.amazonq/rules/` | `.kiro/steering/` |
 | Configuración | — | `~/.kiro/settings/cli.json` |
 
 ---

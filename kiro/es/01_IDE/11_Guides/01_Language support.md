@@ -27,9 +27,9 @@ Kiro proporciona capacidades de desarrollo asistido por IA para los lenguajes m�
 | [Etiqueta de cambio de nombre automático](https://open-vsx.org/extension/formulahendry/auto-rename-tag) | Renombrado automático de etiquetas HTML/JSX |
 | [Fragmentos de ES6](https://open-vsx.org/extension/xabikos/JavaScriptSnippets) | Fragmentos de JavaScript/TypeScript modernos |
 
-### Dirección
+### Steering
 
-Kiro puede generar archivos de dirección para tus proyectos TS/JS:
+Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 
 - `product.md` — Información del producto y sus características clave
 - `tech.md` — Stack tecnológico y pautas de desarrollo
@@ -69,7 +69,7 @@ Kiro puede generar archivos de dirección para tus proyectos TS/JS:
 
 ### Ejemplo de dirección: `python-conventions.md`
 
-```rebaja
+```markdown
 # Convenciones de Python
 
 ## Convenciones de nomenclatura
@@ -120,7 +120,7 @@ Kiro puede generar archivos de dirección para tus proyectos TS/JS:
 ### Ejemplos de dirección
 
 **`java-conventions.md`** — Patrones arquitectónicos y pruebas:
-```rebaja
+```markdown
 # Convenciones del proyecto Java
 ## Patrones de arquitectura
 - Arquitectura hexagonal para dominios complejos
@@ -133,7 +133,7 @@ Kiro puede generar archivos de dirección para tus proyectos TS/JS:
 ```
 
 **`spring-boot-patterns.md`** — Directrices para Spring Boot:
-```rebaja
+```markdown
 # Pautas de desarrollo de Spring Boot
 ## Estructura de componentes
 - @RestController para puntos finales REST

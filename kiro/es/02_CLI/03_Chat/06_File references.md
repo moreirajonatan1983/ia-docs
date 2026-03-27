@@ -56,7 +56,7 @@ Forzar resolución de archivos: `@./myfile`
 
 ## Manejo de archivos
 
-- **Compatible:** Archivos de texto (código fuente, configuración, rebajas) de hasta **250 KB**
+- **Compatible:** Archivos de texto (código fuente, configuración, Markdown) de hasta **250 KB**
 - **No compatible:** Archivos binarios (imágenes, ejecutables, archivos): muestra un error
 - **Archivos grandes:** Truncado a 250 KB con una advertencia: `⚠ El archivo 'large-file.json' fue truncado`
 

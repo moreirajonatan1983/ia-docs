@@ -70,7 +70,7 @@ pr-review/
 
 El archivo empieza con **YAML frontmatter** seguido de instrucciones en Markdown:
 
-```rebaja
+```markdown
 ---
 nombre: pr-revisión
 Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar relaciones públicas o preparar código para revisión.
@@ -129,7 +129,7 @@ cdk-deploy/
 ```
 
 **HABILIDAD.md:**
-```rebaja
+```markdown
 ---
 nombre: implementación de cdk
 Descripción: Implemente pilas de AWS CDK con las mejores prácticas. Úselo al implementar infraestructura, ejecutar cdk implementar o solucionar problemas de CDK.

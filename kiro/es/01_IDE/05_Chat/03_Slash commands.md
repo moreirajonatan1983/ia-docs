@@ -4,7 +4,7 @@
 
 ---
 
-Los comandos de barra diagonal permiten acceder rápidamente a hooks y archivos de dirección directamente desde la entrada del chat escribiendo `/`.
+Los comandos de barra diagonal permiten acceder rápidamente a hooks y archivos de Steering directamente desde la entrada del chat escribiendo `/`.
 
 ---
 
@@ -33,7 +33,7 @@ Los [Hooks](../07_Hooks/01_Hook triggers.md) con disparador de tipo **Manual** a
 
 ---
 
-### Archivos de dirección
+### Archivos de Steering
 
 Los [archivos de Steering](../08_Steering.md) configurados con `inclusion: manual` en el frontmatter aparecen como comandos de barra diagonal. A diferencia del volante siempre activo (que se incluye automáticamente en toda conversación), el volante manual te permite incorporar guías específicas **solo cuando las necesidades**.
 
@@ -48,7 +48,7 @@ Al seleccionar uno, el contenido del archivo se agrega al contexto de tu convers
 /pruebas
 ```
 
-➡️ Para agregar un archivo de dirección como comando de barra diagonal, configurará en el frontmatter:
+➡️ Para agregar un archivo de Steering como comando de barra diagonal, configurará en el frontmatter:
 
 ```markdown
 ---
@@ -63,7 +63,7 @@ Ver [Dirección →](../08_Steering.md)
 ## Mejores prácticas
 
 - **Nombres descriptivos** — Nombres claros como `/run-e2e-tests` o `/accessibility` hacen que los comandos sean fáciles de encontrar
-- **Cambio de contexto** — Creará archivos de dirección para diferentes flujos de trabajo (frontend, backend, pruebas) y cambiará entre ellos según sea necesario
+- **Cambio de contexto** — Creará archivos de Steering para diferentes flujos de trabajo (frontend, backend, pruebas) y cambiará entre ellos según sea necesario
 - **Combiná con `#` proveedores** — Los comandos de barra diagonal funcionan junto a los [context Providers](./01_Autopilot.md) (`#file`, `#codebase`, etc.) para máximo control
 
 ---

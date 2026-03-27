@@ -138,7 +138,7 @@ Las herramientas MCP están disponibles durante la creación de Specs. Podés re
 Algunos servidores MCP exponen **indicaciones predefinidas** — plantillas de indicaciones con parámetros:
 
 ### Acceso a indicaciones
-Escribí `/` en el chat → los avisos MCP disponibles aparecerán junto a hooks y archivos de dirección.
+Escribí `/` en el chat → los avisos MCP disponibles aparecerán junto a hooks y archivos de Steering.
 
 ### Indicaciones con argumentos
 Los avisos pueden aceptar argumentos. Kiro te preguntará los valores necesarios antes de ejecutar el aviso.

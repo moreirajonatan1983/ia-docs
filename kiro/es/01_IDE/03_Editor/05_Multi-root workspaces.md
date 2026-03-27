@@ -27,16 +27,16 @@ Kiro recupera todos los archivos [spec](https://kiro.dev/docs/specs/) de la subc
 
 ---
 
-## Archivos de dirección
+## Archivos de Steering
 
-Kiro recupera todos los archivos [dirección](https://kiro.dev/docs/steering/) de la subcarpeta `.kiro` debajo de cada carpeta raíz, mostrándolos como una lista unificada en la sección **Dirección del agente** del panel de Kiro bajo el grupo *Espacio de trabajo*. El nombre de la carpeta raíz se muestra junto a cada archivo de dirección del espacio de trabajo.
+Kiro recupera todos los archivos [dirección](https://kiro.dev/docs/steering/) de la subcarpeta `.kiro` debajo de cada carpeta raíz, mostrándolos como una lista unificada en la sección **Dirección del agente** del panel de Kiro bajo el grupo *Espacio de trabajo*. El nombre de la carpeta raíz se muestra junto a cada archivo de Steering del espacio de trabajo.
 
 | Directiva | Comportamiento |
 |---|---|
-| **Siempre incluido** | Los archivos de dirección siempre se cargan, independientemente de en qué carpeta raíz esté trabajando el agente |
+| **Siempre incluido** | Los archivos de Steering siempre se cargan, independientemente de en qué carpeta raíz esté trabajando el agente |
 | **Inclusión condicional** | Se carga solo si el agente está trabajando en un archivo en esa misma raíz y el archivo coincide con el patrón de inclusión |
 
-Al crear un nuevo archivo de dirección del espacio de trabajo, se le pedirá que elija la carpeta raíz para guardarlo.
+Al crear un nuevo archivo de Steering del espacio de trabajo, se le pedirá que elija la carpeta raíz para guardarlo.
 
 ---
 

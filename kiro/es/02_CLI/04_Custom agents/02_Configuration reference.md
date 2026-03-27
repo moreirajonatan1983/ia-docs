@@ -101,7 +101,7 @@ Recursos locales disponibles para el agente.
 {
   "recursos": [
     "archivo://README.md",
-    "archivo://.kiro/dirección/**/*.md",
+    "archivo://.kiro/steering/**/*.md",
     "habilidad://.kiro/skills/**/SKILL.md"
   ]
 }

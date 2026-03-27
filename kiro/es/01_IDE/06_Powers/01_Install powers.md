@@ -27,7 +27,7 @@ Cuando inició una tarea, Kiro:
 
 | Componente | Descripción |
 |---|---|
-| `PODER.md` | Archivo de dirección que describe al agente qué herramientas MCP tienen disponibles y cuándo usarlas |
+| `PODER.md` | Archivo de Steering que describe al agente qué herramientas MCP tienen disponibles y cuándo usarlas |
 | Configuración del servidor MCP | Herramientas y detalles de conexión al servidor MCP |
 | Dirección / Hooks | Tareas automatizadas en eventos del IDE o comandos de barra (opcional) |
 

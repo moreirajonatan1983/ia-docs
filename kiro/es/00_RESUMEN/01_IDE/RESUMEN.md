@@ -183,7 +183,7 @@ Si encuentra problemas durante el proceso de autenticación, como fallas de redi
 
 ---
 
-Esta guía lo guía a través de las características esenciales de Kiro trabajando con un proyecto real. Aprenderá a utilizar **archivos de dirección**, **especificaciones**, **hooks** y **servidores MCP** para mejorar su flujo de trabajo de desarrollo.
+Esta guía lo guía a través de las características esenciales de Kiro trabajando con un proyecto real. Aprenderá a utilizar **archivos de Steering**, **especificaciones**, **hooks** y **servidores MCP** para mejorar su flujo de trabajo de desarrollo.
 
 ---
 
@@ -216,11 +216,11 @@ Antes de comenzar, asegúrese de tener:
 
 ---
 
-### Configurar archivos de dirección
+### Configurar archivos de Steering
 
-Los archivos de dirección brindan contexto sobre su proyecto, lo que ayuda a Kiro a comprender su código base, convenciones y requisitos.
+Los archivos de Steering brindan contexto sobre su proyecto, lo que ayuda a Kiro a comprender su código base, convenciones y requisitos.
 
-Para comenzar, elija **Generar documentos de dirección** en el panel Kiro. Kiro genera documentos de dirección del proyecto almacenados en `.kiro/steering/` que guían el comportamiento de Kiro.
+Para comenzar, elija **Generar documentos de Steering** en el panel Kiro. Kiro genera documentos de Steering del proyecto almacenados en `.kiro/steering/` que guían el comportamiento de Kiro.
 
 Contienen información sobre:
 
@@ -228,7 +228,7 @@ Contienen información sobre:
 - Pila técnica y marcos.
 - Estructura y convenciones del proyecto.
 
-También puede crear archivos de dirección personalizados haciendo clic en el botón **+** en la sección de dirección y agregar cosas como estándares de codificación, flujos de trabajo y mejores prácticas del equipo. [Más información sobre la dirección aquí →](https://kiro.dev/docs/steering/)
+También puede crear archivos de Steering personalizados haciendo clic en el botón **+** en la sección de dirección y agregar cosas como estándares de codificación, flujos de trabajo y mejores prácticas del equipo. [Más información sobre la dirección aquí →](https://kiro.dev/docs/steering/)
 
 ![Dirección Kiro](https://kiro.dev/videos/kiro-steering.mp4)
 
@@ -869,16 +869,16 @@ Kiro recupera todos los archivos [spec](https://kiro.dev/docs/specs/) de la subc
 
 ---
 
-### Archivos de dirección
+### Archivos de Steering
 
-Kiro recupera todos los archivos [dirección](https://kiro.dev/docs/steering/) de la subcarpeta `.kiro` debajo de cada carpeta raíz, mostrándolos como una lista unificada en la sección **Dirección del agente** del panel de Kiro bajo el grupo *Espacio de trabajo*. El nombre de la carpeta raíz se muestra junto a cada archivo de dirección del espacio de trabajo.
+Kiro recupera todos los archivos [dirección](https://kiro.dev/docs/steering/) de la subcarpeta `.kiro` debajo de cada carpeta raíz, mostrándolos como una lista unificada en la sección **Dirección del agente** del panel de Kiro bajo el grupo *Espacio de trabajo*. El nombre de la carpeta raíz se muestra junto a cada archivo de Steering del espacio de trabajo.
 
 | Directiva | Comportamiento |
 |---|---|
-| **Siempre incluido** | Los archivos de dirección siempre se cargan, independientemente de en qué carpeta raíz esté trabajando el agente |
+| **Siempre incluido** | Los archivos de Steering siempre se cargan, independientemente de en qué carpeta raíz esté trabajando el agente |
 | **Inclusión condicional** | Se carga solo si el agente está trabajando en un archivo en esa misma raíz y el archivo coincide con el patrón de inclusión |
 
-Al crear un nuevo archivo de dirección del espacio de trabajo, se le pedirá que elija la carpeta raíz para guardarlo.
+Al crear un nuevo archivo de Steering del espacio de trabajo, se le pedirá que elija la carpeta raíz para guardarlo.
 
 ---
 
@@ -1751,7 +1751,7 @@ Una sesión Spec guía a través de un enfoque estructurado para tareas de desar
 
 ---
 
-Los comandos de barra diagonal permiten acceder rápidamente a hooks y archivos de dirección directamente desde la entrada del chat escribiendo `/`.
+Los comandos de barra diagonal permiten acceder rápidamente a hooks y archivos de Steering directamente desde la entrada del chat escribiendo `/`.
 
 ---
 
@@ -1780,7 +1780,7 @@ Los [Hooks](../07_Hooks/01_Hook triggers.md) con disparador de tipo **Manual** a
 
 ---
 
-#### Archivos de dirección
+#### Archivos de Steering
 
 Los [archivos de Steering](../08_Steering.md) configurados con `inclusion: manual` en el frontmatter aparecen como comandos de barra diagonal. A diferencia del volante siempre activo (que se incluye automáticamente en toda conversación), el volante manual te permite incorporar guías específicas **solo cuando las necesidades**.
 
@@ -1795,7 +1795,7 @@ Al seleccionar uno, el contenido del archivo se agrega al contexto de tu convers
 /pruebas
 ```
 
-➡️ Para agregar un archivo de dirección como comando de barra diagonal, configurará en el frontmatter:
+➡️ Para agregar un archivo de Steering como comando de barra diagonal, configurará en el frontmatter:
 
 ```markdown
 ---
@@ -1810,7 +1810,7 @@ Ver [Dirección →](../08_Steering.md)
 ### Mejores prácticas
 
 - **Nombres descriptivos** — Nombres claros como `/run-e2e-tests` o `/accessibility` hacen que los comandos sean fáciles de encontrar
-- **Cambio de contexto** — Creará archivos de dirección para diferentes flujos de trabajo (frontend, backend, pruebas) y cambiará entre ellos según sea necesario
+- **Cambio de contexto** — Creará archivos de Steering para diferentes flujos de trabajo (frontend, backend, pruebas) y cambiará entre ellos según sea necesario
 - **Combiná con `#` proveedores** — Los comandos de barra diagonal funcionan junto a los [context Providers](./01_Autopilot.md) (`#file`, `#codebase`, etc.) para máximo control
 
 ---
@@ -2281,7 +2281,7 @@ El aviso del agente va en el cuerpo del archivo. Los atributos adicionales se de
 
 Crear `~/.kiro/agents/code-reviewer.md`:
 
-```rebaja
+```markdown
 ---
 nombre: revisor de código
 Descripción: Asistente experto en revisión de código.
@@ -2425,7 +2425,7 @@ Kiro **activa habilidades automáticamente** cuando tu solicitud coincide con la
 
 También puedes invocar una habilidad directamente: escribe `/` en la entrada del chat para ver las habilidades disponibles como **comandos de barra diagonal**. Al seleccionar un comando de barra diagonal se cargan las instrucciones de habilidad completas.
 
-Vea y administre habilidades en la sección **Dirección y habilidades del agente** en el panel de Kiro.
+Vea y administre habilidades en la sección **Steering y habilidades del agente** en el panel de Kiro.
 
 ---
 
@@ -2440,7 +2440,7 @@ Vea y administre habilidades en la sección **Dirección y habilidades del agent
 
 ### Importación de habilidades
 
-1. Abra la sección **Dirección y habilidades del agente** en el panel de Kiro.
+1. Abra la sección **Steering y habilidades del agente** en el panel de Kiro.
 2. Haga clic en **+** y seleccione **Importar una habilidad**
 3. Elige tu fuente:
    - **GitHub** — Importar desde una URL de repositorio público (pegue la URL que apunta a la carpeta de habilidades o directamente al archivo `SKILL.md`). La URL debe apuntar a un subdirectorio, no a la raíz del repositorio.
@@ -2464,7 +2464,7 @@ my-skill/
 
 #### Formato HABILIDAD.md
 
-```rebaja
+```markdown
 ---
 nombre: pr-revisión
 Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar relaciones públicas o preparar código para revisión.
@@ -2554,7 +2554,7 @@ Cuando inició una tarea, Kiro:
 
 | Componente | Descripción |
 |---|---|
-| `PODER.md` | Archivo de dirección que describe al agente qué herramientas MCP tienen disponibles y cuándo usarlas |
+| `PODER.md` | Archivo de Steering que describe al agente qué herramientas MCP tienen disponibles y cuándo usarlas |
 | Configuración del servidor MCP | Herramientas y detalles de conexión al servidor MCP |
 | Dirección / Hooks | Tareas automatizadas en eventos del IDE o comandos de barra (opcional) |
 
@@ -2646,7 +2646,7 @@ keywords: ["database", "postgres", "auth", "storage", "realtime", "backend", "su
 
 La sección de onboarding corre cuando alguien usa tu poder por primera vez. Usala para validar dependencias, explicar pasos de configuración o crear hooks de espacio de trabajo.
 
-```rebaja
+```markdown
 ## Incorporación
 
 ### Paso 1: Validar el funcionamiento de las herramientas
@@ -2663,9 +2663,9 @@ Kiro sigue estas instrucciones automáticamente: verifica que Docker esté corri
 
 #### Instrucciones de dirección
 
-**Enfoque simple** (sin archivos de dirección separados): Incluye toda la guía directamente en `POWER.md` después de la sección de incorporación.
+**Enfoque simple** (sin archivos de Steering separados): Incluye toda la guía directamente en `POWER.md` después de la sección de incorporación.
 
-**Enfoque avanzado** (múltiples Steering Files): Para herramientas con muchos flujos de trabajo distintos, mapeá cada flujo de trabajo a un archivo de dirección específico:
+**Enfoque avanzado** (múltiples Steering Files): Para herramientas con muchos flujos de trabajo distintos, mapeá cada flujo de trabajo a un archivo de Steering específico:
 
 ```markdown
 ## When to Load Steering Files
@@ -2723,7 +2723,7 @@ power-supabase/
 
 | Tipo | Estructura |
 |---|---|
-| **Simple** (archivos de dirección sin) | `POWER.md` + `mcp.json` (opcional) |
+| **Simple** (archivos de Steering sin) | `POWER.md` + `mcp.json` (opcional) |
 | **Con dirección de herramienta única** | `POWER.md` + `mcp.json` + `dirección/schema-patterns.md` |
 | **Multiherramienta** | `POWER.md` + `mcp.json` + Múltiples archivos en `steering/` |
 | **Solo documentación** | `POWER.md` + `steering/` (sin servidores MCP) |
@@ -3250,19 +3250,19 @@ Los hooks se almacenan como archivos JSON en:
 
 *📂 Capítulo: **Steering***
 
-## Dirección
+## Steering
 
 > **Fuente:** [kiro.dev/docs/steering/](https://kiro.dev/docs/steering/)
 
 ---
 
-Los archivos de dirección guían la IA de Kiro con un contexto global o específico del espacio de trabajo a través de documentos de rebajas que definen sus estándares, arquitectura y convenciones, lo que le brinda a Kiro una comprensión persistente de cómo funciona su proyecto.
+Los archivos de Steering guían la IA de Kiro con un contexto global o específico del espacio de trabajo a través de documentos Markdown que definen sus estándares, arquitectura y convenciones, lo que le brinda a Kiro una comprensión persistente de cómo funciona su proyecto.
 
 ---
 
-### ¿Qué es la dirección?
+### ¿Qué es el Steering?
 
-Los archivos de dirección son documentos de rebajas almacenados en `.kiro/steering/` que Kiro lee automáticamente durante las interacciones de chat. Proporcionan conocimiento específico del proyecto que da forma a las sugerencias, la generación de código y el comportamiento de Kiro.
+Los archivos de Steering son documentos Markdown almacenados en `.kiro/steering/` que Kiro lee automáticamente durante las interacciones de chat. Proporcionan conocimiento específico del proyecto que da forma a las sugerencias, la generación de código y el comportamiento de Kiro.
 
 **Beneficios clave:**
 - Mantener una calidad de código consistente en todas las sesiones.
@@ -3272,27 +3272,27 @@ Los archivos de dirección son documentos de rebajas almacenados en `.kiro/steer
 
 ---
 
-### Alcance del archivo directivo
+### Alcance del archivo de Steering
 
-#### Dirección del espacio de trabajo
+#### Steering del espacio de trabajo
 
 Reside en `.kiro/steering/` en la raíz de tu espacio de trabajo. Aplicar solo a ese espacio de trabajo específico. Se utiliza para informar a Kiro sobre patrones, bibliotecas y estándares que se aplican a un espacio de trabajo individual.
 
-#### Dirección global
+#### Steering global
 
 Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los espacios de trabajo. Se utiliza para informar a Kiro sobre las convenciones que se aplican en todos sus proyectos.
 
-> **Nota:** En caso de instrucciones contradictorias entre la dirección global y del espacio de trabajo, **la dirección del espacio de trabajo tiene prioridad**.
+> **Nota:** En caso de instrucciones contradictorias entre el Steering global y del espacio de trabajo, **el Steering del espacio de trabajo tiene prioridad**.
 
-#### Dirección del equipo
+#### Steering del equipo
 
-La dirección global puede distribuir archivos de dirección centralizados a equipos completos a través de soluciones MDM, políticas de grupo o descargándolos desde un repositorio central a `~/.kiro/steering`.
+El Steering global puede distribuir archivos de Steering centralizados a equipos completos a través de soluciones MDM, políticas de grupo o descargándolos desde un repositorio central a `~/.kiro/steering`.
 
 ---
 
-### Archivos directivos fundamentales
+### Archivos de Steering fundamentales
 
-Haga clic en **Generar documentos de dirección** en el panel de Kiro para generar automáticamente tres archivos fundamentales:
+Haga clic en **Generar documentos de Steering** en el panel de Kiro para generar automáticamente tres archivos fundamentales:
 
 | Archivo | Propósito |
 |---|---|
@@ -3304,13 +3304,13 @@ Estos archivos básicos se incluyen en cada interacción de forma predeterminada
 
 ---
 
-### Creación de archivos de dirección personalizados
+### Creación de archivos de Steering personalizados
 
-1. Navegue a la sección **Dirección** en el panel Kiro.
+1. Navegue a la sección **Steering** en el panel Kiro.
 2. Haga clic en el botón **+**
 3. Seleccione el alcance: **espacio de trabajo** o **global**
 4. Elija un nombre de archivo descriptivo (por ejemplo, `api-standards.md`)
-5. Escriba su guía utilizando rebajas estándar y lenguaje natural.
+5. Escriba su guía utilizando Markdown estándar y lenguaje natural.
 6. Opcionalmente, utilice el botón **Refinar** para que Kiro mejore sus requisitos.
 
 ---
@@ -3325,7 +3325,7 @@ Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGEN
 
 ### Modos de inclusión
 
-Configure cuándo se cargan los archivos de dirección agregando el texto preliminar de YAML en la parte superior del archivo:
+Configure cuándo se cargan los archivos de Steering agregando el texto preliminar de YAML en la parte superior del archivo:
 
 #### Siempre incluido (predeterminado)
 ```yaml
@@ -3373,7 +3373,7 @@ Se incluye automáticamente cuando su solicitud coincide con la descripción. Ta
 
 ### Referencias de archivos
 
-Enlace a archivos del espacio de trabajo en vivo para mantener la dirección actualizada:
+Enlace a archivos del espacio de trabajo en vivo para mantener el Steering actualizado:
 ```
 ##[[archivo:<nombre_archivo_relativo>]]
 ```
@@ -3392,11 +3392,11 @@ Ejemplos:
 - **Incluir contexto**: explique *por qué* se tomaron decisiones, no solo cuáles son los estándares.
 - **Proporcione ejemplos**: use fragmentos de código y comparaciones antes/después
 - **La seguridad es lo primero**: nunca incluya claves API, contraseñas ni datos confidenciales
-- **Mantener periódicamente**: revisar durante la planificación del sprint y los cambios de arquitectura; Trate los cambios de dirección como cambios de código.
+- **Mantener periódicamente**: revisar durante la planificación del sprint y los cambios de arquitectura; Trate los cambios de Steering como cambios de código.
 
 ---
 
-### Estrategias comunes de archivos de dirección
+### Estrategias comunes de archivos de Steering
 
 | Archivo | Contenido |
 |---|---|
@@ -3448,7 +3448,7 @@ También podés invocar una habilidad directamente:
 - Escribí `/` en el chat → las habilidades disponibles aparecen como comandos de barra diagonal
 - Seleccioná un comando de barra diagonal → carga las instrucciones completas del Skill
 
-Gestioná tus habilidades desde la sección **Dirección y habilidades del agente** en el panel de Kiro.
+Gestioná tus habilidades desde la sección **Steering y habilidades del agente** en el panel de Kiro.
 
 ---
 
@@ -3465,7 +3465,7 @@ Gestioná tus habilidades desde la sección **Dirección y habilidades del agent
 
 ### Importación de habilidades
 
-1. Abra la sección **Dirección y habilidades del agente** en el panel de Kiro
+1. Abra la sección **Steering y habilidades del agente** en el panel de Kiro
 2. Haga clic en **+** y seleccione **Importar una habilidad**
 3. Elegí el origen:
    - **GitHub** — Importará desde una URL de repositorio público (apuntando a la carpeta del Skill o directamente al `SKILL.md`). La URL debe apuntar a un subdirectorio, no a la raíz del repositorio.
@@ -3489,7 +3489,7 @@ my-skill/
 
 #### Formato HABILIDAD.md
 
-```rebaja
+```markdown
 ---
 nombre: pr-revisión
 Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas.
@@ -3600,7 +3600,7 @@ Un poder es un paquete unificado que incluye:
 
 | Componente | Descripción |
 |---|---|
-| `PODER.md` | Archivo de dirección que le indica al agente qué herramientas MCP tiene disponibles y cuándo usarlas |
+| `PODER.md` | Archivo de Steering que le indica al agente qué herramientas MCP tiene disponibles y cuándo usarlas |
 | **Configuración del servidor MCP** | Herramientas y detalles de conexión para el servidor MCP |
 | **Dirección/hooks** *(opcional)* | Tareas automatizadas que se ejecutan en eventos IDE o mediante comandos de barra diagonal |
 
@@ -4076,7 +4076,7 @@ Las herramientas MCP están disponibles durante la creación de Specs. Podés re
 Algunos servidores MCP exponen **indicaciones predefinidas** — plantillas de indicaciones con parámetros:
 
 #### Acceso a indicaciones
-Escribí `/` en el chat → los avisos MCP disponibles aparecerán junto a hooks y archivos de dirección.
+Escribí `/` en el chat → los avisos MCP disponibles aparecerán junto a hooks y archivos de Steering.
 
 #### Indicaciones con argumentos
 Los avisos pueden aceptar argumentos. Kiro te preguntará los valores necesarios antes de ejecutar el aviso.
@@ -4291,9 +4291,9 @@ Kiro proporciona capacidades de desarrollo asistido por IA para los lenguajes m�
 | [Etiqueta de cambio de nombre automático](https://open-vsx.org/extension/formulahendry/auto-rename-tag) | Renombrado automático de etiquetas HTML/JSX |
 | [Fragmentos de ES6](https://open-vsx.org/extension/xabikos/JavaScriptSnippets) | Fragmentos de JavaScript/TypeScript modernos |
 
-#### Dirección
+#### Steering
 
-Kiro puede generar archivos de dirección para tus proyectos TS/JS:
+Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 
 - `product.md` — Información del producto y sus características clave
 - `tech.md` — Stack tecnológico y pautas de desarrollo
@@ -4333,7 +4333,7 @@ Kiro puede generar archivos de dirección para tus proyectos TS/JS:
 
 #### Ejemplo de dirección: `python-conventions.md`
 
-```rebaja
+```markdown
 ## Convenciones de Python
 
 ### Convenciones de nomenclatura
@@ -4384,7 +4384,7 @@ Kiro puede generar archivos de dirección para tus proyectos TS/JS:
 #### Ejemplos de dirección
 
 **`java-conventions.md`** — Patrones arquitectónicos y pruebas:
-```rebaja
+```markdown
 ## Convenciones del proyecto Java
 ### Patrones de arquitectura
 - Arquitectura hexagonal para dominios complejos
@@ -4397,7 +4397,7 @@ Kiro puede generar archivos de dirección para tus proyectos TS/JS:
 ```
 
 **`spring-boot-patterns.md`** — Directrices para Spring Boot:
-```rebaja
+```markdown
 ## Pautas de desarrollo de Spring Boot
 ### Estructura de componentes
 - @RestController para puntos finales REST

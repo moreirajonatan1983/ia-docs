@@ -29,7 +29,7 @@ El aviso del agente va en el cuerpo del archivo. Los atributos adicionales se de
 
 Crear `~/.kiro/agents/code-reviewer.md`:
 
-```rebaja
+```markdown
 ---
 nombre: revisor de código
 Descripción: Asistente experto en revisión de código.

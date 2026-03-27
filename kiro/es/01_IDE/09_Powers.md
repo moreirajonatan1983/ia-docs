@@ -49,7 +49,7 @@ Un poder es un paquete unificado que incluye:
 
 | Componente | Descripción |
 |---|---|
-| `PODER.md` | Archivo de dirección que le indica al agente qué herramientas MCP tiene disponibles y cuándo usarlas |
+| `PODER.md` | Archivo de Steering que le indica al agente qué herramientas MCP tiene disponibles y cuándo usarlas |
 | **Configuración del servidor MCP** | Herramientas y detalles de conexión para el servidor MCP |
 | **Dirección/hooks** *(opcional)* | Tareas automatizadas que se ejecutan en eventos IDE o mediante comandos de barra diagonal |
 

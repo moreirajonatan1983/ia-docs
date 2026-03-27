@@ -932,7 +932,7 @@ Forzar resolución de archivos: `@./myfile`
 
 ### Manejo de archivos
 
-- **Compatible:** Archivos de texto (código fuente, configuración, rebajas) de hasta **250 KB**
+- **Compatible:** Archivos de texto (código fuente, configuración, Markdown) de hasta **250 KB**
 - **No compatible:** Archivos binarios (imágenes, ejecutables, archivos): muestra un error
 - **Archivos grandes:** Truncado a 250 KB con una advertencia: `⚠ El archivo 'large-file.json' fue truncado`
 
@@ -1522,8 +1522,8 @@ Kiro CLI puede configurarse en tres ámbitos para adaptarse a tus preferencias y
 | `.kiro/prompts` | Indicaciones del proyecto |
 | `~/.kiro/agentes` | Agentes Globales |
 | `.kiro/agentes` | Agentes de Proyectos |
-| `~/.kiro/dirección` | Dirección Global |
-| `.kiro/dirección` | Dirección de Proyectos |
+| `~/.kiro/steering` | Steering Global |
+| `.kiro/steering` | Steering de Proyectos |
 | `~/.kiro/settings/cli.json` | Configuración CLI global |
 
 ---
@@ -1934,7 +1934,7 @@ Recursos locales disponibles para el agente.
 {
   "recursos": [
     "archivo://README.md",
-    "archivo://.kiro/dirección/**/*.md",
+    "archivo://.kiro/steering/**/*.md",
     "habilidad://.kiro/skills/**/SKILL.md"
   ]
 }
@@ -2862,19 +2862,19 @@ Ver [Configuración →](../03_Chat/13_Configuration.md) para más detalles sobr
 
 *📂 Capítulo: **Steering***
 
-## Dirección - Kiro CLI
+## Steering - Kiro CLI
 
 > **Fuente:** [kiro.dev/docs/cli/steering/](https://kiro.dev/docs/cli/steering/)
 
 ---
 
-Los archivos de dirección guían la IA de Kiro con el contexto específico del proyecto a través de documentos de rebajas que definen sus estándares, arquitectura y convenciones.
+Los archivos de Steering guían la IA de Kiro con el contexto específico del proyecto a través de documentos Markdown que definen sus estándares, arquitectura y convenciones.
 
 ---
 
-### ¿Qué es la dirección?
+### ¿Qué es el Steering?
 
-Los archivos de dirección son documentos de rebajas almacenados en `.kiro/steering/` que Kiro lee automáticamente durante las sesiones de chat. Proporcionan conocimiento específico del proyecto que da forma a la generación y el comportamiento del código de Kiro.
+Los archivos de Steering son documentos Markdown almacenados en `.kiro/steering/` que Kiro lee automáticamente durante las sesiones de chat. Proporcionan conocimiento específico del proyecto que da forma a la generación y el comportamiento del código de Kiro.
 
 **Beneficios clave:**
 - Calidad de código consistente en todas las sesiones.
@@ -2884,27 +2884,27 @@ Los archivos de dirección son documentos de rebajas almacenados en `.kiro/steer
 
 ---
 
-### Alcance del archivo directivo
+### Alcance del archivo de Steering
 
-#### Dirección del espacio de trabajo
+#### Steering del espacio de trabajo
 
 Reside en `.kiro/steering/` en la raíz de tu espacio de trabajo. Aplicar solo a ese espacio de trabajo específico.
 
-#### Dirección global
+#### Steering global
 
 Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los espacios de trabajo.
 
-> **Nota:** En caso de instrucciones contradictorias, **la dirección del espacio de trabajo tiene prioridad** sobre la dirección global.
+> **Nota:** En caso de instrucciones contradictorias, **el Steering del espacio de trabajo tiene prioridad** sobre el Steering global.
 
-#### Dirección del equipo
+#### Steering del equipo
 
-Los archivos de dirección globales se pueden distribuir a equipos completos a través de soluciones MDM, políticas de grupo o descargar desde un repositorio central a `~/.kiro/steering`.
+Los archivos de Steering globales se pueden distribuir a equipos completos a través de soluciones MDM, políticas de grupo o descargar desde un repositorio central a `~/.kiro/steering`.
 
 ---
 
-### Archivos directivos fundamentales
+### Archivos de Steering fundamentales
 
-Cree archivos de dirección fundamentales en `.kiro/steering/` (espacio de trabajo) o `~/.kiro/steering` (global):
+Cree archivos de Steering fundamentales en `.kiro/steering/` (espacio de trabajo) o `~/.kiro/steering` (global):
 
 | Archivo | Propósito |
 |---|---|
@@ -2916,17 +2916,17 @@ Estos archivos básicos se incluyen en cada interacción de forma predeterminada
 
 ---
 
-### Creación de archivos de dirección personalizados
+### Creación de archivos de Steering personalizados
 
 1. Cree un nuevo archivo `.md` en `.kiro/steering/`
 2. Elija un nombre de archivo descriptivo (por ejemplo, `api-standards.md`)
-3. Escriba su guía utilizando rebajas estándar y lenguaje natural.
+3. Escriba su guía utilizando Markdown estándar y lenguaje natural.
 
 ---
 
-### Dirección con agentes personalizados
+### Steering con agentes personalizados
 
-Cuando se utilizan [agentes personalizados](https://kiro.dev/docs/cli/custom-agents/creating), los archivos de dirección **no se incluyen automáticamente**. Agréguelos explícitamente a la configuración de "recursos" del agente:
+Cuando se utilizan [agentes personalizados](https://kiro.dev/docs/cli/custom-agents/creating), los archivos de Steering **no se incluyen automáticamente**. Agréguelos explícitamente a la configuración de "recursos" del agente:
 
 ```json
 {
@@ -2934,7 +2934,7 @@ Cuando se utilizan [agentes personalizados](https://kiro.dev/docs/cli/custom-age
 }
 ```
 
-Este patrón global garantiza que todos los archivos de rebajas en su directorio de dirección se carguen cuando se utiliza el agente.
+Este patrón global garantiza que todos los archivos Markdown en su directorio de Steering se carguen cuando se utiliza el agente.
 
 ---
 
@@ -2951,11 +2951,11 @@ Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGEN
 - **Incluir contexto**: explique *por qué* se tomaron las decisiones
 - **Proporcione ejemplos**: use fragmentos de código y comparaciones antes/después
 - **La seguridad es lo primero**: nunca incluya claves API ni datos confidenciales
-- **Mantener regularmente**: trate los cambios de dirección como cambios de código
+- **Mantener regularmente**: trate los cambios de Steering como cambios de código
 
 ---
 
-### Estrategias comunes de archivos de dirección
+### Estrategias comunes de archivos de Steering
 
 | Archivo | Contenido |
 |---|---|
@@ -3041,7 +3041,7 @@ pr-review/
 
 El archivo empieza con **YAML frontmatter** seguido de instrucciones en Markdown:
 
-```rebaja
+```markdown
 ---
 nombre: pr-revisión
 Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar relaciones públicas o preparar código para revisión.
@@ -3100,7 +3100,7 @@ cdk-deploy/
 ```
 
 **HABILIDAD.md:**
-```rebaja
+```markdown
 ---
 nombre: implementación de cdk
 Descripción: Implemente pilas de AWS CDK con las mejores prácticas. Úselo al implementar infraestructura, ejecutar cdk implementar o solucionar problemas de CDK.
@@ -6580,7 +6580,7 @@ Obtiene contenido de URL específicas.
 | `auto` | Kiro elige el mejor modo |
 | `crudo` | HTML sin procesar |
 | `texto` | Texto plano extraido |
-| `rebaja` | Convertir a Markdown |
+| `markdown` | Convertir a Markdown |
 
 **Configuración:**
 ```json
@@ -7012,7 +7012,7 @@ Kiro CLI es la **próxima evolución de Q CLI**. Tus flujos de trabajo existente
 | **Autenticación** | ID de constructor + Centro de identidad IAM | ID de constructor + Centro de identidad IAM + **Google + GitHub** |
 | **Agente por defecto** | `q_default` | `kiro_default` |
 | **Carpeta de configuración** | `~/.aws/amazonq/` | `~/.kiro/` |
-| **Dirección/Reglas** | `~/.aws/amazonq/rules/` | `~/.kiro/dirección/` |
+| **Steering/Reglas** | `~/.aws/amazonq/rules/` | `~/.kiro/steering/` |
 | **Nombres de herramientas** | `fs_read`, `fs_write`, `execute_bash`, `use_aws`, `report_issue` | `leer`, `escribir`, `shell`, `aws`, `report` (retrocompatibles) |
 | **Licencia del software** | Apache 2.0 | Licencia de propiedad intelectual de AWS |
 | **Registros** | Varia | `$TMPDIR/kiro-log` |
@@ -7043,8 +7043,8 @@ Al instalar Kiro CLI por primera vez, se ejecuta una **migración automática**:
 | Mensajes (espacio de trabajo) | `.amazonq/prompts/` | `.kiro/prompts/` |
 | Agentes (globales) | `~/.aws/amazonq/cli-agents/` | `~/.kiro/agents/` |
 | Agentes (espacio de trabajo) | `.amazonq/cli-agents/` | `.kiro/agentes/` |
-| Dirección/Reglas (global) | `~/.aws/amazonq/rules/` | `~/.kiro/dirección/` |
-| Dirección/Reglas (espacio de trabajo) | `.amazonq/rules/` | `.kiro/dirección/` |
+| Steering/Reglas (global) | `~/.aws/amazonq/rules/` | `~/.kiro/steering/` |
+| Steering/Reglas (espacio de trabajo) | `.amazonq/rules/` | `.kiro/steering/` |
 | Configuración | — | `~/.kiro/settings/cli.json` |
 
 ---

@@ -1,16 +1,16 @@
-# Dirección
+# Steering
 
 > **Fuente:** [kiro.dev/docs/steering/](https://kiro.dev/docs/steering/)
 
 ---
 
-Los archivos de dirección guían la IA de Kiro con un contexto global o específico del espacio de trabajo a través de documentos de rebajas que definen sus estándares, arquitectura y convenciones, lo que le brinda a Kiro una comprensión persistente de cómo funciona su proyecto.
+Los archivos de Steering guían la IA de Kiro con un contexto global o específico del espacio de trabajo a través de documentos Markdown que definen sus estándares, arquitectura y convenciones, lo que le brinda a Kiro una comprensión persistente de cómo funciona su proyecto.
 
 ---
 
-## ¿Qué es la dirección?
+## ¿Qué es el Steering?
 
-Los archivos de dirección son documentos de rebajas almacenados en `.kiro/steering/` que Kiro lee automáticamente durante las interacciones de chat. Proporcionan conocimiento específico del proyecto que da forma a las sugerencias, la generación de código y el comportamiento de Kiro.
+Los archivos de Steering son documentos Markdown almacenados en `.kiro/steering/` que Kiro lee automáticamente durante las interacciones de chat. Proporcionan conocimiento específico del proyecto que da forma a las sugerencias, la generación de código y el comportamiento de Kiro.
 
 **Beneficios clave:**
 - Mantener una calidad de código consistente en todas las sesiones.
@@ -20,27 +20,27 @@ Los archivos de dirección son documentos de rebajas almacenados en `.kiro/steer
 
 ---
 
-## Alcance del archivo directivo
+## Alcance del archivo de Steering
 
-### Dirección del espacio de trabajo
+### Steering del espacio de trabajo
 
 Reside en `.kiro/steering/` en la raíz de tu espacio de trabajo. Aplicar solo a ese espacio de trabajo específico. Se utiliza para informar a Kiro sobre patrones, bibliotecas y estándares que se aplican a un espacio de trabajo individual.
 
-### Dirección global
+### Steering global
 
 Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los espacios de trabajo. Se utiliza para informar a Kiro sobre las convenciones que se aplican en todos sus proyectos.
 
-> **Nota:** En caso de instrucciones contradictorias entre la dirección global y del espacio de trabajo, **la dirección del espacio de trabajo tiene prioridad**.
+> **Nota:** En caso de instrucciones contradictorias entre el Steering global y del espacio de trabajo, **el Steering del espacio de trabajo tiene prioridad**.
 
-### Dirección del equipo
+### Steering del equipo
 
-La dirección global puede distribuir archivos de dirección centralizados a equipos completos a través de soluciones MDM, políticas de grupo o descargándolos desde un repositorio central a `~/.kiro/steering`.
+El Steering global puede distribuir archivos de Steering centralizados a equipos completos a través de soluciones MDM, políticas de grupo o descargándolos desde un repositorio central a `~/.kiro/steering`.
 
 ---
 
-## Archivos directivos fundamentales
+## Archivos de Steering fundamentales
 
-Haga clic en **Generar documentos de dirección** en el panel de Kiro para generar automáticamente tres archivos fundamentales:
+Haga clic en **Generar documentos de Steering** en el panel de Kiro para generar automáticamente tres archivos fundamentales:
 
 | Archivo | Propósito |
 |---|---|
@@ -52,13 +52,13 @@ Estos archivos básicos se incluyen en cada interacción de forma predeterminada
 
 ---
 
-## Creación de archivos de dirección personalizados
+## Creación de archivos de Steering personalizados
 
-1. Navegue a la sección **Dirección** en el panel Kiro.
+1. Navegue a la sección **Steering** en el panel Kiro.
 2. Haga clic en el botón **+**
 3. Seleccione el alcance: **espacio de trabajo** o **global**
 4. Elija un nombre de archivo descriptivo (por ejemplo, `api-standards.md`)
-5. Escriba su guía utilizando rebajas estándar y lenguaje natural.
+5. Escriba su guía utilizando Markdown estándar y lenguaje natural.
 6. Opcionalmente, utilice el botón **Refinar** para que Kiro mejore sus requisitos.
 
 ---
@@ -73,7 +73,7 @@ Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGEN
 
 ## Modos de inclusión
 
-Configure cuándo se cargan los archivos de dirección agregando el texto preliminar de YAML en la parte superior del archivo:
+Configure cuándo se cargan los archivos de Steering agregando el texto preliminar de YAML en la parte superior del archivo:
 
 ### Siempre incluido (predeterminado)
 ```yaml
@@ -121,7 +121,7 @@ Se incluye automáticamente cuando su solicitud coincide con la descripción. Ta
 
 ## Referencias de archivos
 
-Enlace a archivos del espacio de trabajo en vivo para mantener la dirección actualizada:
+Enlace a archivos del espacio de trabajo en vivo para mantener el Steering actualizado:
 ```
 #[[archivo:<nombre_archivo_relativo>]]
 ```
@@ -140,11 +140,11 @@ Ejemplos:
 - **Incluir contexto**: explique *por qué* se tomaron decisiones, no solo cuáles son los estándares.
 - **Proporcione ejemplos**: use fragmentos de código y comparaciones antes/después
 - **La seguridad es lo primero**: nunca incluya claves API, contraseñas ni datos confidenciales
-- **Mantener periódicamente**: revisar durante la planificación del sprint y los cambios de arquitectura; Trate los cambios de dirección como cambios de código.
+- **Mantener periódicamente**: revisar durante la planificación del sprint y los cambios de arquitectura; Trate los cambios de Steering como cambios de código.
 
 ---
 
-## Estrategias comunes de archivos de dirección
+## Estrategias comunes de archivos de Steering
 
 | Archivo | Contenido |
 |---|---|

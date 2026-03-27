@@ -36,7 +36,7 @@ Kiro **activa habilidades automáticamente** cuando tu solicitud coincide con la
 
 También puedes invocar una habilidad directamente: escribe `/` en la entrada del chat para ver las habilidades disponibles como **comandos de barra diagonal**. Al seleccionar un comando de barra diagonal se cargan las instrucciones de habilidad completas.
 
-Vea y administre habilidades en la sección **Dirección y habilidades del agente** en el panel de Kiro.
+Vea y administre habilidades en la sección **Steering y habilidades del agente** en el panel de Kiro.
 
 ---
 
@@ -51,7 +51,7 @@ Vea y administre habilidades en la sección **Dirección y habilidades del agent
 
 ## Importación de habilidades
 
-1. Abra la sección **Dirección y habilidades del agente** en el panel de Kiro.
+1. Abra la sección **Steering y habilidades del agente** en el panel de Kiro.
 2. Haga clic en **+** y seleccione **Importar una habilidad**
 3. Elige tu fuente:
    - **GitHub** — Importar desde una URL de repositorio público (pegue la URL que apunta a la carpeta de habilidades o directamente al archivo `SKILL.md`). La URL debe apuntar a un subdirectorio, no a la raíz del repositorio.
@@ -75,7 +75,7 @@ my-skill/
 
 ### Formato HABILIDAD.md
 
-```rebaja
+```markdown
 ---
 nombre: pr-revisión
 Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar relaciones públicas o preparar código para revisión.
