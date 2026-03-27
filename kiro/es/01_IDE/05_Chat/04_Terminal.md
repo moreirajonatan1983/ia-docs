@@ -43,7 +43,7 @@ Los comandos de larga ejecución (como servidores de desarrollo) son gestionados
 Configurará qué confiar comandos automáticamente en:
 **Configuración → Kiro Agent: Comandos confiables**
 
-Disponible a nivel usuario (global) y a nivel espacio de trabajo.
+Disponible a nivel usuario (global) y a nivel Workspace.
 
 #### Coincidencia exacta
 ```json
@@ -77,7 +77,7 @@ Disponible a nivel usuario (global) y a nivel espacio de trabajo.
 
 ### Lista de denegaciones de comandos
 
-La lista de denegación impide la aprobación automática de comandos con patrones específicos, independientemente de los ajustes de confianza. Estados Unidos **coincidencia de subcadenas**.
+La lista de denegación impide la aprobación automática de comandos con patrones específicos, independientemente de los Settings de confianza. Estados Unidos **coincidencia de subcadenas**.
 
 **Configuración → Agente Kiro: Lista de comandos rechazados**
 
@@ -97,7 +97,7 @@ La lista de denegación impide la aprobación automática de comandos con patron
 }
 ```
 
-> La lista de denegados **se revisa antes** que los ajustes de confianza. Incluso con `["*"]` entrust, los comandos denegados requieren aprobación manual.
+> La lista de denegados **se revisa antes** que los Settings de confianza. Incluso con `["*"]` entrust, los comandos denegados requieren aprobación manual.
 
 ---
 
@@ -116,4 +116,4 @@ Referencia la salida reciente de tu terminal con `#terminal`:
 - Interpretación de salida — Explicar resultados complejos y logs
 - Acciones de seguimiento — Sugerir próximos pasos basados en resultados reales
 - Reconocimiento de patrones — Identificar problemas recurrentes
-- Depuración del entorno — Resolver conflictos de sistema y dependencias
+- Debug del entorno — Resolver conflictos de sistema y dependencias

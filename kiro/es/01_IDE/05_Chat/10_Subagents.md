@@ -20,8 +20,8 @@ Kiro puede crear subagentes para manejar tareas complejas de forma independiente
 
 Podés definir tu propio agente personalizado creando un archivo Markdown (`.md`) en:
 
-- `~/.kiro/agents/` — alcance global (disponible en todos los espacios de trabajo)
-- `<workspace>/.kiro/agents/` — alcance del espacio de trabajo (solo en ese proyecto)
+- `~/.kiro/agents/` — alcance global (disponible en todos los Workspaces)
+- `<workspace>/.kiro/agents/` — alcance del Workspace (solo en ese proyecto)
 
 El aviso del agente va en el cuerpo del archivo. Los atributos adicionales se definen como materia frontal de YAML.
 

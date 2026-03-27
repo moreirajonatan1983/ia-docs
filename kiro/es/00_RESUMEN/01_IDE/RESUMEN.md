@@ -29,8 +29,8 @@ Kiro está disponible para **macOS**, **Windows** y **Linux**.
 
 Comenzar es simple:
 
-1. Vaya a [kiro.dev](https://kiro.dev) y descargue el instalador.
-2. Abra el archivo descargado y siga las instrucciones de instalación para su sistema operativo (Windows, macOS o Linux).
+1. Navegá a [kiro.dev](https://kiro.dev) y descargue el instalador.
+2. Abrí el archivo descargado y siga las instrucciones de instalación para su sistema operativo (Windows, macOS o Linux).
 3. ¡Abre Kiro IDE y comienza a codificar!
 
 ---
@@ -41,9 +41,9 @@ Comenzar es simple:
 
 1. Cuando abra Kiro por primera vez, se le pedirá que inicie sesión con un proveedor de su elección que incluya opciones sociales y de inicio de sesión de AWS. Obtenga más información sobre los [métodos de autenticación] (https://kiro.dev/docs/getting-started/authentication).
 
-2. Una vez que haya iniciado sesión, puede elegir [importar su código VS](https://kiro.dev/docs/guides/migrating-from-vscode) configuraciones y extensiones. Si está utilizando otro editor, puede omitir este paso. Seleccione su tema preferido entre las opciones disponibles, luego permita que Kiro configure la integración del shell, permitiendo que el agente ejecute comandos en su nombre.
+2. Una vez que haya iniciado sesión, puede elegir [importar su código VS](https://kiro.dev/docs/guides/migrating-from-vscode) configuraciones y extensiones. Si está utilizando otro editor, puede omitir este paso. Seleccioná su tema preferido entre las opciones disponibles, luego permita que Kiro configure la integración del shell, permitiendo que el agente ejecute comandos en su nombre.
 
-3. Finalmente, llegarás a la página de bienvenida. Abra un proyecto para comenzar y continuar con [su primer proyecto](https://kiro.dev/docs/getting-started/first-project).
+3. Finalmente, llegarás a la página de bienvenida. Abrí un proyecto para comenzar y continuar con [su primer proyecto](https://kiro.dev/docs/getting-started/first-project).
 
 ---
 
@@ -93,23 +93,23 @@ Kiro es una aplicación de AWS que funciona como un IDE agente independiente **s
 
 #### GitHub
 
-Utilice las siguientes instrucciones para iniciar sesión en Kiro usando GitHub.
+Utilizá las siguientes instrucciones para Sign in en Kiro usando GitHub.
 
-**Para iniciar sesión con GitHub:**
+**Para Sign in con GitHub:**
 
-1. En Kiro, elija **Iniciar sesión con GitHub**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
-2. Ingrese su nombre de usuario o dirección de correo electrónico y su contraseña y luego elija **Iniciar sesión**.
+1. En Kiro, elija **Sign in con GitHub**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
+2. Ingrese su nombre de usuario o dirección de correo electrónico y su contraseña y luego elija **Sign in**.
 3. Elija **Autorizar kirodotdev** para autorizar la aplicación Kiro con su cuenta de GitHub.
 
 ---
 
 #### Google
 
-Utilice las siguientes instrucciones para iniciar sesión en Kiro mediante Google.
+Utilizá las siguientes instrucciones para Sign in en Kiro mediante Google.
 
-**Para iniciar sesión con Google:**
+**Para Sign in con Google:**
 
-1. En Kiro, elija **Iniciar sesión con Google**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
+1. En Kiro, elija **Sign in con Google**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
 2. Elige una cuenta de Google que quieras usar con Kiro.
 3. Elija **Continuar** para autorizar la aplicación Kiro con su cuenta de Google.
 
@@ -117,24 +117,24 @@ Utilice las siguientes instrucciones para iniciar sesión en Kiro mediante Googl
 
 #### ID del creador de AWS
 
-Utilice las siguientes instrucciones para iniciar sesión en Kiro utilizando AWS Builder ID.
+Utilizá las siguientes instrucciones para Sign in en Kiro utilizando AWS Builder ID.
 
-**Para iniciar sesión con AWS Builder ID:**
+**Para Sign in con AWS Builder ID:**
 
-1. En Kiro, elija **Iniciar sesión con AWS Builder ID**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
+1. En Kiro, elija **Sign in con AWS Builder ID**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
 2. Ingrese su dirección de correo electrónico y luego elija **Siguiente**.
-3. Ingrese su contraseña y luego elija **Iniciar sesión**.
+3. Ingrese su contraseña y luego elija **Sign in**.
 4. Elija **Permitir acceso** para autorizar la aplicación Kiro.
 
 ---
 
 #### Centro de identidad de AWS IAM
 
-Utilice las siguientes instrucciones para iniciar sesión en Kiro en su organización, incluido AWS GovCloud (EE. UU.), mediante AWS IAM Identity Center.
+Utilizá las siguientes instrucciones para Sign in en Kiro en su organización, incluido AWS GovCloud (EE. UU.), mediante AWS IAM Identity Center.
 
-**Para iniciar sesión con AWS IAM Identity Center:**
+**Para Sign in con AWS IAM Identity Center:**
 
-1. En Kiro, elija **Iniciar sesión con AWS IAM Identity Center**.
+1. En Kiro, elija **Sign in con AWS IAM Identity Center**.
 2. En **URL de inicio**, ingrese la URL de inicio proporcionada por su administrador o servicio de asistencia.
 3. En **Región**, ingrese la región de AWS que aloja el directorio de identidad y luego elija **Continuar**.
 
@@ -151,9 +151,9 @@ Utilice las siguientes instrucciones para iniciar sesión en Kiro en su organiza
 
 #### Proveedor de identidad externo
 
-Utilice las siguientes instrucciones para iniciar sesión en Kiro utilizando el proveedor de identidad externo de su organización, como Microsoft Entra ID u Okta.
+Utilizá las siguientes instrucciones para Sign in en Kiro utilizando el proveedor de identidad externo de su organización, como Microsoft Entra ID u Okta.
 
-**Para iniciar sesión con el proveedor de identidad de su organización:**
+**Para Sign in con el proveedor de identidad de su organización:**
 
 1. En Kiro, elige **Tu organización**.
 2. Ingrese su correo electrónico de trabajo para encontrar su organización y luego elija **Continuar**.
@@ -183,7 +183,7 @@ Si encuentra problemas durante el proceso de autenticación, como fallas de redi
 
 ---
 
-Esta guía lo guía a través de las características esenciales de Kiro trabajando con un proyecto real. Aprenderá a utilizar **archivos de Steering**, **especificaciones**, **hooks** y **servidores MCP** para mejorar su flujo de trabajo de desarrollo.
+Esta guía lo guía a través de las características esenciales de Kiro trabajando con un proyecto real. Aprenderá a utilizar **archivos de Steering**, **Specs**, **hooks** y **servidores MCP** para mejorar su flujo de trabajo de desarrollo.
 
 ---
 
@@ -200,7 +200,7 @@ Antes de comenzar, asegúrese de tener:
 ### Abre tu proyecto
 
 1. **Inicia Kiro** y abre tu proyecto:
-   - Utilice **Archivo > Abrir carpeta** para seleccionar el directorio de su proyecto
+   - Utilizá **Archivo > Abrir carpeta** para seleccionar el directorio de su proyecto
    - O arrastra y suelta la carpeta de tu proyecto en Kiro
    - O vaya a la línea de comando y ejecute `kiro.` desde el directorio de su proyecto
 
@@ -225,7 +225,7 @@ Para comenzar, elija **Generar documentos de Steering** en el panel Kiro. Kiro g
 Contienen información sobre:
 
 - Su producto y su propósito
-- Pila técnica y marcos.
+- Pila técnica y frameworks.
 - Estructura y convenciones del proyecto.
 
 También puede crear archivos de Steering personalizados haciendo clic en el botón **+** en la sección de dirección y agregar cosas como estándares de codificación, flujos de trabajo y mejores prácticas del equipo. [Más información sobre la dirección aquí →](https://kiro.dev/docs/steering/)
@@ -234,21 +234,21 @@ También puede crear archivos de Steering personalizados haciendo clic en el bot
 
 ---
 
-### Construir funciones con especificaciones
+### Construir funciones con Specs
 
-Las especificaciones transforman ideas de funciones de alto nivel en planes de implementación detallados a través de tres fases:
+Las Specs transforman ideas de funciones de alto nivel en planes de implementación detallados a través de tres fases:
 
 1. **Requisitos** — Historias de usuarios con criterios de aceptación en notación EARS
 2. **Diseño**: arquitectura técnica y enfoque de implementación
 3. **Tareas**: pasos de implementación discretos y rastreables
 
-![Inicio de especificaciones](https://kiro.dev/videos/specs-start.mp4)
+![Inicio de Specs](https://kiro.dev/videos/specs-start.mp4)
 
-#### Crea tu primera especificación
+#### Crea tu primera spec
 
-1. **Iniciar una nueva especificación:**
-   - En tu sesión de chat, haz clic en el botón **Especificación**
-   - O elige el botón **+** en la sección Especificaciones del panel Kiro
+1. **Iniciar una nueva spec:**
+   - En tu sesión de chat, haz clic en el botón **spec**
+   - O elige el botón **+** en la sección Specs del panel Kiro
 
 2. **Ingrese una descripción de la función:**
    - Describe tu característica en lenguaje natural.
@@ -263,7 +263,7 @@ Las especificaciones transforman ideas de funciones de alto nivel en planes de i
 
 ![Tarea específica](https://kiro.dev/videos/spec-task.gif)
 
-Una vez que su especificación esté completa:
+Una vez que su spec esté completa:
 
 1. Revise **Tareas generadas** en el archivo `tasks.md`
 2. **Ejecutar tareas** haciendo clic en elementos de tareas individuales
@@ -285,15 +285,15 @@ Agent Hooks elimina el trabajo manual al ejecutar automáticamente acciones pred
 
 **Para empezar:**
 
-1. **Creación de gancho de acceso:**
+1. **Creación de hook de acceso:**
    - Navega a la sección **Agent Hooks** en el panel de Kiro.
-   - Haga clic en el botón **+** para crear un nuevo gancho.
+   - Hacé clic en el botón **+** para crear un nuevo hook.
 
-2. **Definir comportamiento del gancho:**
+2. **Definir comportamiento del hook:**
    - Describe lo que quieres automatizar en lenguaje natural.
    - Ejemplo: *"Cuando guardo un archivo de componente de React, creo o actualizo automáticamente su archivo de prueba correspondiente"*
 
-3. **Configurar ajustes de enlace:**
+3. **Configurar Settings de enlace:**
    - **Tipo de evento:** Elija cuándo se activa el enlace: eventos de archivos (creados, guardados, eliminados), eventos de ciclo de vida del agente y avisos (envío rápido, detención del agente, uso previo y posterior a la herramienta), eventos de tareas específicas (ejecución previa y posterior a la tarea) o activación manual
    - **Patrón de archivo:** Especifique qué archivos deben activar el enlace (por ejemplo, `src/**/*.tsx`)
    - **Instrucciones:** Definir las acciones específicas a realizar
@@ -308,12 +308,12 @@ El Protocolo de contexto modelo (MCP) le permite a Kiro:
 
 - Acceda a bases de conocimiento y documentación especializadas.
 - Integrar con API y servicios externos
-- Utilice herramientas y utilidades específicas del dominio.
+- Utilizá herramientas y utilidades específicas del dominio.
 - Conéctese a bases de datos y servicios en la nube.
 
 #### Configurar MCP
 
-1. Abra el panel de Kiro haciendo clic en el icono de Kiro Ghost en la barra de actividades. Primero habilite los MCP y luego haga clic en el botón de edición (icono de lápiz) junto a MCP en el panel.
+1. Abrí el panel de Kiro haciendo clic en el icono de Kiro Ghost en la barra de actividades. Primero habilite los MCP y luego haga clic en el botón de edición (icono de lápiz) junto a MCP en el panel.
 
 2. De forma predeterminada, Kiro se envía con [buscar servidor MCP] (https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) en el archivo JSON. Voltéelo a `disabled=false` para conectarse.
 
@@ -335,7 +335,7 @@ El Protocolo de contexto modelo (MCP) le permite a Kiro:
 }
 ```
 
-#### Utilice herramientas MCP
+#### Utilizá herramientas MCP
 
 Una vez configuradas, puede utilizar las herramientas MCP de varias maneras:
 
@@ -343,9 +343,9 @@ Una vez configuradas, puede utilizar las herramientas MCP de varias maneras:
   - Ejemplo: *"Buscar las últimas mejores prácticas de React 18"*
 
 - **Uso explícito de herramientas**: haga referencia a herramientas MCP específicas con el proveedor de contexto `#MCP`:
-  - Ejemplo: `#[fetch] fetch Utilice la búsqueda web para encontrar ejemplos de restricciones genéricas de TypeScript`
+  - Ejemplo: `#[fetch] fetch Utilizá la búsqueda web para encontrar ejemplos de restricciones genéricas de TypeScript`
 
-- **Integración con otras funciones**: combine MCP con hooks y especificaciones:
+- **Integración con otras funciones**: combine MCP con hooks y Specs:
   - Ejemplo: *"Crear un enlace que utilice el MCP de búsqueda web para encontrar documentación relevante cuando creo nuevos archivos de componentes"*
 
 ---
@@ -353,7 +353,7 @@ Una vez configuradas, puede utilizar las herramientas MCP de varias maneras:
 ### Próximos pasos
 
 - [Pruebe el tutorial interactivo →](https://kiro.dev/docs/guides/learn-by-playing)
-- [Más información sobre especificaciones →](https://kiro.dev/docs/specs)
+- [Más información sobre Specs →](https://kiro.dev/docs/specs)
 - [Únete a la comunidad en Discord →](https://discord.gg/kirodotdev)
 
 ---
@@ -377,7 +377,7 @@ El costo es relativo a **Automático (1,0 veces el valor de referencia)**. Por e
 | Modelo | Mejor para | Multiplicador de costos |
 |---|---|---|
 | **Automático** *(recomendado)* | Uso general, mejor relación calidad/coste | 1,0x |
-| **Claude Opus 4.6** | Codificación agente compleja, depuración, grandes bases de código | ~2,2x |
+| **Claude Opus 4.6** | Codificación agente compleja, Debug, grandes bases de código | ~2,2x |
 | **Claude Opus 4.5** | Razonamiento avanzado, desafíos sofisticados | ~2,2x |
 | **Claude Sonnet 4.6** | Flujos de trabajo de desarrollo iterativos, canalizaciones multimodelo | ~1,0x |
 | **Claude Sonnet 4.5** | Agentes complejos, funcionamiento autónomo ampliado | ~1,0x |
@@ -400,7 +400,7 @@ El enrutador modelo de Kiro. Auto combina múltiples modelos de frontera con té
 
 #### Claude Opus 4.6
 
-El modelo más capaz de Anthropic con codificación de última generación y rendimiento agente. Puntuaciones máximas en Terminal-Bench 2.0 y SWE-bench Verified para codificación agente. Se mantiene productivo durante sesiones más largas sin cambios de contexto y maneja bases de código de varios millones de líneas, planificando por adelantado y adaptándose según sea necesario. Las capacidades mejoradas de depuración y revisión de código le permiten detectar sus propios errores y pensar con más cuidado en problemas complejos, revisando el razonamiento antes de comprometerse. [Más información →](https://www.anthropic.com/research/claude-opus-4-6)
+El modelo más capaz de Anthropic con codificación de última generación y rendimiento agente. Puntuaciones máximas en Terminal-Bench 2.0 y SWE-bench Verified para codificación agente. Se mantiene productivo durante sesiones más largas sin cambios de contexto y maneja bases de código de varios millones de líneas, planificando por adelantado y adaptándose según sea necesario. Las capacidades mejoradas de Debug y revisión de código le permiten detectar sus propios errores y pensar con más cuidado en problemas complejos, revisando el razonamiento antes de comprometerse. [Más información →](https://www.anthropic.com/research/claude-opus-4-6)
 
 ---
 
@@ -477,7 +477,7 @@ Los modelos en Kiro pasan por dos etapas. Cada etapa refleja la madurez del mode
 
 - **Comience con Auto** para la mayoría del trabajo. Optimiza tanto la calidad como el coste de forma automática.
 - **Cambie a Opus** cuando se encuentre con un problema complejo o necesite un trabajo continuo con varios archivos.
-- **Utilice Haiku** para iteraciones rápidas, correcciones simples o cuando desee conservar créditos.
+- **Utilizá Haiku** para iteraciones rápidas, correcciones simples o cuando desee conservar créditos.
 - **Supervise su uso** en la [configuración de su cuenta](https://kiro.dev/docs/billing/) para comprender cómo la elección del modelo afecta el consumo.
 - **Incluye el costo del modelo en tu nivel:** Si usas principalmente Opus, considera Pro+ o Power para obtener más créditos. Consulte [planes y facturación](https://kiro.dev/docs/billing/) para obtener más detalles.
 
@@ -497,7 +497,7 @@ Los modelos en Kiro pasan por dos etapas. Cada etapa refleja la madurez del mode
 
 #### Editor
 
-El espacio de trabajo central donde escribes y editas código. Las características incluyen:
+El Workspace central donde escribes y editas código. Las características incluyen:
 
 - Resaltado de sintaxis para múltiples idiomas.
 - Números de línea e indicadores de error.
@@ -513,7 +513,7 @@ Puedes utilizar el panel de chat para:
 
 - Haga preguntas sobre su código
 - Solicitar generación o modificaciones de código.
-- Obtenga ayuda con la depuración y la resolución de problemas
+- Obtenga ayuda con la Debug y la resolución de problemas
 - Solicite revisiones de código y sugerencias de optimización.
 - Incluir contexto con comandos `#` (por ejemplo, `#Archivo`, `#Carpeta`)
 - Generar código repetitivo y plantillas.
@@ -528,12 +528,12 @@ La barra lateral contiene varias vistas especializadas:
 
 | Ver | Descripción |
 |---|---|
-| **Explorador** | Navegue por la estructura de archivos de su proyecto, consulte los indicadores de estado de Git y acceda a secciones especiales para especificaciones y servidores MCP |
+| **Explorador** | Navegue por la estructura de archivos de su proyecto, consulte los indicadores de estado de Git y acceda a secciones especiales para Specs y servidores MCP |
 | **Buscar** | Realice operaciones globales de búsqueda y reemplazo en todo su proyecto |
 | **Control de fuente** | Administre operaciones de Git, vea cambios y maneje commits con [mensajes de commit generados por IA](https://kiro.dev/docs/editor/source-control) |
-| **Ejecutar y depurar** | Ver variables, pilas de llamadas y gestionar puntos de interrupción durante las sesiones de depuración |
+| **Ejecutar y debuggear** | Ver variables, pilas de llamadas y gestionar puntos de interrupción durante las sesiones de Debug |
 | **Extensiones** | Instalar y administrar extensiones IDE |
-| **Kiro** | Una vista dedicada a funciones específicas de IA: administración de especificaciones, enlaces de agentes, dirección de agentes y servidores MCP |
+| **Kiro** | Una vista dedicada a funciones específicas de IA: administración de Specs, enlaces de agentes, dirección de agentes y servidores MCP |
 
 ---
 
@@ -554,21 +554,21 @@ Accede rápidamente a los comandos de Kiro pulsando:
 - **macOS:** `Cmd+Mayús+P`
 - **Windows/Linux:** `Ctrl+Mayús+P`
 
-Utilice la paleta de comandos para:
+Utilizá la paleta de comandos para:
 - Ejecutar acciones comunes
 - Acceder a herramientas MCP
-- Configurar ajustes
+- Configurar Settings
 - Ejecutar hooks de agente
 
 ---
 
 ### Consejos de navegación
 
-- Utilice [atajos de teclado](https://kiro.dev/docs/editor/keyboard-shortcuts/) para una navegación más rápida
+- Utilizá [atajos de teclado](https://kiro.dev/docs/editor/keyboard-shortcuts/) para una navegación más rápida
 - Aproveche la paleta de comandos para acceder rápidamente a las funciones
 - Anclar archivos de uso frecuente para facilitar el acceso
-- Utilice vistas divididas para comparar o hacer referencia al código
-- Configurar los ajustes del espacio de trabajo para una experiencia personalizada
+- Utilizá vistas divididas para comparar o hacer referencia al código
+- Configurar los Settings del Workspace para una experiencia personalizada
 
 ---
 
@@ -612,7 +612,7 @@ Utilice la paleta de comandos para:
 | Ir a Símbolo | `Cmd+Mayús+O` | `Ctrl+Mayús+O` |
 | Ir a Línea | `Ctrl+G` | `Ctrl+G` |
 | Buscar en Archivo | `Cmd+F` | `Ctrl+F` |
-| Buscar en el espacio de trabajo | `Cmd+Mayús+F` | `Ctrl+Mayús+F` |
+| Buscar en el Workspace | `Cmd+Mayús+F` | `Ctrl+Mayús+F` |
 | Alternar barra lateral | `Cmd+B` | `Ctrl+B` |
 | Editor dividido | `Cmd+\` | `Ctrl+\` |
 | Grupo de editores de enfoque | `Cmd+1/2/3` | `Ctrl+1/2/3` |
@@ -639,7 +639,7 @@ Utilice la paleta de comandos para:
 |---|---|---|
 | Abrir chat de IA | `Cmd+L` | `Ctrl+L` |
 | Edición de IA en línea | `Cmd+I` | `Ctrl+I` |
-| Ejecutar/depurar | `F5` | `F5` |
+| Ejecutar/debuggear | `F5` | `F5` |
 
 ---
 
@@ -647,10 +647,10 @@ Utilice la paleta de comandos para:
 
 Puedes personalizar los atajos de teclado en Kiro:
 
-1. Abra la paleta de comandos (`Cmd+Shift+P` / `Ctrl+Shift+P`)
+1. Abrí la paleta de comandos (`Cmd+Shift+P` / `Ctrl+Shift+P`)
 2. Busque **Atajos de teclado**
-3. Seleccione **Preferencias: Abrir atajos de teclado**
-4. Seleccione el comando que desea modificar.
+3. Seleccioná **Preferencias: Abrir atajos de teclado**
+4. Seleccioná el comando que desea modificar.
 5. Elija el **ícono de lápiz** e ingrese su acceso directo preferido
 
 Esto le permite crear un flujo de trabajo personalizado que coincida con sus preferencias y hábitos de otros editores.
@@ -675,7 +675,7 @@ Kiro indexa su código base para brindar asistencia de código inteligente y con
 
 Kiro realiza la indexación automáticamente en estos escenarios:
 
-1. **Importación de proyectos**: cuando abres un proyecto por primera vez en Kiro, automáticamente comienza a indexar todos los archivos en tu espacio de trabajo.
+1. **Importación de proyectos**: cuando abres un proyecto por primera vez en Kiro, automáticamente comienza a indexar todos los archivos en tu Workspace.
 2. **Cambios de archivos**: cuando se crean o agregan nuevos archivos a su proyecto, se indexan automáticamente.
 3. **Cambios externos**: cuando los archivos se modifican fuera de Kiro (por ejemplo, mediante operaciones de git), se vuelven a indexar.
 
@@ -695,15 +695,15 @@ Puede activar la indexación manualmente cuando sea necesario usando la **Paleta
 
 | Comando | Cuándo utilizar |
 |---|---|
-| `Kiro: Reindexación de la fuerza del código base` | Fuerza una reindexación completa de todo el código base. Utilícelo cuando: el índice parezca corrupto o incompleto, se hayan realizado cambios estructurales importantes o las sugerencias parezcan obsoletas. |
+| `Kiro: Force Reindex Codebase` | Fuerza una reindexación completa de todo el código base. Utilícelo cuando: el índice parezca corrupto o incompleto, se hayan realizado cambios estructurales importantes o las sugerencias parezcan obsoletas. |
 | `Kiro: Reconstruir el índice base del código` | Reconstruye completamente el índice de la base de código desde cero. Más completo que forzar la reindexación. Utilícelo cuando el índice parezca muy dañado o experimente problemas persistentes. |
 
 #### Indexación de documentación
 
 | Comando | Descripción |
 |---|---|
-| `Kiro: Índice de documentos` | Inicia la indexación de archivos de documentación en su proyecto |
-| `Kiro: Docs fuerza la reindexación` | Fuerza una reindexación completa de todos los archivos de documentación |
+| `Kiro: Index Docs` | Inicia la indexación de archivos de documentación en su proyecto |
+| `Kiro: Force Reindex Docs` | Fuerza una reindexación completa de todos los archivos de documentación |
 
 ---
 
@@ -714,7 +714,7 @@ Puede activar la indexación manualmente cuando sea necesario usando la **Paleta
 Puedes monitorear el proceso de indexación a través del panel **Kiro Logs**:
 
 1. Accede al panel **Salida** en Kiro
-2. Seleccione **"Kiro Logs"** en el menú desplegable.
+2. Seleccioná **"Kiro Logs"** en el menú desplegable.
 3. Vea el progreso de la indexación y las actualizaciones de estado en tiempo real.
 
 Los registros muestran:
@@ -731,7 +731,7 @@ Kiro indexa varios tipos de contenido para brindar asistencia inteligente:
 
 | Tipo de contenido | Ejemplos |
 |---|---|
-| **Código fuente** | Todos los archivos de lenguajes de programación en su espacio de trabajo |
+| **Código fuente** | Todos los archivos de lenguajes de programación en su Workspace |
 | **Documentación** | Markdown, MDX y otros formatos de documentación |
 | **Configuración** | Archivos de configuración del proyecto y manifiestos |
 | **Dependencias** | Definiciones de paquetes e información de dependencia |
@@ -766,7 +766,7 @@ Kiro puede generar automáticamente mensajes de commit descriptivos siguiendo el
 #### Cómo generar mensajes de commit
 
 1. **Prepara tus cambios** en el panel de control de código fuente
-2. Haga clic en el botón **🪄** junto al campo de entrada del mensaje de commit.
+2. Hacé clic en el botón **🪄** junto al campo de entrada del mensaje de commit.
 3. **Revise el mensaje generado**: Kiro analiza sus cambios y crea un mensaje de commit descriptivo.
 4. **Edite si es necesario**: puede modificar el mensaje generado antes de confirmarlo.
 5. **Confirma tus cambios** usando el mensaje generado o editado
@@ -817,7 +817,7 @@ feat(docs): add comprehensive Source Control documentation
 
 Kiro incluye un proveedor de contexto `#Git Diff` que le permite hacer referencia a sus cambios actuales no confirmados directamente en el chat. Esto es útil para:
 
-- Solucionar conflictos de fusión
+- Solucionar conflictos de merge
 - Revisar los cambios antes de comprometerlos.
 - Obtener una revisión del código de tu diferencia actual
 
@@ -840,45 +840,45 @@ Hey Kiro, can you fix the merge conflicts? #Git Diff
 
 *📂 Capítulo: **Editor > Multi-root workspaces***
 
-## Espacios de trabajo multiraíz
+## Workspaces multiraíz
 
 > **Fuente:** [kiro.dev/docs/editor/multi-root-workspaces/](https://kiro.dev/docs/editor/multi-root-workspaces/)
 
 ---
 
-Los espacios de trabajo de múltiples raíces le permiten trabajar con múltiples carpetas de proyectos simultáneamente en una sola ventana de Kiro. Las funciones de IA de Kiro están diseñadas para funcionar sin problemas en todas las carpetas raíz.
+Los Workspaces de múltiples raíces le permiten trabajar con múltiples carpetas de proyectos simultáneamente en una sola ventana de Kiro. Las funciones de IA de Kiro están diseñadas para funcionar sin problemas en todas las carpetas raíz.
 
 ---
 
 ### Funcionalidad principal
 
-Kiro resolverá las rutas de los archivos de forma inteligente en todas las carpetas raíz mientras navega y actualiza su espacio de trabajo de múltiples raíces.
+Kiro resolverá las rutas de los archivos de forma inteligente en todas las carpetas raíz mientras navega y actualiza su Workspace de múltiples raíces.
 
-**[Codebase Indexing](https://kiro.dev/docs/editor/codebase-indexing/)** y Repository Maps funcionan perfectamente en espacios de trabajo de múltiples raíces: ambos índices contienen código de todas las carpetas raíz y se puede hacer referencia a ellos en las indicaciones exactamente como en escenarios de espacios de trabajo de una sola raíz.
+**[Codebase Indexing](https://kiro.dev/docs/editor/codebase-indexing/)** y Repository Maps funcionan perfectamente en Workspaces de múltiples raíces: ambos índices contienen código de todas las carpetas raíz y se puede hacer referencia a ellos en las indicaciones exactamente como en escenarios de Workspaces de una sola raíz.
 
 Al agregar un archivo usando el proveedor de contexto `#file`, si hay varios archivos con el mismo nombre en diferentes carpetas raíz, Kiro mostrará una lista de archivos coincidentes con sus rutas para que pueda seleccionar el correcto.
 
 ---
 
-### Especificaciones
+### Specs
 
-Kiro recupera todos los archivos [spec](https://kiro.dev/docs/specs/) de la subcarpeta `.kiro` en **cada** de las carpetas raíz y los muestra como una lista unificada en la sección Especificaciones del panel Kiro. El nombre de la carpeta raíz que contiene se muestra junto a cada especificación.
+Kiro recupera todos los archivos [spec](https://kiro.dev/docs/specs/) de la subcarpeta `.kiro` en **cada** de las carpetas raíz y los muestra como una lista unificada en la sección Specs del panel Kiro. El nombre de la carpeta raíz que contiene se muestra junto a cada spec.
 
-- Puedes pedirle a Kiro que trabaje en una especificación definida en cualquiera de las carpetas raíz.
-- Al crear una nueva especificación, Kiro determinará la carpeta raíz adecuada para colocarla.
+- Puedes pedirle a Kiro que trabaje en una spec definida en cualquiera de las carpetas raíz.
+- Al crear una nueva spec, Kiro determinará la carpeta raíz adecuada para colocarla.
 
 ---
 
 ### Archivos de Steering
 
-Kiro recupera todos los archivos [dirección](https://kiro.dev/docs/steering/) de la subcarpeta `.kiro` debajo de cada carpeta raíz, mostrándolos como una lista unificada en la sección **Dirección del agente** del panel de Kiro bajo el grupo *Espacio de trabajo*. El nombre de la carpeta raíz se muestra junto a cada archivo de Steering del espacio de trabajo.
+Kiro recupera todos los archivos [dirección](https://kiro.dev/docs/steering/) de la subcarpeta `.kiro` debajo de cada carpeta raíz, mostrándolos como una lista unificada en la sección **Dirección del agente** del panel de Kiro bajo el grupo *Workspace*. El nombre de la carpeta raíz se muestra junto a cada archivo de Steering del Workspace.
 
 | Directiva | Comportamiento |
 |---|---|
 | **Siempre incluido** | Los archivos de Steering siempre se cargan, independientemente de en qué carpeta raíz esté trabajando el agente |
 | **Inclusión condicional** | Se carga solo si el agente está trabajando en un archivo en esa misma raíz y el archivo coincide con el patrón de inclusión |
 
-Al crear un nuevo archivo de Steering del espacio de trabajo, se le pedirá que elija la carpeta raíz para guardarlo.
+Al crear un nuevo archivo de Steering del Workspace, se le pedirá que elija la carpeta raíz para guardarlo.
 
 ---
 
@@ -900,7 +900,7 @@ Kiro recupera todas las definiciones de [servidor MCP](https://kiro.dev/docs/mcp
 - Si dos carpetas raíz definen un servidor MCP con el mismo nombre, se utiliza la definición en la **última raíz de definición**.
 - Los servidores se inician con la **primera carpeta raíz** como directorio de trabajo actual.
 
-> Cuando hace clic en **Abrir configuración de MCP**, verá la configuración de MCP a nivel de usuario (global) de forma predeterminada. Haga clic en **Configuración del espacio de trabajo** para ver la configuración a nivel del espacio de trabajo. En un espacio de trabajo con múltiples raíces, se le pedirá que elija la carpeta raíz.
+> Cuando hace clic en **Abrir configuración de MCP**, verá la configuración de MCP a nivel de usuario (global) de forma predeterminada. Hacé clic en **Configuración del Workspace** para ver la configuración a nivel del Workspace. En un Workspace con múltiples raíces, se le pedirá que elija la carpeta raíz.
 
 ---
 
@@ -927,7 +927,7 @@ Kiro recupera todas las definiciones de [servidor MCP](https://kiro.dev/docs/mcp
 
 ---
 
-### Configurar el espacio de trabajo Ignorar
+### Configurar el Workspace Ignorar
 
 Para excluir archivos en un proyecto específico:
 
@@ -947,7 +947,7 @@ secretos/
 privado/
 ```
 
-3. Abra **Configuración** (`Cmd+` en Mac o `Ctrl+` en Windows/Linux)
+3. Abrí **Configuración** (`Cmd+` en Mac o `Ctrl+` en Windows/Linux)
 4. Busque **Archivos ignorados por el agente** (configuración: `kiroAgent.agentIgnoreFiles`)
 5. Agregue `.kiroignore` a la matriz
 
@@ -961,8 +961,8 @@ Kiro ahora omitirá cualquier archivo que coincida con sus patrones.
 
 La configuración `kiroAgent.agentIgnoreFiles` acepta una variedad de nombres de archivos:
 
-- Utilice varios tipos de archivos ignorados simultáneamente: `[".gitignore", ".kiroignore"]`
-- Establezca en `[]` para deshabilitar los archivos ignorados a nivel del espacio de trabajo.
+- Utilizá varios tipos de archivos ignorados simultáneamente: `[".gitignore", ".kiroignore"]`
+- Establezca en `[]` para deshabilitar los archivos ignorados a nivel del Workspace.
 
 #### Subdirectorio Ignorar archivos
 
@@ -991,7 +991,7 @@ Kiro respeta automáticamente los archivos ignorados globales si existen; no se 
 | `**/temp` | Ignore `temp` en cualquier directorio |
 | `! mantener.txt` | Volver a incluir un archivo previamente ignorado |
 
-> **Nota:** No puede volver a incluir un archivo si se excluye un directorio principal. Por ejemplo, si ignora `secrets/`, agregar `!secrets/public.txt` no funcionará. Utilice patrones más específicos en lugar de excluir todo el directorio.
+> **Nota:** No puede volver a incluir un archivo si se excluye un directorio principal. Por ejemplo, si ignora `secrets/`, agregar `!secrets/public.txt` no funcionará. Utilizá patrones más específicos en lugar de excluir todo el directorio.
 
 ---
 
@@ -1041,16 +1041,16 @@ cumplimiento/interno/
 informes-de-auditoría/
 ```
 
-> Utilice `.kiroignore` cuando necesite reglas diferentes para el acceso del agente frente al control de versiones, o para bloquear archivos que se rastrean en git pero que Kiro no debería leer.
+> Utilizá `.kiroignore` cuando necesite reglas diferentes para el acceso del agente frente al control de versiones, o para bloquear archivos que se rastrean en git pero que Kiro no debería leer.
 
 ---
 
 ### Mejores prácticas
 
-- **Utilice comentarios** para documentar por qué se ignoran los archivos: útil para los miembros del equipo
+- **Utilizá comentarios** para documentar por qué se ignoran los archivos: útil para los miembros del equipo
 - **Patrones de prueba** pidiéndole a Kiro que lea un archivo ignorado; indicará que el acceso está bloqueado
 - **Revise los patrones periódicamente** a medida que evoluciona la estructura de su proyecto
-- **Coordine con su equipo** patrones globales para lograr un comportamiento coherente en todos los espacios de trabajo.
+- **Coordine con su equipo** patrones globales para lograr un comportamiento coherente en todos los Workspaces.
 
 ---
 
@@ -1080,7 +1080,7 @@ Busque el archivo en el disco. La ubicación exacta depende de la plataforma:
 
 #### Paso 2: edite la propiedad `extensionsGallery`
 
-Abra `product.json` en un editor y busque la propiedad `extensionsGallery`. Actualice `serviceUrl`, `itemUrl` y `resourceUrlTemplate` para que apunten a su registro privado en lugar de `https://open-vsx.org`.
+Abrí `product.json` en un editor y busque la propiedad `extensionsGallery`. Actualice `serviceUrl`, `itemUrl` y `resourceUrlTemplate` para que apunten a su registro privado en lugar de `https://open-vsx.org`.
 
 #### Paso 3: aplicar la configuración
 
@@ -1102,21 +1102,21 @@ Por ejemplo, si su registro personalizado está alojado en `https://registry.exa
 
 ### Implementación empresarial
 
-Para configurar todas las instalaciones de Kiro en su organización para usar un registro de extensión personalizado, use una solución de administración de puntos finales, **Administración de dispositivos móviles (MDM)** o similar para realizar la actualización anterior a `product.json` en todos sus dispositivos.
+Para configurar todas las instalaciones de Kiro en su organización para usar un registro de extensión personalizado, use una solución de administración de endpoints, **Administración de dispositivos móviles (MDM)** o similar para realizar la actualización anterior a `product.json` en todos sus dispositivos.
 
 ---
 
 *📂 Capítulo: **Specs > Feature Specs***
 
-## Especificaciones
+## Specs
 
 > **Fuente:** [kiro.dev/docs/specs/](https://kiro.dev/docs/specs/)
 
 ---
 
-Las especificaciones o especificaciones son artefactos estructurados que formalizan el proceso de desarrollo de funciones y corrección de errores en su aplicación. Proporcionan un enfoque sistemático para transformar ideas de alto nivel en planes de implementación detallados con un seguimiento y una rendición de cuentas claros.
+Las Specs o Specs son artefactos estructurados que formalizan el proceso de desarrollo de funciones y corrección de errores en su aplicación. Proporcionan un enfoque sistemático para transformar ideas de alto nivel en planes de implementación detallados con un seguimiento y una rendición de cuentas claros.
 
-Con las especificaciones de Kiro, puedes:
+Con las Specs de Kiro, puedes:
 - Dividir los requisitos en historias de usuarios con criterios de aceptación.
 - Crear documentos de diseño con diagramas de secuencia y planos de arquitectura.
 - Seguimiento del progreso de la implementación en tareas discretas
@@ -1126,7 +1126,7 @@ Con las especificaciones de Kiro, puedes:
 
 ### Estructura central
 
-Cada especificación genera tres archivos clave:
+Cada spec genera tres archivos clave:
 
 | Archivo | Propósito |
 |---|---|
@@ -1138,11 +1138,11 @@ Cada especificación genera tres archivos clave:
 
 ### Flujo de trabajo trifásico
 
-Todas las especificaciones siguen un flujo de trabajo de tres fases:
+Todas las Specs siguen un flujo de trabajo de tres fases:
 
 **1. Requisitos o análisis de errores**: defina lo que se debe crear o corregir
-- Especificaciones de funciones: historias de usuarios y criterios de aceptación en `requirements.md`
-- Especificaciones de corrección de errores: análisis de errores con comportamiento actual/esperado/sin cambios en `bugfix.md`
+- Specs de funciones: historias de usuarios y criterios de aceptación en `requirements.md`
+- Specs de corrección de errores: análisis de errores con comportamiento actual/esperado/sin cambios en `bugfix.md`
 
 **2. Diseño**: cree una arquitectura técnica y un enfoque de implementación en `design.md`
 - Arquitectura del sistema y diseño de componentes.
@@ -1162,18 +1162,18 @@ Kiro proporciona una interfaz de ejecución de tareas para archivos `tasks.md` q
 
 ---
 
-### Tipos de especificaciones
+### Tipos de Specs
 
 | Tipo | Lo mejor para |
 |---|---|
-| **Especificaciones de funciones** | Nuevas características que requieren planificación estructurada y requisitos EARS |
-| **Especificaciones de corrección de errores** | Corrección de errores con precisión quirúrgica y evitando regresiones |
+| **Specs de funciones** | Nuevas características que requieren planificación estructurada y requisitos EARS |
+| **Specs de corrección de errores** | Corrección de errores con precisión quirúrgica y evitando regresiones |
 
 ---
 
 ### Empezando
 
-1. Desde el panel Kiro, haga clic en el botón **+** debajo de Especificaciones. Alternativamente, elija **Especificación** en el panel de chat.
+1. Desde el panel Kiro, haga clic en el botón **+** debajo de Specs. Alternativamente, elija **spec** en el panel de chat.
 2. Kiro te preguntará si estás desarrollando una **Función** o solucionando un **Error**
    - Si elige **Función**, describa su función y elija su flujo de trabajo: Requisitos primero o Diseño primero
    - Si elige **Error**, describa su error.
@@ -1183,26 +1183,26 @@ Kiro proporciona una interfaz de ejecución de tareas para archivos `tasks.md` q
 
 ### Cuándo utilizar Specs frente a Vibe
 
-| Utilice especificaciones cuando... | Utilice Vibe cuando... |
+| Utilizá Specs cuando... | Utilizá Vibe cuando... |
 |---|---|
 | Construcción de características complejas que requieren una planificación estructurada | Codificación exploratoria rápida |
 | Corrección de errores en los que las regresiones son costosas | Prototipos sin objetivos claros |
-| Necesita documentación para la colaboración en equipo | |
-| Requisitos o necesidad de diseño iteración | |
+| Necesitas documentación para compartir con tu equipo | |
+| Requiere iterar fuertemente sobre el diseño y la lógica | |
 
 ---
 
 ### Más información
 
-- [Especificaciones de funciones →](https://kiro.dev/docs/specs/feature-specs/)
-- [Especificaciones de corrección de errores →](https://kiro.dev/docs/specs/bugfix-specs/)
+- [Specs de funciones →](https://kiro.dev/docs/specs/feature-specs/)
+- [Specs de corrección de errores →](https://kiro.dev/docs/specs/bugfix-specs/)
 - [Mejores prácticas →](https://kiro.dev/docs/specs/best-practices/)
 
 ---
 
 *📂 Capítulo: **Specs > Bugfix Specs***
 
-## Especificaciones de corrección de errores
+## Specs de corrección de errores
 
 > **Fuente:** [kiro.dev/docs/specs/bugfix-specs/](https://kiro.dev/docs/specs/bugfix-specs/)
 
@@ -1223,7 +1223,7 @@ Bugfix Specs proporciona un enfoque estructurado para diagnosticar y corregir er
 
 ---
 
-### Cuándo utilizar las especificaciones de corrección de errores
+### Cuándo utilizar las Specs de corrección de errores
 
 Lo mejor para:
 - Errores complejos que requieren análisis de causa raíz
@@ -1235,7 +1235,7 @@ Lo mejor para:
 
 ### Cómo funciona
 
-Las especificaciones de corrección de errores siguen el mismo flujo de trabajo de tres fases que las especificaciones de funciones (Requisitos → Diseño → Tareas), pero con contenido diseñado para correcciones de errores quirúrgicos:
+Las Specs de corrección de errores siguen el mismo flujo de trabajo de tres fases que las Specs de funciones (Requisitos → Diseño → Tareas), pero con contenido diseñado para correcciones de errores quirúrgicos:
 
 #### 1. Fase de análisis de corrección de errores
 
@@ -1275,7 +1275,7 @@ Las tareas de implementación se generan con [pruebas basadas en propiedades (PB
 
 ### Empezando
 
-1. Elija **Especificación** en el panel de chat.
+1. Elija **spec** en el panel de chat.
 2. Describe el error, incluyendo:
    - Cuando ocurre el error (pasos de reproducción)
    - ¿Qué debería pasar en su lugar?
@@ -1287,7 +1287,7 @@ Las tareas de implementación se generan con [pruebas basadas en propiedades (PB
 
 ### Más información
 
-- [Mejores prácticas para especificaciones de corrección de errores →](https://kiro.dev/docs/specs/best-practices/#bugfix-specs)
+- [Mejores prácticas para Specs de corrección de errores →](https://kiro.dev/docs/specs/best-practices/#bugfix-specs)
 - [Corrección con pruebas basadas en propiedades →](https://kiro.dev/docs/specs/correctness/)
 
 ---
@@ -1300,7 +1300,7 @@ Las tareas de implementación se generan con [pruebas basadas en propiedades (PB
 
 ---
 
-Kiro utiliza pruebas basadas en propiedades (PBT) para validar que su implementación realmente coincida con lo que definió en sus especificaciones. Este enfoque genera cientos o miles de casos de prueba automáticamente, detectando casos extremos que nunca escribiría manualmente.
+Kiro utiliza pruebas basadas en propiedades (PBT) para validar que su implementación realmente coincida con lo que definió en sus Specs. Este enfoque genera cientos o miles de casos de prueba automáticamente, detectando casos extremos que nunca escribiría manualmente.
 
 ---
 
@@ -1312,7 +1312,7 @@ Una propiedad es una **declaración universal** sobre cómo debe comportarse su 
 
 > *"Para cualquier usuario autenticado y cualquier listado activo, el usuario puede ver ese listado."*
 
-Esto captura una regla general sobre el comportamiento del sistema que debe cumplirse en todos los escenarios válidos. En el mundo de las especificaciones de Kiro, esto se corresponde directamente con los requisitos de EARS.
+Esto captura una regla general sobre el comportamiento del sistema que debe cumplirse en todos los escenarios válidos. En el mundo de las Specs de Kiro, esto se corresponde directamente con los requisitos de EARS.
 
 #### Cómo funcionan las pruebas basadas en propiedades
 
@@ -1331,11 +1331,11 @@ PBT prueba esto automáticamente con:
 
 Esto detecta casos extremos y verifica que la implementación coincida con la intención.
 
-A lo largo de este proceso, PBT busca contraejemplos mediante la **"reducción"**, casi como un equipo rojo que intenta descifrar su código. Cuando encuentra infracciones, Kiro puede actualizar automáticamente su implementación o las opciones de superficie para corregir la especificación, la implementación o la prueba.
+A lo largo de este proceso, PBT busca contraejemplos mediante la **"reducción"**, casi como un equipo rojo que intenta descifrar su código. Cuando encuentra infracciones, Kiro puede actualizar automáticamente su implementación o las opciones de superficie para corregir la spec, la implementación o la prueba.
 
 ---
 
-### Pruebas basadas en propiedades con especificaciones
+### Pruebas basadas en propiedades con Specs
 
 #### Flujo de trabajo
 
@@ -1367,17 +1367,17 @@ Cuando falla una prueba de propiedad, Kiro:
 
 *📂 Capítulo: **Specs > Best practices***
 
-## Mejores prácticas: especificaciones
+## Mejores prácticas: Specs
 
 > **Fuente:** [kiro.dev/docs/specs/best-practices/](https://kiro.dev/docs/specs/best-practices/)
 
 ---
 
-### Especificaciones de funciones
+### Specs de funciones
 
 #### ¿Qué flujo de trabajo debo elegir?
 
-Las especificaciones de funciones admiten dos flujos de trabajo: **Requisitos primero** y **Diseño primero**.
+Las Specs de funciones admiten dos flujos de trabajo: **Requisitos primero** y **Diseño primero**.
 
 | Elija Requisitos: primero cuando... | Elija Diseño primero cuando... |
 |---|---|
@@ -1386,37 +1386,37 @@ Las especificaciones de funciones admiten dos flujos de trabajo: **Requisitos pr
 | Creación de características de productos impulsadas por los comentarios de los clientes | Creación de prototipos con una pila tecnológica específica |
 | Empezar sin limitaciones técnicas | Explorando la viabilidad técnica antes de comprometerse con el alcance |
 
-#### ¿Puedo cambiar los flujos de trabajo después de iniciar una especificación?
+#### ¿Puedo cambiar los flujos de trabajo después de iniciar una spec?
 
-No, debes elegir un flujo de trabajo al crear la especificación. Si necesita cambiar los enfoques, cree una nueva especificación de función con el flujo de trabajo deseado. Puede copiar contenido relevante de la especificación anterior si es necesario.
+No, debes elegir un flujo de trabajo al crear la spec. Si necesita cambiar los enfoques, cree una nueva spec de función con el flujo de trabajo deseado. Puede copiar contenido relevante de la spec anterior si es necesario.
 
 #### ¿Puedo utilizar ambos flujos de trabajo para el mismo proyecto?
 
-¡Sí! Puede crear varias especificaciones. Por ejemplo:
-1. Utilice Design-First para validar la viabilidad técnica
-2. Cree una especificación de requisitos primero para el desarrollo completo de funciones.
+¡Sí! Puede crear varias Specs. Por ejemplo:
+1. Utilizá Design-First para validar la viabilidad técnica
+2. Cree una spec de requisitos primero para el desarrollo completo de funciones.
 
 #### ¿Cómo importo diseños o arquitectura existentes?
 
-- **Usando el flujo de trabajo Diseño-Primero:** Cree una nueva especificación de característica y seleccione Diseño-Primero, cargue diagramas de arquitectura (PNG, JPG) o pegue el contenido del diseño, Kiro formalizará el diseño en `design.md`.
+- **Usando el flujo de trabajo Diseño-Primero:** Cree una nueva spec de característica y seleccione Diseño-Primero, cargue diagramas de arquitectura (PNG, JPG) o pegue el contenido del diseño, Kiro formalizará el diseño en `design.md`.
 - **Usar imágenes:** Exporte diagramas desde herramientas como draw.io, Lucidchart o tome fotografías de bocetos de pizarra e inclúyalas en su mensaje inicial.
 - **Usando la integración MCP:** Si su herramienta de diseño tiene un [servidor MCP](https://kiro.dev/docs/mcp), puede conectarse directamente para importar diseños.
 
 #### ¿Cómo importo los requisitos existentes?
 
-- **Usando la integración MCP:** Si su herramienta de requisitos tiene un servidor MCP (JIRA, Confluence, etc.), conéctese directamente para importar requisitos en su sesión de especificaciones.
-- **Importación manual:** Copie sus requisitos existentes en un nuevo archivo en su repositorio y abra una sesión de chat de especificaciones:
+- **Usando la integración MCP:** Si su herramienta de requisitos tiene un servidor MCP (JIRA, Confluence, etc.), conéctese directamente para importar requisitos en su sesión de Specs.
+- **Importación manual:** Copie sus requisitos existentes en un nuevo archivo en su repositorio y abra una sesión de chat de Specs:
   ```
-  #foo-prfaq.md Genera una especificación a partir de él
+  #foo-prfaq.md Genera una spec a partir de él
   ```
 
-#### ¿Cómo repito mis especificaciones de funciones?
+#### ¿Cómo repito mis Specs de funciones?
 
-Continúe la sesión de chat de especificaciones para perfeccionar los requisitos, actualizar el diseño o ajustar las tareas. Kiro mantiene el contexto de su especificación durante toda la conversación.
+Continúe la sesión de chat de Specs para perfeccionar los requisitos, actualizar el diseño o ajustar las tareas. Kiro mantiene el contexto de su spec durante toda la conversación.
 
 ---
 
-### Especificaciones de corrección de errores
+### Specs de corrección de errores
 
 #### ¿Cómo escribo una buena descripción de error?
 
@@ -1436,7 +1436,7 @@ La lógica de validación de los campos de correo electrónico y contraseña no 
 
 #### ¿Cómo evito regresiones con Bugfix Specs?
 
-Las especificaciones de corrección de errores capturan explícitamente el "comportamiento sin cambios" junto con la corrección. Durante la fase de análisis documentar lo que se debe seguir trabajando:
+Las Specs de corrección de errores capturan explícitamente el "comportamiento sin cambios" junto con la corrección. Durante la fase de análisis documentar lo que se debe seguir trabajando:
 
 ```
 - WHEN [condition] THEN the system SHALL CONTINUE TO [existing behavior]
@@ -1444,9 +1444,9 @@ Las especificaciones de corrección de errores capturan explícitamente el "comp
 
 Kiro genera pruebas basadas en propiedades que validan tanto la corrección como la preservación del comportamiento existente.
 
-#### ¿Cuándo debo utilizar una especificación de corrección de errores frente a una solución rápida?
+#### ¿Cuándo debo utilizar una spec de corrección de errores frente a una solución rápida?
 
-**Utilice una especificación de corrección de errores cuando:**
+**Utilizá una spec de corrección de errores cuando:**
 - El error está en una ruta de código crítica.
 - Los intentos de reparación anteriores provocaron regresiones.
 - La causa raíz no es inmediatamente obvia.
@@ -1454,46 +1454,46 @@ Kiro genera pruebas basadas en propiedades que validan tanto la corrección como
 
 **Una solución rápida en el chat está bien para:** errores tipográficos, errores lógicos simples o cambios de una línea bien entendidos.
 
-#### ¿Puedo convertir una especificación de corrección de errores en una especificación de función?
+#### ¿Puedo convertir una spec de corrección de errores en una spec de función?
 
-No directamente. Si el análisis de la causa raíz revela que la solución requiere una nueva funcionalidad significativa, cree una especificación de característica separada y mantenga la especificación de corrección de errores centrada en el defecto original.
+No directamente. Si el análisis de la causa raíz revela que la solución requiere una nueva funcionalidad significativa, cree una spec de característica separada y mantenga la spec de corrección de errores centrada en el defecto original.
 
 ---
 
 ### General
 
-#### ¿Cómo comparto especificaciones con mi equipo?
+#### ¿Cómo comparto Specs con mi equipo?
 
-Las especificaciones están diseñadas para ser controladas por versiones. Almacene las especificaciones directamente en el repositorio de su proyecto junto con el código que describen. Esto mantiene todos los artefactos del proyecto juntos y mantiene la conexión entre los requisitos y la implementación.
+Las Specs están diseñadas para ser controladas por versiones. Almacene las Specs directamente en el repositorio de su proyecto junto con el código que describen. Esto mantiene todos los artefactos del proyecto juntos y mantiene la conexión entre los requisitos y la implementación.
 
-#### ¿Puedo compartir especificaciones entre varios equipos?
+#### ¿Puedo compartir Specs entre varios equipos?
 
 Sí, aprovechando los submódulos de Git o las referencias de paquetes:
-1. Cree un repositorio central de especificaciones
-2. Utilice submódulos de Git o referencias de paquetes para vincular especificaciones a proyectos individuales.
-3. Implementar flujos de trabajo entre repositorios para proponer, revisar y actualizar especificaciones compartidas.
+1. Cree un repositorio central de Specs
+2. Utilizá submódulos de Git o referencias de paquetes para vincular Specs a proyectos individuales.
+3. Implementar flujos de trabajo entre repositorios para proponer, revisar y actualizar Specs compartidas.
 
-#### ¿Puedo iniciar una sesión de especificaciones desde una sesión de vibración?
+#### ¿Puedo iniciar una sesión de Specs desde una sesión de vibración?
 
-Sí. En una conversación de ambiente, diga "Generar especificaciones". Kiro te preguntará si deseas iniciar una sesión de especificaciones y generará requisitos basados ​​en el contexto de tu sesión de vibración.
+Sí. En una conversación de ambiente, diga "Generar Specs". Kiro te preguntará si deseas iniciar una sesión de Specs y generará requisitos basados ​​en el contexto de tu sesión de vibración.
 
-#### ¿Puedo ejecutar todas las tareas de mi especificación de una sola vez?
+#### ¿Puedo ejecutar todas las tareas de mi spec de una sola vez?
 
-Sí. Haga clic en el botón **"Ejecutar todas las tareas"** en su archivo `tasks.md`. Nota: esto solo ejecutará tareas incompletas que estén marcadas como requeridas.
+Sí. Hacé clic en el botón **"Ejecutar todas las tareas"** en su archivo `tasks.md`. Nota: esto solo ejecutará tareas incompletas que estén marcadas como requeridas.
 
 #### ¿Qué pasa si algunas tareas ya están implementadas?
 
-**Opción 1:** Haga clic en **"Actualizar tareas"** en su archivo `tasks.md`; Kiro marcará automáticamente las tareas completadas.
+**Opción 1:** Hacé clic en **"Actualizar tareas"** en su archivo `tasks.md`; Kiro marcará automáticamente las tareas completadas.
 
-**Opción 2:** En una sesión de especificaciones, pregúntele a Kiro: *"Compruebe qué tareas ya están completas"*: Kiro analizará su código base y marcará las tareas completadas.
+**Opción 2:** En una sesión de Specs, pregúntele a Kiro: *"Compruebe qué tareas ya están completas"*: Kiro analizará su código base y marcará las tareas completadas.
 
-#### ¿Cómo hago referencia a una especificación en el chat?
+#### ¿Cómo hago referencia a una spec en el chat?
 
-Utilice el proveedor de contexto `#spec`. Escriba `#spec` y presione Entrar para ver una lista de especificaciones disponibles, luego seleccione la que desea incluir. Kiro incluye automáticamente todos los archivos de especificaciones (`requirements.md`, `design.md` y `tasks.md`) en el contexto de la conversación.
+Utilizá el proveedor de contexto `#spec`. Escriba `#spec` y presione Entrar para ver una lista de Specs disponibles, luego seleccione la que desea incluir. Kiro incluye automáticamente todos los archivos de Specs (`requirements.md`, `design.md` y `tasks.md`) en el contexto de la conversación.
 
-#### ¿Cuántas especificaciones puedo tener en un solo repositorio?
+#### ¿Cuántas Specs puedo tener en un solo repositorio?
 
-No hay un límite estricto. Organice las especificaciones de forma lógica dentro de `.kiro/specs/` usando nombres descriptivos para cada característica o corrección de errores.
+No hay un límite estricto. Organice las Specs de forma lógica dentro de `.kiro/specs/` usando nombres descriptivos para cada característica o corrección de errores.
 
 ---
 
@@ -1538,7 +1538,7 @@ Kiro chat admite múltiples idiomas naturales, incluidos: mandarín, francés, a
 
 #### Exportar una conversación
 
-Haga clic derecho en la pestaña de la conversación → **Exportar conversación** → guarda como formato `.md`.
+Hacé clic derecho en la pestaña de la conversación → **Exportar conversación** → guarda como formato `.md`.
 
 #### Detección inteligente de intenciones
 
@@ -1552,23 +1552,23 @@ Kiro detecta inteligentemente tu intención:
 
 #### Proveedores de contexto
 
-Utilice el símbolo `#` en la entrada del chat para acceder a los proveedores de contexto:
+Utilizá el símbolo `#` en la entrada del chat para acceder a los proveedores de contexto:
 
 | Proveedor | Uso de ejemplo |
 |---|---|
-| `#base de código` | `#codebase explica el flujo de autenticación` |
-| `#archivo` | `#auth.ts explica esta implementación` |
-| `#carpeta` | `#componentes/ ¿qué componentes tenemos?` |
+| `#codebase` | `#codebase explica el flujo de autenticación` |
+| `#file` | `#auth.ts explica esta implementación` |
+| `#folder` | `#componentes/ ¿qué componentes tenemos?` |
 | `#git diff` | `#git diff explica qué cambió en este PR` |
 | `#terminal` | `#terminal ayúdame a corregir este error de compilación` |
-| `#problemas` | `#problemas me ayudan a resolver estos problemas` |
+| `#issues` | `#issues me ayudan a resolver estos problemas` |
 | `#url` | `#url:https://docs.example.com/api explica esta API` |
-| `#código` | `#código: suma constante = (a, b) => a + b; explica esta función` |
-| `#repositorio` | `#repositorio ¿cómo está organizado este proyecto?` |
-| `#actual` | `#actual explica este componente` |
-| `#dirección` | `#steering:coding-standards.md revisa mi código` |
-| `#docs` | `#docs:api-reference.md explica este punto final de API` |
-| `#especificación` | `#spec: la autenticación de usuario actualiza el archivo de diseño` |
+| `#code` | `#code: suma constante = (a, b) => a + b; explica esta función` |
+| `#repository` | `#repository ¿cómo está organizado este proyecto?` |
+| `#current` | `#current explica este componente` |
+| `#steering` | `#steering:coding-standards.md revisa mi código` |
+| `#docs` | `#docs:api-reference.md explica este endpoint de API` |
+| `#spec` | `#spec: la autenticación de usuario actualiza el archivo de diseño` |
 | `#mcp` | `#mcp:aws-docs ¿Cómo configuro los depósitos S3?` |
 
 Combine múltiples proveedores de contexto:
@@ -1576,7 +1576,7 @@ Combine múltiples proveedores de contexto:
 ##codebase #auth.ts explica cómo funciona la autenticación con nuestra base de datos
 ```
 
-El proveedor de contexto `#terminal` es particularmente poderoso para la depuración:
+El proveedor de contexto `#terminal` es particularmente poderoso para la Debug:
 ```
 ##terminal Mi compilación está fallando, ¿cuál es el problema?
 ##terminal Estas pruebas no pasan, ayúdame a entender por qué
@@ -1589,9 +1589,9 @@ El proveedor de contexto `#terminal` es particularmente poderoso para la depurac
 
 #### Gestión de sesiones
 
-- **Nueva sesión:** Haga clic en el ícono **+** en el panel de chat.
+- **Nueva sesión:** Hacé clic en el ícono **+** en el panel de chat.
 - **Cambiar de sesión:** Navega usando el selector de pestañas
-- **Ver historial:** Haga clic en el botón **Historial**
+- **Ver historial:** Hacé clic en el botón **Historial**
 - **Seguimiento de tareas:** Supervise el progreso mediante el botón **Lista de tareas**
 
 #### Historial de ejecución
@@ -1661,8 +1661,8 @@ Mantienes el control a través de varias características clave:
 
 | Característica | Descripción |
 |---|---|
-| **Ver todos los cambios** | Seleccione "Ver todos los cambios" en el módulo de Chat para ver una diferencia completa de todas las modificaciones |
-| **Revertir todos los cambios** | Seleccione "Revertir" para restaurar todos los archivos a su estado anterior localmente (esencialmente para deshacer todas las modificaciones de Kiro) |
+| **Ver todos los cambios** | Seleccioná "Ver todos los cambios" en el módulo de Chat para ver una diferencia completa de todas las modificaciones |
+| **Revertir todos los cambios** | Seleccioná "Revertir" para restaurar todos los archivos a su estado anterior localmente (esencialmente para deshacer todas las modificaciones de Kiro) |
 | **Revertir punto de control** | Revertir a un [punto de control](https://kiro.dev/docs/chat/checkpoints): revierte tanto los cambios de archivos como las adiciones de contexto |
 | **Interrumpir ejecución** | Detenga a Kiro en mitad de la ejecución en cualquier momento para recuperar el control manual |
 
@@ -1681,7 +1681,7 @@ Mantienes el control a través de varias características clave:
 
 *📂 Capítulo: **Chat > Vibe vs. Spec***
 
-## Sesiones de vibración frente a especificaciones
+## Sesiones de vibración frente a Specs
 
 > **Fuente:** [kiro.dev/docs/chat/vibe/](https://kiro.dev/docs/chat/vibe/)
 
@@ -1707,12 +1707,12 @@ Las sesiones Vibe son sesiones interactivas enfocadas en Q&A, diseñadas para pr
 - Explicaciones y documentación.
 - Refactorizaciones simples
 - Explorar opciones o alternativas
-- Depuración conversacional
+- Debug conversacional
 - Cualquier tarea donde el proceso no necesite ser estructurado
 
 ---
 
-### Sesión de especificaciones
+### Sesión de Specs
 
 Una sesión Spec guía a través de un enfoque estructurado para tareas de desarrollo complejos. Formaliza el proceso de desarrollo de software, transformando ideas de alto nivel en planos de implementación detallados con ejecución sistemática y seguimiento claro.
 
@@ -1733,10 +1733,10 @@ Una sesión Spec guía a través de un enfoque estructurado para tareas de desar
 
 ### Comparación rápida
 
-| | Ambiente | Especificaciones |
+| | Ambiente | Specs |
 |---|---|---|
 | **Estilo** | Conversacional | Estructurado |
-| **Ideal para** | Preguntas, ajustes, exploración | Funcionalidades complejas, arquitectura |
+| **Ideal para** | Preguntas, Settings, exploración | Funcionalidades complejas, arquitectura |
 | **Salida** | Respuesta directa + código | Documento de requisitos → Documento de diseño → Lista de tareas |
 | **Controlar** | Libre | Paso a paso con aprobaciones |
 | **Seguimiento** | Ninguno | Seguimiento de finalización de tareas |
@@ -1759,7 +1759,7 @@ Los comandos de barra diagonal permiten acceder rápidamente a hooks y archivos 
 
 1. Escribí `/` en el campo de entrada del chat
 2. Navegá o buscá los comandos disponibles
-3. Seleccione un comando y presione **Entrar**
+3. Seleccioná un comando y presione **Entrar**
 
 ---
 
@@ -1776,7 +1776,7 @@ Los [Hooks](../07_Hooks/01_Hook triggers.md) con disparador de tipo **Manual** a
 /generar-registro de cambios
 ```
 
-➡️ Para agregar un comando de gancho como barra diagonal: configure su tipo de disparador en **Manual**. Ver [Disparadores de gancho →](../07_Hooks/01_Hook%20triggers.md)
+➡️ Para agregar un comando de hook como barra diagonal: configure su tipo de disparador en **Manual**. Ver [Disparadores de hook →](../07_Hooks/01_Hook%20triggers.md)
 
 ---
 
@@ -1870,7 +1870,7 @@ Los comandos de larga ejecución (como servidores de desarrollo) son gestionados
 Configurará qué confiar comandos automáticamente en:
 **Configuración → Kiro Agent: Comandos confiables**
 
-Disponible a nivel usuario (global) y a nivel espacio de trabajo.
+Disponible a nivel usuario (global) y a nivel Workspace.
 
 ##### Coincidencia exacta
 ```json
@@ -1904,7 +1904,7 @@ Disponible a nivel usuario (global) y a nivel espacio de trabajo.
 
 #### Lista de denegaciones de comandos
 
-La lista de denegación impide la aprobación automática de comandos con patrones específicos, independientemente de los ajustes de confianza. Estados Unidos **coincidencia de subcadenas**.
+La lista de denegación impide la aprobación automática de comandos con patrones específicos, independientemente de los Settings de confianza. Estados Unidos **coincidencia de subcadenas**.
 
 **Configuración → Agente Kiro: Lista de comandos rechazados**
 
@@ -1924,7 +1924,7 @@ La lista de denegación impide la aprobación automática de comandos con patron
 }
 ```
 
-> La lista de denegados **se revisa antes** que los ajustes de confianza. Incluso con `["*"]` entrust, los comandos denegados requieren aprobación manual.
+> La lista de denegados **se revisa antes** que los Settings de confianza. Incluso con `["*"]` entrust, los comandos denegados requieren aprobación manual.
 
 ---
 
@@ -1943,7 +1943,7 @@ Referencia la salida reciente de tu terminal con `#terminal`:
 - Interpretación de salida — Explicar resultados complejos y logs
 - Acciones de seguimiento — Sugerir próximos pasos basados en resultados reales
 - Reconocimiento de patrones — Identificar problemas recurrentes
-- Depuración del entorno — Resolver conflictos de sistema y dependencias
+- Debug del entorno — Resolver conflictos de sistema y dependencias
 
 ---
 
@@ -2002,7 +2002,7 @@ Consultará el estado de tus procesos en cualquier momento:
 Kiro puede:
 - Identificar errores de compilación y sugerir correcciones
 - Confirmar que los servidores se iniciaron correctamente
-- Depurar problemas analizando mensajes de error
+- debuggear problemas analizando mensajes de error
 - Monitorear el progreso de tareas largas
 
 ---
@@ -2272,8 +2272,8 @@ Kiro puede crear subagentes para manejar tareas complejas de forma independiente
 
 Podés definir tu propio agente personalizado creando un archivo Markdown (`.md`) en:
 
-- `~/.kiro/agents/` — alcance global (disponible en todos los espacios de trabajo)
-- `<workspace>/.kiro/agents/` — alcance del espacio de trabajo (solo en ese proyecto)
+- `~/.kiro/agents/` — alcance global (disponible en todos los Workspaces)
+- `<workspace>/.kiro/agents/` — alcance del Workspace (solo en ese proyecto)
 
 El aviso del agente va en el cuerpo del archivo. Los atributos adicionales se definen como materia frontal de YAML.
 
@@ -2433,15 +2433,15 @@ Vea y administre skills en la sección **Steering y skills del agente** en el pa
 
 | Alcance | Ubicación | Mejor para |
 |---|---|---|
-| **Espacio de trabajo** | `.kiro/skills/` en la raíz del proyecto | Procedimientos de equipo, flujos de trabajo específicos de proyectos |
+| **Workspace** | `.kiro/skills/` en la raíz del proyecto | Procedimientos de equipo, flujos de trabajo específicos de proyectos |
 | **Global** | `~/.kiro/skills/` en el directorio de inicio | Flujos de trabajo personales, hábitos entre proyectos |
 
 ---
 
 ### Importación de skills
 
-1. Abra la sección **Steering y skills del agente** en el panel de Kiro.
-2. Haga clic en **+** y seleccione **Importar una skill**
+1. Abrí la sección **Steering y skills del agente** en el panel de Kiro.
+2. Hacé clic en **+** y seleccione **Importar una skill**
 3. Elige tu fuente:
    - **GitHub** — Importar desde una URL de repositorio público (pegue la URL que apunta a la carpeta de skills o directamente al archivo `SKILL.md`). La URL debe apuntar a un subdirectorio, no a la raíz del repositorio.
    - **Carpeta local** — Importar desde su sistema de archivos
@@ -2488,7 +2488,7 @@ Descripción: revise las pull requests para determinar la calidad del código, l
 | `compatibilidad` | ✗ | Herramientas de IA compatibles |
 | `metadatos` | ✗ | Metadatos clave/valor adicionales |
 
-Consulte la [especificación completa →](https://agentskills.io/specification)
+Consulte la [spec completa →](https://agentskills.io/specification)
 
 ---
 
@@ -2496,9 +2496,9 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 
 | Característica | Skills | Dirección | Powers |
 |---|---|---|---|
-| **Estándar** | Abierto (especificación de skills del agente) | Específico de Kiro | Específico de Kiro |
+| **Estándar** | Abierto (spec de skills del agente) | Específico de Kiro | Específico de Kiro |
 | **Cargando** | Bajo demanda | siempre/auto/fileMatch/manual | Dinámico basado en el contexto |
-| **Guiones** | ✅ Sí | ✗ No | ✅ Sí |
+| **scripts** | ✅ Sí | ✗ No | ✅ Sí |
 | **Herramientas MCP** | ✗ No | ✗ No | ✅ Sí |
 | **Mejor para** | Flujos de trabajo reutilizables para compartir o importar | Estándares y convenciones de proyectos | Integraciones de MCP con conocimientos agrupados |
 
@@ -2510,8 +2510,8 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 
 - **Escribe descripciones precisas**: Kiro usa la descripción para decidir cuándo activar. Incluya palabras clave específicas: "Revisar las pull requests para seguridad y cobertura de pruebas" supera a "ayuda con la revisión del código".
 - **Mantenga enfocado SKILL.md**: coloque documentación detallada en archivos `referencias/`. Kiro carga el `SKILL.md` completo al activarlo.
-- **Utilice secuencias de comandos para tareas deterministas**: la validación, la generación de archivos y las llamadas API funcionan mejor como secuencias de comandos que el código generado por LLM.
-- **Elija el alcance correcto**: global para flujos de trabajo personales (su lista de verificación de revisión), espacio de trabajo para procedimientos de equipo (implementación de proyectos).
+- **Utilizá secuencias de comandos para tareas deterministas**: la validación, la generación de archivos y las llamadas API funcionan mejor como secuencias de comandos que el código generado por LLM.
+- **Elija el alcance correcto**: global para flujos de trabajo personales (su lista de verificación de revisión), Workspace para procedimientos de equipo (implementación de proyectos).
 
 ---
 
@@ -2519,7 +2519,7 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 
 - [Dirección →](https://kiro.dev/docs/steering) — Contexto y estándares específicos del proyecto
 - [Powers →](https://kiro.dev/docs/powers) — Integraciones de MCP con conocimientos incluidos
-- [Especificación de skills del agente →](https://agentskills.io/specification)
+- [spec de skills del agente →](https://agentskills.io/specification)
 
 ---
 
@@ -2644,7 +2644,7 @@ keywords: ["database", "postgres", "auth", "storage", "realtime", "backend", "su
 
 #### Instrucciones de incorporación
 
-La sección de onboarding corre cuando alguien usa tu poder por primera vez. Usala para validar dependencias, explicar pasos de configuración o crear hooks de espacio de trabajo.
+La sección de onboarding corre cuando alguien usa tu poder por primera vez. Usala para validar dependencias, explicar pasos de configuración o crear hooks de Workspace.
 
 ```markdown
 ## Incorporación
@@ -2656,10 +2656,10 @@ Antes de usar Supabase Local MCP, asegúrese de que esté instalado lo siguiente
 - **Supabase CLI**: Verificar con: `supabase --version`
 
 ### Paso 2: agregar hooks
-Agregue un gancho a `.kiro/hooks/review-advisors.kiro.hook`
+Agregue un hook a `.kiro/hooks/review-advisors.kiro.hook`
 ```
 
-Kiro sigue estas instrucciones automáticamente: verifica que Docker esté corriendo, valida la CLI e instala el gancho de revisión en el espacio de trabajo.
+Kiro sigue estas instrucciones automáticamente: verifica que Docker esté corriendo, valida la CLI e instala el hook de revisión en el Workspace.
 
 #### Instrucciones de dirección
 
@@ -2770,7 +2770,7 @@ Los enlaces de agente son activadores automatizados que ejecutan mensajes de age
 
 ### ¿Qué son los hooks de agentes?
 
-![Kiro Gancho](https://kiro.dev/videos/kiro-hook.mp4)
+![Kiro hook](https://kiro.dev/videos/kiro-hook.mp4)
 
 Los hooks pueden activarse en:
 - Guardar, crear o eliminar archivos
@@ -2799,13 +2799,13 @@ El sistema de enlace de agente sigue un proceso simple de dos pasos:
 
 ### Configuración de enlaces de agentes
 
-#### Creando un gancho
+#### Creando un hook
 
 1. Navegue a la sección **Agent Hooks** en el panel de Kiro.
-2. Haga clic en el botón **+** para crear un nuevo gancho.
-3. Elige cómo quieres crear el gancho:
-   - **Crear un gancho manualmente**: configure un gancho a mano en un formulario
-   - **Pídele a Kiro que cree un gancho**: describe un gancho usando lenguaje natural.
+2. Hacé clic en el botón **+** para crear un nuevo hook.
+3. Elige cómo quieres crear el hook:
+   - **Crear un hook manualmente**: configure un hook a mano en un formulario
+   - **Pídele a Kiro que cree un hook**: describe un hook usando lenguaje natural.
 
 También puede abrir la interfaz de usuario de Hook desde la paleta de comandos:
 - macOS: `Cmd + Shift + P` → `Kiro: abrir la interfaz de usuario de Kiro Hook`
@@ -2813,18 +2813,18 @@ También puede abrir la interfaz de usuario de Hook desde la paleta de comandos:
 
 ---
 
-#### Pídele a Kiro que cree un gancho
+#### Pídele a Kiro que cree un hook
 
-1. Selecciona **Pedirle a Kiro que cree un gancho**
-2. Describe el flujo de trabajo del gancho en lenguaje natural.
+1. Selecciona **Pedirle a Kiro que cree un hook**
+2. Describe el flujo de trabajo del hook en lenguaje natural.
 3. Presione Entrar o haga clic en **Enviar**
 4. Revise la configuración generada, ajústela si es necesario y haga clic en **Guardar enlace**
 
 ---
 
-#### Crear un gancho manualmente
+#### Crear un hook manualmente
 
-1. Seleccione **Crear un enlace manualmente** para abrir el formulario del enlace.
+1. Seleccioná **Crear un enlace manualmente** para abrir el formulario del enlace.
 2. Complete los campos del formulario:
 
 | Campo | Descripción |
@@ -2837,14 +2837,14 @@ También puede abrir la interfaz de usuario de Hook desde la paleta de comandos:
 | **Acción** | Elija **Preguntar a Kiro** (solicitud de agente) o **Ejecutar comando** (comando de shell) |
 | **Instrucciones o Comando** | El símbolo del sistema o comando de shell para ejecutar |
 
-3. Haga clic en **Crear gancho** cuando haya terminado, o en **Borrar** para restablecer el formulario.
+3. Hacé clic en **Crear hook** cuando haya terminado, o en **Borrar** para restablecer el formulario.
 
 ---
 
 ### Próximos pasos
 
-- [Disparadores de gancho →](https://kiro.dev/docs/hooks/hook-triggers/)
-- [Acciones de gancho →](https://kiro.dev/docs/hooks/hook-actions/)
+- [Disparadores de hook →](https://kiro.dev/docs/hooks/hook-triggers/)
+- [Acciones de hook →](https://kiro.dev/docs/hooks/hook-actions/)
 - [Ejemplos →](https://kiro.dev/docs/hooks/examples/)
 - [Gestión →](https://kiro.dev/docs/hooks/management/)
 - [Mejores prácticas →](https://kiro.dev/docs/hooks/best-practices/)
@@ -2854,21 +2854,21 @@ También puede abrir la interfaz de usuario de Hook desde la paleta de comandos:
 
 *📂 Capítulo: **Hooks > Hook actions***
 
-## Acciones de gancho
+## Acciones de hook
 
 > **Fuente:** [kiro.dev/docs/hooks/actions/](https://kiro.dev/docs/hooks/actions/)
 
 ---
 
-Cada gancho puede ejecutar uno de dos tipos de acciones cuando su disparador se activa.
+Cada hook puede ejecutar uno de dos tipos de acciones cuando su disparador se activa.
 
 ---
 
 ### Acción de solicitud del agente
 
-Defina un mensaje que se envía al agente cada vez que el gancho se dispara. El agente responde y actúa sobre ese aviso igual que con un aviso enviado desde el panel de chat.
+Defina un mensaje que se envía al agente cada vez que el hook se dispara. El agente responde y actúa sobre ese aviso igual que con un aviso enviado desde el panel de chat.
 
-**Caso especial — PromptSubmit:** La acción se llama "Agregar al mensaje". El aviso del gancho se **agrega** al aviso del usuario, y el combinado se envía al agente.
+**Caso especial — PromptSubmit:** La acción se llama "Agregar al mensaje". El aviso del hook se **agrega** al aviso del usuario, y el combinado se envía al agente.
 
 **Cuándo usarlo:**
 - Cuando quieras usar lenguaje natural para instruir al agente a realizar alguna acción basada en contexto
@@ -2881,16 +2881,16 @@ Defina un mensaje que se envía al agente cada vez que el gancho se dispara. El 
 
 ### Acción del comando Shell
 
-Defina un comando de shell que se ejecute cada vez que el gancho se dispare.
+Defina un comando de shell que se ejecute cada vez que el hook se dispare.
 
 | Resultado del comando | Comportamiento |
 |---|---|
 | Código de salida `0` (éxito) | El stdout se agrega al contexto del agente |
 | Cualquier otro código de salida | El stderr se envía al agente con notificación de error |
-| Herramienta previa Uso gancho + error | La invocación de la herramienta es **bloqueada** |
-| Preguntar Enviar gancho + error | El envío del aviso es **bloqueado** |
+| Herramienta previa Uso hook + error | La invocación de la herramienta es **bloqueada** |
+| Preguntar Enviar hook + error | El envío del aviso es **bloqueado** |
 
-**Tiempo de espera:** Configurable por gancho. El valor predeterminado es **60 segundos**. Seteá `0` para deshabilitar el tiempo de espera.
+**Tiempo de espera:** Configurable por hook. El valor predeterminado es **60 segundos**. Seteá `0` para deshabilitar el tiempo de espera.
 
 **Cuándo usarlo:**
 - Cuando quieras ejecutar comandos específicos o acciones determinísticas
@@ -3045,7 +3045,7 @@ Los hooks pueden potenciarse con MCP para acceder a herramientas externas especi
 
 **Cómo usar MCP con hooks:**
 1. [Configurar servidores MCP →](../13_MCP/01_Configuration.md)
-2. Referenciar las herramientas MCP en las instrucciones del gancho
+2. Referenciar las herramientas MCP en las instrucciones del hook
 3. Configurar `autoApprove` para herramientas de uso frecuente
 
 **Casos de uso:**
@@ -3073,8 +3073,8 @@ Activa o desactiva los hooks sin eliminarlos:
 
 | Método | Cómo |
 |---|---|
-| **Alternancia rápida** | Haga clic en el ícono de ojo (👁) junto al gancho en el panel |
-| **Desde la vista del gancho** | Seleccione el gancho → cambiar **Hook Enabled** en la esquina superior derecha |
+| **Alternancia rápida** | Hacé clic en el ícono de ojo (👁) junto al hook en el panel |
+| **Desde la vista del hook** | Seleccioná el hook → cambiar **Hook Enabled** en la esquina superior derecha |
 
 ---
 
@@ -3082,7 +3082,7 @@ Activa o desactiva los hooks sin eliminarlos:
 
 Los hooks evolucionan con tu flujo de trabajo. Actualizalos en cualquier momento:
 
-1. Selecciona el gancho en el panel **Agent Hooks**
+1. Selecciona el hook en el panel **Agent Hooks**
 2. Modificá los campos: disparador, patrones de archivo, instrucciones o descripción
 3. Los cambios se aplican **inmediatamente**
 
@@ -3090,8 +3090,8 @@ Los hooks evolucionan con tu flujo de trabajo. Actualizalos en cualquier momento
 
 ### Eliminar hooks
 
-1. Selecciona el gancho en el panel **Agent Hooks**
-2. Haga clic en **Eliminar gancho** (parte inferior de la vista)
+1. Selecciona el hook en el panel **Agent Hooks**
+2. Hacé clic en **Eliminar hook** (parte inferior de la vista)
 3. Confirmá haciendo clic en **Eliminar**
 
 > ⚠️ Esta acción **no se puede deshacer**.
@@ -3104,33 +3104,33 @@ Para hooks con gatillo de tipo **Manual**:
 
 | Método | Cómo |
 |---|---|
-| **Ejecución rápida** | Click en el botón ▷ junto al nombre del gancho en el panel |
-| **Desde la vista del gancho** | Seleccione el gancho → haga clic en **Iniciar gancho** en la esquina superior derecha |
+| **Ejecución rápida** | Click en el botón ▷ junto al nombre del hook en el panel |
+| **Desde la vista del hook** | Seleccioná el hook → haga clic en **Iniciar hook** en la esquina superior derecha |
 
 ---
 
-### Almacenamiento de gancho
+### Almacenamiento de hook
 
 Los hooks se almacenan como archivos JSON en:
 
-- `.kiro/hooks/` — engancha un espacio de trabajo nivelado (compartidos con el equipo vía git)
-- Los hooks a nivel del espacio de trabajo son visibles para todos los colaboradores del proyecto.
+- `.kiro/hooks/` — engancha un Workspace nivelado (compartidos con el equipo vía git)
+- Los hooks a nivel del Workspace son visibles para todos los colaboradores del proyecto.
 
 ---
 
 *📂 Capítulo: **Hooks > Best practices***
 
-## Mejores prácticas de gancho
+## Mejores prácticas de hook
 
 > **Fuente:** [kiro.dev/docs/hooks/best-practices/](https://kiro.dev/docs/hooks/best-practices/)
 
 ---
 
-### Diseño de gancho
+### Diseño de hook
 
 #### Sea específico y claro
 - Escribí instrucciones detalladas y sin ambigüedad para el agente
-- Enfocá cada gancho en **una sola tarea específica**
+- Enfocá cada hook en **una sola tarea específica**
 - Usa pasos numerados para operaciones complejas
 
 #### Pruebe a fondo
@@ -3158,7 +3158,7 @@ Los hooks se almacenan como archivos JSON en:
 - Considerará el impacto de los hooks en todo el código base.
 
 #### Revisar periódicamente
-- Actualizá la lógica del gancho a medida que el proyecto evoluciona
+- Actualizá la lógica del hook a medida que el proyecto evoluciona
 - Elimina los hooks que ya no sean necesarios
 - Refina los avisos basándote en los resultados reales
 
@@ -3167,7 +3167,7 @@ Los hooks se almacenan como archivos JSON en:
 ### Colaboración en equipo
 
 #### Hooks para documentos
-- Mantené documentación clara del propósito de cada gancho.
+- Mantené documentación clara del propósito de cada hook.
 - Incluye ejemplos del comportamiento esperado.
 - Documentación de limitaciones de casos extremos
 
@@ -3204,19 +3204,19 @@ Los hooks se almacenan como archivos JSON en:
 
 ### Problemas comunes
 
-#### El gancho no se activa
+#### El hook no se activa
 
 | Posible causa | Solución |
 |---|---|
 | El patrón del archivo no coincide | Verificá que el patrón coincide con los archivos objetivo |
-| Gancho deshabilitado | Verifique que el gancho esté habilitado (ícono de ojo en el panel) |
+| hook deshabilitado | Verifique que el hook esté habilitado (ícono de ojo en el panel) |
 | Tipo de evento incorrecto | Revisa que el Evento seleccionado sea el correcto para tu caso |
 
-#### Comportamiento inesperado del gancho
+#### Comportamiento inesperado del hook
 
 | Posible causa | Solución |
 |---|---|
-| Instrucciones ambiguas | Revisá las instrucciones del gancho para mayor claridad |
+| Instrucciones ambiguas | Revisá las instrucciones del hook para mayor claridad |
 | Hooks en conflicto | Verificá si hay otros hooks que se disparan en el mismo evento |
 | Patrones de archivos demasiado amplios | Acotá los patrones a archivos más específicos |
 
@@ -3225,18 +3225,18 @@ Los hooks se almacenan como archivos JSON en:
 | Posible causa | Solución |
 |---|---|
 | Patrones de archivos muy amplios | Usamos patrones más específicos para reducir el alcance |
-| Instrucciones complejas (Agent Prompt) | Simplificá las instrucciones del gancho |
+| Instrucciones complejas (Agent Prompt) | Simplificá las instrucciones del hook |
 | Comando lento (Comando Shell) | Asegurate de que el comando se complete rápidamente |
 | Demasiados desencadenan acontecimientos | Reduzca la frecuencia de los eventos de disparo |
 
 ---
 
-### Consejos de depuración
+### Consejos de Debug
 
-1. **Verificá el tipo de trigger** — Confirmá que el tipo de evento coincide con cuando esperes que corra el gancho
-2. **Testeá el patrón de archivo** — Utilice un patrón más amplio temporalmente para verificar que el gancho se activa
+1. **Verificá el tipo de trigger** — Confirmá que el tipo de evento coincide con cuando esperes que corra el hook
+2. **Testeá el patrón de archivo** — Utilizá un patrón más amplio temporalmente para verificar que el hook se activa
 3. **Revisá el panel de Output** — Buscá errores o mensajes de los hooks en ejecución
-4. **Simplificá primero** — Empezá con un gancho simple, confirma que funciona, y luego agrega complejidad
+4. **Simplificá primero** — Empezá con un hook simple, confirma que funciona, y luego agrega complejidad
 
 ---
 
@@ -3256,7 +3256,7 @@ Los hooks se almacenan como archivos JSON en:
 
 ---
 
-Los archivos de Steering guían la IA de Kiro con un contexto global o específico del espacio de trabajo a través de documentos Markdown que definen sus estándares, arquitectura y convenciones, lo que le brinda a Kiro una comprensión persistente de cómo funciona su proyecto.
+Los archivos de Steering guían la IA de Kiro con un contexto global o específico del Workspace a través de documentos Markdown que definen sus estándares, arquitectura y convenciones, lo que le brinda a Kiro una comprensión persistente de cómo funciona su proyecto.
 
 ---
 
@@ -3274,15 +3274,15 @@ Los archivos de Steering son documentos Markdown almacenados en `.kiro/steering/
 
 ### Alcance del archivo de Steering
 
-#### Steering del espacio de trabajo
+#### Steering del Workspace
 
-Reside en `.kiro/steering/` en la raíz de tu espacio de trabajo. Aplicar solo a ese espacio de trabajo específico. Se utiliza para informar a Kiro sobre patrones, bibliotecas y estándares que se aplican a un espacio de trabajo individual.
+Reside en `.kiro/steering/` en la raíz de tu Workspace. Aplicar solo a ese Workspace específico. Se utiliza para informar a Kiro sobre patrones, bibliotecas y estándares que se aplican a un Workspace individual.
 
 #### Steering global
 
-Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los espacios de trabajo. Se utiliza para informar a Kiro sobre las convenciones que se aplican en todos sus proyectos.
+Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los Workspaces. Se utiliza para informar a Kiro sobre las convenciones que se aplican en todos sus proyectos.
 
-> **Nota:** En caso de instrucciones contradictorias entre el Steering global y del espacio de trabajo, **el Steering del espacio de trabajo tiene prioridad**.
+> **Nota:** En caso de instrucciones contradictorias entre el Steering global y del Workspace, **el Steering del Workspace tiene prioridad**.
 
 #### Steering del equipo
 
@@ -3292,12 +3292,12 @@ El Steering global puede distribuir archivos de Steering centralizados a equipos
 
 ### Archivos de Steering fundamentales
 
-Haga clic en **Generar documentos de Steering** en el panel de Kiro para generar automáticamente tres archivos fundamentales:
+Hacé clic en **Generar documentos de Steering** en el panel de Kiro para generar automáticamente tres archivos fundamentales:
 
 | Archivo | Propósito |
 |---|---|
 | `producto.md` | Define el propósito de su producto, los usuarios objetivo, las características clave y los objetivos comerciales.
-| `tecnología.md` | Marcos de documentos, bibliotecas, herramientas de desarrollo y limitaciones técnicas |
+| `tecnología.md` | frameworks de documentos, bibliotecas, herramientas de desarrollo y limitaciones técnicas |
 | `estructura.md` | Describe la organización de archivos, convenciones de nomenclatura, patrones de importación y decisiones arquitectónicas |
 
 Estos archivos básicos se incluyen en cada interacción de forma predeterminada.
@@ -3307,8 +3307,8 @@ Estos archivos básicos se incluyen en cada interacción de forma predeterminada
 ### Creación de archivos de Steering personalizados
 
 1. Navegue a la sección **Steering** en el panel Kiro.
-2. Haga clic en el botón **+**
-3. Seleccione el alcance: **espacio de trabajo** o **global**
+2. Hacé clic en el botón **+**
+3. Seleccioná el alcance: **Workspace** o **global**
 4. Elija un nombre de archivo descriptivo (por ejemplo, `api-standards.md`)
 5. Escriba su guía utilizando Markdown estándar y lenguaje natural.
 6. Opcionalmente, utilice el botón **Refinar** para que Kiro mejore sus requisitos.
@@ -3317,7 +3317,7 @@ Estos archivos básicos se incluyen en cada interacción de forma predeterminada
 
 ### Agentes.md
 
-Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGENTS.md` a `~/.kiro/steering/` o a la carpeta raíz de su espacio de trabajo.
+Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGENTS.md` a `~/.kiro/steering/` o a la carpeta raíz de su Workspace.
 
 > **Nota:** Los archivos AGENTS.md están **siempre incluidos** y no admiten modos de inclusión.
 
@@ -3364,7 +3364,7 @@ Incluya bajo demanda haciendo referencia con `#steering-file-name` en el chat o 
 ---
 inclusión: automático
 nombre: api-diseño
-Descripción: Patrones y convenciones de diseño de API REST. Úselo al crear o modificar puntos finales de API.
+Descripción: Patrones y convenciones de diseño de API REST. Úselo al crear o modificar endpoints de API.
 ---
 ```
 Se incluye automáticamente cuando su solicitud coincide con la descripción. También disponible como comandos de barra diagonal. Ideal para: orientación con mucho contexto que solo debe cargarse cuando sea relevante.
@@ -3373,7 +3373,7 @@ Se incluye automáticamente cuando su solicitud coincide con la descripción. Ta
 
 ### Referencias de archivos
 
-Enlace a archivos del espacio de trabajo en vivo para mantener el Steering actualizado:
+Enlace a archivos del Workspace en vivo para mantener el Steering actualizado:
 ```
 ##[[archivo:<nombre_archivo_relativo>]]
 ```
@@ -3388,7 +3388,7 @@ Ejemplos:
 ### Mejores prácticas
 
 - **Mantenga los archivos enfocados**: un dominio por archivo (diseño, prueba e implementación de API)
-- **Utilice nombres claros**: `api-rest-conventions.md`, `testing-unit-patterns.md`
+- **Utilizá nombres claros**: `api-rest-conventions.md`, `testing-unit-patterns.md`
 - **Incluir contexto**: explique *por qué* se tomaron decisiones, no solo cuáles son los estándares.
 - **Proporcione ejemplos**: use fragmentos de código y comparaciones antes/después
 - **La seguridad es lo primero**: nunca incluya claves API, contraseñas ni datos confidenciales
@@ -3456,8 +3456,8 @@ Gestioná tus skills desde la sección **Steering y skills del agente** en el pa
 
 | Alcance | Ubicación | Uso |
 |---|---|---|
-| **Espacio de trabajo** | `.kiro/skills/` | Solo el proyecto actual. Skills para flujos de trabajo específicos del proyecto (implementación, convenciones del equipo) |
-| **Global** | `~/.kiro/skills/` | Disponible en todos los espacios de trabajo. Skills personales utilizadas en cualquier proyecto (revisión de código, documentación) |
+| **Workspace** | `.kiro/skills/` | Solo el proyecto actual. Skills para flujos de trabajo específicos del proyecto (implementación, convenciones del equipo) |
+| **Global** | `~/.kiro/skills/` | Disponible en todos los Workspaces. Skills personales utilizadas en cualquier proyecto (revisión de código, documentación) |
 
 > En caso de conflicto de nombres entre skills global y workspace, Kiro **prioriza el workspace skills**. Esto permite definir skills globales con posibilidad de sobreescribirlas por proyecto.
 
@@ -3465,8 +3465,8 @@ Gestioná tus skills desde la sección **Steering y skills del agente** en el pa
 
 ### Importación de skills
 
-1. Abra la sección **Steering y skills del agente** en el panel de Kiro
-2. Haga clic en **+** y seleccione **Importar una skill**
+1. Abrí la sección **Steering y skills del agente** en el panel de Kiro
+2. Hacé clic en **+** y seleccione **Importar una skill**
 3. Elegí el origen:
    - **GitHub** — Importará desde una URL de repositorio público (apuntando a la carpeta del Skill o directamente al `SKILL.md`). La URL debe apuntar a un subdirectorio, no a la raíz del repositorio.
    - **Carpeta local** — Importá desde tu sistema de archivos
@@ -3513,7 +3513,7 @@ Descripción: revise las pull requests para determinar la calidad del código, l
 | `compatibilidad` | Herramientas compatibles con IA |
 | `metadatos` | Metadatos adicionales |
 
-Ver la [especificación completa →](https://agentskills.io/specification)
+Ver la [spec completa →](https://agentskills.io/specification)
 
 ---
 
@@ -3523,7 +3523,7 @@ Ver la [especificación completa →](https://agentskills.io/specification)
 |---|---|---|---|
 | **Portabilidad** | ✅ Estándar abierto, compatibles | ❌ Específico de Kiro | ❌ Específico de Kiro |
 | **Activación** | Bajo demanda (por descripción / comando de barra diagonal) | Siempre, automático, fileMatch, manual | Dinámica por contexto |
-| **Guiones** | ✅ Puede incluir scripts ejecutables | ❌ No | Vía herramientas MCP |
+| **scripts** | ✅ Puede incluir scripts ejecutables | ❌ No | Vía herramientas MCP |
 | **Uso ideal** | Flujos de trabajo reutilizables para compartir | Convenciones y estándares del proyecto | Integraciones con herramientas + conocimiento |
 
 > 💡 Para integraciones MCP, los **Powers** suelen ser la mejor opción — incluyen herramientas con guía integrada y se activan automáticamente.
@@ -3535,7 +3535,7 @@ Ver la [especificación completa →](https://agentskills.io/specification)
 - **Descripciones precisas** — Kiro las usa para decidir cuándo activar. Incluye palabras clave específicas: `"Revisar pull requests para seguridad y cobertura de pruebas"` > `"ayuda con la revisión del código"`
 - **SKILL.md enfocado** — Poné documentación detallada en archivos `references/`. Kiro carga el SKILL.md completo en la activación
 - **Scripts para tareas determinísticas** — Validación, generación de archivos y llamadas a APIs funcionan mejor como scripts que como código generado por LLM
-- **Elegí el alcance correcto** — Global para flujos de trabajo personales; espacio de trabajo para procedimientos del equipo
+- **Elegí el alcance correcto** — Global para flujos de trabajo personales; Workspace para procedimientos del equipo
 
 ---
 
@@ -3543,7 +3543,7 @@ Ver la [especificación completa →](https://agentskills.io/specification)
 
 - [Dirección →](./03_Steering.md)
 - [Powers →](./06_Powers/01_Install%20powers.md)
-- [Especificación de skills del agente →](https://agentskills.io/specification)
+- [spec de skills del agente →](https://agentskills.io/specification)
 
 ---
 
@@ -3612,7 +3612,7 @@ Un poder es un paquete unificado que incluye:
 |---|---|
 | **Carga dinámica de herramientas MCP** | Los servidores MCP tradicionales cargan todas las herramientas por adelantado. Potencia las herramientas de carga bajo demanda, lo que reduce el uso del contexto básico y al mismo tiempo brinda a su agente acceso a docenas de tecnologías |
 | **Ecosistema abierto** | Explore Powers seleccionados de socios de lanzamiento, incluidos Datadog, Dynatrace, Figma, Neon, Netlify, Postman, Supabase, Stripe, Strands SDK y AWS Aurora. Instale Powers creados por la comunidad desde las URL de GitHub o cree y comparta los suyos propios |
-| **Instalación con un clic** | Explora Powers directamente en Kiro o en kiro.dev. Haga clic en "Instalar" y la energía se registrará automáticamente. Sin archivos de configuración JSON, sin configuración de línea de comandos |
+| **Instalación con un clic** | Explora Powers directamente en Kiro o en kiro.dev. Hacé clic en "Instalar" y la energía se registrará automáticamente. Sin archivos de configuración JSON, sin configuración de línea de comandos |
 
 ---
 
@@ -3623,7 +3623,7 @@ Un poder es un paquete unificado que incluye:
 | **Stripe** | Pagos, suscripciones, facturación |
 | **Supabase** | Base de datos PostgreSQL, autenticación, almacenamiento |
 | **Neon** | PostgreSQL sin servidor |
-| **Figma** | Tokens de diseño, especificaciones de componentes |
+| **Figma** | Tokens de diseño, Specs de componentes |
 | **AWS Aurora** | Base de datos relacional administrada |
 | **Netlify** | Implementación de frontend, funciones de borde |
 | **Postman** | Pruebas y documentación de API |
@@ -3761,7 +3761,7 @@ Los archivos de configuración MCP usan formato JSON:
 
 | Propiedad | Descripción |
 |---|---|
-| `URL` | Punto final del servidor remoto |
+| `URL` | endpoint del servidor remoto |
 | `encabezados` | Encabezados HTTP (autenticación, etc.) |
 | `deshabilitado` | `true` para deshabilitar |
 | `aprobación automática` | Herramientas aprobadas automáticamente |
@@ -3773,10 +3773,10 @@ Los archivos de configuración MCP usan formato JSON:
 
 | Nivel | Archivo | Alcance |
 |---|---|---|
-| **Espacio de trabajo** | `.kiro/settings/mcp.json` | Solo el workspace actual — ideal para servidores específicos del proyecto |
-| **Usuario (global)** | `~/.kiro/settings/mcp.json` | Todos los espacios de trabajo — ideales para servidores de uso frecuente |
+| **Workspace** | `.kiro/settings/mcp.json` | Solo el workspace actual — ideal para servidores específicos del proyecto |
+| **Usuario (global)** | `~/.kiro/settings/mcp.json` | Todos los Workspaces — ideales para servidores de uso frecuente |
 
-> Si ambos archivos existen, las configuraciones se **mezclan** y el espacio de trabajo tiene **precedencia**.
+> Si ambos archivos existen, las configuraciones se **mezclan** y el Workspace tiene **precedencia**.
 
 ---
 
@@ -3831,7 +3831,7 @@ Para deshabilitar un servidor sin eliminar su configuración:
 ### Consideraciones de seguridad
 
 - Usá referencias a variables de entorno ("${API_TOKEN}`) en lugar de codificar valores sensibles
-- Nunca comete archivos de configuración con credenciales a control de versiones
+- Nunca commitea archivos de configuración con credenciales a control de versiones
 - Conectar solo a servidores remotos de confianza
 - Revisará los permisos de las herramientas antes de agregarlos a `autoApprove`
 
@@ -4004,7 +4004,7 @@ Cuando Kiro quiera usar una herramienta MCP, solicita aprobación primero:
 
 1. Aparece un mensaje que describe la herramienta y su propósito.
 2. Revisarás los detalles de la herramienta y los parámetros.
-3. Haga clic en **Aprobar** para permitir, o **Denegar** para bloquear.
+3. Hacé clic en **Aprobar** para permitir, o **Denegar** para bloquear.
 
 #### Herramientas confiables de aprobación automática
 
@@ -4065,7 +4065,7 @@ Combina múltiples herramientas en una sola conversación para tareas complejas.
 
 Combina herramientas MCP con contexto local agregando archivos al contexto para que el agente pueda relacionar documentación externa con tu código actual.
 
-#### Uso de herramientas MCP en especificaciones
+#### Uso de herramientas MCP en Specs
 
 Las herramientas MCP están disponibles durante la creación de Specs. Podés referenciarlos en el plan de implementación para que el agente los use durante la ejecución.
 
@@ -4162,7 +4162,7 @@ Restringí el acceso a tus archivos de configuración MCP:
 ## Configuración a nivel de usuario
 chmod 600 ~/.kiro/settings/mcp.json
 
-## Configuración a nivel del espacio de trabajo
+## Configuración a nivel del Workspace
 chmod 600 .kiro/settings/mcp.json
 ```
 
@@ -4200,14 +4200,14 @@ Solo aprobará automáticamente las herramientas que:
 
 ---
 
-### Aislamiento del espacio de trabajo
+### Aislamiento del Workspace
 
-#### Uso de configuraciones a nivel de espacio de trabajo
+#### Uso de configuraciones a nivel de Workspace
 
-Para proyectos con diferentes requisitos de seguridad, use configuraciones a nivel de espacio de trabajo (`.kiro/settings/mcp.json`) en lugar de la configuración global del usuario:
+Para proyectos con diferentes requisitos de seguridad, use configuraciones a nivel de Workspace (`.kiro/settings/mcp.json`) en lugar de la configuración global del usuario:
 
 - Limitá los servidores MCP disponibles por proyecto
-- Configurará permisos específicos para el espacio de trabajo
+- Configurará permisos específicos para el Workspace
 - Evitará exponer servidores de producción en proyectos de desarrollo.
 
 ---
@@ -4219,7 +4219,7 @@ Para proyectos con diferentes requisitos de seguridad, use configuraciones a niv
 Revise periódicamente los registros MCP para monitorear la actividad del servidor:
 
 1. Abrí el panel de Kiro
-2. Seleccione la pestaña **Salida**
+2. Seleccioná la pestaña **Salida**
 3. Elegí **"Kiro - MCP Logs"** del menú desplegable
 
 #### Uso de la herramienta de auditoría
@@ -4301,11 +4301,11 @@ Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 
 #### Hooks recomendados
 
-| Gancho | Gatillo | Acción |
+| hook | Gatillo | Acción |
 |---|---|---|
-| **Generación de prueba** | Guardar archivo (`.ts/.tsx`) | `"Crear un gancho que genere pruebas Jest cuando guardo un nuevo componente"` |
+| **Generación de prueba** | Guardar archivo (`.ts/.tsx`) | `"Crear un hook que genere pruebas Jest cuando guardo un nuevo componente"` |
 | **Comprobación de tipo** | Guardar archivo | `"Configurar un enlace para ejecutar la verificación de tipos de TypeScript cuando guardo archivos"` |
-| **Actualización de dependencia** | Guardar archivo (`paquete.json`) | `"Crear un gancho que busque paquetes npm obsoletos"` |
+| **Actualización de dependencia** | Guardar archivo (`paquete.json`) | `"Crear un hook que busque paquetes npm obsoletos"` |
 | **Corrección automática de ESLint** | Guardar archivo | Corre ESLint con `--fix` y reporta los problemas restantes |
 | **Documentos de los componentes** | Guardar archivo (`.tsx`) | Accesorios adicionales, genera JSDoc y actualiza el README |
 
@@ -4325,10 +4325,10 @@ Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 
 | Extensión | Propósito |
 |---|---|
-| [Python](https://open-vsx.org/extension/ms-python/python) | IntelliSense, depuración, linting, formateo |
+| [Python](https://open-vsx.org/extension/ms-python/python) | IntelliSense, Debug, linting, formateo |
 | [PyLint](https://open-vsx.org/extension/ms-python/pylint) | Linting para archivos Python |
 | [Jupyter](https://open-vsx.org/extension/ms-toolsai/jupyter) | Soporte para portátiles |
-| [Depurador de Python](https://open-vsx.org/extension/ms-python/debugpy) | Depuración con debugpy |
+| [Depurador de Python](https://open-vsx.org/extension/ms-python/debugpy) | Debug con debugpy |
 | [Arcoíris CSV](https://open-vsx.org/extension/mechatroner/rainbow-csv) | Visualización de CSV/TSV |
 
 #### Ejemplo de dirección: `python-conventions.md`
@@ -4354,10 +4354,10 @@ Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 
 #### Hooks recomendados
 
-| Gancho | Gatillo | Aviso |
+| hook | Gatillo | Aviso |
 |---|---|---|
-| **Generación de prueba** | Guardar archivo (`.py`) | `"Crear un gancho que genere pruebas de pytest cuando guardo un nuevo módulo de Python"` |
-| **Actualización de dependencia** | Guardar archivo (`requisitos.txt`) | `"Crear un gancho que busque paquetes de pip obsoletos"` |
+| **Generación de prueba** | Guardar archivo (`.py`) | `"Crear un hook que genere pruebas de pytest cuando guardo un nuevo módulo de Python"` |
+| **Actualización de dependencia** | Guardar archivo (`requisitos.txt`) | `"Crear un hook que busque paquetes de pip obsoletos"` |
 | **pelusa** | Guardar archivo (`.py`) | Corre flake8/pylint, informa problemas, sugiere correcciones, actualiza cadenas de documentos |
 | **Entorno virtual** | Guardar archivo (`requirements.txt` / `pyproject.toml`) | Verifica venv, instala deps, reporta conflictos |
 
@@ -4376,7 +4376,7 @@ Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 
 | Extensión | Propósito |
 |---|---|
-| [Paquete de extensión para Java](https://open-vsx.org/extension/vscjava/vscode-java-pack) | IntelliSense, Depuración, Pruebas, Maven, Gerente de Proyecto |
+| [Paquete de extensión para Java](https://open-vsx.org/extension/vscjava/vscode-java-pack) | IntelliSense, Debug, Pruebas, Maven, Gerente de Proyecto |
 | [Paquete de extensión Spring Boot](https://open-vsx.org/extension/vmware/vscode-spring-boot) | Herramientas de arranque de primavera + Inicializr + Panel de control |
 | [Gradle para Java](https://open-vsx.org/extension/vscjava/vscode-gradle) | Gestión de proyectos Gradle |
 | [Maven para Java](https://open-vsx.org/extension/vscjava/vscode-maven) | Gestión de proyectos Maven |
@@ -4400,7 +4400,7 @@ Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 ```markdown
 ## Pautas de desarrollo de Spring Boot
 ### Estructura de componentes
-- @RestController para puntos finales REST
+- @RestController para endpoints REST
 - @Service para lógica de negocio
 - @Repository para acceder a datos
 ### Inyección de dependencia
@@ -4478,7 +4478,7 @@ La base de VS Code de Kiro permite compatibilidad completa con tu entorno de des
 
 #### Exportación de un perfil desde VS Code
 
-1. Abra la paleta de comandos en VS Code (`Cmd/Ctrl + Shift + P`)
+1. Abrí la paleta de comandos en VS Code (`Cmd/Ctrl + Shift + P`)
 2. Escribí y seleccioná **"Preferencias: Abrir perfiles (UI)"**
 3. Localice el perfil deseado en la barra lateral
 4. Accedé al menú de 3 puntos y elige **Exportar**
@@ -4486,16 +4486,16 @@ La base de VS Code de Kiro permite compatibilidad completa con tu entorno de des
 
 #### Importando un perfil a Kiro
 
-1. Abra la paleta de comandos de Kiro (`Cmd/Ctrl + Shift + P`)
+1. Abrí la paleta de comandos de Kiro (`Cmd/Ctrl + Shift + P`)
 2. Escribí y seleccioná **"Preferencias: Abrir perfiles (UI)"**
-3. Abra el menú desplegable junto a **Nuevo perfil** y seleccione **Importar perfil**
+3. Abrí el menú desplegable junto a **Nuevo perfil** y seleccione **Importar perfil**
 4. Pega la URL del GitHub Gist o busca tu archivo de exportación local
 5. Confirma con **Importar** para guardar la configuración
 6. Activa tu perfil seleccionándolo en la barra lateral y haciendo clic en la marca de verificación ✓
 
 **Tu perfil importado incluye:**
 - Temas de color y preferencias de UI
-- Configuraciones del editor y espacio de trabajo
+- Configuraciones del editor y Workspace
 - Atajos de teclado y combinaciones de teclas personalizados
 
 ---
@@ -4529,7 +4529,7 @@ Kiro usa el **registro de extensiones OpenVSX**, asegurando compatibilidad con e
 |---|---|
 | **Extensiones de idiomas** | Funcionalidad completa para extensiones disponibles en OpenVSX |
 | **Extensiones de tema** | Compatibilidad visual completa con temas de OpenVSX |
-| **Extensiones de depuración** | Flujos de trabajo de depuración sin interrupciones para extensiones compatibles |
+| **Extensiones de Debug** | Flujos de trabajo de Debug sin interrupciones para extensiones compatibles |
 | **Extensiones de Git** | Aumentadas con generación inteligente de commits y revisión de código automatizada |
 
 > ⚠️ Solo las extensiones disponibles en el **registro OpenVSX** pueden importarse. Algunas extensiones exclusivas del VS Code Marketplace pueden no estar disponibles en Kiro.
@@ -4541,7 +4541,7 @@ Kiro usa el **registro de extensiones OpenVSX**, asegurando compatibilidad con e
 - [] Exportar perfil de VS Code (extensiones, configuraciones, combinaciones de teclas)
 - [] Importar perfil en Kiro
 - [] Verificar que las extensiones críticas estén disponibles en OpenVSX
-- [] Revisar los ajustes de **Kiro Agent** para configurar el comportamiento de IA
+- [] Revisar los Settings de **Kiro Agent** para configurar el comportamiento de IA
 - [ ] Probar el flujo de trabajo habitual para confirmar compatibilidad
 
 ---
@@ -4590,7 +4590,7 @@ En modo supervisado, Kiro trabaja **interactivamente** con el usuario:
 
 En cualquier modo, puedes:
 - Ver cambios individuales o de todos los archivos seleccionando **"Ver todos los cambios"** en el módulo de Chat
-- Seleccione **"Revertir todos los cambios"** para deshacer todas las modificaciones del agente
+- Seleccioná **"Revertir todos los cambios"** para deshacer todas las modificaciones del agente
 - Revertir a un [punto de control](https://kiro.dev/docs/chat/checkpoints) para restaurar archivos a un estado anterior localmente
 
 ---
@@ -4627,23 +4627,23 @@ Al utilizar GitHub o la autenticación de Google con Kiro, tenga en cuenta que e
 
 #### Recomendaciones
 
-**1. Aislamiento del espacio de trabajo**
-- Mantenga los proyectos confidenciales en espacios de trabajo separados
-- Utilice `.gitignore` (o `.kiroignore`) para evitar el acceso a archivos confidenciales
-- Considere utilizar funciones de confianza del espacio de trabajo en su IDE
+**1. Aislamiento del Workspace**
+- Mantenga los proyectos confidenciales en Workspaces separados
+- Utilizá `.gitignore` (o `.kiroignore`) para evitar el acceso a archivos confidenciales
+- Considere utilizar funciones de confianza del Workspace en su IDE
 
-**2. Utilice un entorno limpio**
+**2. Utilizá un entorno limpio**
 - Considere la posibilidad de crear una cuenta de usuario dedicada o un entorno de contenedor para Kiro.
 - Limite el acceso solo a los repositorios y recursos necesarios para su proyecto actual
 
 **3. Administre las credenciales de AWS con cuidado**
-- Utilice credenciales temporales con los permisos adecuados
+- Utilizá credenciales temporales con los permisos adecuados
 - Considere el uso de perfiles con nombre de AWS para aislar el acceso de Kiro
 - Para trabajos confidenciales, elimine las credenciales de AWS de su entorno cuando no las necesite
 
 **4. Control de acceso al repositorio**
 - Al usar la autenticación de GitHub, revise a qué repositorios puede acceder Kiro
-- Utilice tokens de acceso específicos del repositorio cuando sea posible
+- Utilizá tokens de acceso específicos del repositorio cuando sea posible
 - Auditar periódicamente los permisos de acceso.
 
 ---
@@ -4686,7 +4686,7 @@ Una vez que ya hiciste la primera actualización, el flujo es diferente desde Ki
 2. Elegí **Manage Plan** — serás redirigido al navegador
 3. Elegí **Actualizar suscripción**, seleccioná el plan deseado y luego **Continuar**
 4. Confirmá los detalles y elegí **Confirmar**
-5. Seleccione **Return to Kiro** para volver al IDE
+5. Seleccioná **Return to Kiro** para volver al IDE
 
 ---
 
@@ -4718,7 +4718,7 @@ Se te factura al primer día del mes. Si bajas de plan a mitad del mes, permanec
 2. Elegí **Manage Plan** — serás redirigido al navegador para completar el proceso
 3. En el navegador, elija **Actualizar suscripción**, seleccione el plan al que querrás bajar y luego **Continuar**
 4. Confirmá los detalles del plan y elegí **Confirmar**
-5. Seleccione **Return to Kiro** para volver al IDE
+5. Seleccioná **Return to Kiro** para volver al IDE
 
 > ℹ️ Los downgrades **toman efecto el mes siguiente**. Las actualizaciones son efectivos de forma **inmediata**.
 
@@ -4742,7 +4742,7 @@ Para cancelar un plan de pago, debes cambiar el nivel **Kiro Free**:
 2. Elegí **Manage Plan** — serás redirigido al navegador
 3. Elegí **Actualizar suscripción**, seleccioná **Kiro Free** y luego **Continuar**
 4. Confirmá los detalles y elegí **Confirmar**
-5. Seleccione **Return to Kiro** para volver al IDE
+5. Seleccioná **Return to Kiro** para volver al IDE
 
 > ⚠️ En el nivel Kiro Free, no hay excedentes disponibles. Al alcanzar el límite mensual debes esperar al próximo mes o actualizar.
 
@@ -4949,7 +4949,7 @@ Accedé al formulario de soporte de facturación directamente desde:
 - [app.kiro.dev/account/usage?support_form](https://app.kiro.dev/account/usage?support_form)
 
 O desde dentro de Kiro:
-1. Seleccione el ícono de perfil
+1. Seleccioná el ícono de perfil
 2. Busque la opción **Soporte de facturación** o **Contactar con soporte**
 
 ---
@@ -4958,7 +4958,7 @@ O desde dentro de Kiro:
 
 Para incluir su ID de usuario en el ticket de soporte:
 
-1. Abra el **panel de uso** en Kiro
+1. Abrí el **panel de uso** en Kiro
 2. Tu ID de usuario se muestra junto a tu correo electrónico y método de inicio de sesión
 3. Busque la etiqueta **"User ID"** con un ícono de copia para copiarlo fácilmente
 
@@ -5000,9 +5000,9 @@ Eliminar tu cuenta de Kiro permanentemente eliminará todas tus configuraciones 
 
 Tenés **30 días** para restaurar tu cuenta:
 
-- Durante ese período, simplemente volvé a iniciar sesión en Kiro
+- Durante ese período, simplemente volvé a Sign in en Kiro
 - Deberás saldar cualquier saldo pendiente antes de volver a aviones pagos
-- Después de los 30 días sin iniciar sesión, la cuenta y todos los datos se eliminan **permanentemente**
+- Después de los 30 días sin Sign in, la cuenta y todos los datos se eliminan **permanentemente**
 
 ---
 
@@ -5109,10 +5109,10 @@ Esta ventana emergente es un **falso positivo** en las funciones de seguridad de
 
 **Soluciones (pruebe en orden):**
 
-1. Vaya a **Configuración del sistema → Privacidad y seguridad** y haga clic en **Permitir** o **Abrir de todos modos** para Kiro.
+1. Navegá a **Configuración del sistema → Privacidad y seguridad** y haga clic en **Permitir** o **Abrir de todos modos** para Kiro.
 2. Arrastre `Kiro.app` a su escritorio, luego arrástrelo nuevamente a la carpeta Aplicaciones.
 3. Reinicie su computadora.
-4. Abra Terminal y ejecute:
+4. Abrí Terminal y ejecute:
    ```golpecito
    sudo xattr -d com.apple.quarantine /Aplicaciones/Kiro.app
    ```
@@ -5126,7 +5126,7 @@ Esta ventana emergente es un **falso positivo** en las funciones de seguridad de
 Si Kiro no te redirige a un navegador durante la autenticación:
 
 **macOS:**
-1. Abra Kiro → **Ayuda → Alternar herramientas de desarrollador**
+1. Abrí Kiro → **Ayuda → Alternar herramientas de desarrollador**
 2. Navegue a la pestaña **Consola**
 3. Observe cualquier error durante el proceso de inicio de sesión.
 4. Verifique que `ioreg` esté en su RUTA:
@@ -5137,7 +5137,7 @@ Si Kiro no te redirige a un navegador durante la autenticación:
    ```
 
 **Windows:**
-1. Abra el símbolo del sistema como administrador
+1. Abrí el símbolo del sistema como administrador
 2. Ejecute Kiro con registro:
    ```
    C:\ruta\a\app.exe --enable-logging
@@ -5147,7 +5147,7 @@ Si Kiro no te redirige a un navegador durante la autenticación:
 #### Problemas del Centro de identidad de AWS IAM
 
 **Se requiere suscripción Q Developer Pro:**
-Si ve *"Hubo un error al iniciar sesión"*, asegúrese de tener una suscripción **Q Developer Pro** válida. [Ver estado de suscripción →](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html)
+Si ve *"Hubo un error al Sign in"*, asegúrese de tener una suscripción **Q Developer Pro** válida. [Ver estado de suscripción →](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html)
 
 **Limitaciones regionales:**
 Kiro utiliza de forma predeterminada **Este de EE. UU. (Norte de Virginia)** para la autenticación del Centro de identidad. Si su perfil de Q Developer se encuentra en una región diferente, inicie sesión con Builder ID, Google o GitHub.
@@ -5237,7 +5237,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 #### Problema de ruta de OneDrive
 
-Si su perfil de usuario está almacenado en OneDrive, Kiro puede tener dificultades con la resolución de rutas. Mueva su espacio de trabajo de Kiro a una ruta local (fuera de OneDrive) para resolverlo.
+Si su perfil de usuario está almacenado en OneDrive, Kiro puede tener dificultades con la resolución de rutas. Mueva su Workspace de Kiro a una ruta local (fuera de OneDrive) para resolverlo.
 
 ---
 
@@ -5245,7 +5245,7 @@ Si su perfil de usuario está almacenado en OneDrive, Kiro puede tener dificulta
 
 #### Problemas comunes
 
-1. **Verificar el estado del servidor** — Abra el panel Kiro → pestaña Servidores MCP → verifique el indicador de estado de la conexión
+1. **Verificar el estado del servidor** — Abrí el panel Kiro → pestaña Servidores MCP → verifique el indicador de estado de la conexión
 2. **Verificar configuración**: asegúrese de que `mcp.json` tenga una sintaxis válida y que los comandos/argumentos del servidor sean correctos.
 3. **Verifique los requisitos previos**: para el servidor de documentación de AWS, verifique que Python 3.10+ y `uv` estén instalados.
 4. **Revisar registros** — Panel de salida → seleccione **"Kiro - Registros de MCP"** en el menú desplegable
@@ -5288,7 +5288,7 @@ Glosario de términos clave para administradores que gestionan suscripciones y u
 | **Centro de identidad de AWS IAM** | Servicio AWS que proporciona un lugar central para gestionar las identidades de usuarios de Kiro |
 | **Región de AWS** | Ubicación física donde AWS agrupa sus centros de datos. Relevante en dos dimensiones: (1) región donde está habilitado IAM Identity Center, y (2) región donde se crea el perfil de Kiro (donde se almacenan los datos) |
 | **Grupo** | Colección de usuarios dentro de IAM Identity Center. Al suscribir un grupo a Kiro, los usuarios individuales se suscriben por separado (no existe concepto de suscripción grupal) |
-| **Consola Kiro** | Consola dentro de la consola AWS donde crearás y gestionarás suscripciones Kiro y configurarás ajustes. Aparece como "Kiro" en el menú desplegable de servicios AWS |
+| **Consola Kiro** | Consola dentro de la consola AWS donde crearás y gestionarás suscripciones Kiro y configurarás Settings. Aparece como "Kiro" en el menú desplegable de servicios AWS |
 | **Créditos de Kiro** | Unidad de consumo que mide el uso de las características de IA de Kiro. Se gastan en interacciones con IA y se reponen según el nivel de suscripción |
 | **Usuario empresarial de Kiro** | Usuario que fue agregado y suscrito a un nivel de Kiro a través de la consola AWS, con acceso mediante IAM Identity Center, Okta o Microsoft Entra ID |
 | **Perfil de Kiro** | Abstracción de gestión que define y aplicaciones configuraciones administrativas y suscripciones a usuarios empresariales en una cuenta AWS y región determinadas. Una cuenta AWS + región = un único perfil. Se configura desde la consola Kiro |
@@ -5313,7 +5313,7 @@ Esta guía está dirigida a **administradores** que quieren incorporar a su equi
 1. **Crear una cuenta AWS** (si no tienes una)
    - [Crear cuenta AWS →](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 
-2. **Iniciar sesión en AWS**
+2. **Sign in en AWS**
    - Como usuario root de AWS o usuario con rol privilegiado
    - Alternativamente, configurará un [administrador con permisos mínimos](https://kiro.dev/docs/enterprise/iam/#policy-allow-administrators-to-configure-kiro-and-subscribe-users)
 
@@ -5358,7 +5358,7 @@ Kiro soporta conectar su proveedor de identidad directamente o a través de AWS 
 
 Consultor [guía de IAM Identity Center →](https://kiro.dev/docs/enterprise/identity-provider/iam-identity-center)
 
-> **Recomendación:** Utilice AWS Organizations al configurar IAM Identity Center para habilitar una instancia de organización con gestión centralizada de identidades en múltiples cuentas AWS.
+> **Recomendación:** Utilizá AWS Organizations al configurar IAM Identity Center para habilitar una instancia de organización con gestión centralizada de identidades en múltiples cuentas AWS.
 > ⚠️ Las instancias de cuenta individual **no pueden** actualizarse a instancias de organización — requieren eliminación y recreación.
 
 ---
@@ -5449,7 +5449,7 @@ Antes de comenzar, asegúrese de tener:
 1. Iniciá sesión en la **AWS Management Console**
 2. Cambiá a la **consola Kiro**
 3. En la página **Usuarios y Grupos**, elija la pestaña correspondiente
-4. Seleccione el usuario o grupo cuya suscripción quiera cambiar
+4. Seleccioná el usuario o grupo cuya suscripción quiera cambiar
 5. Elegí **Change plan** y seleccioná el nuevo plan → **Continuar**
 
 > - **Actualizaciones:** Efectivos de forma inmediata
@@ -5594,7 +5594,7 @@ Controla si los usuarios pueden usar las herramientas de acceso web (`web_search
 **Para deshabilitar el acceso web para todos los usuarios:**
 
 1. Abrí la **consola Kiro**
-2. Elegí **Ajustes**
+2. Elegí **Settings**
 3. En **Configuración compartida**, desactiva **Herramientas de búsqueda y recuperación web**
 
 > Cuando las herramientas web están deshabilitadas, los usuarios verán una notificación en `/tools` indicando que el acceso web fue deshabilitado por su administrador.
@@ -5786,7 +5786,7 @@ Con MCP, puedes:
 - Acceda a bases de conocimiento y documentación especializadas.
 - Integrar con servicios externos y API.
 - Amplíe las capacidades de Kiro con herramientas específicas de dominio
-- Utilice plantillas de mensajes y plantillas de recursos proporcionadas por el servidor a través del sistema de menciones `#` en el chat.
+- Utilizá plantillas de mensajes y plantillas de recursos proporcionadas por el servidor a través del sistema de menciones `#` en el chat.
 - Responder a las solicitudes de obtención del servidor cuando las herramientas necesitan información adicional durante la ejecución.
 - Cree herramientas personalizadas para sus flujos de trabajo específicos
 
@@ -5803,7 +5803,7 @@ Antes de usar MCP:
 #### Habilitación del soporte MCP
 
 Después de crear su archivo de configuración:
-1. Abra Configuración con `Cmd+` (Mac) o `Ctrl+` (Windows/Linux)
+1. Abrí Configuración con `Cmd+` (Mac) o `Ctrl+` (Windows/Linux)
 2. Busque "MCP"
 3. Habilite la configuración de soporte de MCP
 
@@ -5817,7 +5817,7 @@ El panel Kiro incluye una **pestaña de servidores MCP** que muestra:
 Para utilizar esta función:
 1. Selecciona el ícono de Kiro en la barra de actividades.
 2. Navegue a la pestaña **Servidores MCP**
-3. Haga clic en el nombre de cualquier herramienta para insertar un mensaje de marcador de posición en el chat.
+3. Hacé clic en el nombre de cualquier herramienta para insertar un mensaje de marcador de posición en el chat.
 
 ---
 
@@ -5857,10 +5857,10 @@ Los archivos de configuración de MCP utilizan el formato JSON:
 
 | Nivel | Archivo | Alcance |
 |---|---|---|
-| **Espacio de trabajo** | `.kiro/settings/mcp.json` | Solo espacio de trabajo actual: ideal para servidores de proyectos específicos |
-| **Usuario** | `~/.kiro/settings/mcp.json` | Todos los espacios de trabajo: lo mejor para servidores de uso frecuente |
+| **Workspace** | `.kiro/settings/mcp.json` | Solo Workspace actual: ideal para servidores de proyectos específicos |
+| **Usuario** | `~/.kiro/settings/mcp.json` | Todos los Workspaces: lo mejor para servidores de uso frecuente |
 
-> Si ambos archivos existen, las configuraciones se **fusionan** y la configuración del espacio de trabajo tiene prioridad.
+> Si ambos archivos existen, las configuraciones se **fusionan** y la configuración del Workspace tiene prioridad.
 
 #### Creando archivos de configuración
 
@@ -5897,7 +5897,7 @@ Los archivos de configuración de MCP utilizan el formato JSON:
 
 #### Consideraciones de seguridad
 
-- Utilice referencias de variables de entorno ("${API_TOKEN}`) en lugar de codificar valores sensibles
+- Utilizá referencias de variables de entorno ("${API_TOKEN}`) en lugar de codificar valores sensibles
 - Nunca envíe archivos de configuración con credenciales al control de versiones.
 - Conéctese únicamente a servidores remotos confiables
 - Revisar los permisos de la herramienta antes de agregarlos a "autoApprove".
@@ -5916,7 +5916,7 @@ Los archivos de configuración de MCP utilizan el formato JSON:
 #### Comprobación de registros de MCP
 
 1. Abre el panel de Kiro
-2. Seleccione la pestaña **Salida**
+2. Seleccioná la pestaña **Salida**
 3. Elija **"Kiro - Registros de MCP"** en el menú desplegable.
 
 ---
@@ -5959,7 +5959,7 @@ La base VS Code de Kiro permite una compatibilidad total con su entorno de desar
 
 #### Migración de perfil
 
-1. Abra la paleta de comandos: `Cmd+Shift+P` (Mac) / `Ctrl+Shift+P` (Windows/Linux)
+1. Abrí la paleta de comandos: `Cmd+Shift+P` (Mac) / `Ctrl+Shift+P` (Windows/Linux)
 2. Busque **"Importar perfil desde VS Code"**
 3. Kiro detectará e importará automáticamente sus perfiles de VS Code
 
@@ -5979,7 +5979,7 @@ Si la migración automática no funciona:
 Kiro amplía la arquitectura de configuración de VS Code con controles dedicados para:
 - Comportamientos de IA y automatización de agentes.
 - Comandos confiables
-- Funciones exclusivas de Kiro (dirección, especificaciones, hooks)
+- Funciones exclusivas de Kiro (dirección, Specs, hooks)
 
 #### Actualizaciones de versión
 
@@ -5993,7 +5993,7 @@ Kiro utiliza el **registro de extensión OpenVSX**. Las extensiones disponibles 
 |---|---|
 | Extensiones de idiomas | Funcionalidad completa para extensiones disponibles en OpenVSX |
 | Extensiones de temas | Compatibilidad visual completa |
-| Extensiones de depuración | Flujos de trabajo de depuración ininterrumpidos para extensiones compatibles |
+| Extensiones de Debug | Flujos de trabajo de Debug ininterrumpidos para extensiones compatibles |
 | Extensiones de Git | Ampliado con generación de commit inteligente y revisión de código automatizada |
 
 > ⚠️ Solo se pueden importar extensiones disponibles en el **registro OpenVSX**. Es posible que algunas exclusivas de VS Code Marketplace no estén disponibles en Kiro.
@@ -6016,7 +6016,7 @@ Este error es un falso positivo de las funciones de seguridad de macOS.
 
 **Soluciones:**
 
-1. Vaya a **Configuración del sistema → Privacidad y seguridad** → haga clic en **Permitir** o **Abrir de todos modos** para Kiro
+1. Navegá a **Configuración del sistema → Privacidad y seguridad** → haga clic en **Permitir** o **Abrir de todos modos** para Kiro
 2. Arrastrará `Kiro.app` al escritorio, luego arrastralo del escritorio a la carpeta Aplicaciones → reiniciará el sistema
 3. Abrí la terminal y ejecutá:
    ```golpecito
@@ -6030,7 +6030,7 @@ Este error es un falso positivo de las funciones de seguridad de macOS.
 #### Fallos de redireccionamiento del navegador durante la autenticación
 
 **Windows:**
-1. Abra el símbolo del sistema como administrador
+1. Abrí el símbolo del sistema como administrador
 2. Ejecutá Kiro con logging habilitado:
    ```
    C:\ruta\a\app.exe --enable-logging
@@ -6055,8 +6055,8 @@ Este error es un falso positivo de las funciones de seguridad de macOS.
 
 | Error | causa | Solución |
 |---|---|---|
-| `"Hubo un error al iniciar sesión"` | No tienes una suscripción Q Developer Pro activa | [Ver cómo activar Q Developer Pro →](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html) |
-| No podés iniciar sesión a pesar de tener credenciales válidas | Limitación regional — Kiro solo soporta Identity Center en US East (N. Virginia) | Utilice Builder ID para iniciar sesión en redes sociales (Google, GitHub) |
+| `"Hubo un error al Sign in"` | No tienes una suscripción Q Developer Pro activa | [Ver cómo activar Q Developer Pro →](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html) |
+| No podés Sign in a pesar de tener credenciales válidas | Limitación regional — Kiro solo soporta Identity Center en US East (N. Virginia) | Utilizá Builder ID para Sign in en redes sociales (Google, GitHub) |
 | Sesión expira constantemente | Timeout por defecto de 8 horas | El administrador puede [configurar sesiones más largas →](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-session-duration-how-to-configure.html) |
 
 ---
@@ -6139,7 +6139,7 @@ Las actualizaciones están deshabilitadas porque está ejecutando la instalació
 1. Haz clic en derecho en el ícono de Kiro → **Mostrar más opciones**
 2. Seleccioná **Propiedades** → pestaña **Compatibilidad**
 3. Desmarcar **Ejecuta este programa como administrador**
-4. Haga clic en **Aplicar** → **Aceptar**
+4. Hacé clic en **Aplicar** → **Aceptar**
 
 #### No se pueden ejecutar scripts (PowerShell 7+)
 
@@ -6155,7 +6155,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Si usa OneDrive en Windows y la ruta del escritorio causa problemas:
 
-1. Abra el símbolo del sistema como administrador
+1. Abrí el símbolo del sistema como administrador
 2. Crea un enlace simbólico:
    ```
    mklink /J "C:\Users\<nombre de usuario>\Desktop" "C:\Users\<nombre de usuario>\OneDrive\Desktop"
@@ -6279,7 +6279,7 @@ Por defecto, Kiro recopila telemetría de uso, errores, informes de fallos y con
 
 #### Optar por no participar en la CLI
 
-1. Abra **Preferencias** en la aplicación Kiro CLI
+1. Abrí **Preferencias** en la aplicación Kiro CLI
 2. Para telemetría: desactive el botón **Telemetría**
 3. Para contenido: desactivá el interruptor **Compartir contenido de Kiro con AWS**
 
@@ -6289,7 +6289,7 @@ Por defecto, Kiro recopila telemetría de uso, errores, informes de fallos y con
 
 - **Datos de uso:** Versión de Kiro, sistema operativo (Windows, Linux, macOS), ID de máquina anónimo
 - **Métricas de rendimiento:** Recuento de solicitudes, errores y latencia para:
-  - Inicio de sesión, finalización de pestañas, generación de código, dirección, hooks, generación de especificaciones, herramientas, MCP
+  - Inicio de sesión, finalización de pestañas, generación de código, dirección, hooks, generación de Specs, herramientas, MCP
 
 ---
 
@@ -6309,7 +6309,7 @@ Las **referencias de código** son atribuciones que aparecen cuando el código g
 
 El registro de referencias de código muestra las sugerencias de código similar a código público.
 
-1. Abra la pestaña **Output** en la barra de estado
+1. Abrí la pestaña **Output** en la barra de estado
 2. Desde el menú desplegable, elija **code-references**
 
 > ℹ️ El log solo aparece cuando code references está habilitado y Kiro generó código con referencias.
@@ -6508,7 +6508,7 @@ Toda instalación de Kiro necesita las siguientes URL (inicio de sesión, chat, 
 
 | URL | Propósito |
 |---|---|
-| `app.kiro.dev` | Iniciar sesión y portal |
+| `app.kiro.dev` | Sign in y portal |
 | `prod.us-east-1.auth.desktop.kiro.dev` | Autenticación |
 | `prod.us-east-1.telemetry.desktop.kiro.dev` | Telemetria |
 | `prod.download.desktop.kiro.dev` | Actualizaciones |
@@ -6547,7 +6547,7 @@ Consulta con tu equipo de identidad si no estás seguro del dominio exacto.
 
 ### AWS GovCloud
 
-Para **AWS GovCloud (US)**, usaremos estos puntos finales compatibles con FIPS en lugar de las URL principales:
+Para **AWS GovCloud (US)**, usaremos estos endpoints compatibles con FIPS en lugar de las URL principales:
 
 ```
 q-fips.us-gov-east-1.amazonaws.com
@@ -6594,7 +6594,7 @@ NO_PROXY
 
 También puedes configurar el proxy desde **Configuración → Proxy** dentro de Kiro.
 
-> ⚠️ El tráfico del navegador (iniciar sesión) usa la pila de red del sistema operativo — el proxy del IDE **no aplica**. Tu firewall debe permitir las URL de IAM Identity Center y `app.kiro.dev` a nivel de rojo.
+> ⚠️ El tráfico del navegador (Sign in) usa la pila de red del sistema operativo — el proxy del IDE **no aplica**. Tu firewall debe permitir las URL de IAM Identity Center y `app.kiro.dev` a nivel de rojo.
 
 ---
 
@@ -6620,7 +6620,7 @@ AWS PrivateLink permite establecer una **conexión privada** entre tu VPC y Kiro
 
 ### Consideraciones
 
-Antes de configurar un punto final de VPC para Kiro, revise las [limitaciones de puntos finales de interfaz](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#vpce-interface-limitations) en la guía de Amazon VPC.
+Antes de configurar un endpoint de VPC para Kiro, revise las [limitaciones de endpoints de interfaz](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#vpce-interface-limitations) en la guía de Amazon VPC.
 
 Kiro soporta llamadas a todas sus acciones de API desde tu VPC, en el contexto de servicios configurados para trabajar con Kiro.
 
@@ -6634,15 +6634,15 @@ Kiro soporta llamadas a todas sus acciones de API desde tu VPC, en el contexto d
 
 ---
 
-### Creación de un punto final de interfaz VPC para Kiro
+### Creación de un endpoint de interfaz VPC para Kiro
 
-Puede crear el punto final de VPC usando la **consola de Amazon VPC** o la **AWS CLI**.
+Puede crear el endpoint de VPC usando la **consola de Amazon VPC** o la **AWS CLI**.
 
-Referencia: [Creación de un punto final de interfaz →](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint)
+Referencia: [Creación de un endpoint de interfaz →](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint)
 
 #### Nombres de servicios para Kiro
 
-| Punto final | Región |
+| endpoint | Región |
 |---|---|
 | `com.amazonaws.us-east-1.q` | Este de EE. UU. (Norte de Virginia) |
 | `com.amazonaws.us-east-1.codewhisperer` | Este de EE. UU. (Norte de Virginia) — en solitario |
@@ -6650,7 +6650,7 @@ Referencia: [Creación de un punto final de interfaz →](https://docs.aws.amazo
 | `com.amazonaws.us-gov-west-1.q` | AWS GovCloud (EE.UU.-Oeste) |
 | `com.amazonaws.us-gov-east-1.q` | AWS GovCloud (EE.UU.-Este) |
 
-> ℹ️ Kiro soporta perfiles de desarrolladores de Amazon Q en EE.UU. Este (N. Virginia) y Europa (Frankfurt). El punto final Amazon CodeWhisperer solo está disponible en el este de EE. UU.
+> ℹ️ Kiro soporta perfiles de desarrolladores de Amazon Q en EE.UU. Este (N. Virginia) y Europa (Frankfurt). El endpoint Amazon CodeWhisperer solo está disponible en el este de EE. UU.
 
 #### DNS privado
 
@@ -6669,9 +6669,9 @@ Para conectar a Kiro desde un equipo local a través de AWS PrivateLink:
 1. **Crea una conexión VPN** entre tu dispositivo local y tu VPC
    - [Guía del usuario del cliente VPN de AWS →](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-user-what-is.html)
 
-2. **Crear el punto final de la VPC de interfaz** para Kiro
+2. **Crear el endpoint de la VPC de interfaz** para Kiro
    - [Instrucciones arriba ↑](#creando-una-interfaz-vpc-endpoint-para-kiro)
 
-3. **Configurar un punto final entrante de Amazon Route 53**
+3. **Configurar un endpoint entrante de Amazon Route 53**
    - Esto permite usar el nombre DNS del endpoint de Kiro desde tu dispositivo local
-   - [Enrutamiento a un punto final de interfaz VPC →](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-vpc-interface-endpoint.html)
+   - [Enrutamiento a un endpoint de interfaz VPC →](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-vpc-interface-endpoint.html)

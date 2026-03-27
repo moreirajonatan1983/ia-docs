@@ -10,7 +10,7 @@ AWS PrivateLink permite establecer una **conexión privada** entre tu VPC y Kiro
 
 ## Consideraciones
 
-Antes de configurar un punto final de VPC para Kiro, revise las [limitaciones de puntos finales de interfaz](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#vpce-interface-limitations) en la guía de Amazon VPC.
+Antes de configurar un endpoint de VPC para Kiro, revise las [limitaciones de endpoints de interfaz](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#vpce-interface-limitations) en la guía de Amazon VPC.
 
 Kiro soporta llamadas a todas sus acciones de API desde tu VPC, en el contexto de servicios configurados para trabajar con Kiro.
 
@@ -24,15 +24,15 @@ Kiro soporta llamadas a todas sus acciones de API desde tu VPC, en el contexto d
 
 ---
 
-## Creación de un punto final de interfaz VPC para Kiro
+## Creación de un endpoint de interfaz VPC para Kiro
 
-Puede crear el punto final de VPC usando la **consola de Amazon VPC** o la **AWS CLI**.
+Puede crear el endpoint de VPC usando la **consola de Amazon VPC** o la **AWS CLI**.
 
-Referencia: [Creación de un punto final de interfaz →](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint)
+Referencia: [Creación de un endpoint de interfaz →](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint)
 
 ### Nombres de servicios para Kiro
 
-| Punto final | Región |
+| endpoint | Región |
 |---|---|
 | `com.amazonaws.us-east-1.q` | Este de EE. UU. (Norte de Virginia) |
 | `com.amazonaws.us-east-1.codewhisperer` | Este de EE. UU. (Norte de Virginia) — en solitario |
@@ -40,7 +40,7 @@ Referencia: [Creación de un punto final de interfaz →](https://docs.aws.amazo
 | `com.amazonaws.us-gov-west-1.q` | AWS GovCloud (EE.UU.-Oeste) |
 | `com.amazonaws.us-gov-east-1.q` | AWS GovCloud (EE.UU.-Este) |
 
-> ℹ️ Kiro soporta perfiles de desarrolladores de Amazon Q en EE.UU. Este (N. Virginia) y Europa (Frankfurt). El punto final Amazon CodeWhisperer solo está disponible en el este de EE. UU.
+> ℹ️ Kiro soporta perfiles de desarrolladores de Amazon Q en EE.UU. Este (N. Virginia) y Europa (Frankfurt). El endpoint Amazon CodeWhisperer solo está disponible en el este de EE. UU.
 
 ### DNS privado
 
@@ -59,9 +59,9 @@ Para conectar a Kiro desde un equipo local a través de AWS PrivateLink:
 1. **Crea una conexión VPN** entre tu dispositivo local y tu VPC
    - [Guía del usuario del cliente VPN de AWS →](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-user-what-is.html)
 
-2. **Crear el punto final de la VPC de interfaz** para Kiro
+2. **Crear el endpoint de la VPC de interfaz** para Kiro
    - [Instrucciones arriba ↑](#creando-una-interfaz-vpc-endpoint-para-kiro)
 
-3. **Configurar un punto final entrante de Amazon Route 53**
+3. **Configurar un endpoint entrante de Amazon Route 53**
    - Esto permite usar el nombre DNS del endpoint de Kiro desde tu dispositivo local
-   - [Enrutamiento a un punto final de interfaz VPC →](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-vpc-interface-endpoint.html)
+   - [Enrutamiento a un endpoint de interfaz VPC →](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-vpc-interface-endpoint.html)

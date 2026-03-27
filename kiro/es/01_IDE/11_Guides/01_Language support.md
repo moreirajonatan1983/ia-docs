@@ -37,11 +37,11 @@ Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 
 ### Hooks recomendados
 
-| Gancho | Gatillo | Acción |
+| hook | Gatillo | Acción |
 |---|---|---|
-| **Generación de prueba** | Guardar archivo (`.ts/.tsx`) | `"Crear un gancho que genere pruebas Jest cuando guardo un nuevo componente"` |
+| **Generación de prueba** | Guardar archivo (`.ts/.tsx`) | `"Crear un hook que genere pruebas Jest cuando guardo un nuevo componente"` |
 | **Comprobación de tipo** | Guardar archivo | `"Configurar un enlace para ejecutar la verificación de tipos de TypeScript cuando guardo archivos"` |
-| **Actualización de dependencia** | Guardar archivo (`paquete.json`) | `"Crear un gancho que busque paquetes npm obsoletos"` |
+| **Actualización de dependencia** | Guardar archivo (`paquete.json`) | `"Crear un hook que busque paquetes npm obsoletos"` |
 | **Corrección automática de ESLint** | Guardar archivo | Corre ESLint con `--fix` y reporta los problemas restantes |
 | **Documentos de los componentes** | Guardar archivo (`.tsx`) | Accesorios adicionales, genera JSDoc y actualiza el README |
 
@@ -61,10 +61,10 @@ Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 
 | Extensión | Propósito |
 |---|---|
-| [Python](https://open-vsx.org/extension/ms-python/python) | IntelliSense, depuración, linting, formateo |
+| [Python](https://open-vsx.org/extension/ms-python/python) | IntelliSense, Debug, linting, formateo |
 | [PyLint](https://open-vsx.org/extension/ms-python/pylint) | Linting para archivos Python |
 | [Jupyter](https://open-vsx.org/extension/ms-toolsai/jupyter) | Soporte para portátiles |
-| [Depurador de Python](https://open-vsx.org/extension/ms-python/debugpy) | Depuración con debugpy |
+| [Depurador de Python](https://open-vsx.org/extension/ms-python/debugpy) | Debug con debugpy |
 | [Arcoíris CSV](https://open-vsx.org/extension/mechatroner/rainbow-csv) | Visualización de CSV/TSV |
 
 ### Ejemplo de dirección: `python-conventions.md`
@@ -90,10 +90,10 @@ Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 
 ### Hooks recomendados
 
-| Gancho | Gatillo | Aviso |
+| hook | Gatillo | Aviso |
 |---|---|---|
-| **Generación de prueba** | Guardar archivo (`.py`) | `"Crear un gancho que genere pruebas de pytest cuando guardo un nuevo módulo de Python"` |
-| **Actualización de dependencia** | Guardar archivo (`requisitos.txt`) | `"Crear un gancho que busque paquetes de pip obsoletos"` |
+| **Generación de prueba** | Guardar archivo (`.py`) | `"Crear un hook que genere pruebas de pytest cuando guardo un nuevo módulo de Python"` |
+| **Actualización de dependencia** | Guardar archivo (`requisitos.txt`) | `"Crear un hook que busque paquetes de pip obsoletos"` |
 | **pelusa** | Guardar archivo (`.py`) | Corre flake8/pylint, informa problemas, sugiere correcciones, actualiza cadenas de documentos |
 | **Entorno virtual** | Guardar archivo (`requirements.txt` / `pyproject.toml`) | Verifica venv, instala deps, reporta conflictos |
 
@@ -112,7 +112,7 @@ Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 
 | Extensión | Propósito |
 |---|---|
-| [Paquete de extensión para Java](https://open-vsx.org/extension/vscjava/vscode-java-pack) | IntelliSense, Depuración, Pruebas, Maven, Gerente de Proyecto |
+| [Paquete de extensión para Java](https://open-vsx.org/extension/vscjava/vscode-java-pack) | IntelliSense, Debug, Pruebas, Maven, Gerente de Proyecto |
 | [Paquete de extensión Spring Boot](https://open-vsx.org/extension/vmware/vscode-spring-boot) | Herramientas de arranque de primavera + Inicializr + Panel de control |
 | [Gradle para Java](https://open-vsx.org/extension/vscjava/vscode-gradle) | Gestión de proyectos Gradle |
 | [Maven para Java](https://open-vsx.org/extension/vscjava/vscode-maven) | Gestión de proyectos Maven |
@@ -136,7 +136,7 @@ Kiro puede generar archivos de Steering para tus proyectos TS/JS:
 ```markdown
 # Pautas de desarrollo de Spring Boot
 ## Estructura de componentes
-- @RestController para puntos finales REST
+- @RestController para endpoints REST
 - @Service para lógica de negocio
 - @Repository para acceder a datos
 ## Inyección de dependencia

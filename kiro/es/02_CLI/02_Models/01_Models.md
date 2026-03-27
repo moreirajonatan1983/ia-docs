@@ -29,7 +29,7 @@ El costo es relativo a **Automático (1,0 veces el valor de referencia)**. Por e
 
 ### Desde la interfaz de chat
 
-Utilice el menú desplegable de modelos en la interfaz de chat. Si no aparece un modelo, reinicie el cliente.
+Utilizá el menú desplegable de modelos en la interfaz de chat. Si no aparece un modelo, reinicie el cliente.
 
 ### Desde la línea de comando
 

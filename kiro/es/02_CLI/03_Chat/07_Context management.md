@@ -89,7 +89,7 @@ Current context window (5.9% used)
 
 ## Eliminando contexto
 
-Utilice `/context remove <ruta>` para eliminar archivos específicos del contexto de la sesión actual.
+Utilizá `/context remove <ruta>` para eliminar archivos específicos del contexto de la sesión actual.
 
 ---
 

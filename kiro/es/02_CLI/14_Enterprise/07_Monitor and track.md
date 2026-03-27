@@ -17,7 +17,7 @@ Visualice el uso de Kiro a nivel de organización desde la **Kiro Console**:
 - Distribución de uso por nivel
 
 **Cómo acceder:**
-1. Iniciar sesión en la **AWS Management Console**
+1. Sign in en la **AWS Management Console**
 2. Navegar a la **Consola Kiro**
 3. Ver la sección de **Uso/Panel**
 
@@ -37,7 +37,7 @@ Los administradores pueden habilitar el registro de mensajes de los usuarios par
 
 **Para habilitar:**
 1. Abrir la **Consola Kiro**
-2. Vaya a **Configuración**
+2. Navegá a **Configuración**
 3. Activar **Registro rápido**
 
 Ver [Registrar mensajes de usuario →](https://kiro.dev/docs/cli/enterprise/monitor-and-track/prompt-logging)
@@ -49,7 +49,7 @@ Ver [Registrar mensajes de usuario →](https://kiro.dev/docs/cli/enterprise/mon
 Los administradores pueden deshabilitar las herramientas web (`web_search` y `web_fetch`) para todos los usuarios:
 
 1. Abrir la **Consola Kiro**
-2. Vaya a **Configuración → Configuración compartida**
+2. Navegá a **Configuración → Configuración compartida**
 3. Desactivar **Herramientas de búsqueda y recuperación web**
 
 Cuando están deshabilitados, los usuarios ven una notificación en `/tools` indicando que el administrador deshabilitó el acceso web.

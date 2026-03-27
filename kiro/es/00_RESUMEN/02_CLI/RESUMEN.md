@@ -166,7 +166,7 @@ export HTTPS_PROXY=http://username:password@proxy.company.com:8080
 #### Solución de problemas de proxy
 
 - Verificar la accesibilidad y las credenciales del servidor proxy.
-- Asegúrese de que su firewall corporativo permita conexiones a puntos finales de AWS
+- Asegúrese de que su firewall corporativo permita conexiones a endpoints de AWS
 - Póngase en contacto con su administrador de TI si falla la validación del certificado SSL
 - Verifique que el servidor proxy admita los protocolos requeridos
 
@@ -187,7 +187,7 @@ sudo apt-get purge kiro-cli # Eliminar los archivos de configuración restantes
 
 ---
 
-### Depuración de Kiro CLI
+### Debug de Kiro CLI
 
 Si tiene problemas con Kiro CLI, ejecute `kiro-cli doctor` para identificar y solucionar problemas comunes:
 
@@ -212,7 +212,7 @@ kiro-cli doctor
 
 ---
 
-### Iniciar sesión en Kiro CLI
+### Sign in en Kiro CLI
 
 1. En la línea de comando, ingrese `kiro-cli` o `kiro-cli login`. Se le pedirá que presione Entrar para completar el inicio de sesión en su navegador.
 
@@ -224,7 +224,7 @@ kiro-cli doctor
 
 3. Después de autenticarse, recibirá un mensaje en su navegador que lo dirigirá nuevamente a su terminal.
 
-4. Cuando regrese a su terminal, deberá iniciar sesión con Kiro CLI.
+4. Cuando regrese a su terminal, deberá Sign in con Kiro CLI.
 
 > **Nota:** Los métodos de inicio de sesión individuales como GitHub, Google y AWS Builder ID **no están disponibles** en las regiones de AWS GovCloud (EE. UU.).
 >
@@ -237,14 +237,14 @@ kiro-cli doctor
 
 ---
 
-### Iniciar sesión desde una máquina remota
+### Sign in desde una máquina remota
 
 Cuando se ejecuta Kiro CLI en una máquina remota (a través de SSH, SSM, contenedores, etc.), la autenticación funciona de manera diferente ya que la máquina remota no puede abrir un navegador.
 
 - **Para Builder ID e IAM Identity Center:** Kiro CLI utiliza **autenticación de código de dispositivo**. Verá una URL y un código para ingresar en su navegador local; no se requiere configuración adicional.
 - **Para inicio de sesión social (Google o GitHub):** La CLI utiliza autenticación PKCE que requiere **reenvío de puertos**. La devolución de llamada de OAuth redirige a "localhost", que no llegará a la CLI remota sin un túnel.
 
-**Para iniciar sesión con inicio de sesión social en una máquina remota:**
+**Para Sign in con inicio de sesión social en una máquina remota:**
 
 1. Ejecute `kiro-cli login` y seleccione *"Usar gratis con Google o GitHub"*
 2. Anote el número de puerto que se muestra (varía cada vez, por ejemplo, `49153`)
@@ -335,7 +335,7 @@ El costo es relativo a **Automático (1,0 veces el valor de referencia)**. Por e
 
 #### Desde la interfaz de chat
 
-Utilice el menú desplegable de modelos en la interfaz de chat. Si no aparece un modelo, reinicie el cliente.
+Utilizá el menú desplegable de modelos en la interfaz de chat. Si no aparece un modelo, reinicie el cliente.
 
 #### Desde la línea de comando
 
@@ -395,14 +395,14 @@ Reanudar una conversación en el directorio actual:
 chat kiro-cli --reanudar
 ```
 
-Abra un selector de sesiones interactivo para elegir entre sesiones anteriores:
+Abrí un selector de sesiones interactivo para elegir entre sesiones anteriores:
 ```golpecito
 chat kiro-cli --resume-selector
 ```
 
 #### Iniciar una nueva conversación
 
-Utilice el comando `/chat new` sin reiniciar la CLI. Esto guarda su sesión actual en la base de datos y comienza una nueva:
+Utilizá el comando `/chat new` sin reiniciar la CLI. Esto guarda su sesión actual en la base de datos y comienza una nueva:
 
 ```golpecito
 ## Iniciar una nueva conversación
@@ -412,7 +412,7 @@ Utilice el comando `/chat new` sin reiniciar la CLI. Esto guarda su sesión actu
 /chat nuevo ¿Cómo configuro un proyecto de React?
 ```
 
-Utilice `/chat resume` para volver a cualquier sesión anterior.
+Utilizá `/chat resume` para volver a cualquier sesión anterior.
 
 #### Guardar y cargar conversaciones manualmente
 
@@ -507,7 +507,7 @@ En la configuración de su agente, especifique qué agentes se pueden usar como 
 
 #### Confiar en agentes específicos
 
-Utilice `trustedAgents` para permitir que subagentes específicos se ejecuten sin solicitudes de permiso.
+Utilizá `trustedAgents` para permitir que subagentes específicos se ejecuten sin solicitudes de permiso.
 
 #### Combinando ambas configuraciones
 
@@ -555,7 +555,7 @@ a. Aplicación web b. Aplicación móvil c. Aplicación de escritorio d. Herrami
 [2]: ¿Cuál es el caso de uso principal?
 a. Gestión de tareas personales b. Colaboración en equipo c. Gestión de proyectos
 
-(Utilice el chat para responder cualquier subconjunto: por ejemplo, "1=a, 2=b")
+(Utilizá el chat para responder cualquier subconjunto: por ejemplo, "1=a, 2=b")
 ```
 
 #### 2. Investigación y análisis
@@ -715,7 +715,7 @@ Puede crear:
 #### Preguntar sobre un comando
 ```
 [ayuda] > ¿Cómo guardo una conversación?
-Utilice `/chat save` para guardar su conversación actual:
+Utilizá `/chat save` para guardar su conversación actual:
   /guardar chat ~/mi-sesión.json
 Las conversaciones guardadas se pueden cargar más tarde con /chat load.
 ```
@@ -777,7 +777,7 @@ Los avisos permiten crear, organizar y reutilizar instrucciones personalizadas p
 
 | Tipo | Descripción |
 |---|---|
-| **Mensajes locales** | Avisos específicos del proyecto, almacenados en el espacio de trabajo |
+| **Mensajes locales** | Avisos específicos del proyecto, almacenados en el Workspace |
 | **Mensajes globales** | Avisos disponibles en todos los proyectos |
 | **Mensajes de MCP** | Avisos provistos por servidores MCP con funcionalidad extendida |
 
@@ -799,7 +799,7 @@ Muestra todos los mensajes disponibles en diseño de 3 columnas: nombre, descrip
 ```
 - Si `--content` está provisto: crea el aviso con ese contenido
 - Si no hay contenido: abre el editor por defecto
-- Se guarda en `.kiro/prompts/` del espacio de trabajo actual
+- Se guarda en `.kiro/prompts/` del Workspace actual
 - Nombre máximo: 50 caracteres
 
 #### Editar mensajes
@@ -855,7 +855,7 @@ También podés usar `@` para referenciar archivos y directorios:
 
 | Alcance | Ubicación | Prioridad |
 |---|---|---|
-| **Local (espacio de trabajo)** | `proyecto/.kiro/prompts/` | ⬆️Más alta |
+| **Local (Workspace)** | `proyecto/.kiro/prompts/` | ⬆️Más alta |
 | **Global (todo el usuario)** | `~/.kiro/prompts/` | Medios |
 | **MCP** | Información sobre el servidor MCP | ⬇️Más baja |
 
@@ -1073,7 +1073,7 @@ Current context window (5.9% used)
 
 ### Eliminando contexto
 
-Utilice `/context remove <ruta>` para eliminar archivos específicos del contexto de la sesión actual.
+Utilizá `/context remove <ruta>` para eliminar archivos específicos del contexto de la sesión actual.
 
 ---
 
@@ -1322,7 +1322,7 @@ Ver [Herramientas de diferenciación personalizadas →](./14_Custom%20diff%20to
 
 - Usá `@` para referenciar archivos específicos: `> Revise @src/main.rs para detectar problemas antes de confirmar`
 - Combiná con Hooks para automatizar acciones en eventos Git (pre-commit, post-merge)
-- Usá el Plan Agent (`/plan`) para planificar características antes de cometer cambios
+- Usá el Plan Agent (`/plan`) para planificar características antes de hacer commit cambios
 - El agente puede leer la salida de `git status`, `git diff`, `git log` directamente desde el terminal integrado
 
 ---
@@ -1400,7 +1400,7 @@ Pegue una imagen del portapapeles de su sistema:
 | **Máximo de imágenes por solicitud** | 10 |
 
 **Mejores prácticas:**
-- Utilice imágenes de alta resolución con texto claro
+- Utilizá imágenes de alta resolución con texto claro
 - Proporciona instrucciones específicas sobre lo que quieres que haga Kiro.
 - Para diagramas complejos, proporcione contexto adicional
 
@@ -1609,7 +1609,7 @@ Muestran diferencias directamente en la terminal — mantienen el flujo de traba
 
 ### Herramientas GUI
 
-Abra una ventana separada para revisar cambios:
+Abrí una ventana separada para revisar cambios:
 
 | Herramienta | comando |
 |---|---|
@@ -1722,7 +1722,7 @@ kiro-cli agent create backend-specialist
 
 | Valor | Ubicación |
 |---|---|
-| `espacio de trabajo` | `.kiro/agents/` (proyecto actual) |
+| `Workspace` | `.kiro/agents/` (proyecto actual) |
 | `global` | `~/.kiro/agents/` (todos los proyectos) |
 | `./ruta` o `/ruta` | Ruta personalizada |
 
@@ -1802,7 +1802,7 @@ Los agentes personalizados le permiten crear e implementar agentes de IA especia
 
 ### Beneficios de utilizar agentes personalizados
 
-1. **Optimización del flujo de trabajo**: cree agentes adaptados a tareas específicas como administración de infraestructura de AWS, revisiones de código o sesiones de depuración.
+1. **Optimización del flujo de trabajo**: cree agentes adaptados a tareas específicas como administración de infraestructura de AWS, revisiones de código o sesiones de Debug.
 2. **Reducción de interrupciones**: apruebe previamente herramientas confiables para eliminar las solicitudes de permiso durante las sesiones de trabajo enfocadas.
 3. **Contexto mejorado**: incluya automáticamente documentación relevante del proyecto, archivos de configuración o información del sistema.
 4. **Colaboración en equipo**: comparta configuraciones de agentes personalizadas con los miembros del equipo para garantizar entornos de desarrollo consistentes.
@@ -1814,7 +1814,7 @@ Los agentes personalizados le permiten crear e implementar agentes de IA especia
 
 Los agentes personalizados trabajan tanto con herramientas integradas como con herramientas externas proporcionadas a través del Protocolo de contexto modelo (MCP):
 
-- **Utilice herramientas integradas**: operaciones de archivos, ejecución de comandos, integración de AWS CLI y otras funciones principales
+- **Utilizá herramientas integradas**: operaciones de archivos, ejecución de comandos, integración de AWS CLI y otras funciones principales
 - **Integrar servidores MCP**: agregue herramientas y servicios personalizados a través de configuraciones de servidor MCP
 - **Control de acceso a herramientas**: especifique exactamente qué herramientas de cada fuente están disponibles
 - **Administrar conflictos de herramientas**: use alias para manejar conflictos de nombres entre diferentes fuentes de herramientas
@@ -1991,7 +1991,7 @@ Mensaje que se muestra al activar el agente.
 
 | Alcance | Ubicación | Prioridad |
 |---|---|---|
-| **Local (espacio de trabajo)** | `.kiro/agents/<nombre>.json` | ⬆️Más alta |
+| **Local (Workspace)** | `.kiro/agents/<nombre>.json` | ⬆️Más alta |
 | **Global (todo el usuario)** | `~/.kiro/agents/<nombre>.json` | Más baja |
 
 ---
@@ -2173,7 +2173,7 @@ Para un agente específico de proyecto, guárdelo en `.kiro/agents/`:
 
 ### Consejos para crear agentes personalizados eficaces
 
-1. **Defina el alcance claramente** — Utilice `tools` y `allowedTools` para limitar exactamente qué puede hacer el agente
+1. **Defina el alcance claramente** — Utilizá `tools` y `allowedTools` para limitar exactamente qué puede hacer el agente
 2. **Aprovechá los recursos** — Incluí documentación relevante del proyecto en `resources`
 3. **Usá hooks para automatización** — `postToolUse` es ideal para formatear código automáticamente
 4. **Comenzá simple** — Creá un agente básico y ampliará sus capacidades según sea necesario
@@ -2232,7 +2232,7 @@ Para un agente específico de proyecto, guárdelo en `.kiro/agents/`:
 **Soluciones:**
 - Verifique la ubicación del archivo:
   - Global: `~/.kiro/agents/<nombre>.json`
-  - Espacio de trabajo: `.kiro/agents/<nombre>.json`
+  - Workspace: `.kiro/agents/<nombre>.json`
 - Verifica permisos de lectura del archivo
 - Asegurate de que el nombre del archivo coincida con el nombre que intentas usar
 - El archivo debe tener extensión `.json`
@@ -2277,7 +2277,7 @@ Para un agente específico de proyecto, guárdelo en `.kiro/agents/`:
 
 ---
 
-### Comportamiento del agente de depuración
+### Comportamiento del agente de Debug
 
 #### Lista de verificación de pruebas
 
@@ -2338,7 +2338,7 @@ kiro-cli mcp add \
 #### 2. Archivo mcp.json
 
 Los servidores MCP se pueden cargar desde:
-- Nivel de espacio de trabajo: `<raíz del proyecto>/.kiro/settings/mcp.json`
+- Nivel de Workspace: `<raíz del proyecto>/.kiro/settings/mcp.json`
 - Nivel de usuario: `~/.kiro/settings/mcp.json`
 
 ```json
@@ -2389,7 +2389,7 @@ El campo `mcpServers` especifica a qué servidores MCP tiene acceso un agente pe
 }
 ```
 
-> `includeMcpJson: true` le da al agente acceso a todos los servidores MCP definidos en las configuraciones a nivel de usuario y espacio de trabajo, además de aquellos en el campo `mcpServers` del agente.
+> `includeMcpJson: true` le da al agente acceso a todos los servidores MCP definidos en las configuraciones a nivel de usuario y Workspace, además de aquellos en el campo `mcpServers` del agente.
 
 ---
 
@@ -2520,7 +2520,7 @@ Alcances de token requeridos: `repo`, `user`.
 4. Empaquetá y distribuiré tu servidor
 
 **Recursos:**
-- [Especificación del protocolo MCP] (https://modelcontextprotocol.io/specification/2025-06-18)
+- [spec del protocolo MCP] (https://modelcontextprotocol.io/specification/2025-06-18)
 - [Documentación oficial de MCP] (https://modelcontextprotocol.io/introduction)
 
 ---
@@ -2658,7 +2658,7 @@ def my_tool(consulta: str) -> str:
     return f"Resultado de: {consulta}"
 ```
 
-Ver la [especificación del protocolo MCP](https://modelcontextprotocol.io/specification/2025-06-18) para detalles.
+Ver la [spec del protocolo MCP](https://modelcontextprotocol.io/specification/2025-06-18) para detalles.
 
 ---
 
@@ -2755,7 +2755,7 @@ kiro-cli mcp agregar mi-servidor --env MCP_API_KEY --env DATABASE_URL
 
 ### Mejores prácticas de configuración
 
-#### Utilice nombres descriptivos
+#### Utilizá nombres descriptivos
 
 ```json
 {
@@ -2886,15 +2886,15 @@ Los archivos de Steering son documentos Markdown almacenados en `.kiro/steering/
 
 ### Alcance del archivo de Steering
 
-#### Steering del espacio de trabajo
+#### Steering del Workspace
 
-Reside en `.kiro/steering/` en la raíz de tu espacio de trabajo. Aplicar solo a ese espacio de trabajo específico.
+Reside en `.kiro/steering/` en la raíz de tu Workspace. Aplicar solo a ese Workspace específico.
 
 #### Steering global
 
-Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los espacios de trabajo.
+Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los Workspaces.
 
-> **Nota:** En caso de instrucciones contradictorias, **el Steering del espacio de trabajo tiene prioridad** sobre el Steering global.
+> **Nota:** En caso de instrucciones contradictorias, **el Steering del Workspace tiene prioridad** sobre el Steering global.
 
 #### Steering del equipo
 
@@ -2904,12 +2904,12 @@ Los archivos de Steering globales se pueden distribuir a equipos completos a tra
 
 ### Archivos de Steering fundamentales
 
-Cree archivos de Steering fundamentales en `.kiro/steering/` (espacio de trabajo) o `~/.kiro/steering` (global):
+Cree archivos de Steering fundamentales en `.kiro/steering/` (Workspace) o `~/.kiro/steering` (global):
 
 | Archivo | Propósito |
 |---|---|
 | `producto.md` | Propósito del producto, usuarios objetivo, características clave y objetivos comerciales |
-| `tecnología.md` | Marcos, bibliotecas, herramientas de desarrollo y limitaciones técnicas |
+| `tecnología.md` | frameworks, bibliotecas, herramientas de desarrollo y limitaciones técnicas |
 | `estructura.md` | Organización de archivos, convenciones de nomenclatura, patrones de importación y decisiones arquitectónicas |
 
 Estos archivos básicos se incluyen en cada interacción de forma predeterminada.
@@ -2940,14 +2940,14 @@ Este patrón global garantiza que todos los archivos Markdown en su directorio d
 
 ### Agentes.md
 
-Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGENTS.md` a `~/.kiro/steering/` o a la carpeta raíz de su espacio de trabajo; **siempre se incluyen** automáticamente.
+Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGENTS.md` a `~/.kiro/steering/` o a la carpeta raíz de su Workspace; **siempre se incluyen** automáticamente.
 
 ---
 
 ### Mejores prácticas
 
 - **Mantenga los archivos enfocados**: un dominio por archivo
-- **Utilice nombres claros**: `api-rest-conventions.md`, `testing-unit-patterns.md`
+- **Utilizá nombres claros**: `api-rest-conventions.md`, `testing-unit-patterns.md`
 - **Incluir contexto**: explique *por qué* se tomaron las decisiones
 - **Proporcione ejemplos**: use fragmentos de código y comparaciones antes/después
 - **La seguridad es lo primero**: nunca incluya claves API ni datos confidenciales
@@ -3005,10 +3005,10 @@ Las skills pueden almacenarse en dos lugares:
 
 | Ubicación | Alcance |
 |---|---|
-| `.kiro/skills/` | **Espacio de trabajo** — Solo para ese proyecto |
-| `~/.kiro/skills/` | **Global** — Disponible en todos los espacios de trabajo |
+| `.kiro/skills/` | **Workspace** — Solo para ese proyecto |
+| `~/.kiro/skills/` | **Global** — Disponible en todos los Workspaces |
 
-Cuando las skills comparten el mismo nombre, **las skills del espacio de trabajo tienen prioridad** sobre los globales.
+Cuando las skills comparten el mismo nombre, **las skills del Workspace tienen prioridad** sobre los globales.
 
 #### Agente predeterminado
 
@@ -3108,7 +3108,7 @@ Descripción: Implemente pilas de AWS CDK con las mejores prácticas. Úselo al 
 
 ### Flujo de trabajo de implementación
 1. Ejecute `cdk synth` para validar las plantillas antes de implementarlas.
-2. Utilice `cdk diff` para obtener una vista previa de lo que cambiará
+2. Utilizá `cdk diff` para obtener una vista previa de lo que cambiará
 3. Ejecute `cdk implementar` y revise los cambios de IAM
 
 ### Comprobaciones previas al despliegue
@@ -3138,7 +3138,7 @@ Seguiré el flujo de trabajo de implementación. Primero, déjame sintetizar las
   - ✅ `Revisar las pull requests para detectar vulnerabilidades de seguridad. Úselo al revisar las Pull Requests.`
   - ❌ `Ayuda con la revisión del código`
 - **SKILL.md accionable** — Poné el material de referencia detallado en `references/`
-- **Elegí el alcance correcto** — Skills globales para flujos de trabajo personales; espacio de trabajo para procedimientos de equipo
+- **Elegí el alcance correcto** — Skills globales para flujos de trabajo personales; Workspace para procedimientos de equipo
 - **Versión de control** — Commitá `.kiro/skills/` a tu repositorio para que todo el equipo comparta los flujos de trabajo
 
 ---
@@ -3169,9 +3169,9 @@ Los enlaces se definen en el archivo de configuración del agente. Consulte la [
 
 ---
 
-### Evento de gancho
+### Evento de hook
 
-Los hooks reciben un evento de gancho en **formato JSON a través de STDIN**:
+Los hooks reciben un evento de hook en **formato JSON a través de STDIN**:
 
 ```json
 { "hook_event_name": "agentSpawn", "cwd": "/current/working/directory" }
@@ -3184,19 +3184,19 @@ Para los hooks relacionados con herramientas, se incluyen campos adicionales:
 
 ---
 
-### Salida de gancho
+### Salida de hook
 
 | Código de salida | Comportamiento |
 |---|---|
 | `0` | Hook tuvo éxito. STDOUT se captura pero no se muestra al usuario. |
 | `2` | *(Solo PreToolUse)* Bloquear la ejecución de la herramienta. STDERR se devuelve al LLM. |
-| Otro | El gancho falló. STDERR se muestra como una advertencia para el usuario. |
+| Otro | El hook falló. STDERR se muestra como una advertencia para el usuario. |
 
 ---
 
 ### Coincidencia de herramientas
 
-Utilice el campo `matcher` para especificar a qué herramientas se aplica el gancho:
+Utilizá el campo `matcher` para especificar a qué herramientas se aplica el hook:
 
 | Emparejador | Partidos |
 |---|---|
@@ -3212,7 +3212,7 @@ Utilice el campo `matcher` para especificar a qué herramientas se aplica el gan
 
 ---
 
-### Tipos de gancho
+### Tipos de hook
 
 #### AgenteSpawn
 
@@ -3344,7 +3344,7 @@ Ejecute Kiro como agente ACP:
 kiro-cli acp
 ```
 
-Utilice una configuración de agente específica:
+Utilizá una configuración de agente específica:
 ```golpecito
 kiro-cli acp --agente mi-agente
 ```
@@ -3357,7 +3357,7 @@ El agente se comunica a través de **stdin/stdout** usando **JSON-RPC 2.0**. Con
 
 #### General
 
-Utilice la **ruta completa** a `kiro-cli` en la configuración de su editor. Los IDE a menudo no heredan la RUTA de su shell, por lo que es posible que no se encuentren comandos como `kiro-cli`.
+Utilizá la **ruta completa** a `kiro-cli` en la configuración de su editor. Los IDE a menudo no heredan la RUTA de su shell, por lo que es posible que no se encuentren comandos como `kiro-cli`.
 
 Encuentra el camino:
 ```golpecito
@@ -3381,7 +3381,7 @@ Cualquier editor que admita el protocolo ACP puede utilizar Kiro CLI. Consulte l
 
 ### Métodos ACP admitidos
 
-Kiro CLI implementa la especificación ACP que incluye:
+Kiro CLI implementa la spec ACP que incluye:
 - **Protocolo central**: gestión de sesiones, selección de modelos y transmisión de respuestas
 - **Capacidades del agente**: acceso a herramientas, gestión de contexto y estado de conversación
 - **Actualizaciones de sesiones**: transmisión en tiempo real de las respuestas de los agentes
@@ -3390,7 +3390,7 @@ Kiro CLI implementa la especificación ACP que incluye:
 
 ### Extensiones Kiro
 
-Kiro extiende ACP con métodos personalizados (con el prefijo `_kiro.dev/` según la especificación de ACP) para exponer características específicas de Kiro:
+Kiro extiende ACP con métodos personalizados (con el prefijo `_kiro.dev/` según la spec de ACP) para exponer características específicas de Kiro:
 
 - [Comandos de barra diagonal] (https://kiro.dev/docs/cli/reference/slash-commands)
 - [eventos del servidor MCP] (https://kiro.dev/docs/cli/mcp)
@@ -3408,7 +3408,7 @@ Las sesiones se almacenan localmente y se pueden reanudar. El ID de sesión se i
 
 ### Registro
 
-Utilice el indicador `--log-level` para controlar la detalle del registro cuando se ejecuta en modo ACP. Los registros se escriben en stderr para evitar interferir con la comunicación JSON-RPC en stdout.
+Utilizá el indicador `--log-level` para controlar la detalle del registro cuando se ejecuta en modo ACP. Los registros se escriben en stderr para evitar interferir con la comunicación JSON-RPC en stdout.
 
 ---
 
@@ -3432,7 +3432,7 @@ El menú desplegable de autocompletar aparece a la **derecha del cursor** al esc
 
 - Comience a escribir un comando
 - El menú desplegable aparece automáticamente con sugerencias.
-- Utilice **teclas de flecha** para navegar
+- Utilizá **teclas de flecha** para navegar
 - Presione **Tab** o **Enter** para aceptar una sugerencia.
 
 #### Configuración
@@ -3680,7 +3680,7 @@ configuración de kiro-cli chat.enableTodoList verdadero
 Kiro crea automáticamente:
 ☐ 1. Configurar la estructura y las dependencias del proyecto.
 ☐ 2. Implementar la autenticación de usuario (JWT)
-☐ 3. Crear puntos finales del catálogo de productos
+☐ 3. Crear endpoints del catálogo de productos
 ☐ 4. Construir un sistema de gestión de pedidos
 ☐ 5. Agregar pruebas unitarias
 
@@ -3722,7 +3722,7 @@ configuración de kiro-cli chat.enablePensando verdadero
 
 - Proceso de toma de decisiones transparente
 - Visualización del razonamiento paso a paso
-- Útil para depuración y aprendizaje
+- Útil para Debug y aprendizaje
 - Mejor comprensión de las conclusiones del agente
 
 ---
@@ -3749,7 +3749,7 @@ Al observar su código, es probable que el problema esté en el middleware...
 
 ### Casos de uso
 
-- **Complejo de depuración** — Ver cómo el agente analiza el problema
+- **Complejo de Debug** — Ver cómo el agente analiza el problema
 - **Aprendizaje** — Entender el razonamiento detrás de las decisiones
 - **Validación** — Verificar que el agente está considerando los factores correctos
 - **Arquitectura** — Evaluar trade-offs en decisiones de diseño
@@ -3876,7 +3876,7 @@ configuración de kiro-cli chat.enableDelegate verdadero
 
 ```
 ## Lanzar una tarea en segundo plano con lenguaje natural
-> ¿Puedes crear una tarea en segundo plano para analizar el rendimiento de nuestros puntos finales API?
+> ¿Puedes crear una tarea en segundo plano para analizar el rendimiento de nuestros endpoints API?
 
 ## El agente pide aprobación, luego ejecuta en segundo plano
 ✔ Lanzamiento de tarea en segundo plano: Análisis de rendimiento de API
@@ -4032,7 +4032,7 @@ Bash, C, C++, C#, Elixir, Go, Java, JavaScript, Kotlin, Lua, PHP, Python, Ruby, 
 
 ### Descripción general de la base de código
 
-Obtenga una descripción completa de cualquier espacio de trabajo en segundos:
+Obtenga una descripción completa de cualquier Workspace en segundos:
 
 ```bash
 /code overview
@@ -4043,7 +4043,7 @@ Centrarse en un directorio específico:
 /descripción general del código ./src/components
 ```
 
-Utilice `--silent` para obtener resultados más limpios cuando profundice en un paquete:
+Utilizá `--silent` para obtener resultados más limpios cuando profundice en un paquete:
 ```golpecito
 / descripción general del código --silencioso
 ```
@@ -4073,7 +4073,7 @@ Búsqueda y transformación de código estructural basada en AST. Busque y modif
 
 #### Metavariables
 
-Utilice metavariables (por ejemplo, `$FUNC`, `$ARG`) en patrones para que coincidan con cualquier expresión de ese tipo.
+Utilizá metavariables (por ejemplo, `$FUNC`, `$ARG`) en patrones para que coincidan con cualquier expresión de ese tipo.
 
 #### Ejemplos de búsqueda de patrones
 
@@ -4095,7 +4095,7 @@ Utilice metavariables (por ejemplo, `$FUNC`, `$ARG`) en patrones para que coinci
 
 Las funciones integradas de cuidado de árboles funcionan desde el primer momento. Ejecute `/code init` solo si desea funciones LSP mejoradas.
 
-> La inteligencia del código se configura por espacio de trabajo: cada proyecto mantiene su propia configuración de LSP de forma independiente.
+> La inteligencia del código se configura por Workspace: cada proyecto mantiene su propia configuración de LSP de forma independiente.
 
 ```bash
 /code init
@@ -4118,7 +4118,7 @@ Las funciones integradas de cuidado de árboles funcionan desde el primer moment
 
 | Comando | Descripción |
 |---|---|
-| `/ código de inicio` | Inicializar LSP para el espacio de trabajo actual |
+| `/ código de inicio` | Inicializar LSP para el Workspace actual |
 | `/ código de inicio -f` | Forzar reinicializar LSP |
 | `/estado del código` | Mostrar el estado actual de la conexión LSP |
 | `/ registros de código` | Ver registros de diagnóstico de LSP |
@@ -4607,7 +4607,7 @@ Esta guía está dirigida a **administradores** que desean incorporar su equipo 
 
 Si no tienes una, [creá una cuenta AWS](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html).
 
-#### Paso 2 — Iniciar sesión en AWS
+#### Paso 2 — Sign in en AWS
 
 Podés iniciar como:
 - Usuario raíz de AWS
@@ -4729,9 +4729,9 @@ Una vez que tu proveedor de identidad esté conectado y tu perfil de Kiro esté 
 
 ### Usuarios suscritos
 
-1. Iniciar sesión en **AWS Management Console**
+1. Sign in en **AWS Management Console**
 2. Navegar a la **Kiro Console** (si no la ves, verifica que estás en la región AWS correcta)
-3. Vaya a **Usuarios y grupos → pestaña Usuarios**
+3. Navegá a **Usuarios y grupos → pestaña Usuarios**
 4. Seleccionar el usuario a suscribir
 5. Elegir el plan de suscripción
 6. Confirmar
@@ -4777,9 +4777,9 @@ Los estados se visualizan en la página **Suscripciones** de la Kiro Console (so
 
 ### Cambiar los planes de suscripción de Kiro
 
-1. Iniciar sesión en **AWS Management Console**
+1. Sign in en **AWS Management Console**
 2. Navegar a la **Kiro Console** (si no la ves, verificará la región de AWS)
-3. Vaya a **Usuarios y Grupos → pestaña Usuarios o Grupos**
+3. Navegá a **Usuarios y Grupos → pestaña Usuarios o Grupos**
 4. Seleccionar el usuario o grupo
 5. Elegir **Cambiar plan** → seleccionar el nuevo plan → **Continuar**
 
@@ -4793,9 +4793,9 @@ Ver [Facturación empresarial →](./09_Billing.md) para detalles sobre qué inc
 
 ### Darse de baja de usuarios de Kiro
 
-1. Iniciar sesión en **AWS Management Console**
+1. Sign in en **AWS Management Console**
 2. Navegar a la **Consola Kiro**
-3. Vaya a **Usuarios y Grupos → pestaña Usuarios o Grupos**
+3. Navegá a **Usuarios y Grupos → pestaña Usuarios o Grupos**
 4. Seleccionar el usuario o grupo a cancelar
 5. Elegir **Desactivar plan** → revisar el diálogo → **Cancelar suscripción**
 
@@ -4822,9 +4822,9 @@ El excedente permite a los usuarios continuar trabajando cuando superan los lím
 **Por defecto, el exceso está deshabilitado.** Una vez habilitado, aplica a **todos los usuarios y grupos del perfil**.
 
 Para habilitar:
-1. Iniciar sesión en **AWS Management Console**
+1. Sign in en **AWS Management Console**
 2. Navegar a la **Consola Kiro**
-3. Vaya a **Configuración**
+3. Navegá a **Configuración**
 4. En la sección **Configuración de Kiro**, activa **Excedentes**
 
 > Los tapones personalizados de excedente no están disponibles aún (próximamente).
@@ -4885,7 +4885,7 @@ Para más detalles, ver [Herramientas MCP →](https://kiro.dev/docs/cli/enterpr
 ### Cómo configurar
 
 1. Abrir la **Consola Kiro** en AWS
-2. Vaya a **Configuración → Configuración compartida**
+2. Navegá a **Configuración → Configuración compartida**
 3. Configurar las opciones de Model Governance o MCP Governance
 
 ---
@@ -4926,7 +4926,7 @@ Visualice el uso de Kiro a nivel de organización desde la **Kiro Console**:
 - Distribución de uso por nivel
 
 **Cómo acceder:**
-1. Iniciar sesión en la **AWS Management Console**
+1. Sign in en la **AWS Management Console**
 2. Navegar a la **Consola Kiro**
 3. Ver la sección de **Uso/Panel**
 
@@ -4946,7 +4946,7 @@ Los administradores pueden habilitar el registro de mensajes de los usuarios par
 
 **Para habilitar:**
 1. Abrir la **Consola Kiro**
-2. Vaya a **Configuración**
+2. Navegá a **Configuración**
 3. Activar **Registro rápido**
 
 Ver [Registrar mensajes de usuario →](https://kiro.dev/docs/cli/enterprise/monitor-and-track/prompt-logging)
@@ -4958,7 +4958,7 @@ Ver [Registrar mensajes de usuario →](https://kiro.dev/docs/cli/enterprise/mon
 Los administradores pueden deshabilitar las herramientas web (`web_search` y `web_fetch`) para todos los usuarios:
 
 1. Abrir la **Consola Kiro**
-2. Vaya a **Configuración → Configuración compartida**
+2. Navegá a **Configuración → Configuración compartida**
 3. Desactivar **Herramientas de búsqueda y recuperación web**
 
 Cuando están deshabilitados, los usuarios ven una notificación en `/tools` indicando que el administrador deshabilitó el acceso web.
@@ -4978,7 +4978,7 @@ Cuando están deshabilitados, los usuarios ven una notificación en `/tools` ind
 
 *📂 Capítulo: **Enterprise > Settings***
 
-## Ajustes
+## Settings
 
 > **Fuente:** [kiro.dev/docs/cli/enterprise/settings/](https://kiro.dev/docs/cli/enterprise/settings/)
 
@@ -5006,9 +5006,9 @@ Un administrador puede controlar las siguientes configuraciones dentro de un **p
 
 ### Cómo acceder a la configuración
 
-1. Iniciar sesión en la **AWS Management Console**
+1. Sign in en la **AWS Management Console**
 2. Navegar a la **Consola Kiro**
-3. Vaya a **Configuración**
+3. Navegá a **Configuración**
 4. Configurar las opciones disponibles
 
 ---
@@ -5019,7 +5019,7 @@ La configuración **Herramientas web** controla si los usuarios pueden usar `web
 
 **Para deshabilitar herramientas web:**
 1. Abrir la **Consola Kiro**
-2. Vaya a **Configuración → Configuración compartida**
+2. Navegá a **Configuración → Configuración compartida**
 3. Desactivar **Herramientas de búsqueda y recuperación web**
 
 Cuando están deshabilitados, los usuarios ven una notificación en `/tools` indicando que el administrador deshabilitó el acceso web.
@@ -5028,7 +5028,7 @@ Cuando están deshabilitados, los usuarios ven una notificación en `/tools` ind
 
 ### Alcance de la configuración
 
-Los ajustes pueden configurarse a diferentes niveles:
+Los Settings pueden configurarse a diferentes niveles:
 
 | Nivel | Descripción |
 |---|---|
@@ -5153,9 +5153,9 @@ Para que los administradores puedan configurar Kiro y suscribir usuarios **sin p
 
 ---
 
-### Iniciar sesión
+### Sign in
 
-Podés iniciar sesión en la consola AWS como:
+Podés Sign in en la consola AWS como:
 - **Usuario root de AWS** (no recomendado para uso cotidiano)
 - **Usuario con rol privilegiado** (recomendado)
 - **Usuario con permisos mínimos** según la política de arriba
@@ -5247,7 +5247,7 @@ kiro-cli diagnostic --format json-pretty   # Output estructurado
 kiro-cli diagnostic --force                # Sin requerir que la app esté corriendo
 ```
 
-#### Registros de depuración
+#### Registros de Debug
 
 ```bash
 kiro-cli --verbose chat "..."    # -v / -vv / -vvv para más detalle
@@ -5544,7 +5544,7 @@ kiro-cli settings telemetry.enabled false
 
 #### Optar por no participar en el IDE
 
-Vaya a **Configuración → Privacidad** y desmarcar las opciones de uso de datos.
+Navegá a **Configuración → Privacidad** y desmarcar las opciones de uso de datos.
 
 ---
 
@@ -5661,7 +5661,7 @@ AWS mantiene seguridad física de nivel militar en sus centros de datos:
 | **Aislamiento de red** | VPC con subredes privadas |
 | **Filtrado de tráfico** | Grupos de Seguridad y ACL de Red |
 | **Cifrado TLS** | Todo el tráfico cifrado en tránsito |
-| **Puntos finales de VPC** | Comunicación privada sin salir a Internet público |
+| **endpoints de VPC** | Comunicación privada sin salir a Internet público |
 
 ---
 
@@ -5808,7 +5808,7 @@ Si tu organización utiliza firewalls, proxies corporativos o perímetros de dat
 
 ---
 
-### Puntos finales requeridos
+### endpoints requeridos
 
 Permitir el acceso a los siguientes dominios:
 
@@ -5856,7 +5856,7 @@ exportar NODE_EXTRA_CA_CERTS=/ruta/a/corporate-ca.pem
 
 Para organizaciones que requieren que todo el tráfico permanezca dentro de la red de AWS, Kiro soporta **VPC Endpoints (AWS PrivateLink)**.
 
-Consulte [Puntos finales de VPC →](./06_Puntos finales de VPC (AWS PrivateLink).md) para configurar detalladamente.
+Consulte [endpoints de VPC →](./06_Puntos finales de VPC (AWS PrivateLink).md) para configurar detalladamente.
 
 ---
 
@@ -5919,7 +5919,7 @@ ALLOW TCP 443 -> *.awsapps.com     # Solo Enterprise
 
 ### Pasos de configuración
 
-#### 1. Cree el punto final de la VPC
+#### 1. Cree el endpoint de la VPC
 
 ```bash
 aws ec2 create-vpc-endpoint \
@@ -5957,7 +5957,7 @@ Outbound: TCP 443 to Kiro service
 ## Verificar que el tráfico va por el endpoint privado
 kiro-cli doctor --todos
 
-## Ver el punto final configurado
+## Ver el endpoint configurado
 aws ec2 describe-vpc-endpoints --filters "Nombre=nombre-servicio,Valores=*kiro*"
 ```
 
@@ -5975,7 +5975,7 @@ aws ec2 describe-vpc-endpoints --filters "Nombre=nombre-servicio,Valores=*kiro*"
 
 ### Notas de administración empresarial
 
-Los administradores Enterprise pueden forzar el uso de puntos finales de VPC para todos los usuarios de su organización desde la **Kiro Console → Configuración**.
+Los administradores Enterprise pueden forzar el uso de endpoints de VPC para todos los usuarios de su organización desde la **Kiro Console → Configuración**.
 
 ---
 
@@ -6021,7 +6021,7 @@ kiro-cli chat [OPTIONS] [INPUT]
 
 | Argumento | Descripción |
 |---|---|
-| `--no-interactivo` | Modo no interactivo (para guiones/CI) |
+| `--no-interactivo` | Modo no interactivo (para scripts/CI) |
 | `--resume` / `-r` | Continuar última sesión |
 | `--resume-selector` | Selector para elegir sesión y reanudar |
 | `--lista-sesiones` | Listar sesiones guardadas |
@@ -6088,15 +6088,15 @@ Gestionar servidores MCP.
 
 | Subcomando | Descripción |
 |---|---|
-| `mcp add --name <n> --command <cmd> --scope <espacio de trabajo\|global>` | Agregar servidor |
+| `mcp add --name <n> --command <cmd> --scope <Workspace\|global>` | Agregar servidor |
 | `mcp eliminar --nombre <n> --scope <alcance>` | Eliminar servidor |
-| `lista mcp [espacio de trabajo\|global]` | Listar servidores |
+| `lista mcp [Workspace\|global]` | Listar servidores |
 | `mcp import --file <archivo> <alcance>` | Importar configuración |
 | `estado de mcp --nombre <n>` | Estado de un servidor |
 
 ---
 
-#### `iniciar sesión en kiro-cli`
+#### `Sign in en kiro-cli`
 
 Autenticar con Kiro CLI.
 
@@ -6111,7 +6111,7 @@ kiro-cli login --use-device-flow                         # Forzar device flow
 
 #### `kiro-cli cerrar sesión`
 
-Cerrar sesión. **Termina la sesión en todos los espacios de trabajo** (preserva la configuración y conversaciones guardadas).
+Cerrar sesión. **Termina la sesión en todos los Workspaces** (preserva la configuración y conversaciones guardadas).
 
 ```bash
 kiro-cli logout
@@ -6265,7 +6265,7 @@ kiro-cli chat --delete-session <ID> # Eliminar sesión
 
 ### Archivos de registro
 
-Los registros se almacenan en `~/.kiro/logs/`. Uso de para depuración:
+Los registros se almacenan en `~/.kiro/logs/`. Uso de para Debug:
 ```golpecito
 kiro-cli --verbose chat "..." # -v, -vv, -vvv para más detalles
 ```
@@ -6723,13 +6723,13 @@ Si **cualquier** servidor MCP configurado falla al iniciar, el CLI termina inmed
 
 ---
 
-### Códigos de salida del gancho
+### Códigos de salida del hook
 
 Los [Hooks](../03_Chat/../08_Hooks/01_Overview.md) usan un conjunto separado de códigos de salida para controlar la ejecución de herramientas:
 
 | Código | Comportamiento en Hook |
 |---|---|
-| **0** | Gancho completado exitosamente, continuar |
+| **0** | hook completado exitosamente, continuar |
 | **≠ 0** | Hook falló — para hooks `preToolUse`, **bloquea** la ejecución de la herramienta |
 
 ---
@@ -6980,7 +6980,7 @@ configuración de kiro-cli abierta
 
 ### Archivo de configuración
 
-Los ajustes se almacenan en JSON en `~/.kiro/settings/cli.json`.
+Los Settings se almacenan en JSON en `~/.kiro/settings/cli.json`.
 
 > Se recomienda usar `kiro-cli settings` para hacer cambios — proporciona validación automática.
 
@@ -7038,13 +7038,13 @@ Al instalar Kiro CLI por primera vez, se ejecuta una **migración automática**:
 | Configuración | CLI de desarrollador Q | Kiro CLI |
 |---|---|---|
 | PCM (global) | `~/.aws/amazonq/mcp.json` | `~/.kiro/settings/mcp.json` |
-| MCP (espacio de trabajo) | `.amazonq/mcp.json` | `.kiro/settings/mcp.json` |
+| MCP (Workspace) | `.amazonq/mcp.json` | `.kiro/settings/mcp.json` |
 | Avisos (globales) | `~/.aws/amazonq/prompts/` | `~/.kiro/prompts/` |
-| Mensajes (espacio de trabajo) | `.amazonq/prompts/` | `.kiro/prompts/` |
+| Mensajes (Workspace) | `.amazonq/prompts/` | `.kiro/prompts/` |
 | Agentes (globales) | `~/.aws/amazonq/cli-agents/` | `~/.kiro/agents/` |
-| Agentes (espacio de trabajo) | `.amazonq/cli-agents/` | `.kiro/agentes/` |
+| Agentes (Workspace) | `.amazonq/cli-agents/` | `.kiro/agentes/` |
 | Steering/Reglas (global) | `~/.aws/amazonq/rules/` | `~/.kiro/steering/` |
-| Steering/Reglas (espacio de trabajo) | `.amazonq/rules/` | `.kiro/steering/` |
+| Steering/Reglas (Workspace) | `.amazonq/rules/` | `.kiro/steering/` |
 | Configuración | — | `~/.kiro/settings/cli.json` |
 
 ---
@@ -7058,7 +7058,7 @@ Al instalar Kiro CLI por primera vez, se ejecuta una **migración automática**:
 - El agente por defecto cambió a `kiro_default`. En `/agent list` aparece con "No se encontró ruta" porque la configuración está en memoria
 - La interfaz de usuario tiene colores y nombres actualizados.
 - El agente por defecto soporta tanto **Amazon Q Rules** como **Kiro Steering**
-- Si tu proyecto tiene ambas carpetas `.kiro` y `.amazonq`, la configuración se carga desde `.kiro` (verás una advertencia al iniciar sesión)
+- Si tu proyecto tiene ambas carpetas `.kiro` y `.amazonq`, la configuración se carga desde `.kiro` (verás una advertencia al Sign in)
 
 ---
 

@@ -47,7 +47,7 @@
 **Soluciones:**
 - Verifique la ubicación del archivo:
   - Global: `~/.kiro/agents/<nombre>.json`
-  - Espacio de trabajo: `.kiro/agents/<nombre>.json`
+  - Workspace: `.kiro/agents/<nombre>.json`
 - Verifica permisos de lectura del archivo
 - Asegurate de que el nombre del archivo coincida con el nombre que intentas usar
 - El archivo debe tener extensión `.json`
@@ -92,7 +92,7 @@
 
 ---
 
-## Comportamiento del agente de depuración
+## Comportamiento del agente de Debug
 
 ### Lista de verificación de pruebas
 

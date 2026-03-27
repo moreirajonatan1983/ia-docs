@@ -62,7 +62,7 @@ kiro-cli settings telemetry.enabled false
 
 ### Optar por no participar en el IDE
 
-Vaya a **Configuración → Privacidad** y desmarcar las opciones de uso de datos.
+Navegá a **Configuración → Privacidad** y desmarcar las opciones de uso de datos.
 
 ---
 

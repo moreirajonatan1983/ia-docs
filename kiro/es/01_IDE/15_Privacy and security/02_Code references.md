@@ -12,7 +12,7 @@ Las **referencias de código** son atribuciones que aparecen cuando el código g
 
 El registro de referencias de código muestra las sugerencias de código similar a código público.
 
-1. Abra la pestaña **Output** en la barra de estado
+1. Abrí la pestaña **Output** en la barra de estado
 2. Desde el menú desplegable, elija **code-references**
 
 > ℹ️ El log solo aparece cuando code references está habilitado y Kiro generó código con referencias.

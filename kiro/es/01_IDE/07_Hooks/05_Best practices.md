@@ -1,14 +1,14 @@
-# Mejores prácticas de gancho
+# Mejores prácticas de hook
 
 > **Fuente:** [kiro.dev/docs/hooks/best-practices/](https://kiro.dev/docs/hooks/best-practices/)
 
 ---
 
-## Diseño de gancho
+## Diseño de hook
 
 ### Sea específico y claro
 - Escribí instrucciones detalladas y sin ambigüedad para el agente
-- Enfocá cada gancho en **una sola tarea específica**
+- Enfocá cada hook en **una sola tarea específica**
 - Usa pasos numerados para operaciones complejas
 
 ### Pruebe a fondo
@@ -36,7 +36,7 @@
 - Considerará el impacto de los hooks en todo el código base.
 
 ### Revisar periódicamente
-- Actualizá la lógica del gancho a medida que el proyecto evoluciona
+- Actualizá la lógica del hook a medida que el proyecto evoluciona
 - Elimina los hooks que ya no sean necesarios
 - Refina los avisos basándote en los resultados reales
 
@@ -45,7 +45,7 @@
 ## Colaboración en equipo
 
 ### Hooks para documentos
-- Mantené documentación clara del propósito de cada gancho.
+- Mantené documentación clara del propósito de cada hook.
 - Incluye ejemplos del comportamiento esperado.
 - Documentación de limitaciones de casos extremos
 

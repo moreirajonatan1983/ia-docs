@@ -15,7 +15,7 @@ El costo es relativo al modelo **Auto (valor de referencia de 1.0x)**. Por ejemp
 | Modelo | Mejor para | Multiplicador de costos |
 |---|---|---|
 | **Auto** *(recomendado)* | Uso general, mejor relación calidad/coste | 1.0x |
-| **Claude Opus 4.6** | Programación agente compleja, depuración, bases de código gigantes | ~2.2x |
+| **Claude Opus 4.6** | Programación agente compleja, Debug, bases de código gigantes | ~2.2x |
 | **Claude Opus 4.5** | Razonamiento avanzado, desafíos sofisticados | ~2.2x |
 | **Claude Sonnet 4.6** | Flujos de iteración rápida, pipelines multimodelo | ~1.0x |
 | **Claude Sonnet 4.5** | Agentes complejos, uso autónomo extendido | ~1.0x |
@@ -36,7 +36,7 @@ Es el enrutador de modelos (model router) propio de Kiro. Combina múltiples mod
 
 ### Claude Opus 4.6
 
-Es el modelo más capaz de Anthropic en temas de programación agente de vanguardia. Obtiene puntajes máximos en benchmarks como Terminal-Bench 2.0 y SWE-bench Verified. Se mantiene totalmente productivo y enfocado durante sesiones larguísimas sin perder contexto, logrando manejar bases de código millonarias, planificando la arquitectura y adaptándose según vayas pidiendo. Posee capacidades superiores de depuración que lo ayudan a atrapar sus propios bugs y a pensar cuidadosamente en problemas muy complejos. [Más información →](https://www.anthropic.com/research/claude-opus-4-6)
+Es el modelo más capaz de Anthropic en temas de programación agente de vanguardia. Obtiene puntajes máximos en benchmarks como Terminal-Bench 2.0 y SWE-bench Verified. Se mantiene totalmente productivo y enfocado durante sesiones larguísimas sin perder contexto, logrando manejar bases de código millonarias, planificando la arquitectura y adaptándose según vayas pidiendo. Posee capacidades superiores de Debug que lo ayudan a atrapar sus propios bugs y a pensar cuidadosamente en problemas muy complejos. [Más información →](https://www.anthropic.com/research/claude-opus-4-6)
 
 ### Claude Opus 4.5
 

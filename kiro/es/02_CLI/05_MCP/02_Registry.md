@@ -103,5 +103,5 @@ Alcances de token requeridos: `repo`, `user`.
 4. Empaquetá y distribuiré tu servidor
 
 **Recursos:**
-- [Especificación del protocolo MCP] (https://modelcontextprotocol.io/specification/2025-06-18)
+- [spec del protocolo MCP] (https://modelcontextprotocol.io/specification/2025-06-18)
 - [Documentación oficial de MCP] (https://modelcontextprotocol.io/introduction)

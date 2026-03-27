@@ -61,7 +61,7 @@ Un poder es un paquete unificado que incluye:
 |---|---|
 | **Carga dinámica de herramientas MCP** | Los servidores MCP tradicionales cargan todas las herramientas por adelantado. Potencia las herramientas de carga bajo demanda, lo que reduce el uso del contexto básico y al mismo tiempo brinda a su agente acceso a docenas de tecnologías |
 | **Ecosistema abierto** | Explore Powers seleccionados de socios de lanzamiento, incluidos Datadog, Dynatrace, Figma, Neon, Netlify, Postman, Supabase, Stripe, Strands SDK y AWS Aurora. Instale Powers creados por la comunidad desde las URL de GitHub o cree y comparta los suyos propios |
-| **Instalación con un clic** | Explora Powers directamente en Kiro o en kiro.dev. Haga clic en "Instalar" y la energía se registrará automáticamente. Sin archivos de configuración JSON, sin configuración de línea de comandos |
+| **Instalación con un clic** | Explora Powers directamente en Kiro o en kiro.dev. Hacé clic en "Instalar" y la energía se registrará automáticamente. Sin archivos de configuración JSON, sin configuración de línea de comandos |
 
 ---
 
@@ -72,7 +72,7 @@ Un poder es un paquete unificado que incluye:
 | **Stripe** | Pagos, suscripciones, facturación |
 | **Supabase** | Base de datos PostgreSQL, autenticación, almacenamiento |
 | **Neon** | PostgreSQL sin servidor |
-| **Figma** | Tokens de diseño, especificaciones de componentes |
+| **Figma** | Tokens de diseño, Specs de componentes |
 | **AWS Aurora** | Base de datos relacional administrada |
 | **Netlify** | Implementación de frontend, funciones de borde |
 | **Postman** | Pruebas y documentación de API |

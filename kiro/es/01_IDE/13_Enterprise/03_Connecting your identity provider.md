@@ -22,7 +22,7 @@ Kiro soporta conectar su proveedor de identidad directamente o a través de AWS 
 
 Consultor [guía de IAM Identity Center →](https://kiro.dev/docs/enterprise/identity-provider/iam-identity-center)
 
-> **Recomendación:** Utilice AWS Organizations al configurar IAM Identity Center para habilitar una instancia de organización con gestión centralizada de identidades en múltiples cuentas AWS.
+> **Recomendación:** Utilizá AWS Organizations al configurar IAM Identity Center para habilitar una instancia de organización con gestión centralizada de identidades en múltiples cuentas AWS.
 > ⚠️ Las instancias de cuenta individual **no pueden** actualizarse a instancias de organización — requieren eliminación y recreación.
 
 ---

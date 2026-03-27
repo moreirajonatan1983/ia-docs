@@ -53,7 +53,7 @@ Restringí el acceso a tus archivos de configuración MCP:
 # Configuración a nivel de usuario
 chmod 600 ~/.kiro/settings/mcp.json
 
-# Configuración a nivel del espacio de trabajo
+# Configuración a nivel del Workspace
 chmod 600 .kiro/settings/mcp.json
 ```
 
@@ -91,14 +91,14 @@ Solo aprobará automáticamente las herramientas que:
 
 ---
 
-## Aislamiento del espacio de trabajo
+## Aislamiento del Workspace
 
-### Uso de configuraciones a nivel de espacio de trabajo
+### Uso de configuraciones a nivel de Workspace
 
-Para proyectos con diferentes requisitos de seguridad, use configuraciones a nivel de espacio de trabajo (`.kiro/settings/mcp.json`) en lugar de la configuración global del usuario:
+Para proyectos con diferentes requisitos de seguridad, use configuraciones a nivel de Workspace (`.kiro/settings/mcp.json`) en lugar de la configuración global del usuario:
 
 - Limitá los servidores MCP disponibles por proyecto
-- Configurará permisos específicos para el espacio de trabajo
+- Configurará permisos específicos para el Workspace
 - Evitará exponer servidores de producción en proyectos de desarrollo.
 
 ---
@@ -110,7 +110,7 @@ Para proyectos con diferentes requisitos de seguridad, use configuraciones a niv
 Revise periódicamente los registros MCP para monitorear la actividad del servidor:
 
 1. Abrí el panel de Kiro
-2. Seleccione la pestaña **Salida**
+2. Seleccioná la pestaña **Salida**
 3. Elegí **"Kiro - MCP Logs"** del menú desplegable
 
 ### Uso de la herramienta de auditoría

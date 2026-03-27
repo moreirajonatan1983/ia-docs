@@ -10,7 +10,7 @@
 
 ### Editor
 
-Es tu espacio de trabajo central, donde escribís y editás tu código. Sus funcionalidades incluyen:
+Es tu Workspace central, donde escribís y editás tu código. Sus funcionalidades incluyen:
 
 - Resaltado de sintaxis nativo para múltiples lenguajes.
 - Números de línea e indicadores visuales de error.
@@ -26,7 +26,7 @@ Podés utilizar el panel de chat para:
 
 - Hacer preguntas sobre tu base de código.
 - Pedir que te genere código nuevo o modifique el existente.
-- Obtener ayuda para debuggear (depuración) y resolver problemas.
+- Obtener ayuda para debuggear (Debug) y resolver problemas.
 - Solicitar revisiones de código y sugerencias avanzadas de optimización.
 - Incluir contexto a la fuerza utilizando los comandos con arroba `#` (por ejemplo, `#File`, `#Folder`).
 - Generar código *boilerplate* y templates de arranque.
@@ -44,7 +44,7 @@ La barra lateral de Kiro (activity bar) contiene varias vistas especializadas:
 | **Explorer** | Navegá por el árbol de archivos de tu proyecto, mirá los estados y colores de Git, y accedé velozmente a las secciones donde tenés guardados tus Specs y Servidores MCP. |
 | **Search** | Realizá búsquedas globales o reemplazos automáticos en todo tu proyecto. |
 | **Source Control** | Administrá tus tareas de Git: revisá los diffs, controlá tus ramas y prepará tus commits usando [mensajes de commit generados por IA](https://kiro.dev/docs/editor/source-control). |
-| **Run and Debug** | Inspeccioná variables, call stacks, y manipulá *breakpoints* paso a paso durante tus sesiones de depuración. |
+| **Run and Debug** | Inspeccioná variables, call stacks, y manipulá *breakpoints* paso a paso durante tus sesiones de Debug. |
 | **Extensions** | Instalá y administrá cualquier extensión de VS Code u otro entorno. |
 | **Kiro** | Una sección dedicada 100% al "cerebro": desde acá administrás Specs, Agent Hooks, el Steering principal del Agente y los Servidores MCP asociados. |
 
@@ -71,7 +71,7 @@ Podés usar tu Paleta de Comandos para:
 - Ejecutar comandos rutinarios y acciones comunes.
 - Llamar de frente a una herramienta MCP.
 - Modificar configuraciones ocultas.
-- Disparar *Agent Hooks* (ganchos automáticos).
+- Disparar *Agent Hooks* (hooks automáticos).
 
 ---
 

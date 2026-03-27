@@ -51,7 +51,7 @@ Consultará el estado de tus procesos en cualquier momento:
 Kiro puede:
 - Identificar errores de compilación y sugerir correcciones
 - Confirmar que los servidores se iniciaron correctamente
-- Depurar problemas analizando mensajes de error
+- debuggear problemas analizando mensajes de error
 - Monitorear el progreso de tareas largas
 
 ---

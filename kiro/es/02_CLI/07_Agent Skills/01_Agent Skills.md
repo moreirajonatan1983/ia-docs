@@ -34,10 +34,10 @@ Las skills pueden almacenarse en dos lugares:
 
 | Ubicación | Alcance |
 |---|---|
-| `.kiro/skills/` | **Espacio de trabajo** — Solo para ese proyecto |
-| `~/.kiro/skills/` | **Global** — Disponible en todos los espacios de trabajo |
+| `.kiro/skills/` | **Workspace** — Solo para ese proyecto |
+| `~/.kiro/skills/` | **Global** — Disponible en todos los Workspaces |
 
-Cuando las skills comparten el mismo nombre, **las skills del espacio de trabajo tienen prioridad** sobre los globales.
+Cuando las skills comparten el mismo nombre, **las skills del Workspace tienen prioridad** sobre los globales.
 
 ### Agente predeterminado
 
@@ -137,7 +137,7 @@ Descripción: Implemente pilas de AWS CDK con las mejores prácticas. Úselo al 
 
 ## Flujo de trabajo de implementación
 1. Ejecute `cdk synth` para validar las plantillas antes de implementarlas.
-2. Utilice `cdk diff` para obtener una vista previa de lo que cambiará
+2. Utilizá `cdk diff` para obtener una vista previa de lo que cambiará
 3. Ejecute `cdk implementar` y revise los cambios de IAM
 
 ## Comprobaciones previas al despliegue
@@ -167,7 +167,7 @@ Seguiré el flujo de trabajo de implementación. Primero, déjame sintetizar las
   - ✅ `Revisar las pull requests para detectar vulnerabilidades de seguridad. Úselo al revisar las Pull Requests.`
   - ❌ `Ayuda con la revisión del código`
 - **SKILL.md accionable** — Poné el material de referencia detallado en `references/`
-- **Elegí el alcance correcto** — Skills globales para flujos de trabajo personales; espacio de trabajo para procedimientos de equipo
+- **Elegí el alcance correcto** — Skills globales para flujos de trabajo personales; Workspace para procedimientos de equipo
 - **Versión de control** — Commitá `.kiro/skills/` a tu repositorio para que todo el equipo comparta los flujos de trabajo
 
 ---

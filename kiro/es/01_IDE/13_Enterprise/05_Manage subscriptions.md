@@ -11,7 +11,7 @@
 1. Iniciá sesión en la **AWS Management Console**
 2. Cambiá a la **consola Kiro**
 3. En la página **Usuarios y Grupos**, elija la pestaña correspondiente
-4. Seleccione el usuario o grupo cuya suscripción quiera cambiar
+4. Seleccioná el usuario o grupo cuya suscripción quiera cambiar
 5. Elegí **Change plan** y seleccioná el nuevo plan → **Continuar**
 
 > - **Actualizaciones:** Efectivos de forma inmediata

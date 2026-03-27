@@ -71,7 +71,7 @@ En la configuración de su agente, especifique qué agentes se pueden usar como 
 
 ### Confiar en agentes específicos
 
-Utilice `trustedAgents` para permitir que subagentes específicos se ejecuten sin solicitudes de permiso.
+Utilizá `trustedAgents` para permitir que subagentes específicos se ejecuten sin solicitudes de permiso.
 
 ### Combinando ambas configuraciones
 

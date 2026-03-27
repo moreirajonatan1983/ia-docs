@@ -51,9 +51,9 @@ Para que los administradores puedan configurar Kiro y suscribir usuarios **sin p
 
 ---
 
-## Iniciar sesión
+## Sign in
 
-Podés iniciar sesión en la consola AWS como:
+Podés Sign in en la consola AWS como:
 - **Usuario root de AWS** (no recomendado para uso cotidiano)
 - **Usuario con rol privilegiado** (recomendado)
 - **Usuario con permisos mínimos** según la política de arriba

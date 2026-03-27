@@ -1,4 +1,4 @@
-# Sesiones de vibración frente a especificaciones
+# Sesiones de vibración frente a Specs
 
 > **Fuente:** [kiro.dev/docs/chat/vibe/](https://kiro.dev/docs/chat/vibe/)
 
@@ -24,12 +24,12 @@ Las sesiones Vibe son sesiones interactivas enfocadas en Q&A, diseñadas para pr
 - Explicaciones y documentación.
 - Refactorizaciones simples
 - Explorar opciones o alternativas
-- Depuración conversacional
+- Debug conversacional
 - Cualquier tarea donde el proceso no necesite ser estructurado
 
 ---
 
-## Sesión de especificaciones
+## Sesión de Specs
 
 Una sesión Spec guía a través de un enfoque estructurado para tareas de desarrollo complejos. Formaliza el proceso de desarrollo de software, transformando ideas de alto nivel en planos de implementación detallados con ejecución sistemática y seguimiento claro.
 
@@ -50,10 +50,10 @@ Una sesión Spec guía a través de un enfoque estructurado para tareas de desar
 
 ## Comparación rápida
 
-| | Ambiente | Especificaciones |
+| | Ambiente | Specs |
 |---|---|---|
 | **Estilo** | Conversacional | Estructurado |
-| **Ideal para** | Preguntas, ajustes, exploración | Funcionalidades complejas, arquitectura |
+| **Ideal para** | Preguntas, Settings, exploración | Funcionalidades complejas, arquitectura |
 | **Salida** | Respuesta directa + código | Documento de requisitos → Documento de diseño → Lista de tareas |
 | **Controlar** | Libre | Paso a paso con aprobaciones |
 | **Seguimiento** | Ninguno | Seguimiento de finalización de tareas |

@@ -22,6 +22,6 @@ Eliminar tu cuenta de Kiro permanentemente eliminará todas tus configuraciones 
 
 Tenés **30 días** para restaurar tu cuenta:
 
-- Durante ese período, simplemente volvé a iniciar sesión en Kiro
+- Durante ese período, simplemente volvé a Sign in en Kiro
 - Deberás saldar cualquier saldo pendiente antes de volver a aviones pagos
-- Después de los 30 días sin iniciar sesión, la cuenta y todos los datos se eliminan **permanentemente**
+- Después de los 30 días sin Sign in, la cuenta y todos los datos se eliminan **permanentemente**

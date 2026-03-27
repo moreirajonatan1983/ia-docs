@@ -53,7 +53,7 @@ kiro-cli agent create backend-specialist
 
 | Valor | Ubicación |
 |---|---|
-| `espacio de trabajo` | `.kiro/agents/` (proyecto actual) |
+| `Workspace` | `.kiro/agents/` (proyecto actual) |
 | `global` | `~/.kiro/agents/` (todos los proyectos) |
 | `./ruta` o `/ruta` | Ruta personalizada |
 

@@ -40,7 +40,7 @@ Para más detalles, ver [Herramientas MCP →](https://kiro.dev/docs/cli/enterpr
 ## Cómo configurar
 
 1. Abrir la **Consola Kiro** en AWS
-2. Vaya a **Configuración → Configuración compartida**
+2. Navegá a **Configuración → Configuración compartida**
 3. Configurar las opciones de Model Governance o MCP Governance
 
 ---

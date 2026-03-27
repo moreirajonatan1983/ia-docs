@@ -52,7 +52,7 @@ Estos prefijos están en inglés internacional para garantizar un control de ver
 | `test` | Arreglo de cobertura, carga de nuevos scripts de *testing* unitario |
 | `chore` | Actualización de dependencias o tareas de aburrimiento técnico general |
 | `perf` | Refactor enfocado estrictamente en mejorar métricas de rendimiento |
-| `ci` | Ajustes de CI/CD, configuración de despliegue, *pipelines* |
+| `ci` | Settings de CI/CD, configuración de despliegue, *pipelines* |
 
 ### Ejemplo del resultado de la IA
 

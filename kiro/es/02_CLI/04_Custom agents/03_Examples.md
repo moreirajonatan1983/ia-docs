@@ -129,7 +129,7 @@ Para un agente específico de proyecto, guárdelo en `.kiro/agents/`:
 
 ## Consejos para crear agentes personalizados eficaces
 
-1. **Defina el alcance claramente** — Utilice `tools` y `allowedTools` para limitar exactamente qué puede hacer el agente
+1. **Defina el alcance claramente** — Utilizá `tools` y `allowedTools` para limitar exactamente qué puede hacer el agente
 2. **Aprovechá los recursos** — Incluí documentación relevante del proyecto en `resources`
 3. **Usá hooks para automatización** — `postToolUse` es ideal para formatear código automáticamente
 4. **Comenzá simple** — Creá un agente básico y ampliará sus capacidades según sea necesario

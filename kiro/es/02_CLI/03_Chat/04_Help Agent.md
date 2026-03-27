@@ -65,7 +65,7 @@ Puede crear:
 ### Preguntar sobre un comando
 ```
 [ayuda] > ¿Cómo guardo una conversación?
-Utilice `/chat save` para guardar su conversación actual:
+Utilizá `/chat save` para guardar su conversación actual:
   /guardar chat ~/mi-sesión.json
 Las conversaciones guardadas se pueden cargar más tarde con /chat load.
 ```

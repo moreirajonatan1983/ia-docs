@@ -6,7 +6,7 @@
 
 ## Mejores prácticas de configuración
 
-### Utilice nombres descriptivos
+### Utilizá nombres descriptivos
 
 ```json
 {

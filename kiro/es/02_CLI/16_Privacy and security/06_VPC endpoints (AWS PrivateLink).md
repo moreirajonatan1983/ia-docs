@@ -29,7 +29,7 @@
 
 ## Pasos de configuración
 
-### 1. Cree el punto final de la VPC
+### 1. Cree el endpoint de la VPC
 
 ```bash
 aws ec2 create-vpc-endpoint \
@@ -67,7 +67,7 @@ Outbound: TCP 443 to Kiro service
 # Verificar que el tráfico va por el endpoint privado
 kiro-cli doctor --todos
 
-# Ver el punto final configurado
+# Ver el endpoint configurado
 aws ec2 describe-vpc-endpoints --filters "Nombre=nombre-servicio,Valores=*kiro*"
 ```
 
@@ -85,7 +85,7 @@ aws ec2 describe-vpc-endpoints --filters "Nombre=nombre-servicio,Valores=*kiro*"
 
 ## Notas de administración empresarial
 
-Los administradores Enterprise pueden forzar el uso de puntos finales de VPC para todos los usuarios de su organización desde la **Kiro Console → Configuración**.
+Los administradores Enterprise pueden forzar el uso de endpoints de VPC para todos los usuarios de su organización desde la **Kiro Console → Configuración**.
 
 ---
 

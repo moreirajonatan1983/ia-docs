@@ -12,7 +12,7 @@ Accedé al formulario de soporte de facturación directamente desde:
 - [app.kiro.dev/account/usage?support_form](https://app.kiro.dev/account/usage?support_form)
 
 O desde dentro de Kiro:
-1. Seleccione el ícono de perfil
+1. Seleccioná el ícono de perfil
 2. Busque la opción **Soporte de facturación** o **Contactar con soporte**
 
 ---
@@ -21,7 +21,7 @@ O desde dentro de Kiro:
 
 Para incluir su ID de usuario en el ticket de soporte:
 
-1. Abra el **panel de uso** en Kiro
+1. Abrí el **panel de uso** en Kiro
 2. Tu ID de usuario se muestra junto a tu correo electrónico y método de inicio de sesión
 3. Busque la etiqueta **"User ID"** con un ícono de copia para copiarlo fácilmente
 

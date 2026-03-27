@@ -22,15 +22,15 @@ Los archivos de Steering son documentos Markdown almacenados en `.kiro/steering/
 
 ## Alcance del archivo de Steering
 
-### Steering del espacio de trabajo
+### Steering del Workspace
 
-Reside en `.kiro/steering/` en la raíz de tu espacio de trabajo. Aplicar solo a ese espacio de trabajo específico.
+Reside en `.kiro/steering/` en la raíz de tu Workspace. Aplicar solo a ese Workspace específico.
 
 ### Steering global
 
-Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los espacios de trabajo.
+Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los Workspaces.
 
-> **Nota:** En caso de instrucciones contradictorias, **el Steering del espacio de trabajo tiene prioridad** sobre el Steering global.
+> **Nota:** En caso de instrucciones contradictorias, **el Steering del Workspace tiene prioridad** sobre el Steering global.
 
 ### Steering del equipo
 
@@ -40,12 +40,12 @@ Los archivos de Steering globales se pueden distribuir a equipos completos a tra
 
 ## Archivos de Steering fundamentales
 
-Cree archivos de Steering fundamentales en `.kiro/steering/` (espacio de trabajo) o `~/.kiro/steering` (global):
+Cree archivos de Steering fundamentales en `.kiro/steering/` (Workspace) o `~/.kiro/steering` (global):
 
 | Archivo | Propósito |
 |---|---|
 | `producto.md` | Propósito del producto, usuarios objetivo, características clave y objetivos comerciales |
-| `tecnología.md` | Marcos, bibliotecas, herramientas de desarrollo y limitaciones técnicas |
+| `tecnología.md` | frameworks, bibliotecas, herramientas de desarrollo y limitaciones técnicas |
 | `estructura.md` | Organización de archivos, convenciones de nomenclatura, patrones de importación y decisiones arquitectónicas |
 
 Estos archivos básicos se incluyen en cada interacción de forma predeterminada.
@@ -76,14 +76,14 @@ Este patrón global garantiza que todos los archivos Markdown en su directorio d
 
 ## Agentes.md
 
-Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGENTS.md` a `~/.kiro/steering/` o a la carpeta raíz de su espacio de trabajo; **siempre se incluyen** automáticamente.
+Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGENTS.md` a `~/.kiro/steering/` o a la carpeta raíz de su Workspace; **siempre se incluyen** automáticamente.
 
 ---
 
 ## Mejores prácticas
 
 - **Mantenga los archivos enfocados**: un dominio por archivo
-- **Utilice nombres claros**: `api-rest-conventions.md`, `testing-unit-patterns.md`
+- **Utilizá nombres claros**: `api-rest-conventions.md`, `testing-unit-patterns.md`
 - **Incluir contexto**: explique *por qué* se tomaron las decisiones
 - **Proporcione ejemplos**: use fragmentos de código y comparaciones antes/después
 - **La seguridad es lo primero**: nunca incluya claves API ni datos confidenciales

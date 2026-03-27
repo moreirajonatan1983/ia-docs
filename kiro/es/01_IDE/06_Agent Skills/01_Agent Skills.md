@@ -44,15 +44,15 @@ Vea y administre skills en la sección **Steering y skills del agente** en el pa
 
 | Alcance | Ubicación | Mejor para |
 |---|---|---|
-| **Espacio de trabajo** | `.kiro/skills/` en la raíz del proyecto | Procedimientos de equipo, flujos de trabajo específicos de proyectos |
+| **Workspace** | `.kiro/skills/` en la raíz del proyecto | Procedimientos de equipo, flujos de trabajo específicos de proyectos |
 | **Global** | `~/.kiro/skills/` en el directorio de inicio | Flujos de trabajo personales, hábitos entre proyectos |
 
 ---
 
 ## Importación de skills
 
-1. Abra la sección **Steering y skills del agente** en el panel de Kiro.
-2. Haga clic en **+** y seleccione **Importar una skill**
+1. Abrí la sección **Steering y skills del agente** en el panel de Kiro.
+2. Hacé clic en **+** y seleccione **Importar una skill**
 3. Elige tu fuente:
    - **GitHub** — Importar desde una URL de repositorio público (pegue la URL que apunta a la carpeta de skills o directamente al archivo `SKILL.md`). La URL debe apuntar a un subdirectorio, no a la raíz del repositorio.
    - **Carpeta local** — Importar desde su sistema de archivos
@@ -99,7 +99,7 @@ Descripción: revise las pull requests para determinar la calidad del código, l
 | `compatibilidad` | ✗ | Herramientas de IA compatibles |
 | `metadatos` | ✗ | Metadatos clave/valor adicionales |
 
-Consulte la [especificación completa →](https://agentskills.io/specification)
+Consulte la [spec completa →](https://agentskills.io/specification)
 
 ---
 
@@ -107,9 +107,9 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 
 | Característica | Skills | Dirección | Powers |
 |---|---|---|---|
-| **Estándar** | Abierto (especificación de skills del agente) | Específico de Kiro | Específico de Kiro |
+| **Estándar** | Abierto (spec de skills del agente) | Específico de Kiro | Específico de Kiro |
 | **Cargando** | Bajo demanda | siempre/auto/fileMatch/manual | Dinámico basado en el contexto |
-| **Guiones** | ✅ Sí | ✗ No | ✅ Sí |
+| **scripts** | ✅ Sí | ✗ No | ✅ Sí |
 | **Herramientas MCP** | ✗ No | ✗ No | ✅ Sí |
 | **Mejor para** | Flujos de trabajo reutilizables para compartir o importar | Estándares y convenciones de proyectos | Integraciones de MCP con conocimientos agrupados |
 
@@ -121,8 +121,8 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 
 - **Escribe descripciones precisas**: Kiro usa la descripción para decidir cuándo activar. Incluya palabras clave específicas: "Revisar las pull requests para seguridad y cobertura de pruebas" supera a "ayuda con la revisión del código".
 - **Mantenga enfocado SKILL.md**: coloque documentación detallada en archivos `referencias/`. Kiro carga el `SKILL.md` completo al activarlo.
-- **Utilice secuencias de comandos para tareas deterministas**: la validación, la generación de archivos y las llamadas API funcionan mejor como secuencias de comandos que el código generado por LLM.
-- **Elija el alcance correcto**: global para flujos de trabajo personales (su lista de verificación de revisión), espacio de trabajo para procedimientos de equipo (implementación de proyectos).
+- **Utilizá secuencias de comandos para tareas deterministas**: la validación, la generación de archivos y las llamadas API funcionan mejor como secuencias de comandos que el código generado por LLM.
+- **Elija el alcance correcto**: global para flujos de trabajo personales (su lista de verificación de revisión), Workspace para procedimientos de equipo (implementación de proyectos).
 
 ---
 
@@ -130,4 +130,4 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 
 - [Dirección →](https://kiro.dev/docs/steering) — Contexto y estándares específicos del proyecto
 - [Powers →](https://kiro.dev/docs/powers) — Integraciones de MCP con conocimientos incluidos
-- [Especificación de skills del agente →](https://agentskills.io/specification)
+- [spec de skills del agente →](https://agentskills.io/specification)

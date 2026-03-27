@@ -180,6 +180,6 @@ configuración de kiro-cli abierta
 
 ## Archivo de configuración
 
-Los ajustes se almacenan en JSON en `~/.kiro/settings/cli.json`.
+Los Settings se almacenan en JSON en `~/.kiro/settings/cli.json`.
 
 > Se recomienda usar `kiro-cli settings` para hacer cambios — proporciona validación automática.

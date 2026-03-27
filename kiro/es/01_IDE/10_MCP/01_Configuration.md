@@ -53,7 +53,7 @@ Los archivos de configuración MCP usan formato JSON:
 
 | Propiedad | Descripción |
 |---|---|
-| `URL` | Punto final del servidor remoto |
+| `URL` | endpoint del servidor remoto |
 | `encabezados` | Encabezados HTTP (autenticación, etc.) |
 | `deshabilitado` | `true` para deshabilitar |
 | `aprobación automática` | Herramientas aprobadas automáticamente |
@@ -65,10 +65,10 @@ Los archivos de configuración MCP usan formato JSON:
 
 | Nivel | Archivo | Alcance |
 |---|---|---|
-| **Espacio de trabajo** | `.kiro/settings/mcp.json` | Solo el workspace actual — ideal para servidores específicos del proyecto |
-| **Usuario (global)** | `~/.kiro/settings/mcp.json` | Todos los espacios de trabajo — ideales para servidores de uso frecuente |
+| **Workspace** | `.kiro/settings/mcp.json` | Solo el workspace actual — ideal para servidores específicos del proyecto |
+| **Usuario (global)** | `~/.kiro/settings/mcp.json` | Todos los Workspaces — ideales para servidores de uso frecuente |
 
-> Si ambos archivos existen, las configuraciones se **mezclan** y el espacio de trabajo tiene **precedencia**.
+> Si ambos archivos existen, las configuraciones se **mezclan** y el Workspace tiene **precedencia**.
 
 ---
 
@@ -123,7 +123,7 @@ Para deshabilitar un servidor sin eliminar su configuración:
 ## Consideraciones de seguridad
 
 - Usá referencias a variables de entorno ("${API_TOKEN}`) en lugar de codificar valores sensibles
-- Nunca comete archivos de configuración con credenciales a control de versiones
+- Nunca commitea archivos de configuración con credenciales a control de versiones
 - Conectar solo a servidores remotos de confianza
 - Revisará los permisos de las herramientas antes de agregarlos a `autoApprove`
 

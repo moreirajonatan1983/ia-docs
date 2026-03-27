@@ -23,7 +23,7 @@ Comenzá con el Kiro Autónomo Agente conectando tu cuenta de GitHub y configura
 
 Navegá a [app.kiro.dev/agent](https://app.kiro.dev/agent) para acceder al Agente Autónomo.
 
-### 2. Iniciar sesión
+### 2. Sign in
 
 Ingresá con tu cuenta de Kiro existente.
 
@@ -31,10 +31,10 @@ Ingresá con tu cuenta de Kiro existente.
 
 Conecta tu cuenta de GitHub para darle al agente acceso a tus repositorios:
 
-1. Vaya a **Configuración** en la aplicación web
+1. Navegá a **Configuración** en la aplicación web
 2. Hacer clic en **"Conectar GitHub"**
 3. Autorizar la **aplicación Kiro Agent GitHub**
-4. Seleccione a qué repositorios puede acceder el agente
+4. Seleccioná a qué repositorios puede acceder el agente
 
 > Necesitás tener **permisos de escritura** en los repositorios para que el agente pueda crear sucursales y abrir pull request.
 

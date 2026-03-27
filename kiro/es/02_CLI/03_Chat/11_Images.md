@@ -61,6 +61,6 @@ Pegue una imagen del portapapeles de su sistema:
 | **Máximo de imágenes por solicitud** | 10 |
 
 **Mejores prácticas:**
-- Utilice imágenes de alta resolución con texto claro
+- Utilizá imágenes de alta resolución con texto claro
 - Proporciona instrucciones específicas sobre lo que quieres que haga Kiro.
 - Para diagramas complejos, proporcione contexto adicional

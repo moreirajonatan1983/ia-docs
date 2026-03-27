@@ -28,7 +28,7 @@ AWS mantiene seguridad física de nivel militar en sus centros de datos:
 | **Aislamiento de red** | VPC con subredes privadas |
 | **Filtrado de tráfico** | Grupos de Seguridad y ACL de Red |
 | **Cifrado TLS** | Todo el tráfico cifrado en tránsito |
-| **Puntos finales de VPC** | Comunicación privada sin salir a Internet público |
+| **endpoints de VPC** | Comunicación privada sin salir a Internet público |
 
 ---
 

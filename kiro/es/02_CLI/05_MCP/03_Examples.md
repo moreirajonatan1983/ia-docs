@@ -129,4 +129,4 @@ def my_tool(consulta: str) -> str:
     return f"Resultado de: {consulta}"
 ```
 
-Ver la [especificación del protocolo MCP](https://modelcontextprotocol.io/specification/2025-06-18) para detalles.
+Ver la [spec del protocolo MCP](https://modelcontextprotocol.io/specification/2025-06-18) para detalles.

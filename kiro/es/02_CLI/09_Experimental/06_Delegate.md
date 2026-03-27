@@ -30,7 +30,7 @@ configuración de kiro-cli chat.enableDelegate verdadero
 
 ```
 # Lanzar una tarea en segundo plano con lenguaje natural
-> ¿Puedes crear una tarea en segundo plano para analizar el rendimiento de nuestros puntos finales API?
+> ¿Puedes crear una tarea en segundo plano para analizar el rendimiento de nuestros endpoints API?
 
 # El agente pide aprobación, luego ejecuta en segundo plano
 ✔ Lanzamiento de tarea en segundo plano: Análisis de rendimiento de API

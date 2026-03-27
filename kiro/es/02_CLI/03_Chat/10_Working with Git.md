@@ -52,7 +52,7 @@ Ver [Herramientas de diferenciación personalizadas →](./14_Custom%20diff%20to
 
 - Usá `@` para referenciar archivos específicos: `> Revise @src/main.rs para detectar problemas antes de confirmar`
 - Combiná con Hooks para automatizar acciones en eventos Git (pre-commit, post-merge)
-- Usá el Plan Agent (`/plan`) para planificar características antes de cometer cambios
+- Usá el Plan Agent (`/plan`) para planificar características antes de hacer commit cambios
 - El agente puede leer la salida de `git status`, `git diff`, `git log` directamente desde el terminal integrado
 
 ---

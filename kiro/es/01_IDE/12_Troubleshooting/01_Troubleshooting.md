@@ -12,10 +12,10 @@ Esta ventana emergente es un **falso positivo** en las funciones de seguridad de
 
 **Soluciones (pruebe en orden):**
 
-1. Vaya a **Configuración del sistema → Privacidad y seguridad** y haga clic en **Permitir** o **Abrir de todos modos** para Kiro.
+1. Navegá a **Configuración del sistema → Privacidad y seguridad** y haga clic en **Permitir** o **Abrir de todos modos** para Kiro.
 2. Arrastre `Kiro.app` a su escritorio, luego arrástrelo nuevamente a la carpeta Aplicaciones.
 3. Reinicie su computadora.
-4. Abra Terminal y ejecute:
+4. Abrí Terminal y ejecute:
    ```golpecito
    sudo xattr -d com.apple.quarantine /Aplicaciones/Kiro.app
    ```
@@ -29,7 +29,7 @@ Esta ventana emergente es un **falso positivo** en las funciones de seguridad de
 Si Kiro no te redirige a un navegador durante la autenticación:
 
 **macOS:**
-1. Abra Kiro → **Ayuda → Alternar herramientas de desarrollador**
+1. Abrí Kiro → **Ayuda → Alternar herramientas de desarrollador**
 2. Navegue a la pestaña **Consola**
 3. Observe cualquier error durante el proceso de inicio de sesión.
 4. Verifique que `ioreg` esté en su RUTA:
@@ -40,7 +40,7 @@ Si Kiro no te redirige a un navegador durante la autenticación:
    ```
 
 **Windows:**
-1. Abra el símbolo del sistema como administrador
+1. Abrí el símbolo del sistema como administrador
 2. Ejecute Kiro con registro:
    ```
    C:\ruta\a\app.exe --enable-logging
@@ -50,7 +50,7 @@ Si Kiro no te redirige a un navegador durante la autenticación:
 ### Problemas del Centro de identidad de AWS IAM
 
 **Se requiere suscripción Q Developer Pro:**
-Si ve *"Hubo un error al iniciar sesión"*, asegúrese de tener una suscripción **Q Developer Pro** válida. [Ver estado de suscripción →](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html)
+Si ve *"Hubo un error al Sign in"*, asegúrese de tener una suscripción **Q Developer Pro** válida. [Ver estado de suscripción →](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html)
 
 **Limitaciones regionales:**
 Kiro utiliza de forma predeterminada **Este de EE. UU. (Norte de Virginia)** para la autenticación del Centro de identidad. Si su perfil de Q Developer se encuentra en una región diferente, inicie sesión con Builder ID, Google o GitHub.
@@ -140,7 +140,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ### Problema de ruta de OneDrive
 
-Si su perfil de usuario está almacenado en OneDrive, Kiro puede tener dificultades con la resolución de rutas. Mueva su espacio de trabajo de Kiro a una ruta local (fuera de OneDrive) para resolverlo.
+Si su perfil de usuario está almacenado en OneDrive, Kiro puede tener dificultades con la resolución de rutas. Mueva su Workspace de Kiro a una ruta local (fuera de OneDrive) para resolverlo.
 
 ---
 
@@ -148,7 +148,7 @@ Si su perfil de usuario está almacenado en OneDrive, Kiro puede tener dificulta
 
 ### Problemas comunes
 
-1. **Verificar el estado del servidor** — Abra el panel Kiro → pestaña Servidores MCP → verifique el indicador de estado de la conexión
+1. **Verificar el estado del servidor** — Abrí el panel Kiro → pestaña Servidores MCP → verifique el indicador de estado de la conexión
 2. **Verificar configuración**: asegúrese de que `mcp.json` tenga una sintaxis válida y que los comandos/argumentos del servidor sean correctos.
 3. **Verifique los requisitos previos**: para el servidor de documentación de AWS, verifique que Python 3.10+ y `uv` estén instalados.
 4. **Revisar registros** — Panel de salida → seleccione **"Kiro - Registros de MCP"** en el menú desplegable

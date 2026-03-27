@@ -14,8 +14,8 @@ Activa o desactiva los hooks sin eliminarlos:
 
 | Método | Cómo |
 |---|---|
-| **Alternancia rápida** | Haga clic en el ícono de ojo (👁) junto al gancho en el panel |
-| **Desde la vista del gancho** | Seleccione el gancho → cambiar **Hook Enabled** en la esquina superior derecha |
+| **Alternancia rápida** | Hacé clic en el ícono de ojo (👁) junto al hook en el panel |
+| **Desde la vista del hook** | Seleccioná el hook → cambiar **Hook Enabled** en la esquina superior derecha |
 
 ---
 
@@ -23,7 +23,7 @@ Activa o desactiva los hooks sin eliminarlos:
 
 Los hooks evolucionan con tu flujo de trabajo. Actualizalos en cualquier momento:
 
-1. Selecciona el gancho en el panel **Agent Hooks**
+1. Selecciona el hook en el panel **Agent Hooks**
 2. Modificá los campos: disparador, patrones de archivo, instrucciones o descripción
 3. Los cambios se aplican **inmediatamente**
 
@@ -31,8 +31,8 @@ Los hooks evolucionan con tu flujo de trabajo. Actualizalos en cualquier momento
 
 ## Eliminar hooks
 
-1. Selecciona el gancho en el panel **Agent Hooks**
-2. Haga clic en **Eliminar gancho** (parte inferior de la vista)
+1. Selecciona el hook en el panel **Agent Hooks**
+2. Hacé clic en **Eliminar hook** (parte inferior de la vista)
 3. Confirmá haciendo clic en **Eliminar**
 
 > ⚠️ Esta acción **no se puede deshacer**.
@@ -45,14 +45,14 @@ Para hooks con gatillo de tipo **Manual**:
 
 | Método | Cómo |
 |---|---|
-| **Ejecución rápida** | Click en el botón ▷ junto al nombre del gancho en el panel |
-| **Desde la vista del gancho** | Seleccione el gancho → haga clic en **Iniciar gancho** en la esquina superior derecha |
+| **Ejecución rápida** | Click en el botón ▷ junto al nombre del hook en el panel |
+| **Desde la vista del hook** | Seleccioná el hook → haga clic en **Iniciar hook** en la esquina superior derecha |
 
 ---
 
-## Almacenamiento de gancho
+## Almacenamiento de hook
 
 Los hooks se almacenan como archivos JSON en:
 
-- `.kiro/hooks/` — engancha un espacio de trabajo nivelado (compartidos con el equipo vía git)
-- Los hooks a nivel del espacio de trabajo son visibles para todos los colaboradores del proyecto.
+- `.kiro/hooks/` — engancha un Workspace nivelado (compartidos con el equipo vía git)
+- Los hooks a nivel del Workspace son visibles para todos los colaboradores del proyecto.

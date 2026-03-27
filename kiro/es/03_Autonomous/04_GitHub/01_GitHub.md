@@ -9,7 +9,7 @@
 Conecta tu cuenta de GitHub al Agente Autónomo Kiro:
 
 1. Navegá a [app.kiro.dev/agent](https://app.kiro.dev/agent) y ve a **Configuración**
-2. Seleccione **"Connect GitHub"** bajo Integraciones
+2. Seleccioná **"Connect GitHub"** bajo Integraciones
 3. Autorizá la **aplicación Kiro Agent GitHub**
 4. Otorgá acceso a repositorios específicos o todos los repositorios de tu organización
 

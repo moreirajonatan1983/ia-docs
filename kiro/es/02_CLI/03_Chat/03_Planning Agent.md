@@ -36,7 +36,7 @@ a. Aplicación web b. Aplicación móvil c. Aplicación de escritorio d. Herrami
 [2]: ¿Cuál es el caso de uso principal?
 a. Gestión de tareas personales b. Colaboración en equipo c. Gestión de proyectos
 
-(Utilice el chat para responder cualquier subconjunto: por ejemplo, "1=a, 2=b")
+(Utilizá el chat para responder cualquier subconjunto: por ejemplo, "1=a, 2=b")
 ```
 
 ### 2. Investigación y análisis

@@ -158,7 +158,7 @@ Mensaje que se muestra al activar el agente.
 
 | Alcance | Ubicación | Prioridad |
 |---|---|---|
-| **Local (espacio de trabajo)** | `.kiro/agents/<nombre>.json` | ⬆️Más alta |
+| **Local (Workspace)** | `.kiro/agents/<nombre>.json` | ⬆️Más alta |
 | **Global (todo el usuario)** | `~/.kiro/agents/<nombre>.json` | Más baja |
 
 ---

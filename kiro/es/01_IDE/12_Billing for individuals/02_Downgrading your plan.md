@@ -12,6 +12,6 @@ Se te factura al primer día del mes. Si bajas de plan a mitad del mes, permanec
 2. Elegí **Manage Plan** — serás redirigido al navegador para completar el proceso
 3. En el navegador, elija **Actualizar suscripción**, seleccione el plan al que querrás bajar y luego **Continuar**
 4. Confirmá los detalles del plan y elegí **Confirmar**
-5. Seleccione **Return to Kiro** para volver al IDE
+5. Seleccioná **Return to Kiro** para volver al IDE
 
 > ℹ️ Los downgrades **toman efecto el mes siguiente**. Las actualizaciones son efectivos de forma **inmediata**.

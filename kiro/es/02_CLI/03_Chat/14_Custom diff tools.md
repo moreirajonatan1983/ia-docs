@@ -43,7 +43,7 @@ Muestran diferencias directamente en la terminal — mantienen el flujo de traba
 
 ## Herramientas GUI
 
-Abra una ventana separada para revisar cambios:
+Abrí una ventana separada para revisar cambios:
 
 | Herramienta | comando |
 |---|---|

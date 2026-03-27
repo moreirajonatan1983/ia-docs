@@ -1,4 +1,4 @@
-# Especificaciones de corrección de errores
+# Specs de corrección de errores
 
 > **Fuente:** [kiro.dev/docs/specs/bugfix-specs/](https://kiro.dev/docs/specs/bugfix-specs/)
 
@@ -19,7 +19,7 @@ Bugfix Specs proporciona un enfoque estructurado para diagnosticar y corregir er
 
 ---
 
-## Cuándo utilizar las especificaciones de corrección de errores
+## Cuándo utilizar las Specs de corrección de errores
 
 Lo mejor para:
 - Errores complejos que requieren análisis de causa raíz
@@ -31,7 +31,7 @@ Lo mejor para:
 
 ## Cómo funciona
 
-Las especificaciones de corrección de errores siguen el mismo flujo de trabajo de tres fases que las especificaciones de funciones (Requisitos → Diseño → Tareas), pero con contenido diseñado para correcciones de errores quirúrgicos:
+Las Specs de corrección de errores siguen el mismo flujo de trabajo de tres fases que las Specs de funciones (Requisitos → Diseño → Tareas), pero con contenido diseñado para correcciones de errores quirúrgicos:
 
 ### 1. Fase de análisis de corrección de errores
 
@@ -71,7 +71,7 @@ Las tareas de implementación se generan con [pruebas basadas en propiedades (PB
 
 ## Empezando
 
-1. Elija **Especificación** en el panel de chat.
+1. Elija **spec** en el panel de chat.
 2. Describe el error, incluyendo:
    - Cuando ocurre el error (pasos de reproducción)
    - ¿Qué debería pasar en su lugar?
@@ -83,5 +83,5 @@ Las tareas de implementación se generan con [pruebas basadas en propiedades (PB
 
 ## Más información
 
-- [Mejores prácticas para especificaciones de corrección de errores →](https://kiro.dev/docs/specs/best-practices/#bugfix-specs)
+- [Mejores prácticas para Specs de corrección de errores →](https://kiro.dev/docs/specs/best-practices/#bugfix-specs)
 - [Corrección con pruebas basadas en propiedades →](https://kiro.dev/docs/specs/correctness/)

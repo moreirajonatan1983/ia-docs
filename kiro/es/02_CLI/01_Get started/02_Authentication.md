@@ -4,7 +4,7 @@
 
 ---
 
-## Iniciar sesión en Kiro CLI
+## Sign in en Kiro CLI
 
 1. En la línea de comando, ingrese `kiro-cli` o `kiro-cli login`. Se le pedirá que presione Entrar para completar el inicio de sesión en su navegador.
 
@@ -16,7 +16,7 @@
 
 3. Después de autenticarse, recibirá un mensaje en su navegador que lo dirigirá nuevamente a su terminal.
 
-4. Cuando regrese a su terminal, deberá iniciar sesión con Kiro CLI.
+4. Cuando regrese a su terminal, deberá Sign in con Kiro CLI.
 
 > **Nota:** Los métodos de inicio de sesión individuales como GitHub, Google y AWS Builder ID **no están disponibles** en las regiones de AWS GovCloud (EE. UU.).
 >
@@ -29,14 +29,14 @@
 
 ---
 
-## Iniciar sesión desde una máquina remota
+## Sign in desde una máquina remota
 
 Cuando se ejecuta Kiro CLI en una máquina remota (a través de SSH, SSM, contenedores, etc.), la autenticación funciona de manera diferente ya que la máquina remota no puede abrir un navegador.
 
 - **Para Builder ID e IAM Identity Center:** Kiro CLI utiliza **autenticación de código de dispositivo**. Verá una URL y un código para ingresar en su navegador local; no se requiere configuración adicional.
 - **Para inicio de sesión social (Google o GitHub):** La CLI utiliza autenticación PKCE que requiere **reenvío de puertos**. La devolución de llamada de OAuth redirige a "localhost", que no llegará a la CLI remota sin un túnel.
 
-**Para iniciar sesión con inicio de sesión social en una máquina remota:**
+**Para Sign in con inicio de sesión social en una máquina remota:**
 
 1. Ejecute `kiro-cli login` y seleccione *"Usar gratis con Google o GitHub"*
 2. Anote el número de puerto que se muestra (varía cada vez, por ejemplo, `49153`)

@@ -38,14 +38,14 @@ Reanudar una conversación en el directorio actual:
 chat kiro-cli --reanudar
 ```
 
-Abra un selector de sesiones interactivo para elegir entre sesiones anteriores:
+Abrí un selector de sesiones interactivo para elegir entre sesiones anteriores:
 ```golpecito
 chat kiro-cli --resume-selector
 ```
 
 ### Iniciar una nueva conversación
 
-Utilice el comando `/chat new` sin reiniciar la CLI. Esto guarda su sesión actual en la base de datos y comienza una nueva:
+Utilizá el comando `/chat new` sin reiniciar la CLI. Esto guarda su sesión actual en la base de datos y comienza una nueva:
 
 ```golpecito
 # Iniciar una nueva conversación
@@ -55,7 +55,7 @@ Utilice el comando `/chat new` sin reiniciar la CLI. Esto guarda su sesión actu
 /chat nuevo ¿Cómo configuro un proyecto de React?
 ```
 
-Utilice `/chat resume` para volver a cualquier sesión anterior.
+Utilizá `/chat resume` para volver a cualquier sesión anterior.
 
 ### Guardar y cargar conversaciones manualmente
 

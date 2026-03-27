@@ -56,7 +56,7 @@ Por defecto, Kiro recopila telemetría de uso, errores, informes de fallos y con
 
 ### Optar por no participar en la CLI
 
-1. Abra **Preferencias** en la aplicación Kiro CLI
+1. Abrí **Preferencias** en la aplicación Kiro CLI
 2. Para telemetría: desactive el botón **Telemetría**
 3. Para contenido: desactivá el interruptor **Compartir contenido de Kiro con AWS**
 
@@ -66,4 +66,4 @@ Por defecto, Kiro recopila telemetría de uso, errores, informes de fallos y con
 
 - **Datos de uso:** Versión de Kiro, sistema operativo (Windows, Linux, macOS), ID de máquina anónimo
 - **Métricas de rendimiento:** Recuento de solicitudes, errores y latencia para:
-  - Inicio de sesión, finalización de pestañas, generación de código, dirección, hooks, generación de especificaciones, herramientas, MCP
+  - Inicio de sesión, finalización de pestañas, generación de código, dirección, hooks, generación de Specs, herramientas, MCP

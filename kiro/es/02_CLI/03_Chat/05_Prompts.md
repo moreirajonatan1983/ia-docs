@@ -12,7 +12,7 @@ Los avisos permiten crear, organizar y reutilizar instrucciones personalizadas p
 
 | Tipo | Descripción |
 |---|---|
-| **Mensajes locales** | Avisos específicos del proyecto, almacenados en el espacio de trabajo |
+| **Mensajes locales** | Avisos específicos del proyecto, almacenados en el Workspace |
 | **Mensajes globales** | Avisos disponibles en todos los proyectos |
 | **Mensajes de MCP** | Avisos provistos por servidores MCP con funcionalidad extendida |
 
@@ -34,7 +34,7 @@ Muestra todos los mensajes disponibles en diseño de 3 columnas: nombre, descrip
 ```
 - Si `--content` está provisto: crea el aviso con ese contenido
 - Si no hay contenido: abre el editor por defecto
-- Se guarda en `.kiro/prompts/` del espacio de trabajo actual
+- Se guarda en `.kiro/prompts/` del Workspace actual
 - Nombre máximo: 50 caracteres
 
 ### Editar mensajes
@@ -90,7 +90,7 @@ También podés usar `@` para referenciar archivos y directorios:
 
 | Alcance | Ubicación | Prioridad |
 |---|---|---|
-| **Local (espacio de trabajo)** | `proyecto/.kiro/prompts/` | ⬆️Más alta |
+| **Local (Workspace)** | `proyecto/.kiro/prompts/` | ⬆️Más alta |
 | **Global (todo el usuario)** | `~/.kiro/prompts/` | Medios |
 | **MCP** | Información sobre el servidor MCP | ⬇️Más baja |
 

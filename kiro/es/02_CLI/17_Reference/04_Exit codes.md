@@ -29,13 +29,13 @@ Si **cualquier** servidor MCP configurado falla al iniciar, el CLI termina inmed
 
 ---
 
-## Códigos de salida del gancho
+## Códigos de salida del hook
 
 Los [Hooks](../03_Chat/../08_Hooks/01_Overview.md) usan un conjunto separado de códigos de salida para controlar la ejecución de herramientas:
 
 | Código | Comportamiento en Hook |
 |---|---|
-| **0** | Gancho completado exitosamente, continuar |
+| **0** | hook completado exitosamente, continuar |
 | **≠ 0** | Hook falló — para hooks `preToolUse`, **bloquea** la ejecución de la herramienta |
 
 ---

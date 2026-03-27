@@ -1,4 +1,4 @@
-# Ajustes
+# Settings
 
 > **Fuente:** [kiro.dev/docs/cli/enterprise/settings/](https://kiro.dev/docs/cli/enterprise/settings/)
 
@@ -26,9 +26,9 @@ Un administrador puede controlar las siguientes configuraciones dentro de un **p
 
 ## Cómo acceder a la configuración
 
-1. Iniciar sesión en la **AWS Management Console**
+1. Sign in en la **AWS Management Console**
 2. Navegar a la **Consola Kiro**
-3. Vaya a **Configuración**
+3. Navegá a **Configuración**
 4. Configurar las opciones disponibles
 
 ---
@@ -39,7 +39,7 @@ La configuración **Herramientas web** controla si los usuarios pueden usar `web
 
 **Para deshabilitar herramientas web:**
 1. Abrir la **Consola Kiro**
-2. Vaya a **Configuración → Configuración compartida**
+2. Navegá a **Configuración → Configuración compartida**
 3. Desactivar **Herramientas de búsqueda y recuperación web**
 
 Cuando están deshabilitados, los usuarios ven una notificación en `/tools` indicando que el administrador deshabilitó el acceso web.
@@ -48,7 +48,7 @@ Cuando están deshabilitados, los usuarios ven una notificación en `/tools` ind
 
 ## Alcance de la configuración
 
-Los ajustes pueden configurarse a diferentes niveles:
+Los Settings pueden configurarse a diferentes niveles:
 
 | Nivel | Descripción |
 |---|---|

@@ -10,9 +10,9 @@ Una vez que tu proveedor de identidad esté conectado y tu perfil de Kiro esté 
 
 ## Usuarios suscritos
 
-1. Iniciar sesión en **AWS Management Console**
+1. Sign in en **AWS Management Console**
 2. Navegar a la **Kiro Console** (si no la ves, verifica que estás en la región AWS correcta)
-3. Vaya a **Usuarios y grupos → pestaña Usuarios**
+3. Navegá a **Usuarios y grupos → pestaña Usuarios**
 4. Seleccionar el usuario a suscribir
 5. Elegir el plan de suscripción
 6. Confirmar

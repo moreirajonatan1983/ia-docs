@@ -40,7 +40,7 @@ En modo supervisado, Kiro trabaja **interactivamente** con el usuario:
 
 En cualquier modo, puedes:
 - Ver cambios individuales o de todos los archivos seleccionando **"Ver todos los cambios"** en el módulo de Chat
-- Seleccione **"Revertir todos los cambios"** para deshacer todas las modificaciones del agente
+- Seleccioná **"Revertir todos los cambios"** para deshacer todas las modificaciones del agente
 - Revertir a un [punto de control](https://kiro.dev/docs/chat/checkpoints) para restaurar archivos a un estado anterior localmente
 
 ---
@@ -77,23 +77,23 @@ Al utilizar GitHub o la autenticación de Google con Kiro, tenga en cuenta que e
 
 ### Recomendaciones
 
-**1. Aislamiento del espacio de trabajo**
-- Mantenga los proyectos confidenciales en espacios de trabajo separados
-- Utilice `.gitignore` (o `.kiroignore`) para evitar el acceso a archivos confidenciales
-- Considere utilizar funciones de confianza del espacio de trabajo en su IDE
+**1. Aislamiento del Workspace**
+- Mantenga los proyectos confidenciales en Workspaces separados
+- Utilizá `.gitignore` (o `.kiroignore`) para evitar el acceso a archivos confidenciales
+- Considere utilizar funciones de confianza del Workspace en su IDE
 
-**2. Utilice un entorno limpio**
+**2. Utilizá un entorno limpio**
 - Considere la posibilidad de crear una cuenta de usuario dedicada o un entorno de contenedor para Kiro.
 - Limite el acceso solo a los repositorios y recursos necesarios para su proyecto actual
 
 **3. Administre las credenciales de AWS con cuidado**
-- Utilice credenciales temporales con los permisos adecuados
+- Utilizá credenciales temporales con los permisos adecuados
 - Considere el uso de perfiles con nombre de AWS para aislar el acceso de Kiro
 - Para trabajos confidenciales, elimine las credenciales de AWS de su entorno cuando no las necesite
 
 **4. Control de acceso al repositorio**
 - Al usar la autenticación de GitHub, revise a qué repositorios puede acceder Kiro
-- Utilice tokens de acceso específicos del repositorio cuando sea posible
+- Utilizá tokens de acceso específicos del repositorio cuando sea posible
 - Auditar periódicamente los permisos de acceso.
 
 ---

@@ -1,18 +1,18 @@
-# Acciones de gancho
+# Acciones de hook
 
 > **Fuente:** [kiro.dev/docs/hooks/actions/](https://kiro.dev/docs/hooks/actions/)
 
 ---
 
-Cada gancho puede ejecutar uno de dos tipos de acciones cuando su disparador se activa.
+Cada hook puede ejecutar uno de dos tipos de acciones cuando su disparador se activa.
 
 ---
 
 ## Acción de solicitud del agente
 
-Defina un mensaje que se envía al agente cada vez que el gancho se dispara. El agente responde y actúa sobre ese aviso igual que con un aviso enviado desde el panel de chat.
+Defina un mensaje que se envía al agente cada vez que el hook se dispara. El agente responde y actúa sobre ese aviso igual que con un aviso enviado desde el panel de chat.
 
-**Caso especial — PromptSubmit:** La acción se llama "Agregar al mensaje". El aviso del gancho se **agrega** al aviso del usuario, y el combinado se envía al agente.
+**Caso especial — PromptSubmit:** La acción se llama "Agregar al mensaje". El aviso del hook se **agrega** al aviso del usuario, y el combinado se envía al agente.
 
 **Cuándo usarlo:**
 - Cuando quieras usar lenguaje natural para instruir al agente a realizar alguna acción basada en contexto
@@ -25,16 +25,16 @@ Defina un mensaje que se envía al agente cada vez que el gancho se dispara. El 
 
 ## Acción del comando Shell
 
-Defina un comando de shell que se ejecute cada vez que el gancho se dispare.
+Defina un comando de shell que se ejecute cada vez que el hook se dispare.
 
 | Resultado del comando | Comportamiento |
 |---|---|
 | Código de salida `0` (éxito) | El stdout se agrega al contexto del agente |
 | Cualquier otro código de salida | El stderr se envía al agente con notificación de error |
-| Herramienta previa Uso gancho + error | La invocación de la herramienta es **bloqueada** |
-| Preguntar Enviar gancho + error | El envío del aviso es **bloqueado** |
+| Herramienta previa Uso hook + error | La invocación de la herramienta es **bloqueada** |
+| Preguntar Enviar hook + error | El envío del aviso es **bloqueado** |
 
-**Tiempo de espera:** Configurable por gancho. El valor predeterminado es **60 segundos**. Seteá `0` para deshabilitar el tiempo de espera.
+**Tiempo de espera:** Configurable por hook. El valor predeterminado es **60 segundos**. Seteá `0` para deshabilitar el tiempo de espera.
 
 **Cuándo usarlo:**
 - Cuando quieras ejecutar comandos específicos o acciones determinísticas

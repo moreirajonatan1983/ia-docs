@@ -10,7 +10,7 @@ Si tu organización utiliza firewalls, proxies corporativos o perímetros de dat
 
 ---
 
-## Puntos finales requeridos
+## endpoints requeridos
 
 Permitir el acceso a los siguientes dominios:
 
@@ -58,7 +58,7 @@ exportar NODE_EXTRA_CA_CERTS=/ruta/a/corporate-ca.pem
 
 Para organizaciones que requieren que todo el tráfico permanezca dentro de la red de AWS, Kiro soporta **VPC Endpoints (AWS PrivateLink)**.
 
-Consulte [Puntos finales de VPC →](./06_Puntos finales de VPC (AWS PrivateLink).md) para configurar detalladamente.
+Consulte [endpoints de VPC →](./06_Puntos finales de VPC (AWS PrivateLink).md) para configurar detalladamente.
 
 ---
 

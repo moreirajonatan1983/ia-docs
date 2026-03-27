@@ -156,7 +156,7 @@ export HTTPS_PROXY=http://username:password@proxy.company.com:8080
 ### Solución de problemas de proxy
 
 - Verificar la accesibilidad y las credenciales del servidor proxy.
-- Asegúrese de que su firewall corporativo permita conexiones a puntos finales de AWS
+- Asegúrese de que su firewall corporativo permita conexiones a endpoints de AWS
 - Póngase en contacto con su administrador de TI si falla la validación del certificado SSL
 - Verifique que el servidor proxy admita los protocolos requeridos
 
@@ -177,7 +177,7 @@ sudo apt-get purge kiro-cli # Eliminar los archivos de configuración restantes
 
 ---
 
-## Depuración de Kiro CLI
+## Debug de Kiro CLI
 
 Si tiene problemas con Kiro CLI, ejecute `kiro-cli doctor` para identificar y solucionar problemas comunes:
 

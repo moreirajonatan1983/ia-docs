@@ -21,7 +21,7 @@ configuración de kiro-cli chat.enablePensando verdadero
 
 - Proceso de toma de decisiones transparente
 - Visualización del razonamiento paso a paso
-- Útil para depuración y aprendizaje
+- Útil para Debug y aprendizaje
 - Mejor comprensión de las conclusiones del agente
 
 ---
@@ -48,7 +48,7 @@ Al observar su código, es probable que el problema esté en el middleware...
 
 ## Casos de uso
 
-- **Complejo de depuración** — Ver cómo el agente analiza el problema
+- **Complejo de Debug** — Ver cómo el agente analiza el problema
 - **Aprendizaje** — Entender el razonamiento detrás de las decisiones
 - **Validación** — Verificar que el agente está considerando los factores correctos
 - **Arquitectura** — Evaluar trade-offs en decisiones de diseño

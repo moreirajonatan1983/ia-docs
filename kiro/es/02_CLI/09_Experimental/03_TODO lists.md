@@ -51,7 +51,7 @@ configuración de kiro-cli chat.enableTodoList verdadero
 Kiro crea automáticamente:
 ☐ 1. Configurar la estructura y las dependencias del proyecto.
 ☐ 2. Implementar la autenticación de usuario (JWT)
-☐ 3. Crear puntos finales del catálogo de productos
+☐ 3. Crear endpoints del catálogo de productos
 ☐ 4. Construir un sistema de gestión de pedidos
 ☐ 5. Agregar pruebas unitarias
 

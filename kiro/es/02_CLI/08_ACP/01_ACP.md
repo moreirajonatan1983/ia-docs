@@ -23,7 +23,7 @@ Ejecute Kiro como agente ACP:
 kiro-cli acp
 ```
 
-Utilice una configuración de agente específica:
+Utilizá una configuración de agente específica:
 ```golpecito
 kiro-cli acp --agente mi-agente
 ```
@@ -36,7 +36,7 @@ El agente se comunica a través de **stdin/stdout** usando **JSON-RPC 2.0**. Con
 
 ### General
 
-Utilice la **ruta completa** a `kiro-cli` en la configuración de su editor. Los IDE a menudo no heredan la RUTA de su shell, por lo que es posible que no se encuentren comandos como `kiro-cli`.
+Utilizá la **ruta completa** a `kiro-cli` en la configuración de su editor. Los IDE a menudo no heredan la RUTA de su shell, por lo que es posible que no se encuentren comandos como `kiro-cli`.
 
 Encuentra el camino:
 ```golpecito
@@ -60,7 +60,7 @@ Cualquier editor que admita el protocolo ACP puede utilizar Kiro CLI. Consulte l
 
 ## Métodos ACP admitidos
 
-Kiro CLI implementa la especificación ACP que incluye:
+Kiro CLI implementa la spec ACP que incluye:
 - **Protocolo central**: gestión de sesiones, selección de modelos y transmisión de respuestas
 - **Capacidades del agente**: acceso a herramientas, gestión de contexto y estado de conversación
 - **Actualizaciones de sesiones**: transmisión en tiempo real de las respuestas de los agentes
@@ -69,7 +69,7 @@ Kiro CLI implementa la especificación ACP que incluye:
 
 ## Extensiones Kiro
 
-Kiro extiende ACP con métodos personalizados (con el prefijo `_kiro.dev/` según la especificación de ACP) para exponer características específicas de Kiro:
+Kiro extiende ACP con métodos personalizados (con el prefijo `_kiro.dev/` según la spec de ACP) para exponer características específicas de Kiro:
 
 - [Comandos de barra diagonal] (https://kiro.dev/docs/cli/reference/slash-commands)
 - [eventos del servidor MCP] (https://kiro.dev/docs/cli/mcp)
@@ -87,4 +87,4 @@ Las sesiones se almacenan localmente y se pueden reanudar. El ID de sesión se i
 
 ## Registro
 
-Utilice el indicador `--log-level` para controlar la detalle del registro cuando se ejecuta en modo ACP. Los registros se escriben en stderr para evitar interferir con la comunicación JSON-RPC en stdout.
+Utilizá el indicador `--log-level` para controlar la detalle del registro cuando se ejecuta en modo ACP. Los registros se escriben en stderr para evitar interferir con la comunicación JSON-RPC en stdout.

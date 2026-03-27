@@ -57,8 +57,8 @@ Mantienes el control a través de varias características clave:
 
 | Característica | Descripción |
 |---|---|
-| **Ver todos los cambios** | Seleccione "Ver todos los cambios" en el módulo de Chat para ver una diferencia completa de todas las modificaciones |
-| **Revertir todos los cambios** | Seleccione "Revertir" para restaurar todos los archivos a su estado anterior localmente (esencialmente para deshacer todas las modificaciones de Kiro) |
+| **Ver todos los cambios** | Seleccioná "Ver todos los cambios" en el módulo de Chat para ver una diferencia completa de todas las modificaciones |
+| **Revertir todos los cambios** | Seleccioná "Revertir" para restaurar todos los archivos a su estado anterior localmente (esencialmente para deshacer todas las modificaciones de Kiro) |
 | **Revertir punto de control** | Revertir a un [punto de control](https://kiro.dev/docs/chat/checkpoints): revierte tanto los cambios de archivos como las adiciones de contexto |
 | **Interrumpir ejecución** | Detenga a Kiro en mitad de la ejecución en cualquier momento para recuperar el control manual |
 

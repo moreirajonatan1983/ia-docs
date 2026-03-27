@@ -57,7 +57,7 @@
 |---|---|---|
 | Abrir Chat de IA | `Cmd+L` | `Ctrl+L` |
 | Edición Inline con IA | `Cmd+I` | `Ctrl+I` |
-| Ejecutar/Depurar | `F5` | `F5` |
+| Ejecutar/debuggear | `F5` | `F5` |
 
 ---
 

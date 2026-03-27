@@ -16,7 +16,7 @@ El menú desplegable de autocompletar aparece a la **derecha del cursor** al esc
 
 - Comience a escribir un comando
 - El menú desplegable aparece automáticamente con sugerencias.
-- Utilice **teclas de flecha** para navegar
+- Utilizá **teclas de flecha** para navegar
 - Presione **Tab** o **Enter** para aceptar una sugerencia.
 
 ### Configuración

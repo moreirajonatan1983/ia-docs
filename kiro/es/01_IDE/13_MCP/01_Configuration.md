@@ -10,7 +10,7 @@ Con MCP, puedes:
 - Acceda a bases de conocimiento y documentación especializadas.
 - Integrar con servicios externos y API.
 - Amplíe las capacidades de Kiro con herramientas específicas de dominio
-- Utilice plantillas de mensajes y plantillas de recursos proporcionadas por el servidor a través del sistema de menciones `#` en el chat.
+- Utilizá plantillas de mensajes y plantillas de recursos proporcionadas por el servidor a través del sistema de menciones `#` en el chat.
 - Responder a las solicitudes de obtención del servidor cuando las herramientas necesitan información adicional durante la ejecución.
 - Cree herramientas personalizadas para sus flujos de trabajo específicos
 
@@ -27,7 +27,7 @@ Antes de usar MCP:
 ### Habilitación del soporte MCP
 
 Después de crear su archivo de configuración:
-1. Abra Configuración con `Cmd+` (Mac) o `Ctrl+` (Windows/Linux)
+1. Abrí Configuración con `Cmd+` (Mac) o `Ctrl+` (Windows/Linux)
 2. Busque "MCP"
 3. Habilite la configuración de soporte de MCP
 
@@ -41,7 +41,7 @@ El panel Kiro incluye una **pestaña de servidores MCP** que muestra:
 Para utilizar esta función:
 1. Selecciona el ícono de Kiro en la barra de actividades.
 2. Navegue a la pestaña **Servidores MCP**
-3. Haga clic en el nombre de cualquier herramienta para insertar un mensaje de marcador de posición en el chat.
+3. Hacé clic en el nombre de cualquier herramienta para insertar un mensaje de marcador de posición en el chat.
 
 ---
 
@@ -81,10 +81,10 @@ Los archivos de configuración de MCP utilizan el formato JSON:
 
 | Nivel | Archivo | Alcance |
 |---|---|---|
-| **Espacio de trabajo** | `.kiro/settings/mcp.json` | Solo espacio de trabajo actual: ideal para servidores de proyectos específicos |
-| **Usuario** | `~/.kiro/settings/mcp.json` | Todos los espacios de trabajo: lo mejor para servidores de uso frecuente |
+| **Workspace** | `.kiro/settings/mcp.json` | Solo Workspace actual: ideal para servidores de proyectos específicos |
+| **Usuario** | `~/.kiro/settings/mcp.json` | Todos los Workspaces: lo mejor para servidores de uso frecuente |
 
-> Si ambos archivos existen, las configuraciones se **fusionan** y la configuración del espacio de trabajo tiene prioridad.
+> Si ambos archivos existen, las configuraciones se **fusionan** y la configuración del Workspace tiene prioridad.
 
 ### Creando archivos de configuración
 
@@ -121,7 +121,7 @@ Los archivos de configuración de MCP utilizan el formato JSON:
 
 ### Consideraciones de seguridad
 
-- Utilice referencias de variables de entorno ("${API_TOKEN}`) en lugar de codificar valores sensibles
+- Utilizá referencias de variables de entorno ("${API_TOKEN}`) en lugar de codificar valores sensibles
 - Nunca envíe archivos de configuración con credenciales al control de versiones.
 - Conéctese únicamente a servidores remotos confiables
 - Revisar los permisos de la herramienta antes de agregarlos a "autoApprove".
@@ -140,7 +140,7 @@ Los archivos de configuración de MCP utilizan el formato JSON:
 ### Comprobación de registros de MCP
 
 1. Abre el panel de Kiro
-2. Seleccione la pestaña **Salida**
+2. Seleccioná la pestaña **Salida**
 3. Elija **"Kiro - Registros de MCP"** en el menú desplegable.
 
 ---

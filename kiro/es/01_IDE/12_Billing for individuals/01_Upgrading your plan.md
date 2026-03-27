@@ -28,7 +28,7 @@ Una vez que ya hiciste la primera actualización, el flujo es diferente desde Ki
 2. Elegí **Manage Plan** — serás redirigido al navegador
 3. Elegí **Actualizar suscripción**, seleccioná el plan deseado y luego **Continuar**
 4. Confirmá los detalles y elegí **Confirmar**
-5. Seleccione **Return to Kiro** para volver al IDE
+5. Seleccioná **Return to Kiro** para volver al IDE
 
 ---
 

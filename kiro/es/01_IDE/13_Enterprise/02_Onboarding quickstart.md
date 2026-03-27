@@ -13,7 +13,7 @@ Esta guía está dirigida a **administradores** que quieren incorporar a su equi
 1. **Crear una cuenta AWS** (si no tienes una)
    - [Crear cuenta AWS →](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 
-2. **Iniciar sesión en AWS**
+2. **Sign in en AWS**
    - Como usuario root de AWS o usuario con rol privilegiado
    - Alternativamente, configurará un [administrador con permisos mínimos](https://kiro.dev/docs/enterprise/iam/#policy-allow-administrators-to-configure-kiro-and-subscribe-users)
 

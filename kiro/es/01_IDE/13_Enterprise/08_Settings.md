@@ -28,7 +28,7 @@ Controla si los usuarios pueden usar las herramientas de acceso web (`web_search
 **Para deshabilitar el acceso web para todos los usuarios:**
 
 1. Abrí la **consola Kiro**
-2. Elegí **Ajustes**
+2. Elegí **Settings**
 3. En **Configuración compartida**, desactiva **Herramientas de búsqueda y recuperación web**
 
 > Cuando las herramientas web están deshabilitadas, los usuarios verán una notificación en `/tools` indicando que el acceso web fue deshabilitado por su administrador.

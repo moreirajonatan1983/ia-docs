@@ -48,13 +48,13 @@ Al instalar Kiro CLI por primera vez, se ejecuta una **migración automática**:
 | Configuración | CLI de desarrollador Q | Kiro CLI |
 |---|---|---|
 | PCM (global) | `~/.aws/amazonq/mcp.json` | `~/.kiro/settings/mcp.json` |
-| MCP (espacio de trabajo) | `.amazonq/mcp.json` | `.kiro/settings/mcp.json` |
+| MCP (Workspace) | `.amazonq/mcp.json` | `.kiro/settings/mcp.json` |
 | Avisos (globales) | `~/.aws/amazonq/prompts/` | `~/.kiro/prompts/` |
-| Mensajes (espacio de trabajo) | `.amazonq/prompts/` | `.kiro/prompts/` |
+| Mensajes (Workspace) | `.amazonq/prompts/` | `.kiro/prompts/` |
 | Agentes (globales) | `~/.aws/amazonq/cli-agents/` | `~/.kiro/agents/` |
-| Agentes (espacio de trabajo) | `.amazonq/cli-agents/` | `.kiro/agentes/` |
+| Agentes (Workspace) | `.amazonq/cli-agents/` | `.kiro/agentes/` |
 | Steering/Reglas (global) | `~/.aws/amazonq/rules/` | `~/.kiro/steering/` |
-| Steering/Reglas (espacio de trabajo) | `.amazonq/rules/` | `.kiro/steering/` |
+| Steering/Reglas (Workspace) | `.amazonq/rules/` | `.kiro/steering/` |
 | Configuración | — | `~/.kiro/settings/cli.json` |
 
 ---
@@ -68,7 +68,7 @@ Al instalar Kiro CLI por primera vez, se ejecuta una **migración automática**:
 - El agente por defecto cambió a `kiro_default`. En `/agent list` aparece con "No se encontró ruta" porque la configuración está en memoria
 - La interfaz de usuario tiene colores y nombres actualizados.
 - El agente por defecto soporta tanto **Amazon Q Rules** como **Kiro Steering**
-- Si tu proyecto tiene ambas carpetas `.kiro` y `.amazonq`, la configuración se carga desde `.kiro` (verás una advertencia al iniciar sesión)
+- Si tu proyecto tiene ambas carpetas `.kiro` y `.amazonq`, la configuración se carga desde `.kiro` (verás una advertencia al Sign in)
 
 ---
 

@@ -4,7 +4,7 @@
 
 ---
 
-Kiro utiliza pruebas basadas en propiedades (PBT) para validar que su implementación realmente coincida con lo que definió en sus especificaciones. Este enfoque genera cientos o miles de casos de prueba automáticamente, detectando casos extremos que nunca escribiría manualmente.
+Kiro utiliza pruebas basadas en propiedades (PBT) para validar que su implementación realmente coincida con lo que definió en sus Specs. Este enfoque genera cientos o miles de casos de prueba automáticamente, detectando casos extremos que nunca escribiría manualmente.
 
 ---
 
@@ -16,7 +16,7 @@ Una propiedad es una **declaración universal** sobre cómo debe comportarse su 
 
 > *"Para cualquier usuario autenticado y cualquier listado activo, el usuario puede ver ese listado."*
 
-Esto captura una regla general sobre el comportamiento del sistema que debe cumplirse en todos los escenarios válidos. En el mundo de las especificaciones de Kiro, esto se corresponde directamente con los requisitos de EARS.
+Esto captura una regla general sobre el comportamiento del sistema que debe cumplirse en todos los escenarios válidos. En el mundo de las Specs de Kiro, esto se corresponde directamente con los requisitos de EARS.
 
 ### Cómo funcionan las pruebas basadas en propiedades
 
@@ -35,11 +35,11 @@ PBT prueba esto automáticamente con:
 
 Esto detecta casos extremos y verifica que la implementación coincida con la intención.
 
-A lo largo de este proceso, PBT busca contraejemplos mediante la **"reducción"**, casi como un equipo rojo que intenta descifrar su código. Cuando encuentra infracciones, Kiro puede actualizar automáticamente su implementación o las opciones de superficie para corregir la especificación, la implementación o la prueba.
+A lo largo de este proceso, PBT busca contraejemplos mediante la **"reducción"**, casi como un equipo rojo que intenta descifrar su código. Cuando encuentra infracciones, Kiro puede actualizar automáticamente su implementación o las opciones de superficie para corregir la spec, la implementación o la prueba.
 
 ---
 
-## Pruebas basadas en propiedades con especificaciones
+## Pruebas basadas en propiedades con Specs
 
 ### Flujo de trabajo
 

@@ -37,7 +37,7 @@ Kiro chat admite múltiples idiomas naturales, incluidos: mandarín, francés, a
 
 ### Exportar una conversación
 
-Haga clic derecho en la pestaña de la conversación → **Exportar conversación** → guarda como formato `.md`.
+Hacé clic derecho en la pestaña de la conversación → **Exportar conversación** → guarda como formato `.md`.
 
 ### Detección inteligente de intenciones
 
@@ -51,23 +51,23 @@ Kiro detecta inteligentemente tu intención:
 
 ### Proveedores de contexto
 
-Utilice el símbolo `#` en la entrada del chat para acceder a los proveedores de contexto:
+Utilizá el símbolo `#` en la entrada del chat para acceder a los proveedores de contexto:
 
 | Proveedor | Uso de ejemplo |
 |---|---|
-| `#base de código` | `#codebase explica el flujo de autenticación` |
-| `#archivo` | `#auth.ts explica esta implementación` |
-| `#carpeta` | `#componentes/ ¿qué componentes tenemos?` |
+| `#codebase` | `#codebase explica el flujo de autenticación` |
+| `#file` | `#auth.ts explica esta implementación` |
+| `#folder` | `#componentes/ ¿qué componentes tenemos?` |
 | `#git diff` | `#git diff explica qué cambió en este PR` |
 | `#terminal` | `#terminal ayúdame a corregir este error de compilación` |
-| `#problemas` | `#problemas me ayudan a resolver estos problemas` |
+| `#issues` | `#issues me ayudan a resolver estos problemas` |
 | `#url` | `#url:https://docs.example.com/api explica esta API` |
-| `#código` | `#código: suma constante = (a, b) => a + b; explica esta función` |
-| `#repositorio` | `#repositorio ¿cómo está organizado este proyecto?` |
-| `#actual` | `#actual explica este componente` |
-| `#dirección` | `#steering:coding-standards.md revisa mi código` |
-| `#docs` | `#docs:api-reference.md explica este punto final de API` |
-| `#especificación` | `#spec: la autenticación de usuario actualiza el archivo de diseño` |
+| `#code` | `#code: suma constante = (a, b) => a + b; explica esta función` |
+| `#repository` | `#repository ¿cómo está organizado este proyecto?` |
+| `#current` | `#current explica este componente` |
+| `#steering` | `#steering:coding-standards.md revisa mi código` |
+| `#docs` | `#docs:api-reference.md explica este endpoint de API` |
+| `#spec` | `#spec: la autenticación de usuario actualiza el archivo de diseño` |
 | `#mcp` | `#mcp:aws-docs ¿Cómo configuro los depósitos S3?` |
 
 Combine múltiples proveedores de contexto:
@@ -75,7 +75,7 @@ Combine múltiples proveedores de contexto:
 #codebase #auth.ts explica cómo funciona la autenticación con nuestra base de datos
 ```
 
-El proveedor de contexto `#terminal` es particularmente poderoso para la depuración:
+El proveedor de contexto `#terminal` es particularmente poderoso para la Debug:
 ```
 #terminal Mi compilación está fallando, ¿cuál es el problema?
 #terminal Estas pruebas no pasan, ayúdame a entender por qué
@@ -88,9 +88,9 @@ El proveedor de contexto `#terminal` es particularmente poderoso para la depurac
 
 ### Gestión de sesiones
 
-- **Nueva sesión:** Haga clic en el ícono **+** en el panel de chat.
+- **Nueva sesión:** Hacé clic en el ícono **+** en el panel de chat.
 - **Cambiar de sesión:** Navega usando el selector de pestañas
-- **Ver historial:** Haga clic en el botón **Historial**
+- **Ver historial:** Hacé clic en el botón **Historial**
 - **Seguimiento de tareas:** Supervise el progreso mediante el botón **Lista de tareas**
 
 ### Historial de ejecución

@@ -12,7 +12,7 @@ Los comandos de barra diagonal permiten acceder rápidamente a hooks y archivos 
 
 1. Escribí `/` en el campo de entrada del chat
 2. Navegá o buscá los comandos disponibles
-3. Seleccione un comando y presione **Entrar**
+3. Seleccioná un comando y presione **Entrar**
 
 ---
 
@@ -29,7 +29,7 @@ Los [Hooks](../07_Hooks/01_Hook triggers.md) con disparador de tipo **Manual** a
 /generar-registro de cambios
 ```
 
-➡️ Para agregar un comando de gancho como barra diagonal: configure su tipo de disparador en **Manual**. Ver [Disparadores de gancho →](../07_Hooks/01_Hook%20triggers.md)
+➡️ Para agregar un comando de hook como barra diagonal: configure su tipo de disparador en **Manual**. Ver [Disparadores de hook →](../07_Hooks/01_Hook%20triggers.md)
 
 ---
 

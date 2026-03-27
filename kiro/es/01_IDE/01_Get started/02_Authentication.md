@@ -23,9 +23,9 @@ Kiro es una aplicación de AWS que funciona como un IDE agente independiente **s
 
 ### GitHub
 
-Utilizá las siguientes instrucciones para iniciar sesión en Kiro usando GitHub.
+Utilizá las siguientes instrucciones para Sign in en Kiro usando GitHub.
 
-**Para iniciar sesión con GitHub:**
+**Para Sign in con GitHub:**
 
 1. En Kiro, elegí **Sign in with GitHub**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
 2. Ingresá tu nombre de usuario o dirección de correo electrónico y tu contraseña y luego elegí **Sign in**.
@@ -35,9 +35,9 @@ Utilizá las siguientes instrucciones para iniciar sesión en Kiro usando GitHub
 
 ### Google
 
-Utilizá las siguientes instrucciones para iniciar sesión en Kiro mediante Google.
+Utilizá las siguientes instrucciones para Sign in en Kiro mediante Google.
 
-**Para iniciar sesión con Google:**
+**Para Sign in con Google:**
 
 1. En Kiro, elegí **Sign in with Google**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
 2. Elegí una cuenta de Google que quieras usar con Kiro.
@@ -47,9 +47,9 @@ Utilizá las siguientes instrucciones para iniciar sesión en Kiro mediante Goog
 
 ### AWS Builder ID
 
-Utilizá las siguientes instrucciones para iniciar sesión en Kiro usando AWS Builder ID.
+Utilizá las siguientes instrucciones para Sign in en Kiro usando AWS Builder ID.
 
-**Para iniciar sesión con AWS Builder ID:**
+**Para Sign in con AWS Builder ID:**
 
 1. En Kiro, elegí **Login with AWS Builder ID**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
 2. Ingresá tu dirección de correo electrónico y luego elegí **Next**.
@@ -60,9 +60,9 @@ Utilizá las siguientes instrucciones para iniciar sesión en Kiro usando AWS Bu
 
 ### AWS IAM Identity Center
 
-Utilizá las siguientes instrucciones para iniciar sesión en Kiro en tu organización, incluyendo AWS GovCloud (Estados Unidos), mediante AWS IAM Identity Center.
+Utilizá las siguientes instrucciones para Sign in en Kiro en tu organización, incluyendo AWS GovCloud (Estados Unidos), mediante AWS IAM Identity Center.
 
-**Para iniciar sesión con AWS IAM Identity Center:**
+**Para Sign in con AWS IAM Identity Center:**
 
 1. En Kiro, elegí **Sign in with AWS IAM Identity Center**.
 2. En **Start URL**, ingresá la URL de inicio proporcionada por tu administrador o mesa de ayuda.
@@ -81,9 +81,9 @@ Utilizá las siguientes instrucciones para iniciar sesión en Kiro en tu organiz
 
 ### Proveedor de identidad externo
 
-Utilizá las siguientes instrucciones para iniciar sesión en Kiro utilizando el proveedor de identidad externo de tu organización, como Microsoft Entra ID u Okta.
+Utilizá las siguientes instrucciones para Sign in en Kiro utilizando el proveedor de identidad externo de tu organización, como Microsoft Entra ID u Okta.
 
-**Para iniciar sesión con el proveedor de identidad de tu organización:**
+**Para Sign in con el proveedor de identidad de tu organización:**
 
 1. En Kiro, elegí **Your organization**.
 2. Ingresá tu correo electrónico de trabajo para encontrar tu organización y luego elegí **Continue**.

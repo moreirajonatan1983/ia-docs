@@ -66,7 +66,7 @@ Cuando Kiro quiera usar una herramienta MCP, solicita aprobación primero:
 
 1. Aparece un mensaje que describe la herramienta y su propósito.
 2. Revisarás los detalles de la herramienta y los parámetros.
-3. Haga clic en **Aprobar** para permitir, o **Denegar** para bloquear.
+3. Hacé clic en **Aprobar** para permitir, o **Denegar** para bloquear.
 
 ### Herramientas confiables de aprobación automática
 
@@ -127,7 +127,7 @@ Combina múltiples herramientas en una sola conversación para tareas complejas.
 
 Combina herramientas MCP con contexto local agregando archivos al contexto para que el agente pueda relacionar documentación externa con tu código actual.
 
-### Uso de herramientas MCP en especificaciones
+### Uso de herramientas MCP en Specs
 
 Las herramientas MCP están disponibles durante la creación de Specs. Podés referenciarlos en el plan de implementación para que el agente los use durante la ejecución.
 

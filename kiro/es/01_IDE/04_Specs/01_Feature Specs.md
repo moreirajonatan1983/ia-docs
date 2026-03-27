@@ -1,12 +1,12 @@
-# Especificaciones
+# Specs
 
 > **Fuente:** [kiro.dev/docs/specs/](https://kiro.dev/docs/specs/)
 
 ---
 
-Las especificaciones o especificaciones son artefactos estructurados que formalizan el proceso de desarrollo de funciones y corrección de errores en su aplicación. Proporcionan un enfoque sistemático para transformar ideas de alto nivel en planes de implementación detallados con un seguimiento y una rendición de cuentas claros.
+Las Specs o Specs son artefactos estructurados que formalizan el proceso de desarrollo de funciones y corrección de errores en su aplicación. Proporcionan un enfoque sistemático para transformar ideas de alto nivel en planes de implementación detallados con un seguimiento y una rendición de cuentas claros.
 
-Con las especificaciones de Kiro, puedes:
+Con las Specs de Kiro, puedes:
 - Dividir los requisitos en historias de usuarios con criterios de aceptación.
 - Crear documentos de diseño con diagramas de secuencia y planos de arquitectura.
 - Seguimiento del progreso de la implementación en tareas discretas
@@ -16,7 +16,7 @@ Con las especificaciones de Kiro, puedes:
 
 ## Estructura central
 
-Cada especificación genera tres archivos clave:
+Cada spec genera tres archivos clave:
 
 | Archivo | Propósito |
 |---|---|
@@ -28,11 +28,11 @@ Cada especificación genera tres archivos clave:
 
 ## Flujo de trabajo trifásico
 
-Todas las especificaciones siguen un flujo de trabajo de tres fases:
+Todas las Specs siguen un flujo de trabajo de tres fases:
 
 **1. Requisitos o análisis de errores**: defina lo que se debe crear o corregir
-- Especificaciones de funciones: historias de usuarios y criterios de aceptación en `requirements.md`
-- Especificaciones de corrección de errores: análisis de errores con comportamiento actual/esperado/sin cambios en `bugfix.md`
+- Specs de funciones: historias de usuarios y criterios de aceptación en `requirements.md`
+- Specs de corrección de errores: análisis de errores con comportamiento actual/esperado/sin cambios en `bugfix.md`
 
 **2. Diseño**: cree una arquitectura técnica y un enfoque de implementación en `design.md`
 - Arquitectura del sistema y diseño de componentes.
@@ -52,18 +52,18 @@ Kiro proporciona una interfaz de ejecución de tareas para archivos `tasks.md` q
 
 ---
 
-## Tipos de especificaciones
+## Tipos de Specs
 
 | Tipo | Lo mejor para |
 |---|---|
-| **Especificaciones de funciones** | Nuevas características que requieren planificación estructurada y requisitos EARS |
-| **Especificaciones de corrección de errores** | Corrección de errores con precisión quirúrgica y evitando regresiones |
+| **Specs de funciones** | Nuevas características que requieren planificación estructurada y requisitos EARS |
+| **Specs de corrección de errores** | Corrección de errores con precisión quirúrgica y evitando regresiones |
 
 ---
 
 ## Empezando
 
-1. Desde el panel Kiro, haga clic en el botón **+** debajo de Especificaciones. Alternativamente, elija **Especificación** en el panel de chat.
+1. Desde el panel Kiro, haga clic en el botón **+** debajo de Specs. Alternativamente, elija **spec** en el panel de chat.
 2. Kiro te preguntará si estás desarrollando una **Función** o solucionando un **Error**
    - Si elige **Función**, describa su función y elija su flujo de trabajo: Requisitos primero o Diseño primero
    - Si elige **Error**, describa su error.
@@ -73,17 +73,17 @@ Kiro proporciona una interfaz de ejecución de tareas para archivos `tasks.md` q
 
 ## Cuándo utilizar Specs frente a Vibe
 
-| Utilice especificaciones cuando... | Utilice Vibe cuando... |
+| Utilizá Specs cuando... | Utilizá Vibe cuando... |
 |---|---|
 | Construcción de características complejas que requieren una planificación estructurada | Codificación exploratoria rápida |
 | Corrección de errores en los que las regresiones son costosas | Prototipos sin objetivos claros |
-| Necesita documentación para la colaboración en equipo | |
-| Requisitos o necesidad de diseño iteración | |
+| Necesitas documentación para compartir con tu equipo | |
+| Requiere iterar fuertemente sobre el diseño y la lógica | |
 
 ---
 
 ## Más información
 
-- [Especificaciones de funciones →](https://kiro.dev/docs/specs/feature-specs/)
-- [Especificaciones de corrección de errores →](https://kiro.dev/docs/specs/bugfix-specs/)
+- [Specs de funciones →](https://kiro.dev/docs/specs/feature-specs/)
+- [Specs de corrección de errores →](https://kiro.dev/docs/specs/bugfix-specs/)
 - [Mejores prácticas →](https://kiro.dev/docs/specs/best-practices/)

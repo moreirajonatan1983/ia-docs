@@ -127,7 +127,7 @@ Los hooks pueden potenciarse con MCP para acceder a herramientas externas especi
 
 **Cómo usar MCP con hooks:**
 1. [Configurar servidores MCP →](../13_MCP/01_Configuration.md)
-2. Referenciar las herramientas MCP en las instrucciones del gancho
+2. Referenciar las herramientas MCP en las instrucciones del hook
 3. Configurar `autoApprove` para herramientas de uso frecuente
 
 **Casos de uso:**

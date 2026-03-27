@@ -22,7 +22,7 @@ kiro-cli diagnostic --format json-pretty   # Output estructurado
 kiro-cli diagnostic --force                # Sin requerir que la app esté corriendo
 ```
 
-### Registros de depuración
+### Registros de Debug
 
 ```bash
 kiro-cli --verbose chat "..."    # -v / -vv / -vvv para más detalle

@@ -33,7 +33,7 @@ kiro-cli mcp add \
 ### 2. Archivo mcp.json
 
 Los servidores MCP se pueden cargar desde:
-- Nivel de espacio de trabajo: `<raíz del proyecto>/.kiro/settings/mcp.json`
+- Nivel de Workspace: `<raíz del proyecto>/.kiro/settings/mcp.json`
 - Nivel de usuario: `~/.kiro/settings/mcp.json`
 
 ```json
@@ -84,7 +84,7 @@ El campo `mcpServers` especifica a qué servidores MCP tiene acceso un agente pe
 }
 ```
 
-> `includeMcpJson: true` le da al agente acceso a todos los servidores MCP definidos en las configuraciones a nivel de usuario y espacio de trabajo, además de aquellos en el campo `mcpServers` del agente.
+> `includeMcpJson: true` le da al agente acceso a todos los servidores MCP definidos en las configuraciones a nivel de usuario y Workspace, además de aquellos en el campo `mcpServers` del agente.
 
 ---
 

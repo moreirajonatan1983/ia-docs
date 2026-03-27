@@ -6,9 +6,9 @@
 
 ## Cambiar los planes de suscripción de Kiro
 
-1. Iniciar sesión en **AWS Management Console**
+1. Sign in en **AWS Management Console**
 2. Navegar a la **Kiro Console** (si no la ves, verificará la región de AWS)
-3. Vaya a **Usuarios y Grupos → pestaña Usuarios o Grupos**
+3. Navegá a **Usuarios y Grupos → pestaña Usuarios o Grupos**
 4. Seleccionar el usuario o grupo
 5. Elegir **Cambiar plan** → seleccionar el nuevo plan → **Continuar**
 
@@ -22,9 +22,9 @@ Ver [Facturación empresarial →](./09_Billing.md) para detalles sobre qué inc
 
 ## Darse de baja de usuarios de Kiro
 
-1. Iniciar sesión en **AWS Management Console**
+1. Sign in en **AWS Management Console**
 2. Navegar a la **Consola Kiro**
-3. Vaya a **Usuarios y Grupos → pestaña Usuarios o Grupos**
+3. Navegá a **Usuarios y Grupos → pestaña Usuarios o Grupos**
 4. Seleccionar el usuario o grupo a cancelar
 5. Elegir **Desactivar plan** → revisar el diálogo → **Cancelar suscripción**
 
@@ -51,9 +51,9 @@ El excedente permite a los usuarios continuar trabajando cuando superan los lím
 **Por defecto, el exceso está deshabilitado.** Una vez habilitado, aplica a **todos los usuarios y grupos del perfil**.
 
 Para habilitar:
-1. Iniciar sesión en **AWS Management Console**
+1. Sign in en **AWS Management Console**
 2. Navegar a la **Consola Kiro**
-3. Vaya a **Configuración**
+3. Navegá a **Configuración**
 4. En la sección **Configuración de Kiro**, activa **Excedentes**
 
 > Los tapones personalizados de excedente no están disponibles aún (próximamente).

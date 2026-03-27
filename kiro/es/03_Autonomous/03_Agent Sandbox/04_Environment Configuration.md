@@ -10,7 +10,7 @@ El sandbox del Agente Autónomo puede configurarse usando un `Dockerfile` para q
 
 ## Configuración automática
 
-Kiro Autónoma Agent busca un `Dockerfile` en la **raíz de tu repositorio**. Si lo encuentra, el agente configura automáticamente el sandbox basándose en esas especificaciones.
+Kiro Autónoma Agent busca un `Dockerfile` en la **raíz de tu repositorio**. Si lo encuentra, el agente configura automáticamente el sandbox basándose en esas Specs.
 
 > **Limitación:** Solo se soportan imágenes de contenedores **disponibles públicamente**. Las imágenes de registros privados y repositorios privados no pueden ser accedidas por el sandbox.
 

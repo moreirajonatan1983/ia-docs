@@ -16,7 +16,7 @@ Esta guía está dirigida a **administradores** que desean incorporar su equipo 
 
 Si no tienes una, [creá una cuenta AWS](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html).
 
-### Paso 2 — Iniciar sesión en AWS
+### Paso 2 — Sign in en AWS
 
 Podés iniciar como:
 - Usuario raíz de AWS

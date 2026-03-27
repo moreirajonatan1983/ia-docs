@@ -30,7 +30,7 @@ Bash, C, C++, C#, Elixir, Go, Java, JavaScript, Kotlin, Lua, PHP, Python, Ruby, 
 
 ## Descripción general de la base de código
 
-Obtenga una descripción completa de cualquier espacio de trabajo en segundos:
+Obtenga una descripción completa de cualquier Workspace en segundos:
 
 ```bash
 /code overview
@@ -41,7 +41,7 @@ Centrarse en un directorio específico:
 /descripción general del código ./src/components
 ```
 
-Utilice `--silent` para obtener resultados más limpios cuando profundice en un paquete:
+Utilizá `--silent` para obtener resultados más limpios cuando profundice en un paquete:
 ```golpecito
 / descripción general del código --silencioso
 ```
@@ -71,7 +71,7 @@ Búsqueda y transformación de código estructural basada en AST. Busque y modif
 
 ### Metavariables
 
-Utilice metavariables (por ejemplo, `$FUNC`, `$ARG`) en patrones para que coincidan con cualquier expresión de ese tipo.
+Utilizá metavariables (por ejemplo, `$FUNC`, `$ARG`) en patrones para que coincidan con cualquier expresión de ese tipo.
 
 ### Ejemplos de búsqueda de patrones
 
@@ -93,7 +93,7 @@ Utilice metavariables (por ejemplo, `$FUNC`, `$ARG`) en patrones para que coinci
 
 Las funciones integradas de cuidado de árboles funcionan desde el primer momento. Ejecute `/code init` solo si desea funciones LSP mejoradas.
 
-> La inteligencia del código se configura por espacio de trabajo: cada proyecto mantiene su propia configuración de LSP de forma independiente.
+> La inteligencia del código se configura por Workspace: cada proyecto mantiene su propia configuración de LSP de forma independiente.
 
 ```bash
 /code init
@@ -116,7 +116,7 @@ Las funciones integradas de cuidado de árboles funcionan desde el primer moment
 
 | Comando | Descripción |
 |---|---|
-| `/ código de inicio` | Inicializar LSP para el espacio de trabajo actual |
+| `/ código de inicio` | Inicializar LSP para el Workspace actual |
 | `/ código de inicio -f` | Forzar reinicializar LSP |
 | `/estado del código` | Mostrar el estado actual de la conexión LSP |
 | `/ registros de código` | Ver registros de diagnóstico de LSP |

@@ -14,6 +14,6 @@ Para cancelar un plan de pago, debes cambiar el nivel **Kiro Free**:
 2. Elegí **Manage Plan** — serás redirigido al navegador
 3. Elegí **Actualizar suscripción**, seleccioná **Kiro Free** y luego **Continuar**
 4. Confirmá los detalles y elegí **Confirmar**
-5. Seleccione **Return to Kiro** para volver al IDE
+5. Seleccioná **Return to Kiro** para volver al IDE
 
 > ⚠️ En el nivel Kiro Free, no hay excedentes disponibles. Al alcanzar el límite mensual debes esperar al próximo mes o actualizar.

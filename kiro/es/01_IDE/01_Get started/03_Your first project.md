@@ -92,7 +92,7 @@ Una vez que tu spec está completo:
 
 ## Automatizá flujos de trabajo con Hooks
 
-Los Agent Hooks (ganchos del agente) eliminan el trabajo manual al ejecutar automáticamente acciones predefinidas cuando:
+Los Agent Hooks (hooks del agente) eliminan el trabajo manual al ejecutar automáticamente acciones predefinidas cuando:
 
 - Se crean, guardan o eliminan archivos.
 - Se activan triggers (disparadores) manuales.
@@ -108,7 +108,7 @@ Para empezar:
    - Describí lo que querés automatizar en lenguaje natural.
    - Ejemplo: *"Cuando guardo un archivo de un componente de React, creá o actualizá automáticamente su correspondiente archivo de prueba"*
 
-3. **Configurá los ajustes del hook:**
+3. **Configurá los Settings del hook:**
    - **Event Type:** Elegí cuándo se activa el hook — eventos de archivos (crear, guardar, eliminar), eventos del ciclo de vida de los prompts o del agente (enviar prompt, detener agente, antes/después de usar herramientas), eventos de tareas del Spec (antes/después de la ejecución de una tarea), o disparo manual.
    - **File Pattern:** Especificá qué archivos deben activar este hook (por ejemplo, `src/**/*.tsx`).
    - **Instructions:** Definí las acciones específicas a realizar.

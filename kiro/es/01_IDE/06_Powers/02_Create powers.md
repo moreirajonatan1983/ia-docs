@@ -38,7 +38,7 @@ keywords: ["database", "postgres", "auth", "storage", "realtime", "backend", "su
 
 ### Instrucciones de incorporación
 
-La sección de onboarding corre cuando alguien usa tu poder por primera vez. Usala para validar dependencias, explicar pasos de configuración o crear hooks de espacio de trabajo.
+La sección de onboarding corre cuando alguien usa tu poder por primera vez. Usala para validar dependencias, explicar pasos de configuración o crear hooks de Workspace.
 
 ```markdown
 # Incorporación
@@ -50,10 +50,10 @@ Antes de usar Supabase Local MCP, asegúrese de que esté instalado lo siguiente
 - **Supabase CLI**: Verificar con: `supabase --version`
 
 ## Paso 2: agregar hooks
-Agregue un gancho a `.kiro/hooks/review-advisors.kiro.hook`
+Agregue un hook a `.kiro/hooks/review-advisors.kiro.hook`
 ```
 
-Kiro sigue estas instrucciones automáticamente: verifica que Docker esté corriendo, valida la CLI e instala el gancho de revisión en el espacio de trabajo.
+Kiro sigue estas instrucciones automáticamente: verifica que Docker esté corriendo, valida la CLI e instala el hook de revisión en el Workspace.
 
 ### Instrucciones de dirección
 

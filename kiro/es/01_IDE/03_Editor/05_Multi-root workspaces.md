@@ -1,4 +1,4 @@
-# Espacios de trabajo Multi-Raíz (Multi-root)
+# Workspaces Multi-Raíz (Multi-root)
 
 > **Fuente:** [kiro.dev/docs/editor/multi-root-workspaces/](https://kiro.dev/docs/editor/multi-root-workspaces/)
 
@@ -18,7 +18,7 @@ Al vincular manualemente un archivo en el chat usando `#file`, y detectarse que 
 
 ---
 
-## Specs (Especificaciones)
+## Specs (Specs)
 
 Kiro carga agresivamente todos los archivos de [Specs](https://kiro.dev/docs/specs/) desenterrándolos desde el submundo `.kiro` ubicado individualmente en **cada** raíz de tu espacio gigante, mostrando una lista unificada espectacular en el panel. Lado a lado de cada Spec dice a qué proyecto (carpeta raíz) pertenece la criatura.
 
@@ -40,11 +40,11 @@ A la hora de crear una regla de Steering grupal vos también serás apuntado por
 
 ---
 
-## Hooks (Ganchos de automatización)
+## Hooks (hooks de automatización)
 
 El rastreador se encarga de ubicar cada uno de los [hooks configurados](https://kiro.dev/docs/hooks/) bajo el capó de la subcarpeta `.kiro` en cada monstruo multi-proyecto que insertes en la UI, uniéndolo al panel **Agent Hooks**.
 
-> **Importantísimo:** Los ganchos puristas como Crear, Eliminar o Guardar archivos **saltan al ataque (triggers) estrictamente** cuando el Agente Kiro osa manipular el terreno y los bits exclusivos de la raíz de la que partió ese hook. No se cruzan los cables con otras raíces vecinas de la ventana para evitar apocalipsis asíncronos en cadena.
+> **Importantísimo:** Los hooks puristas como Crear, Eliminar o Guardar archivos **saltan al ataque (triggers) estrictamente** cuando el Agente Kiro osa manipular el terreno y los bits exclusivos de la raíz de la que partió ese hook. No se cruzan los cables con otras raíces vecinas de la ventana para evitar apocalipsis asíncronos en cadena.
 
 A la de crear un trigger, se asume que debés asignarle una cama raíz obligada.
 

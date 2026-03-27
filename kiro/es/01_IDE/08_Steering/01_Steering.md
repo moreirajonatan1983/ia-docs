@@ -4,7 +4,7 @@
 
 ---
 
-Los archivos de Steering guían la IA de Kiro con un contexto global o específico del espacio de trabajo a través de documentos Markdown que definen sus estándares, arquitectura y convenciones, lo que le brinda a Kiro una comprensión persistente de cómo funciona su proyecto.
+Los archivos de Steering guían la IA de Kiro con un contexto global o específico del Workspace a través de documentos Markdown que definen sus estándares, arquitectura y convenciones, lo que le brinda a Kiro una comprensión persistente de cómo funciona su proyecto.
 
 ---
 
@@ -22,15 +22,15 @@ Los archivos de Steering son documentos Markdown almacenados en `.kiro/steering/
 
 ## Alcance del archivo de Steering
 
-### Steering del espacio de trabajo
+### Steering del Workspace
 
-Reside en `.kiro/steering/` en la raíz de tu espacio de trabajo. Aplicar solo a ese espacio de trabajo específico. Se utiliza para informar a Kiro sobre patrones, bibliotecas y estándares que se aplican a un espacio de trabajo individual.
+Reside en `.kiro/steering/` en la raíz de tu Workspace. Aplicar solo a ese Workspace específico. Se utiliza para informar a Kiro sobre patrones, bibliotecas y estándares que se aplican a un Workspace individual.
 
 ### Steering global
 
-Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los espacios de trabajo. Se utiliza para informar a Kiro sobre las convenciones que se aplican en todos sus proyectos.
+Reside en `~/.kiro/steering/` en tu directorio de inicio. Aplicar a **todos** los Workspaces. Se utiliza para informar a Kiro sobre las convenciones que se aplican en todos sus proyectos.
 
-> **Nota:** En caso de instrucciones contradictorias entre el Steering global y del espacio de trabajo, **el Steering del espacio de trabajo tiene prioridad**.
+> **Nota:** En caso de instrucciones contradictorias entre el Steering global y del Workspace, **el Steering del Workspace tiene prioridad**.
 
 ### Steering del equipo
 
@@ -40,12 +40,12 @@ El Steering global puede distribuir archivos de Steering centralizados a equipos
 
 ## Archivos de Steering fundamentales
 
-Haga clic en **Generar documentos de Steering** en el panel de Kiro para generar automáticamente tres archivos fundamentales:
+Hacé clic en **Generar documentos de Steering** en el panel de Kiro para generar automáticamente tres archivos fundamentales:
 
 | Archivo | Propósito |
 |---|---|
 | `producto.md` | Define el propósito de su producto, los usuarios objetivo, las características clave y los objetivos comerciales.
-| `tecnología.md` | Marcos de documentos, bibliotecas, herramientas de desarrollo y limitaciones técnicas |
+| `tecnología.md` | frameworks de documentos, bibliotecas, herramientas de desarrollo y limitaciones técnicas |
 | `estructura.md` | Describe la organización de archivos, convenciones de nomenclatura, patrones de importación y decisiones arquitectónicas |
 
 Estos archivos básicos se incluyen en cada interacción de forma predeterminada.
@@ -55,8 +55,8 @@ Estos archivos básicos se incluyen en cada interacción de forma predeterminada
 ## Creación de archivos de Steering personalizados
 
 1. Navegue a la sección **Steering** en el panel Kiro.
-2. Haga clic en el botón **+**
-3. Seleccione el alcance: **espacio de trabajo** o **global**
+2. Hacé clic en el botón **+**
+3. Seleccioná el alcance: **Workspace** o **global**
 4. Elija un nombre de archivo descriptivo (por ejemplo, `api-standards.md`)
 5. Escriba su guía utilizando Markdown estándar y lenguaje natural.
 6. Opcionalmente, utilice el botón **Refinar** para que Kiro mejore sus requisitos.
@@ -65,7 +65,7 @@ Estos archivos básicos se incluyen en cada interacción de forma predeterminada
 
 ## Agentes.md
 
-Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGENTS.md` a `~/.kiro/steering/` o a la carpeta raíz de su espacio de trabajo.
+Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGENTS.md` a `~/.kiro/steering/` o a la carpeta raíz de su Workspace.
 
 > **Nota:** Los archivos AGENTS.md están **siempre incluidos** y no admiten modos de inclusión.
 
@@ -112,7 +112,7 @@ Incluya bajo demanda haciendo referencia con `#steering-file-name` en el chat o 
 ---
 inclusión: automático
 nombre: api-diseño
-Descripción: Patrones y convenciones de diseño de API REST. Úselo al crear o modificar puntos finales de API.
+Descripción: Patrones y convenciones de diseño de API REST. Úselo al crear o modificar endpoints de API.
 ---
 ```
 Se incluye automáticamente cuando su solicitud coincide con la descripción. También disponible como comandos de barra diagonal. Ideal para: orientación con mucho contexto que solo debe cargarse cuando sea relevante.
@@ -121,7 +121,7 @@ Se incluye automáticamente cuando su solicitud coincide con la descripción. Ta
 
 ## Referencias de archivos
 
-Enlace a archivos del espacio de trabajo en vivo para mantener el Steering actualizado:
+Enlace a archivos del Workspace en vivo para mantener el Steering actualizado:
 ```
 #[[archivo:<nombre_archivo_relativo>]]
 ```
@@ -136,7 +136,7 @@ Ejemplos:
 ## Mejores prácticas
 
 - **Mantenga los archivos enfocados**: un dominio por archivo (diseño, prueba e implementación de API)
-- **Utilice nombres claros**: `api-rest-conventions.md`, `testing-unit-patterns.md`
+- **Utilizá nombres claros**: `api-rest-conventions.md`, `testing-unit-patterns.md`
 - **Incluir contexto**: explique *por qué* se tomaron decisiones, no solo cuáles son los estándares.
 - **Proporcione ejemplos**: use fragmentos de código y comparaciones antes/después
 - **La seguridad es lo primero**: nunca incluya claves API, contraseñas ni datos confidenciales

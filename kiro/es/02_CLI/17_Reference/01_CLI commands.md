@@ -30,7 +30,7 @@ kiro-cli chat [OPTIONS] [INPUT]
 
 | Argumento | Descripción |
 |---|---|
-| `--no-interactivo` | Modo no interactivo (para guiones/CI) |
+| `--no-interactivo` | Modo no interactivo (para scripts/CI) |
 | `--resume` / `-r` | Continuar última sesión |
 | `--resume-selector` | Selector para elegir sesión y reanudar |
 | `--lista-sesiones` | Listar sesiones guardadas |
@@ -97,15 +97,15 @@ Gestionar servidores MCP.
 
 | Subcomando | Descripción |
 |---|---|
-| `mcp add --name <n> --command <cmd> --scope <espacio de trabajo\|global>` | Agregar servidor |
+| `mcp add --name <n> --command <cmd> --scope <Workspace\|global>` | Agregar servidor |
 | `mcp eliminar --nombre <n> --scope <alcance>` | Eliminar servidor |
-| `lista mcp [espacio de trabajo\|global]` | Listar servidores |
+| `lista mcp [Workspace\|global]` | Listar servidores |
 | `mcp import --file <archivo> <alcance>` | Importar configuración |
 | `estado de mcp --nombre <n>` | Estado de un servidor |
 
 ---
 
-### `iniciar sesión en kiro-cli`
+### `Sign in en kiro-cli`
 
 Autenticar con Kiro CLI.
 
@@ -120,7 +120,7 @@ kiro-cli login --use-device-flow                         # Forzar device flow
 
 ### `kiro-cli cerrar sesión`
 
-Cerrar sesión. **Termina la sesión en todos los espacios de trabajo** (preserva la configuración y conversaciones guardadas).
+Cerrar sesión. **Termina la sesión en todos los Workspaces** (preserva la configuración y conversaciones guardadas).
 
 ```bash
 kiro-cli logout
@@ -274,7 +274,7 @@ kiro-cli chat --delete-session <ID> # Eliminar sesión
 
 ## Archivos de registro
 
-Los registros se almacenan en `~/.kiro/logs/`. Uso de para depuración:
+Los registros se almacenan en `~/.kiro/logs/`. Uso de para Debug:
 ```golpecito
 kiro-cli --verbose chat "..." # -v, -vv, -vvv para más detalles
 ```

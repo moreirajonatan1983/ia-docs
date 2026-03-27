@@ -23,7 +23,7 @@ Toda instalación de Kiro necesita las siguientes URL (inicio de sesión, chat, 
 
 | URL | Propósito |
 |---|---|
-| `app.kiro.dev` | Iniciar sesión y portal |
+| `app.kiro.dev` | Sign in y portal |
 | `prod.us-east-1.auth.desktop.kiro.dev` | Autenticación |
 | `prod.us-east-1.telemetry.desktop.kiro.dev` | Telemetria |
 | `prod.download.desktop.kiro.dev` | Actualizaciones |
@@ -62,7 +62,7 @@ Consulta con tu equipo de identidad si no estás seguro del dominio exacto.
 
 ## AWS GovCloud
 
-Para **AWS GovCloud (US)**, usaremos estos puntos finales compatibles con FIPS en lugar de las URL principales:
+Para **AWS GovCloud (US)**, usaremos estos endpoints compatibles con FIPS en lugar de las URL principales:
 
 ```
 q-fips.us-gov-east-1.amazonaws.com
@@ -109,7 +109,7 @@ NO_PROXY
 
 También puedes configurar el proxy desde **Configuración → Proxy** dentro de Kiro.
 
-> ⚠️ El tráfico del navegador (iniciar sesión) usa la pila de red del sistema operativo — el proxy del IDE **no aplica**. Tu firewall debe permitir las URL de IAM Identity Center y `app.kiro.dev` a nivel de rojo.
+> ⚠️ El tráfico del navegador (Sign in) usa la pila de red del sistema operativo — el proxy del IDE **no aplica**. Tu firewall debe permitir las URL de IAM Identity Center y `app.kiro.dev` a nivel de rojo.
 
 ---
 

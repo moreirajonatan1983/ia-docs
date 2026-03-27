@@ -74,7 +74,7 @@ El contenido que Kiro puede usar incluye:
 - Otros insumos que proporcionalás
 - Respuestas y código que genera Kiro
 
-Este contenido puede usarse para: mejorar respuestas a preguntas comunes, corregir problemas operativos de Kiro, depuración o entrenamiento de modelos.
+Este contenido puede usarse para: mejorar respuestas a preguntas comunes, corregir problemas operativos de Kiro, Debug o entrenamiento de modelos.
 
 ---
 
@@ -84,7 +84,7 @@ Por defecto, el Agente Autónomo Kiro recopila contenido para mejorar el servici
 
 ### Cómo darse de baja
 
-1. Vaya a [app.kiro.dev/agent/settings](https://app.kiro.dev/agent/settings)
+1. Navegá a [app.kiro.dev/agent/settings](https://app.kiro.dev/agent/settings)
 2. Navegar a la sección **Recopilación de datos**
 3. Desactivar **"Permitir que AWS utilice el contenido de su agente autónomo Kiro para mejorar el servicio"**
 

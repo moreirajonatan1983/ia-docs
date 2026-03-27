@@ -24,7 +24,7 @@ La base VS Code de Kiro permite una compatibilidad total con su entorno de desar
 
 ### Migración de perfil
 
-1. Abra la paleta de comandos: `Cmd+Shift+P` (Mac) / `Ctrl+Shift+P` (Windows/Linux)
+1. Abrí la paleta de comandos: `Cmd+Shift+P` (Mac) / `Ctrl+Shift+P` (Windows/Linux)
 2. Busque **"Importar perfil desde VS Code"**
 3. Kiro detectará e importará automáticamente sus perfiles de VS Code
 
@@ -44,7 +44,7 @@ Si la migración automática no funciona:
 Kiro amplía la arquitectura de configuración de VS Code con controles dedicados para:
 - Comportamientos de IA y automatización de agentes.
 - Comandos confiables
-- Funciones exclusivas de Kiro (dirección, especificaciones, hooks)
+- Funciones exclusivas de Kiro (dirección, Specs, hooks)
 
 ### Actualizaciones de versión
 
@@ -58,7 +58,7 @@ Kiro utiliza el **registro de extensión OpenVSX**. Las extensiones disponibles 
 |---|---|
 | Extensiones de idiomas | Funcionalidad completa para extensiones disponibles en OpenVSX |
 | Extensiones de temas | Compatibilidad visual completa |
-| Extensiones de depuración | Flujos de trabajo de depuración ininterrumpidos para extensiones compatibles |
+| Extensiones de Debug | Flujos de trabajo de Debug ininterrumpidos para extensiones compatibles |
 | Extensiones de Git | Ampliado con generación de commit inteligente y revisión de código automatizada |
 
 > ⚠️ Solo se pueden importar extensiones disponibles en el **registro OpenVSX**. Es posible que algunas exclusivas de VS Code Marketplace no estén disponibles en Kiro.

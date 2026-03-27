@@ -12,7 +12,7 @@ Este error es un falso positivo de las funciones de seguridad de macOS.
 
 **Soluciones:**
 
-1. Vaya a **Configuración del sistema → Privacidad y seguridad** → haga clic en **Permitir** o **Abrir de todos modos** para Kiro
+1. Navegá a **Configuración del sistema → Privacidad y seguridad** → haga clic en **Permitir** o **Abrir de todos modos** para Kiro
 2. Arrastrará `Kiro.app` al escritorio, luego arrastralo del escritorio a la carpeta Aplicaciones → reiniciará el sistema
 3. Abrí la terminal y ejecutá:
    ```golpecito
@@ -26,7 +26,7 @@ Este error es un falso positivo de las funciones de seguridad de macOS.
 ### Fallos de redireccionamiento del navegador durante la autenticación
 
 **Windows:**
-1. Abra el símbolo del sistema como administrador
+1. Abrí el símbolo del sistema como administrador
 2. Ejecutá Kiro con logging habilitado:
    ```
    C:\ruta\a\app.exe --enable-logging
@@ -51,8 +51,8 @@ Este error es un falso positivo de las funciones de seguridad de macOS.
 
 | Error | causa | Solución |
 |---|---|---|
-| `"Hubo un error al iniciar sesión"` | No tienes una suscripción Q Developer Pro activa | [Ver cómo activar Q Developer Pro →](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html) |
-| No podés iniciar sesión a pesar de tener credenciales válidas | Limitación regional — Kiro solo soporta Identity Center en US East (N. Virginia) | Utilice Builder ID para iniciar sesión en redes sociales (Google, GitHub) |
+| `"Hubo un error al Sign in"` | No tienes una suscripción Q Developer Pro activa | [Ver cómo activar Q Developer Pro →](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html) |
+| No podés Sign in a pesar de tener credenciales válidas | Limitación regional — Kiro solo soporta Identity Center en US East (N. Virginia) | Utilizá Builder ID para Sign in en redes sociales (Google, GitHub) |
 | Sesión expira constantemente | Timeout por defecto de 8 horas | El administrador puede [configurar sesiones más largas →](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-session-duration-how-to-configure.html) |
 
 ---
@@ -135,7 +135,7 @@ Las actualizaciones están deshabilitadas porque está ejecutando la instalació
 1. Haz clic en derecho en el ícono de Kiro → **Mostrar más opciones**
 2. Seleccioná **Propiedades** → pestaña **Compatibilidad**
 3. Desmarcar **Ejecuta este programa como administrador**
-4. Haga clic en **Aplicar** → **Aceptar**
+4. Hacé clic en **Aplicar** → **Aceptar**
 
 ### No se pueden ejecutar scripts (PowerShell 7+)
 
@@ -151,7 +151,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Si usa OneDrive en Windows y la ruta del escritorio causa problemas:
 
-1. Abra el símbolo del sistema como administrador
+1. Abrí el símbolo del sistema como administrador
 2. Crea un enlace simbólico:
    ```
    mklink /J "C:\Users\<nombre de usuario>\Desktop" "C:\Users\<nombre de usuario>\OneDrive\Desktop"

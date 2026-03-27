@@ -14,9 +14,9 @@ Los enlaces se definen en el archivo de configuración del agente. Consulte la [
 
 ---
 
-## Evento de gancho
+## Evento de hook
 
-Los hooks reciben un evento de gancho en **formato JSON a través de STDIN**:
+Los hooks reciben un evento de hook en **formato JSON a través de STDIN**:
 
 ```json
 { "hook_event_name": "agentSpawn", "cwd": "/current/working/directory" }
@@ -29,19 +29,19 @@ Para los hooks relacionados con herramientas, se incluyen campos adicionales:
 
 ---
 
-## Salida de gancho
+## Salida de hook
 
 | Código de salida | Comportamiento |
 |---|---|
 | `0` | Hook tuvo éxito. STDOUT se captura pero no se muestra al usuario. |
 | `2` | *(Solo PreToolUse)* Bloquear la ejecución de la herramienta. STDERR se devuelve al LLM. |
-| Otro | El gancho falló. STDERR se muestra como una advertencia para el usuario. |
+| Otro | El hook falló. STDERR se muestra como una advertencia para el usuario. |
 
 ---
 
 ## Coincidencia de herramientas
 
-Utilice el campo `matcher` para especificar a qué herramientas se aplica el gancho:
+Utilizá el campo `matcher` para especificar a qué herramientas se aplica el hook:
 
 | Emparejador | Partidos |
 |---|---|
@@ -57,7 +57,7 @@ Utilice el campo `matcher` para especificar a qué herramientas se aplica el gan
 
 ---
 
-## Tipos de gancho
+## Tipos de hook
 
 ### AgenteSpawn
 

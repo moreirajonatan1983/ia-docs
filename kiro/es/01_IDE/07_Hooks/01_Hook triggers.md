@@ -10,7 +10,7 @@ Los enlaces de agente son activadores automatizados que ejecutan mensajes de age
 
 ## ¿Qué son los hooks de agentes?
 
-![Kiro Gancho](https://kiro.dev/videos/kiro-hook.mp4)
+![Kiro hook](https://kiro.dev/videos/kiro-hook.mp4)
 
 Los hooks pueden activarse en:
 - Guardar, crear o eliminar archivos
@@ -39,13 +39,13 @@ El sistema de enlace de agente sigue un proceso simple de dos pasos:
 
 ## Configuración de enlaces de agentes
 
-### Creando un gancho
+### Creando un hook
 
 1. Navegue a la sección **Agent Hooks** en el panel de Kiro.
-2. Haga clic en el botón **+** para crear un nuevo gancho.
-3. Elige cómo quieres crear el gancho:
-   - **Crear un gancho manualmente**: configure un gancho a mano en un formulario
-   - **Pídele a Kiro que cree un gancho**: describe un gancho usando lenguaje natural.
+2. Hacé clic en el botón **+** para crear un nuevo hook.
+3. Elige cómo quieres crear el hook:
+   - **Crear un hook manualmente**: configure un hook a mano en un formulario
+   - **Pídele a Kiro que cree un hook**: describe un hook usando lenguaje natural.
 
 También puede abrir la interfaz de usuario de Hook desde la paleta de comandos:
 - macOS: `Cmd + Shift + P` → `Kiro: abrir la interfaz de usuario de Kiro Hook`
@@ -53,18 +53,18 @@ También puede abrir la interfaz de usuario de Hook desde la paleta de comandos:
 
 ---
 
-### Pídele a Kiro que cree un gancho
+### Pídele a Kiro que cree un hook
 
-1. Selecciona **Pedirle a Kiro que cree un gancho**
-2. Describe el flujo de trabajo del gancho en lenguaje natural.
+1. Selecciona **Pedirle a Kiro que cree un hook**
+2. Describe el flujo de trabajo del hook en lenguaje natural.
 3. Presione Entrar o haga clic en **Enviar**
 4. Revise la configuración generada, ajústela si es necesario y haga clic en **Guardar enlace**
 
 ---
 
-### Crear un gancho manualmente
+### Crear un hook manualmente
 
-1. Seleccione **Crear un enlace manualmente** para abrir el formulario del enlace.
+1. Seleccioná **Crear un enlace manualmente** para abrir el formulario del enlace.
 2. Complete los campos del formulario:
 
 | Campo | Descripción |
@@ -77,14 +77,14 @@ También puede abrir la interfaz de usuario de Hook desde la paleta de comandos:
 | **Acción** | Elija **Preguntar a Kiro** (solicitud de agente) o **Ejecutar comando** (comando de shell) |
 | **Instrucciones o Comando** | El símbolo del sistema o comando de shell para ejecutar |
 
-3. Haga clic en **Crear gancho** cuando haya terminado, o en **Borrar** para restablecer el formulario.
+3. Hacé clic en **Crear hook** cuando haya terminado, o en **Borrar** para restablecer el formulario.
 
 ---
 
 ## Próximos pasos
 
-- [Disparadores de gancho →](https://kiro.dev/docs/hooks/hook-triggers/)
-- [Acciones de gancho →](https://kiro.dev/docs/hooks/hook-actions/)
+- [Disparadores de hook →](https://kiro.dev/docs/hooks/hook-triggers/)
+- [Acciones de hook →](https://kiro.dev/docs/hooks/hook-actions/)
 - [Ejemplos →](https://kiro.dev/docs/hooks/examples/)
 - [Gestión →](https://kiro.dev/docs/hooks/management/)
 - [Mejores prácticas →](https://kiro.dev/docs/hooks/best-practices/)
