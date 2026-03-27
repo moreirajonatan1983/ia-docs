@@ -90,12 +90,13 @@ Al revisar una pull request:
 - Declaraciones Console.log dejadas en el código de producción.
 ```
 
-### Campos frontales
+### Front fields
 
-| Campo | Descripción |
-|---|---|
-| `nombre` | Identificador único del Skill |
-| `descripción` | **Crítico** — Determina cuándo se activa. Incluir palabras clave y acciones específicas. |
+- **name** (Requerido) — Identificador de la skill (usado como slash command).
+- **description** (Requerido) — Utilizado por Kiro para decidir cuándo activarla.
+- **license** (No) — Nombre de la licencia o referencia a un archivo de licencia empaquetado.
+- **compatibility** (No) — Requisitos del entorno (ej. herramientas requeridas, acceso a red).
+- **metadata** (No) — Datos adicionales clave-valor como autor o versión.
 
 ### Archivos de referencia
 

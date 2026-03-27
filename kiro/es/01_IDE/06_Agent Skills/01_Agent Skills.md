@@ -89,15 +89,13 @@ Descripción: revise las pull requests para determinar la calidad del código, l
 4. Revisar el nombre y la estructura.
 ```
 
-### Campos frontales
+### Front fields
 
-| Campo | Requerido | Descripción |
-|---|---|---|
-| `nombre` | ✅ | Identificador de skill (usado como comando de barra diagonal) |
-| `descripción` | ✅ | Utilizado por Kiro para decidir cuándo activar |
-| `licencia` | ✗ | Identificador de licencia SPDX |
-| `compatibilidad` | ✗ | Herramientas de IA compatibles |
-| `metadatos` | ✗ | Metadatos clave/valor adicionales |
+- **name** (Requerido) — Identificador de la skill (usado como slash command).
+- **description** (Requerido) — Utilizado por Kiro para decidir cuándo activarla.
+- **license** (No) — Nombre de la licencia o referencia a un archivo de licencia empaquetado.
+- **compatibility** (No) — Requisitos del entorno (ej. herramientas requeridas, acceso a red).
+- **metadata** (No) — Datos adicionales clave-valor como autor o versión.
 
 Consulte la [spec completa →](https://agentskills.io/specification)
 

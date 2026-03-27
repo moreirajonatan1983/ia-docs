@@ -91,13 +91,12 @@ description: Review pull requests for code quality, security issues, and test co
 
 ### Frontmatter Fields
 
-| Field | Required | Description |
-|---|---|---|
-| `name` | ✅ | Skill identifier (used as slash command) |
-| `description` | ✅ | Used by Kiro to decide when to activate |
-| `license` | ✗ | SPDX license identifier |
-| `compatibility` | ✗ | Compatible AI tools |
-| `metadata` | ✗ | Additional key/value metadata |
+
+- **name** (Required) — Skill identifier (used as slash command)
+- **description** (Required) — Used by Kiro to decide when to activate
+- **license** (No) — SPDX license identifier or reference to a bundled license file.
+- **compatibility** (No) — Environment requirements (e.g., required tools, network access).
+- **metadata** (No) — Additional key-value data like author or version.
 
 See the [full specification →](https://agentskills.io/specification)
 
