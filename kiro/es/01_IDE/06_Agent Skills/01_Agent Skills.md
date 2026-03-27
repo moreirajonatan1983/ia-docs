@@ -103,9 +103,9 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 
 ---
 
-## En qué se diferencian las skills de la dirección y los poderes
+## En qué se diferencian las skills de la dirección y los Powers
 
-| Característica | Skills | Dirección | Poderes |
+| Característica | Skills | Dirección | Powers |
 |---|---|---|---|
 | **Estándar** | Abierto (especificación de skills del agente) | Específico de Kiro | Específico de Kiro |
 | **Cargando** | Bajo demanda | siempre/auto/fileMatch/manual | Dinámico basado en el contexto |
@@ -129,5 +129,5 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 ## Documentación relacionada
 
 - [Dirección →](https://kiro.dev/docs/steering) — Contexto y estándares específicos del proyecto
-- [Poderes →](https://kiro.dev/docs/powers) — Integraciones de MCP con conocimientos incluidos
+- [Powers →](https://kiro.dev/docs/powers) — Integraciones de MCP con conocimientos incluidos
 - [Especificación de skills del agente →](https://agentskills.io/specification)

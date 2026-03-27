@@ -44,4 +44,4 @@ El tutorial está estructurado en etapas progresivas:
 
 - [Configuración MCP →](../10_MCP/01_Configuration.md)
 - [Hooks →](../07_Hooks/01_Hook%20triggers.md)
-- [Poderes →](../06_Powers/01_Install%20powers.md)
+- [Powers →](../06_Powers/01_Install%20powers.md)

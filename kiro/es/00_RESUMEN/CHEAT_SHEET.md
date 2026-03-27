@@ -51,6 +51,6 @@ El agente autónomo "dialoga" con GitHub a través de menciones o etiquetas de i
   El Sandbox del agente es capaz de clonar, probar y mandar Pull Requests finalizados con las reparaciones o *features* listadas, requiriendo solamente tu validación de revisión de código (Review).
 
 ### 🛡 MCP & Variables Aisladas en Sandbox
-Para darle poderes o llaves de API al agente sin que tu entorno las exponga, declararlas en el panel de configuración alojado en *app.kiro.dev/agent* dentro de:
+Para darle Powers o llaves de API al agente sin que tu entorno las exponga, declararlas en el panel de configuración alojado en *app.kiro.dev/agent* dentro de:
 - `Secure Environment Variables`
 - `External Actions Access` (APIs Rest delegadas).

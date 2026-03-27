@@ -1,10 +1,10 @@
-# Crear poderes
+# Crear Powers
 
 > **Fuente:** [kiro.dev/docs/powers/create/](https://kiro.dev/docs/powers/create/)
 
 ---
 
-Crea tus propios poderes para extender las capacidades de Kiro con herramientas especializadas, y compartílos con la comunidad.
+Crea tus propios Powers para extender las capacidades de Kiro con herramientas especializadas, y compartílos con la comunidad.
 
 ---
 
@@ -127,7 +127,7 @@ power-supabase/
 ## Pruebas localmente
 
 1. Cree el directorio del power con los archivos necesarios
-2. Abrí **Kiro → Panel de poderes → Agregar energía desde la ruta local**
+2. Abrí **Kiro → Panel de Powers → Agregar energía desde la ruta local**
 3. Selecciona tu directorio del poder
 4. Testeá la activación usando palabras clave de tu power en una conversación
 

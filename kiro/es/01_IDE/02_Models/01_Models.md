@@ -50,7 +50,7 @@ El modelo más inteligente de Anthropic, que combina la máxima capacidad con un
 
 ### Claude Soneto 4.6
 
-Una actualización completa de Sonnet 4.5 que se acerca a la inteligencia de Opus 4.6 y al mismo tiempo es más eficiente en términos de token. Destaca en flujos de trabajo de desarrollo iterativos y mantiene el contexto durante sesiones largas. Maneja funciones de agente principal y subagente en procesos multimodelo, lo que lo hace ideal para equipos que utilizan poderes de Kiro y subagentes personalizados. [Más información →](https://www.anthropic.com/news/claude-sonnet-4-6)
+Una actualización completa de Sonnet 4.5 que se acerca a la inteligencia de Opus 4.6 y al mismo tiempo es más eficiente en términos de token. Destaca en flujos de trabajo de desarrollo iterativos y mantiene el contexto durante sesiones largas. Maneja funciones de agente principal y subagente en procesos multimodelo, lo que lo hace ideal para equipos que utilizan Powers de Kiro y subagentes personalizados. [Más información →](https://www.anthropic.com/news/claude-sonnet-4-6)
 
 ---
 

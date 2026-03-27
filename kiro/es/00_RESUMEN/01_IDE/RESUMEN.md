@@ -412,7 +412,7 @@ El modelo más inteligente de Anthropic, que combina la máxima capacidad con un
 
 #### Claude Soneto 4.6
 
-Una actualización completa de Sonnet 4.5 que se acerca a la inteligencia de Opus 4.6 y al mismo tiempo es más eficiente en términos de token. Destaca en flujos de trabajo de desarrollo iterativos y mantiene el contexto durante sesiones largas. Maneja funciones de agente principal y subagente en procesos multimodelo, lo que lo hace ideal para equipos que utilizan poderes de Kiro y subagentes personalizados. [Más información →](https://www.anthropic.com/news/claude-sonnet-4-6)
+Una actualización completa de Sonnet 4.5 que se acerca a la inteligencia de Opus 4.6 y al mismo tiempo es más eficiente en términos de token. Destaca en flujos de trabajo de desarrollo iterativos y mantiene el contexto durante sesiones largas. Maneja funciones de agente principal y subagente en procesos multimodelo, lo que lo hace ideal para equipos que utilizan Powers de Kiro y subagentes personalizados. [Más información →](https://www.anthropic.com/news/claude-sonnet-4-6)
 
 ---
 
@@ -2492,9 +2492,9 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 
 ---
 
-### En qué se diferencian las skills de la dirección y los poderes
+### En qué se diferencian las skills de la dirección y los Powers
 
-| Característica | Skills | Dirección | Poderes |
+| Característica | Skills | Dirección | Powers |
 |---|---|---|---|
 | **Estándar** | Abierto (especificación de skills del agente) | Específico de Kiro | Específico de Kiro |
 | **Cargando** | Bajo demanda | siempre/auto/fileMatch/manual | Dinámico basado en el contexto |
@@ -2518,37 +2518,37 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 ### Documentación relacionada
 
 - [Dirección →](https://kiro.dev/docs/steering) — Contexto y estándares específicos del proyecto
-- [Poderes →](https://kiro.dev/docs/powers) — Integraciones de MCP con conocimientos incluidos
+- [Powers →](https://kiro.dev/docs/powers) — Integraciones de MCP con conocimientos incluidos
 - [Especificación de skills del agente →](https://agentskills.io/specification)
 
 ---
 
 *📂 Capítulo: **Powers > Install powers***
 
-## Instalar poderes
+## Instalar Powers
 
 > **Fuente:** [kiro.dev/docs/powers/](https://kiro.dev/docs/powers/) · [kiro.dev/powers](https://kiro.dev/powers)
 
 ---
 
-### ¿Qué son los poderes?
+### ¿Qué son los Powers?
 
-Powers son paquetes que combinan **servidores MCP + dirección + hooks**, activados dinámicamente según el contexto de tu conversación. En lugar de cargar todas las herramientas de golpe MCP, los poderes se activan solo cuando son relevantes.
+Powers son paquetes que combinan **servidores MCP + dirección + hooks**, activados dinámicamente según el contexto de tu conversación. En lugar de cargar todas las herramientas de golpe MCP, los Powers se activan solo cuando son relevantes.
 
 #### El problema: sobrecarga de contexto
 
-| Poderes del pecado | Poderes estafadores |
+| Powers del pecado | Powers estafadores |
 |---|---|
 | Conectar 5 servidores MCP carga más de 100 definiciones de herramientas antes de tu primer aviso | Las herramientas se cargan **on-demand** basado en palabras clave de la conversación |
 | 5 servidores pueden consumir 50.000+ tokens (40% de la ventana de contexto) | Solo se carga lo relevante al task actual |
 | Sin contexto del framework, el agente adivina | Acceso instantáneo a conocimiento especializado |
 
-#### Cómo funcionan los poderes
+#### Cómo funcionan los Powers
 
 Cuando inició una tarea, Kiro:
 1. Lee la descripción de la tarea
-2. Evalúa los poderes instalados contra el task
-3. Carga **solo** los poderes relevantes en contexto
+2. Evalúa los Powers instalados contra el task
+3. Carga **solo** los Powers relevantes en contexto
 
 #### ¿Qué hay en un poder?
 
@@ -2564,7 +2564,7 @@ Cuando inició una tarea, Kiro:
 
 ### Socios del mercado
 
-Poderes curados de socios oficiales disponibles con un clic:
+Powers curados de socios oficiales disponibles con un clic:
 
 `Datadog` · `Dynatrace` · `Figma` · `Neon` · `Netlify` · `Postman` · `Supabase` · `Stripe` · `Strands SDK` · `AWS Aurora`
 
@@ -2575,7 +2575,7 @@ Poderes curados de socios oficiales disponibles con un clic:
 #### Desde Marketplace (un clic)
 
 1. Abrí el panel **Powers** en Kiro
-2. Explora los poderes disponibles en [kiro.dev/powers](https://kiro.dev/powers)
+2. Explora los Powers disponibles en [kiro.dev/powers](https://kiro.dev/powers)
 3. Haz clic en **Instalar** — el poder se registra automáticamente
 4. No requiere configuración manual de JSON ni configuración por línea de comandos
 
@@ -2591,7 +2591,7 @@ Poderes curados de socios oficiales disponibles con un clic:
 1. Abrí el panel **Powers** en Kiro
 2. Seleccioná **Agregar energía desde la ruta local**
 3. Selecciona el directorio de tu power local
-4. Ideal para testear poderes propios antes de publicarlos
+4. Ideal para testear Powers propios antes de publicarlos
 
 ---
 
@@ -2604,13 +2604,13 @@ Poderes curados de socios oficiales disponibles con un clic:
 
 *📂 Capítulo: **Powers > Create powers***
 
-## Crear poderes
+## Crear Powers
 
 > **Fuente:** [kiro.dev/docs/powers/create/](https://kiro.dev/docs/powers/create/)
 
 ---
 
-Crea tus propios poderes para extender las capacidades de Kiro con herramientas especializadas, y compartílos con la comunidad.
+Crea tus propios Powers para extender las capacidades de Kiro con herramientas especializadas, y compartílos con la comunidad.
 
 ---
 
@@ -2733,7 +2733,7 @@ power-supabase/
 ### Pruebas localmente
 
 1. Cree el directorio del power con los archivos necesarios
-2. Abrí **Kiro → Panel de poderes → Agregar energía desde la ruta local**
+2. Abrí **Kiro → Panel de Powers → Agregar energía desde la ruta local**
 3. Selecciona tu directorio del poder
 4. Testeá la activación usando palabras clave de tu power en una conversación
 
@@ -3517,9 +3517,9 @@ Ver la [especificación completa →](https://agentskills.io/specification)
 
 ---
 
-### En qué se diferencian las skills de la dirección y los poderes
+### En qué se diferencian las skills de la dirección y los Powers
 
-| Característica | Skills | Dirección | Poderes |
+| Característica | Skills | Dirección | Powers |
 |---|---|---|---|
 | **Portabilidad** | ✅ Estándar abierto, compatibles | ❌ Específico de Kiro | ❌ Específico de Kiro |
 | **Activación** | Bajo demanda (por descripción / comando de barra diagonal) | Siempre, automático, fileMatch, manual | Dinámica por contexto |
@@ -3542,26 +3542,26 @@ Ver la [especificación completa →](https://agentskills.io/specification)
 ### Relacionado
 
 - [Dirección →](./03_Steering.md)
-- [Poderes →](./06_Powers/01_Install%20powers.md)
+- [Powers →](./06_Powers/01_Install%20powers.md)
 - [Especificación de skills del agente →](https://agentskills.io/specification)
 
 ---
 
 *📂 Capítulo: **Powers***
 
-## poderes
+## Powers
 
 > **Fuente:** [kiro.dev/docs/powers/](https://kiro.dev/docs/powers/)
 
 ---
 
-Los poderes son paquetes dinámicos de contexto y herramientas MCP que le brindan a su agente de IA experiencia instantánea para cualquier marco o herramienta, cargando solo lo que es relevante, solo cuando es necesario.
+Los Powers son paquetes dinámicos de contexto y herramientas MCP que le brindan a su agente de IA experiencia instantánea para cualquier marco o herramienta, cargando solo lo que es relevante, solo cuando es necesario.
 
 ---
 
 ### Empezar
 
-- [Explorar poderes](https://kiro.dev/powers): explore poderes seleccionados de socios de lanzamiento e instálelos con un solo clic
+- [Explorar Powers](https://kiro.dev/powers): explore Powers seleccionados de socios de lanzamiento e instálelos con un solo clic
 - [Instalar un poder →](https://kiro.dev/docs/powers/installation/)
 - [Crear un poder →](https://kiro.dev/docs/powers/create/)
 
@@ -3581,14 +3581,14 @@ Conecte cinco servidores MCP y su agente cargará más de 100 definiciones de he
 
 ---
 
-#### Cómo funcionan los poderes
+#### Cómo funcionan los Powers
 
-En lugar de cargar todas las herramientas MCP a la vez, los poderes **se activan dinámicamente según las palabras clave** en su conversación.
+En lugar de cargar todas las herramientas MCP a la vez, los Powers **se activan dinámicamente según las palabras clave** en su conversación.
 
 Cuando comienzas una tarea, Kiro:
 1. Lee la descripción de la tarea.
 2. Evalúa las potencias instaladas frente a la tarea
-3. Carga **solo poderes relevantes** en contexto
+3. Carga **solo Powers relevantes** en contexto
 
 Cuando mencionas "pago" o "pago", el poder de Stripe se activa, cargando las herramientas MCP de Stripe y la dirección POWER.md en contexto. Cuando pasas al trabajo de la base de datos, el poder de Supabase se activa y Stripe se desactiva.
 
@@ -3606,17 +3606,17 @@ Un poder es un paquete unificado que incluye:
 
 ---
 
-#### ¿Qué hace que los poderes sean diferentes?
+#### ¿Qué hace que los Powers sean diferentes?
 
 | Característica | Descripción |
 |---|---|
 | **Carga dinámica de herramientas MCP** | Los servidores MCP tradicionales cargan todas las herramientas por adelantado. Potencia las herramientas de carga bajo demanda, lo que reduce el uso del contexto básico y al mismo tiempo brinda a su agente acceso a docenas de tecnologías |
-| **Ecosistema abierto** | Explore poderes seleccionados de socios de lanzamiento, incluidos Datadog, Dynatrace, Figma, Neon, Netlify, Postman, Supabase, Stripe, Strands SDK y AWS Aurora. Instale poderes creados por la comunidad desde las URL de GitHub o cree y comparta los suyos propios |
-| **Instalación con un clic** | Explora poderes directamente en Kiro o en kiro.dev. Haga clic en "Instalar" y la energía se registrará automáticamente. Sin archivos de configuración JSON, sin configuración de línea de comandos |
+| **Ecosistema abierto** | Explore Powers seleccionados de socios de lanzamiento, incluidos Datadog, Dynatrace, Figma, Neon, Netlify, Postman, Supabase, Stripe, Strands SDK y AWS Aurora. Instale Powers creados por la comunidad desde las URL de GitHub o cree y comparta los suyos propios |
+| **Instalación con un clic** | Explora Powers directamente en Kiro o en kiro.dev. Haga clic en "Instalar" y la energía se registrará automáticamente. Sin archivos de configuración JSON, sin configuración de línea de comandos |
 
 ---
 
-### Poderes del socio de lanzamiento
+### Powers del socio de lanzamiento
 
 | Socio | Caso de uso |
 |---|---|
@@ -4458,7 +4458,7 @@ El tutorial está estructurado en etapas progresivas:
 
 - [Configuración MCP →](../10_MCP/01_Configuration.md)
 - [Hooks →](../07_Hooks/01_Hook%20triggers.md)
-- [Poderes →](../06_Powers/01_Install%20powers.md)
+- [Powers →](../06_Powers/01_Install%20powers.md)
 
 ---
 
@@ -6577,8 +6577,8 @@ Solo necesitas estas URL si usamos las características correspondientes:
 |---|---|
 | `open-vsx.org` | Extensiones |
 | `openvsx.eclipsecontent.org` | Extensiones |
-| `github.com` | Poderes |
-| `raw.githubusercontent.com` | Poderes |
+| `github.com` | Powers |
+| `raw.githubusercontent.com` | Powers |
 
 ---
 

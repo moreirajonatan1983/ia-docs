@@ -92,8 +92,8 @@ Solo necesitas estas URL si usamos las características correspondientes:
 |---|---|
 | `open-vsx.org` | Extensiones |
 | `openvsx.eclipsecontent.org` | Extensiones |
-| `github.com` | Poderes |
-| `raw.githubusercontent.com` | Poderes |
+| `github.com` | Powers |
+| `raw.githubusercontent.com` | Powers |
 
 ---
 

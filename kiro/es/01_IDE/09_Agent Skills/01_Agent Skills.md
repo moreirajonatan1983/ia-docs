@@ -105,9 +105,9 @@ Ver la [especificación completa →](https://agentskills.io/specification)
 
 ---
 
-## En qué se diferencian las skills de la dirección y los poderes
+## En qué se diferencian las skills de la dirección y los Powers
 
-| Característica | Skills | Dirección | Poderes |
+| Característica | Skills | Dirección | Powers |
 |---|---|---|---|
 | **Portabilidad** | ✅ Estándar abierto, compatibles | ❌ Específico de Kiro | ❌ Específico de Kiro |
 | **Activación** | Bajo demanda (por descripción / comando de barra diagonal) | Siempre, automático, fileMatch, manual | Dinámica por contexto |
@@ -130,5 +130,5 @@ Ver la [especificación completa →](https://agentskills.io/specification)
 ## Relacionado
 
 - [Dirección →](./03_Steering.md)
-- [Poderes →](./06_Powers/01_Install%20powers.md)
+- [Powers →](./06_Powers/01_Install%20powers.md)
 - [Especificación de skills del agente →](https://agentskills.io/specification)
