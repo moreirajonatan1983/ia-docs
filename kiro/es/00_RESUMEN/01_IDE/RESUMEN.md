@@ -2492,15 +2492,11 @@ Consulte la [spec completa →](https://agentskills.io/specification)
 
 ---
 
-### En qué se diferencian las skills de la dirección y los Powers
+### En qué se diferencian las Skills del Steering y los Powers
 
-| Característica | Skills | Dirección | Powers |
-|---|---|---|---|
-| **Estándar** | Abierto (spec de skills del agente) | Específico de Kiro | Específico de Kiro |
-| **Cargando** | Bajo demanda | siempre/auto/fileMatch/manual | Dinámico basado en el contexto |
-| **scripts** | ✅ Sí | ✗ No | ✅ Sí |
-| **Herramientas MCP** | ✗ No | ✗ No | ✅ Sí |
-| **Mejor para** | Flujos de trabajo reutilizables para compartir o importar | Estándares y convenciones de proyectos | Integraciones de MCP con conocimientos agrupados |
+- **Skills:** Son paquetes portables que siguen un estándar abierto. Se cargan bajo demanda (*on-demand*) y pueden llegar a incluir scripts ejecutables. Son ideales para armarse flujos de trabajo reutilizables que querés compartir o importar de otros colegas.
+- **Steering:** Es un contexto puramente exclusivo de Kiro que moldea de base el comportamiento general del Agente en tu IDE. Soporta los modos de activación `always`, `auto`, `fileMatch` y `manual`. Su caso de uso primordial es fijar estándares corporativos y convenciones obligatorias de un proyecto.
+- **Powers:** Son empaquetados pesados de herramientas MCP mixturadas agresivamente con conocimientos y descripciones de flujos de trabajo. Se encienden dinámicamente apenas el contexto o tu charla del chat los llama. Te sirven para armar integraciones de API donde necesites sumar herramientas ejecutables junto a un manual de instrucciones a la misma vez.
 
 > Para las integraciones de MCP, [Powers](https://kiro.dev/docs/powers) suelen ser una mejor opción: combinan herramientas con orientación integrada y se activan automáticamente.
 
@@ -3517,88 +3513,11 @@ Ver la [spec completa →](https://agentskills.io/specification)
 
 ---
 
-### En qué se diferencian las skills de la dirección y los Powers
+### En qué se diferencian las Skills del Steering y los Powers
 
-| Característica | Skills | Dirección | Powers |
-|---|---|---|---|
-| **Portabilidad** | ✅ Estándar abierto, compatibles | ❌ Específico de Kiro | ❌ Específico de Kiro |
-| **Activación** | Bajo demanda (por descripción / comando de barra diagonal) | Siempre, automático, fileMatch, manual | Dinámica por contexto |
-| **scripts** | ✅ Puede incluir scripts ejecutables | ❌ No | Vía herramientas MCP |
-| **Uso ideal** | Flujos de trabajo reutilizables para compartir | Convenciones y estándares del proyecto | Integraciones con herramientas + conocimiento |
-
-> 💡 Para integraciones MCP, los **Powers** suelen ser la mejor opción — incluyen herramientas con guía integrada y se activan automáticamente.
-
----
-
-### Mejores prácticas
-
-- **Descripciones precisas** — Kiro las usa para decidir cuándo activar. Incluye palabras clave específicas: `"Revisar pull requests para seguridad y cobertura de pruebas"` > `"ayuda con la revisión del código"`
-- **SKILL.md enfocado** — Poné documentación detallada en archivos `references/`. Kiro carga el SKILL.md completo en la activación
-- **Scripts para tareas determinísticas** — Validación, generación de archivos y llamadas a APIs funcionan mejor como scripts que como código generado por LLM
-- **Elegí el alcance correcto** — Global para flujos de trabajo personales; Workspace para procedimientos del equipo
-
----
-
-### Relacionado
-
-- [Dirección →](./03_Steering.md)
-- [Powers →](./06_Powers/01_Install%20powers.md)
-- [spec de skills del agente →](https://agentskills.io/specification)
-
----
-
-*📂 Capítulo: **Powers***
-
-## Powers
-
-> **Fuente:** [kiro.dev/docs/powers/](https://kiro.dev/docs/powers/)
-
----
-
-Los Powers son paquetes dinámicos de contexto y herramientas MCP que le brindan a su agente de IA experiencia instantánea para cualquier marco o herramienta, cargando solo lo que es relevante, solo cuando es necesario.
-
----
-
-### Empezar
-
-- [Explorar Powers](https://kiro.dev/powers): explore Powers seleccionados de socios de lanzamiento e instálelos con un solo clic
-- [Instalar un poder →](https://kiro.dev/docs/powers/installation/)
-- [Crear un poder →](https://kiro.dev/docs/powers/create/)
-
----
-
-### Concepto
-
-#### El problema: sobrecarga de contexto
-
-Los agentes de IA se enfrentan a dos desafíos opuestos:
-
-**Sin contexto marco, los agentes suponen.**
-Su agente puede llamar a las API de Stripe, pero ¿sabe utilizar claves idempotentes? Puede consultar Neon, pero ¿comprende la agrupación de conexiones sin servidor? Sin experiencia incorporada, usted debe leer la documentación manualmente y refinar los enfoques hasta que el resultado sea el correcto.
-
-**Con demasiado contexto, los agentes se ralentizan.**
-Conecte cinco servidores MCP y su agente cargará más de 100 definiciones de herramientas antes de escribir una sola línea de código. Cinco servidores pueden consumir más de 50 000 tokens (el 40 % de su ventana de contexto) antes de su primer mensaje. Más herramientas deberían significar mejores resultados, pero el contexto no estructurado abruma al agente, lo que genera respuestas más lentas y resultados de menor calidad.
-
----
-
-#### Cómo funcionan los Powers
-
-En lugar de cargar todas las herramientas MCP a la vez, los Powers **se activan dinámicamente según las palabras clave** en su conversación.
-
-Cuando comienzas una tarea, Kiro:
-1. Lee la descripción de la tarea.
-2. Evalúa las potencias instaladas frente a la tarea
-3. Carga **solo Powers relevantes** en contexto
-
-Cuando mencionas "pago" o "pago", el poder de Stripe se activa, cargando las herramientas MCP de Stripe y la dirección POWER.md en contexto. Cuando pasas al trabajo de la base de datos, el poder de Supabase se activa y Stripe se desactiva.
-
----
-
-#### ¿Qué hay en un poder?
-
-Un poder es un paquete unificado que incluye:
-
-| Componente | Descripción |
+- **Skills:** Son paquetes portables que siguen un estándar abierto. Se cargan bajo demanda (*on-demand*) y pueden llegar a incluir scripts ejecutables. Son ideales para armarse flujos de trabajo reutilizables que querés compartir o importar de otros colegas.
+- **Steering:** Es un contexto puramente exclusivo de Kiro que moldea de base el comportamiento general del Agente en tu IDE. Soporta los modos de activación `always`, `auto`, `fileMatch` y `manual`. Su caso de uso primordial es fijar estándares corporativos y convenciones obligatorias de un proyecto.
+- **Powers:** Son empaquetados pesados de herramientas MCP mixturadas agresivamente con conocimientos y descripciones de flujos de trabajo. Se encienden dinámicamente apenas el contexto o tu charla del chat los llama. Te sirven para armar integraciones de API donde necesites sumar herramientas ejecutables junto a un manual de instrucciones a la misma vez.
 |---|---|
 | `PODER.md` | Archivo de Steering que le indica al agente qué herramientas MCP tiene disponibles y cuándo usarlas |
 | **Configuración del servidor MCP** | Herramientas y detalles de conexión para el servidor MCP |

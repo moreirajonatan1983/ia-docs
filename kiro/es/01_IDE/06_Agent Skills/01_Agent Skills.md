@@ -103,17 +103,13 @@ Consulte la [spec completa →](https://agentskills.io/specification)
 
 ---
 
-## En qué se diferencian las skills de la dirección y los Powers
+## En qué se diferencian las Skills del Steering y los Powers
 
-| Característica | Skills | Dirección | Powers |
-|---|---|---|---|
-| **Estándar** | Abierto (spec de skills del agente) | Específico de Kiro | Específico de Kiro |
-| **Cargando** | Bajo demanda | siempre/auto/fileMatch/manual | Dinámico basado en el contexto |
-| **scripts** | ✅ Sí | ✗ No | ✅ Sí |
-| **Herramientas MCP** | ✗ No | ✗ No | ✅ Sí |
-| **Mejor para** | Flujos de trabajo reutilizables para compartir o importar | Estándares y convenciones de proyectos | Integraciones de MCP con conocimientos agrupados |
+- **Skills:** Son paquetes portables que siguen un estándar abierto. Se cargan bajo demanda (*on-demand*) y pueden llegar a incluir scripts ejecutables. Son ideales para armarse flujos de trabajo reutilizables que querés compartir o importar de otros colegas.
+- **Steering:** Es un contexto puramente exclusivo de Kiro que moldea de base el comportamiento general del Agente en tu IDE. Soporta los modos de activación `always`, `auto`, `fileMatch` y `manual`. Su caso de uso primordial es fijar estándares corporativos y convenciones obligatorias de un proyecto.
+- **Powers:** Son empaquetados pesados de herramientas MCP mixturadas agresivamente con conocimientos y descripciones de flujos de trabajo. Se encienden dinámicamente apenas el contexto o tu charla del chat los llama. Te sirven para armar integraciones de API donde necesites sumar herramientas ejecutables junto a un manual de instrucciones para Kiro a la misma vez.
 
-> Para las integraciones de MCP, [Powers](https://kiro.dev/docs/powers) suelen ser una mejor opción: combinan herramientas con orientación integrada y se activan automáticamente.
+> **Tip:** Para integraciones MCP nativas, los [Powers](https://kiro.dev/docs/powers) terminan siendo siempre la mejor opción; agrupan la herramienta junto a la propia IA para que sepa cómo usarla, y se prenden soles en el exacto instante en que te ponés a trabajar sobre ese tema.
 
 ---
 
