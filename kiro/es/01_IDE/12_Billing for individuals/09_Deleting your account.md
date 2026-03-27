@@ -1,6 +1,6 @@
 # Eliminar tu cuenta
 
-<video src="https://kiro.dev/videos/delete-account.mp4" controls autoplay muted loop playsinline width="100%" title="Eliminar cuenta"></video>
+![Eliminar cuenta](https://kiro.dev/videos/delete-account.mp4)
 
 > **Fuente:** [kiro.dev/docs/billing/deleting-account/](https://kiro.dev/docs/billing/deleting-account/)
 

@@ -6,7 +6,7 @@
 
 ## Cambiar los planes de suscripción de Kiro
 
-<video src="https://kiro.dev/videos/docs/enterprise/manage-subscription-change-subscription.mp4" controls autoplay muted loop playsinline width="100%" title="Administrar suscripción Cambiar suscripción"></video>
+![Administrar suscripción Cambiar suscripción](https://kiro.dev/videos/docs/enterprise/manage-subscription-change-subscription.mp4)
 
 1. Iniciá sesión en la **AWS Management Console**
 2. Cambiá a la **consola Kiro**
@@ -21,7 +21,7 @@
 
 ## Darse de baja de usuarios de Kiro
 
-<video src="https://kiro.dev/videos/docs/enterprise/manage-subscription-deactivate-user.mp4" controls autoplay muted loop playsinline width="100%" title="Administrar suscripción Desactivar usuario"></video>
+![Administrar suscripción Desactivar usuario](https://kiro.dev/videos/docs/enterprise/manage-subscription-deactivate-user.mp4)
 
 1. En la **consola Kiro**, ve a **Usuarios y Grupos**
 2. Selecciona el usuario o grupo a desuscribir

@@ -27,7 +27,7 @@ Comenzar es simple:
 
 ## Primera ejecución
 
-<video src="https://kiro.dev/videos/kiro_3.mp4" controls autoplay muted loop playsinline width="100%" title="Kiro_3"></video>
+![Kiro_3](https://kiro.dev/videos/kiro_3.mp4)
 
 1. Cuando abra Kiro por primera vez, se le pedirá que inicie sesión con un proveedor de su elección que incluya opciones sociales y de inicio de sesión de AWS. Obtenga más información sobre los [métodos de autenticación] (https://kiro.dev/docs/getting-started/authentication).
 

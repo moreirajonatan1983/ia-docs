@@ -10,7 +10,7 @@ Kiro mejora su flujo de trabajo de Git con la generación de mensajes de commit 
 
 ## Confirmar generación de mensajes
 
-<video src="https://kiro.dev/videos/git-commit-message.mp4" controls autoplay muted loop playsinline width="100%" title="Mensaje de commit de Git"></video>
+![Mensaje de commit de Git](https://kiro.dev/videos/git-commit-message.mp4)
 
 Kiro puede generar automáticamente mensajes de commit descriptivos siguiendo el formato [Commits convencionales](https://www.conventionalcommits.org/en/v1.0.0/) analizando sus cambios por etapas.
 

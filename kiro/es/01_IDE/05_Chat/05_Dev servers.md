@@ -10,7 +10,7 @@ El soporte del servidor de desarrollo permite al agente Kiro ejecutar procesos e
 
 ## Cómo funciona
 
-<video src="https://kiro.dev/videos/start-process.mp4" controls autoplay muted loop playsinline width="100%" title="Iniciar proceso"></video>
+![Iniciar proceso](https://kiro.dev/videos/start-process.mp4)
 
 Cuando pides a Kiro ejecutar un comando de larga ejecución, automáticamente:
 
