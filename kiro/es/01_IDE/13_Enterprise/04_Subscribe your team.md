@@ -17,7 +17,7 @@ Antes de comenzar, asegúrese de tener:
 
 ## Crea el perfil de Kiro
 
-![Suscribirse Crear perfil de Kiro](https://kiro.dev/videos/docs/enterprise/subscribe-create-kiro-profile.mp4)
+<video src="https://kiro.dev/videos/docs/enterprise/subscribe-create-kiro-profile.mp4" controls autoplay muted loop playsinline width="100%" title="Suscribirse Crear perfil de Kiro"></video>
 
 1. Iniciá sesión en la **AWS Management Console**
 2. Cambiá a la **consola Kiro**
@@ -30,7 +30,7 @@ Antes de comenzar, asegúrese de tener:
 
 ## Suscríbete a tu equipo a Kiro
 
-![Suscribirse Agregar usuario](https://kiro.dev/videos/docs/enterprise/subscribe-add-user.mp4)
+<video src="https://kiro.dev/videos/docs/enterprise/subscribe-add-user.mp4" controls autoplay muted loop playsinline width="100%" title="Suscribirse Agregar usuario"></video>
 
 1. Cambiá a la **consola Kiro**
 2. Verifica que estás en la región AWS donde creaste el perfil de Kiro

@@ -10,7 +10,7 @@ Los enlaces de agente son activadores automatizados que ejecutan mensajes de age
 
 ## ¿Qué son los hooks de agentes?
 
-![Kiro Gancho](https://kiro.dev/videos/kiro-hook.mp4)
+<video src="https://kiro.dev/videos/kiro-hook.mp4" controls autoplay muted loop playsinline width="100%" title="Kiro Gancho"></video>
 
 Los hooks pueden activarse en:
 - Guardar, crear o eliminar archivos

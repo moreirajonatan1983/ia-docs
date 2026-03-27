@@ -1,6 +1,6 @@
 # puntos de control
 
-![Puntos de control](https://kiro.dev/videos/checkpoints.mp4)
+<video src="https://kiro.dev/videos/checkpoints.mp4" controls autoplay muted loop playsinline width="100%" title="Puntos de control"></video>
 
 > **Fuente:** [kiro.dev/docs/chat/checkpoints/](https://kiro.dev/docs/chat/checkpoints/)
 

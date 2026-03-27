@@ -1,6 +1,6 @@
 # Herramientas web
 
-![Herramientas web](https://kiro.dev/videos/webtools.mp4)
+<video src="https://kiro.dev/videos/webtools.mp4" controls autoplay muted loop playsinline width="100%" title="Herramientas web"></video>
 
 > **Fuente:** [kiro.dev/docs/chat/webtools/](https://kiro.dev/docs/chat/webtools/)
 

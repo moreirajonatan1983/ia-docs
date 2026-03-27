@@ -22,7 +22,7 @@ En el tablero de facturación encontrarás:
 
 ## Actualizando su método de pago
 
-![Actualizar pago](https://kiro.dev/videos/update-paid.mp4)
+<video src="https://kiro.dev/videos/update-paid.mp4" controls autoplay muted loop playsinline width="100%" title="Actualizar pago"></video>
 
 1. En Kiro, selecciona el ícono de perfil
 2. Elegí **Administrar Plan**

@@ -1,6 +1,6 @@
 # Subagentes
 
-![Subagentes](https://kiro.dev/videos/subagents.mp4)
+<video src="https://kiro.dev/videos/subagents.mp4" controls autoplay muted loop playsinline width="100%" title="Subagentes"></video>
 
 > **Fuente:** [kiro.dev/docs/chat/subagents/](https://kiro.dev/docs/chat/subagents/)
 

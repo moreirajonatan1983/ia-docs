@@ -77,6 +77,6 @@ Kiro actualmente soporta facturación en la mayoría de los países. Consulta la
 
 ## ¿Cómo puedo recuperar mi ID de usuario?
 
-![Identificación de usuario](https://kiro.dev/videos/user-id.mp4)
+<video src="https://kiro.dev/videos/user-id.mp4" controls autoplay muted loop playsinline width="100%" title="Identificación de usuario"></video>
 
 Tu ID de usuario está disponible en el **panel de uso**. Aparece junto a tu correo electrónico y método de inicio de sesión, con un ícono de copia para copiarlo fácilmente.

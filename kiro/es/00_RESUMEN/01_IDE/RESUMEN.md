@@ -37,7 +37,7 @@ Comenzar es simple:
 
 ### Primera ejecución
 
-![Kiro_3](https://kiro.dev/videos/kiro_3.mp4)
+<video src="https://kiro.dev/videos/kiro_3.mp4" controls autoplay muted loop playsinline width="100%" title="Kiro_3"></video>
 
 1. Cuando abra Kiro por primera vez, se le pedirá que inicie sesión con un proveedor de su elección que incluya opciones sociales y de inicio de sesión de AWS. Obtenga más información sobre los [métodos de autenticación] (https://kiro.dev/docs/getting-started/authentication).
 
@@ -212,7 +212,7 @@ Antes de comenzar, asegúrese de tener:
    - El panel de chat debería estar abierto de forma predeterminada.
    - Esto abre la interfaz conversacional de Kiro donde puedes interactuar con la IA.
 
-![Kiro Panel](https://kiro.dev/videos/kiro-pane.mp4)
+<video src="https://kiro.dev/videos/kiro-pane.mp4" controls autoplay muted loop playsinline width="100%" title="Kiro Panel"></video>
 
 ---
 
@@ -230,7 +230,7 @@ Contienen información sobre:
 
 También puede crear archivos de Steering personalizados haciendo clic en el botón **+** en la sección de dirección y agregar cosas como estándares de codificación, flujos de trabajo y mejores prácticas del equipo. [Más información sobre la dirección aquí →](https://kiro.dev/docs/steering/)
 
-![Dirección Kiro](https://kiro.dev/videos/kiro-steering.mp4)
+<video src="https://kiro.dev/videos/kiro-steering.mp4" controls autoplay muted loop playsinline width="100%" title="Dirección Kiro"></video>
 
 ---
 
@@ -242,7 +242,7 @@ Las especificaciones transforman ideas de funciones de alto nivel en planes de i
 2. **Diseño**: arquitectura técnica y enfoque de implementación
 3. **Tareas**: pasos de implementación discretos y rastreables
 
-![Inicio de especificaciones](https://kiro.dev/videos/specs-start.mp4)
+<video src="https://kiro.dev/videos/specs-start.mp4" controls autoplay muted loop playsinline width="100%" title="Inicio de especificaciones"></video>
 
 #### Crea tu primera especificación
 
@@ -759,7 +759,7 @@ Kiro mejora su flujo de trabajo de Git con la generación de mensajes de commit 
 
 ### Confirmar generación de mensajes
 
-![Mensaje de commit de Git](https://kiro.dev/videos/git-commit-message.mp4)
+<video src="https://kiro.dev/videos/git-commit-message.mp4" controls autoplay muted loop playsinline width="100%" title="Mensaje de commit de Git"></video>
 
 Kiro puede generar automáticamente mensajes de commit descriptivos siguiendo el formato [Commits convencionales](https://www.conventionalcommits.org/en/v1.0.0/) analizando sus cambios por etapas.
 
@@ -1961,7 +1961,7 @@ El soporte del servidor de desarrollo permite al agente Kiro ejecutar procesos e
 
 ### Cómo funciona
 
-![Iniciar proceso](https://kiro.dev/videos/start-process.mp4)
+<video src="https://kiro.dev/videos/start-process.mp4" controls autoplay muted loop playsinline width="100%" title="Iniciar proceso"></video>
 
 Cuando pides a Kiro ejecutar un comando de larga ejecución, automáticamente:
 
@@ -2161,7 +2161,7 @@ Cuando Kiro trabaja en modo Autopilot ejecutando tareas complejas, las notificac
 
 ## puntos de control
 
-![Puntos de control](https://kiro.dev/videos/checkpoints.mp4)
+<video src="https://kiro.dev/videos/checkpoints.mp4" controls autoplay muted loop playsinline width="100%" title="Puntos de control"></video>
 
 > **Fuente:** [kiro.dev/docs/chat/checkpoints/](https://kiro.dev/docs/chat/checkpoints/)
 
@@ -2252,7 +2252,7 @@ El medidor en el panel del chat muestra en tiempo real qué porcentaje de la ven
 
 ## Subagentes
 
-![Subagentes](https://kiro.dev/videos/subagents.mp4)
+<video src="https://kiro.dev/videos/subagents.mp4" controls autoplay muted loop playsinline width="100%" title="Subagentes"></video>
 
 > **Fuente:** [kiro.dev/docs/chat/subagents/](https://kiro.dev/docs/chat/subagents/)
 
@@ -2327,7 +2327,7 @@ Kiro invoca automáticamente el subagente cuando detecta que la tarea encaja con
 
 ## Herramientas web
 
-![Herramientas web](https://kiro.dev/videos/webtools.mp4)
+<video src="https://kiro.dev/videos/webtools.mp4" controls autoplay muted loop playsinline width="100%" title="Herramientas web"></video>
 
 > **Fuente:** [kiro.dev/docs/chat/webtools/](https://kiro.dev/docs/chat/webtools/)
 
@@ -2770,7 +2770,7 @@ Los enlaces de agente son activadores automatizados que ejecutan mensajes de age
 
 ### ¿Qué son los hooks de agentes?
 
-![Kiro Gancho](https://kiro.dev/videos/kiro-hook.mp4)
+<video src="https://kiro.dev/videos/kiro-hook.mp4" controls autoplay muted loop playsinline width="100%" title="Kiro Gancho"></video>
 
 Los hooks pueden activarse en:
 - Guardar, crear o eliminar archivos
@@ -4804,7 +4804,7 @@ En el tablero de facturación encontrarás:
 
 ### Actualizando su método de pago
 
-![Actualizar pago](https://kiro.dev/videos/update-paid.mp4)
+<video src="https://kiro.dev/videos/update-paid.mp4" controls autoplay muted loop playsinline width="100%" title="Actualizar pago"></video>
 
 1. En Kiro, selecciona el ícono de perfil
 2. Elegí **Administrar Plan**
@@ -4978,7 +4978,7 @@ Para incluir su ID de usuario en el ticket de soporte:
 
 ## Eliminar tu cuenta
 
-![Eliminar cuenta](https://kiro.dev/videos/delete-account.mp4)
+<video src="https://kiro.dev/videos/delete-account.mp4" controls autoplay muted loop playsinline width="100%" title="Eliminar cuenta"></video>
 
 > **Fuente:** [kiro.dev/docs/billing/deleting-account/](https://kiro.dev/docs/billing/deleting-account/)
 
@@ -5087,7 +5087,7 @@ Kiro actualmente soporta facturación en la mayoría de los países. Consulta la
 
 ### ¿Cómo puedo recuperar mi ID de usuario?
 
-![Identificación de usuario](https://kiro.dev/videos/user-id.mp4)
+<video src="https://kiro.dev/videos/user-id.mp4" controls autoplay muted loop playsinline width="100%" title="Identificación de usuario"></video>
 
 Tu ID de usuario está disponible en el **panel de uso**. Aparece junto a tu correo electrónico y método de inicio de sesión, con un ícono de copia para copiarlo fácilmente.
 
@@ -5401,7 +5401,7 @@ Antes de comenzar, asegúrese de tener:
 
 ### Crea el perfil de Kiro
 
-![Suscribirse Crear perfil de Kiro](https://kiro.dev/videos/docs/enterprise/subscribe-create-kiro-profile.mp4)
+<video src="https://kiro.dev/videos/docs/enterprise/subscribe-create-kiro-profile.mp4" controls autoplay muted loop playsinline width="100%" title="Suscribirse Crear perfil de Kiro"></video>
 
 1. Iniciá sesión en la **AWS Management Console**
 2. Cambiá a la **consola Kiro**
@@ -5414,7 +5414,7 @@ Antes de comenzar, asegúrese de tener:
 
 ### Suscríbete a tu equipo a Kiro
 
-![Suscribirse Agregar usuario](https://kiro.dev/videos/docs/enterprise/subscribe-add-user.mp4)
+<video src="https://kiro.dev/videos/docs/enterprise/subscribe-add-user.mp4" controls autoplay muted loop playsinline width="100%" title="Suscribirse Agregar usuario"></video>
 
 1. Cambiá a la **consola Kiro**
 2. Verifica que estás en la región AWS donde creaste el perfil de Kiro
@@ -5444,7 +5444,7 @@ Antes de comenzar, asegúrese de tener:
 
 ### Cambiar los planes de suscripción de Kiro
 
-![Administrar suscripción Cambiar suscripción](https://kiro.dev/videos/docs/enterprise/manage-subscription-change-subscription.mp4)
+<video src="https://kiro.dev/videos/docs/enterprise/manage-subscription-change-subscription.mp4" controls autoplay muted loop playsinline width="100%" title="Administrar suscripción Cambiar suscripción"></video>
 
 1. Iniciá sesión en la **AWS Management Console**
 2. Cambiá a la **consola Kiro**
@@ -5459,7 +5459,7 @@ Antes de comenzar, asegúrese de tener:
 
 ### Darse de baja de usuarios de Kiro
 
-![Administrar suscripción Desactivar usuario](https://kiro.dev/videos/docs/enterprise/manage-subscription-deactivate-user.mp4)
+<video src="https://kiro.dev/videos/docs/enterprise/manage-subscription-deactivate-user.mp4" controls autoplay muted loop playsinline width="100%" title="Administrar suscripción Desactivar usuario"></video>
 
 1. En la **consola Kiro**, ve a **Usuarios y Grupos**
 2. Selecciona el usuario o grupo a desuscribir

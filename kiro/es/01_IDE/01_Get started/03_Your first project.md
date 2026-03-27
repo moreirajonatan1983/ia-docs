@@ -33,7 +33,7 @@ Antes de comenzar, asegúrese de tener:
    - El panel de chat debería estar abierto de forma predeterminada.
    - Esto abre la interfaz conversacional de Kiro donde puedes interactuar con la IA.
 
-![Kiro Panel](https://kiro.dev/videos/kiro-pane.mp4)
+<video src="https://kiro.dev/videos/kiro-pane.mp4" controls autoplay muted loop playsinline width="100%" title="Kiro Panel"></video>
 
 ---
 
@@ -51,7 +51,7 @@ Contienen información sobre:
 
 También puede crear archivos de Steering personalizados haciendo clic en el botón **+** en la sección de dirección y agregar cosas como estándares de codificación, flujos de trabajo y mejores prácticas del equipo. [Más información sobre la dirección aquí →](https://kiro.dev/docs/steering/)
 
-![Dirección Kiro](https://kiro.dev/videos/kiro-steering.mp4)
+<video src="https://kiro.dev/videos/kiro-steering.mp4" controls autoplay muted loop playsinline width="100%" title="Dirección Kiro"></video>
 
 ---
 
@@ -63,7 +63,7 @@ Las especificaciones transforman ideas de funciones de alto nivel en planes de i
 2. **Diseño**: arquitectura técnica y enfoque de implementación
 3. **Tareas**: pasos de implementación discretos y rastreables
 
-![Inicio de especificaciones](https://kiro.dev/videos/specs-start.mp4)
+<video src="https://kiro.dev/videos/specs-start.mp4" controls autoplay muted loop playsinline width="100%" title="Inicio de especificaciones"></video>
 
 ### Crea tu primera especificación
 
