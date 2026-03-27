@@ -18,11 +18,9 @@ Con las Specs de Kiro, puedes:
 
 Cada spec genera tres archivos clave:
 
-| Archivo | Propósito |
-|---|---|
-| `requisitos.md` (o `bugfix.md`) | Captura historias de usuarios, criterios de aceptación o análisis de errores en notación estructurada |
-| `diseño.md` | Documenta la arquitectura técnica, los diagramas de secuencia y las consideraciones de implementación.
-| `tareas.md` | Proporciona un plan de implementación detallado con tareas discretas y rastreables |
+- **requirements.md** (o **bugfix.md**) — Captura historias de usuarios, criterios de aceptación o análisis de errores en notación estructurada.
+- **design.md** — Documenta la arquitectura técnica, los diagramas de secuencia y las consideraciones de implementación.
+- **tasks.md** — Proporciona un plan de implementación detallado con tareas discretas y rastreables.
 
 ---
 
@@ -54,10 +52,11 @@ Kiro proporciona una interfaz de ejecución de tareas para archivos `tasks.md` q
 
 ## Tipos de Specs
 
-| Tipo | Lo mejor para |
-|---|---|
-| **Specs de funciones** | Nuevas características que requieren planificación estructurada y requisitos EARS |
-| **Specs de corrección de errores** | Corrección de errores con precisión quirúrgica y evitando regresiones |
+### Feature Specs
+Para construir nuevas funcionalidades y características en tu aplicación. Los Feature Specs te guían a través de la recopilación de requisitos, el diseño técnico y la planificación de implementación.
+
+### Bugfix Specs
+Para diagnosticar y arreglar bugs sistemáticamente con precisión quirúrgica, previniendo regresiones. Los Bugfix Specs te ayudan a identificar la raíz del problema, diseñar correcciones y validar que no se rompa nada más.
 
 ---
 
@@ -73,12 +72,15 @@ Kiro proporciona una interfaz de ejecución de tareas para archivos `tasks.md` q
 
 ## Cuándo utilizar Specs frente a Vibe
 
-| Utilizá Specs cuando... | Utilizá Vibe cuando... |
-|---|---|
-| Construcción de características complejas que requieren una planificación estructurada | Codificación exploratoria rápida |
-| Corrección de errores en los que las regresiones son costosas | Prototipos sin objetivos claros |
-| Necesitas documentación para compartir con tu equipo | |
-| Requiere iterar fuertemente sobre el diseño y la lógica | |
+**Usá Specs cuando:**
+- Construyas features complejas que requieran planificación estructurada.
+- Arregles bugs donde las regresiones son muy costosas.
+- Necesites documentación formal para la colaboración con tu equipo.
+- Detectás que los requerimientos de diseño van a necesitar mucha iteración.
+
+**Usá Vibe cuando:**
+- Estés en una sesión de coding rápido o exploratorio.
+- Mutees prototipos sin objetivos del todo claros.
 
 ---
 

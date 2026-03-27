@@ -18,11 +18,9 @@ With Kiro's specs, you can:
 
 Every spec generates three key files:
 
-| File | Purpose |
-|---|---|
-| `requirements.md` (or `bugfix.md`) | Captures user stories, acceptance criteria, or bug analysis in structured notation |
-| `design.md` | Documents technical architecture, sequence diagrams, and implementation considerations |
-| `tasks.md` | Provides a detailed implementation plan with discrete, trackable tasks |
+- **requirements.md** (or **bugfix.md**) — Captures user stories, acceptance criteria, or bug analysis in structured notation.
+- **design.md** — Documents technical architecture, sequence diagrams, and implementation considerations.
+- **tasks.md** — Provides a detailed implementation plan with discrete, trackable tasks.
 
 ---
 
@@ -54,10 +52,11 @@ Kiro provides a task execution interface for `tasks.md` files that displays real
 
 ## Types of Specs
 
-| Type | Best for |
-|---|---|
-| **Feature Specs** | New features requiring structured planning and EARS requirements |
-| **Bugfix Specs** | Fixing bugs with surgical precision while preventing regressions |
+### Feature Specs
+For building new features and capabilities in your application. Feature Specs guide you through requirements gathering, technical design, and implementation planning.
+
+### Bugfix Specs
+For systematically diagnosing and fixing bugs with surgical precision while preventing regressions. Bugfix Specs help you identify root causes, design fixes, and validate that nothing else breaks.
 
 ---
 
@@ -73,12 +72,15 @@ Kiro provides a task execution interface for `tasks.md` files that displays real
 
 ## When to Use Specs vs Vibe
 
-| Use Specs when... | Use Vibe when... |
-|---|---|
-| Building complex features requiring structured planning | Quick exploratory coding |
-| Fixing bugs where regressions are costly | Prototyping without clear goals |
-| You need documentation for team collaboration | |
-| Requirements or design need iteration | |
+**Use Specs when:**
+- Building complex features requiring structured planning.
+- Fixing bugs where regressions are costly.
+- You need documentation for team collaboration.
+- Requirements or design need iteration.
+
+**Use Vibe when:**
+- Quick exploratory coding.
+- Prototyping without clear goals.
 
 ---
 
