@@ -1,32 +1,33 @@
-# Registro de extensión personalizado
+# Registro de extensión personalizado (Extension registry)
 
 > **Fuente:** [kiro.dev/docs/editor/extension-registry/](https://kiro.dev/docs/editor/extension-registry/)
 
 ---
 
-Kiro admite el uso de un registro de extensión personalizado en lugar del [Registro Open VSX] predeterminado (https://open-vsx.org). Esto es útil para organizaciones que albergan su propio mercado de extensión privado.
+Kiro tiene soporte para inyectar su base leyendo los plugins desde un *Extension registry* 100% personalizado mediante túnel, saltándose completamente el registro oficial que viene clavado por defecto de [Open VSX Registry](https://open-vsx.org). Esto le soluciona literal la vida a corporaciones de alto calibre que obligatoriamente deben atornillar su propio marketplace en servidores on-premise privados aislados del público general.
 
 ---
 
-## Configurar un mercado de extensiones diferente
+## Configurar un supermercado centralizado (Marketplace privado)
 
-### Paso 1: busque el archivo `product.json`
+### Paso 1: Localizá el eslabón maestro `product.json`
 
-Busque el archivo en el disco. La ubicación exacta depende de la plataforma:
+Vas a tener que encontrar el santo grial en tu disco de máquina. Obvio, la vida de esta variable dependerá estrictamente del sistema operativo que tengas vivo:
 
-| Plataforma | Camino |
+| Sistema Operativo | Directorio de archivo duro |
 |---|---|
-| **macOS** | `/Aplicaciones/Kiro.app/Contents/Resources/app/product.json` |
-| **Windows** | `C:\Archivos de programa\Kiro\resources\app\product.json` |
+| **macOS** | `/Applications/Kiro.app/Contents/Resources/app/product.json` |
+| **Windows** | `C:\Program Files\Kiro\resources\app\product.json` |
 | **Linux** | `/usr/lib/code/product.json` |
 
-### Paso 2: edite la propiedad `extensionsGallery`
+### Paso 2: Edita la constante intocable `extensionsGallery`
 
-Abra `product.json` en un editor y busque la propiedad `extensionsGallery`. Actualice `serviceUrl`, `itemUrl` y `resourceUrlTemplate` para que apunten a su registro privado en lugar de `https://open-vsx.org`.
+Agarrá tu sublime/nano/bloc o cualquiera de uso y buscá explícitamente el objeto core indexado llamado `extensionsGallery`.
+Meté la cuchara ahí actualizando sus variables internas de las propiedades primarias `serviceUrl`, `itemUrl`, y el grandioso `resourceUrlTemplate` apuntando hacia el subdominio HTTP/HTTPS de tu propio servidor corporativo en rotundo detrimento del original `https://open-vsx.org`.
 
-### Paso 3: aplicar la configuración
+### Paso 3: Aplicar este conocimiento destructivo/creativo
 
-Por ejemplo, si su registro personalizado está alojado en `https://registry.example.com`, actualice la propiedad `extensionsGallery` de la siguiente manera:
+Miralo con tus propios ojos: si a tu empresa corporativa se le ocurrió armar el servidor montado en una URL llamada `https://registry.example.com`, el objeto `extensionsGallery` a reventar dentro de tu disco tiene que terminar viéndose quirúrgicamente así:
 
 ```json
 "extensionsGallery": {
@@ -42,6 +43,6 @@ Por ejemplo, si su registro personalizado está alojado en `https://registry.exa
 
 ---
 
-## Implementación empresarial
+## Moviéndolo a toda la oficina (Implementación Enterprise)
 
-Para configurar todas las instalaciones de Kiro en su organización para usar un registro de extensión personalizado, use una solución de administración de puntos finales, **Administración de dispositivos móviles (MDM)** o similar para realizar la actualización anterior a `product.json` en todos sus dispositivos.
+Para dominar en cadena y estandarizar forzosamente sin ir bajando de computadora en computadora de la oficina de desarrollo a forzar la escritura oculta del archivo `product.json`, hacela corta y aplicá reglas duras mediante políticas locales (Endpoint administration / GPOs), soluciones de infraestructura y aprovisionamientos de máquinas unificadas (**Mobile Device Management - MDM**) para masacrar silenciosamente dichos JSON mediante scripts bash en toda la red corporativa de programadores autorizados.

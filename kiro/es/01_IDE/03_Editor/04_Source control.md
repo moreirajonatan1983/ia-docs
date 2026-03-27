@@ -1,60 +1,62 @@
-# Control de fuente
+# Control de versiones
 
 > **Fuente:** [kiro.dev/docs/editor/source-control/](https://kiro.dev/docs/editor/source-control/)
 
 ---
 
-Kiro mejora su flujo de trabajo de Git con la generación de mensajes de commit impulsada por IA y una perfecta integración del control de versiones.
+Kiro eleva tu flujo de trabajo de Git encargándose de autogenerar tus mensajes de *commit* (propulsados por IA) e integrándose perfecto en tu control de versiones actual.
 
 ---
 
-## Confirmar generación de mensajes
+## Generación de mensajes de commit
 
-![Mensaje de commit de Git](https://kiro.dev/videos/git-commit-message.mp4)
+![Git Commit Message](https://kiro.dev/videos/git-commit-message.mp4)
 
-Kiro puede generar automáticamente mensajes de commit descriptivos siguiendo el formato [Commits convencionales](https://www.conventionalcommits.org/en/v1.0.0/) analizando sus cambios por etapas.
+Kiro puede observar tus cambios *staged* (preparados) y armar inteligentemente mensajes descriptivos siguiendo el formato estándar de la industria [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ### Cómo generar mensajes de commit
 
-1. **Prepara tus cambios** en el panel de control de código fuente
-2. Haga clic en el botón **🪄** junto al campo de entrada del mensaje de commit.
-3. **Revise el mensaje generado**: Kiro analiza sus cambios y crea un mensaje de commit descriptivo.
-4. **Edite si es necesario**: puede modificar el mensaje generado antes de confirmarlo.
-5. **Confirma tus cambios** usando el mensaje generado o editado
+1. **Staggeá (prepará) tus cambios** desde el panel de Source Control oficial.
+2. Hacé clic en el iconito de **🪄 varita mágica** justo arriba del cuadro de texto del mensaje.
+3. **Revisá el mensaje:** Kiro analizará tus *diffs* y creará un mensaje bien robusto de la nada.
+4. **Editalo:** Siempre vas a poder retocar el mensaje a tu manera o quitar lo que sobre.
+5. **Aceptalo y committeá** tus cambios.
 
-> **Consejo:** Puedes configurar un atajo de teclado personalizado para `Kiro: Generar mensaje de commit` en la configuración de tu teclado para un acceso más rápido.
+> **Tip:** Podés bindear tu propio atajo de teclado para la acción `Kiro: Generate Commit Message` desde la configuración de tus atajos (`Keyboard Shortcuts`) para ir a los pedos.
 
 ---
 
-### Formato del mensaje
+### Formato esperado
 
-Kiro sigue el formato de **Compromisos Convencionales**:
+Kiro formatea siguiendo las **reglas de Conventional Commits**:
 
-```
+```text
 <type>(<scope>): <subject>
-- First change or addition
-- Second change or improvement
-- Third change if applicable
-- Why this change was needed (if relevant)
+- Primer cambio puntual detallado
+- Segundo cambio fuerte o mejoras
+- Tercer cambio (si aplica)
+- De ser necesario, una explicación de por qué fue necesario un refactor
 ```
 
-### Tipos de compromiso convencionales
+### Tipos de commits convencionales (NO traducir)
 
-| Tipo | Descripción |
+Estos prefijos están en inglés internacional para garantizar un control de versiones semántico:
+
+| Tipo | Descripción estándar |
 |---|---|
-| `hazaña` | Nuevas características |
-| `arreglar` | Corrección de errores |
-| `docs` | Cambios en la documentación |
-| `estilo` | Cambios de formato |
-| `refactor` | Reestructuración del código |
-| `prueba` | Agregar/actualizar pruebas |
-| `tarea` | Tareas de mantenimiento |
-| `perfeccionamiento` | Mejoras de rendimiento |
-| `ci` | Cambios CI/CD |
+| `feat` | Implementación de características o funciones nuevas |
+| `fix` | Reparación de defectos o *bugs* confirmados |
+| `docs` | Modificación a los archivos documentales (README, manuales) |
+| `style` | Modificaciones estéticas (espacios, saltos, comas, etc) |
+| `refactor` | Refactorización gruesa o estructuración que no afecta a la funcionalidad final |
+| `test` | Arreglo de cobertura, carga de nuevos scripts de *testing* unitario |
+| `chore` | Actualización de dependencias o tareas de aburrimiento técnico general |
+| `perf` | Refactor enfocado estrictamente en mejorar métricas de rendimiento |
+| `ci` | Ajustes de CI/CD, configuración de despliegue, *pipelines* |
 
-### Ejemplo
+### Ejemplo del resultado de la IA
 
-```
+```text
 feat(docs): add comprehensive Source Control documentation
 - Create new documentation page for Source Control features
 - Update interface documentation to link to Source Control page
@@ -66,23 +68,23 @@ feat(docs): add comprehensive Source Control documentation
 
 ## Proveedor de contexto Git Diff
 
-Kiro incluye un proveedor de contexto `#Git Diff` que le permite hacer referencia a sus cambios actuales no confirmados directamente en el chat. Esto es útil para:
+Kiro incluye espectacularmente el proveedor de contexto `#Git Diff`. Su gracia es permitirte arrobar todos los "cambios vivos sin guardar" directamente en tu mensaje de chat. Esto es brillante para:
 
-- Solucionar conflictos de fusión
-- Revisar los cambios antes de comprometerlos.
-- Obtener una revisión del código de tu diferencia actual
+- Solucionar conflictos dolorosos de repositorios mergeados.
+- Pedirle a la IA que revise *Code Review* estricto de los cambios antes de tirarlos a producción mediante *commit*.
+- Dejar que lea por qué se te rompió algo analizando la diferencia entre la rama `main` y tu desastre en el teclado.
 
 ### Ejemplo de uso
 
-```
-Hey Kiro, can you fix the merge conflicts? #Git Diff
+```text
+Che Kiro, ¿me ayudás arreglando los merge conflicts de este archivo? #Git Diff
 ```
 
 ---
 
-## Solución de problemas
+## Resolución de problemas
 
-### Error en las operaciones de Git
+### Falla en operaciones directas de Git
 
-- Verifique su configuración y credenciales de Git
-- Asegúrese de tener los permisos adecuados para el repositorio.
+- Revisá dos veces tu configuración global de Git o certificados.
+- Comprobá que de verdad tengas permisos de GitHub/GitLab autorizados para ese repositorio al pushear.

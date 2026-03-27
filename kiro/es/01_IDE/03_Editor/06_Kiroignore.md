@@ -1,145 +1,146 @@
-#kiroignorar
+# El archivo .kiroignore
 
 > **Fuente:** [kiro.dev/docs/editor/kiroignore/](https://kiro.dev/docs/editor/kiroignore/)
 
 ---
 
-`.kiroignore` usa patrones de estilo gitignore para controlar a qué archivos puede acceder Kiro. Esto le brinda un control preciso sobre lo que el agente de IA puede leer e interactuar en su proyecto.
+Estructurar un `.kiroignore` imita el glorioso comportamiento base de `gitignore`, regulando como patovica a qué archivos tiene estúpidamente prohibido acceder el motor o IA de Kiro. Esto regala control total a nivel submolecular sobre la privacidad de la data que existe en tu *workspace*.
 
 ---
 
-## ¿Por qué utilizar .kiroignore?
+## ¿Por qué configurar tu .kiroignore?
 
-| Razón | Descripción |
+| Motivo | Descripción |
 |---|---|
-| **Seguridad** | Evite que Kiro acceda a archivos que contengan credenciales, claves API u otros datos confidenciales |
-| **Privacidad** | Excluir información confidencial de las interacciones de IA |
-| **Cumplimiento** | Asegúrese de que Kiro no acceda a archivos que no deberían compartirse con servicios externos |
-| **Enfoque** | Mantenga relevante el contexto de Kiro excluyendo archivos grandes o creando artefactos |
+| **Seguridad extrema** | Bloqueale totalmente el acceso a los `.env` o `.pem` llenos de credenciales en crudo, API keys de productivo y tokens robados. |
+| **Privacidad** | Evitá que la IA mande en su contexto información PII (Datos de usuario personales) al intentar ayudar a programar módulos colindantes. |
+| **Paz legal / Compliance** | Cumplí los ISO y normativas demostrando que el código fuente de tu agente local no sube secretos hacia los servidores frontera (OpenAi/Anthropic). |
+| **Enfoque quirúrgico (Focus)** | Ahorrá toneladas de tokens y latencias evitando que el agente lea *build artifacts* y binarios insoportables (carpetas `dist`, o exportaciones tontas). |
 
 ---
 
-## Configurar el espacio de trabajo Ignorar
+## Cómo establecer reglas por proyecto (Workspace-level)
 
-Para excluir archivos en un proyecto específico:
+Bloquear cosas específicas es un trámite:
 
-1. Cree un archivo `.kiroignore` en la raíz de su proyecto (o cualquier subdirectorio)
-2. Agregue patrones para los archivos que desea excluir:
+1. Creá un archivo desnudo llamado `.kiroignore` dentro de la raíz del proyecto (o hasta oculto dentro de tus subdirectorios si preferís).
+2. Clavá adentro tus reglas sucias copiando lo asimilado de años de lidiar con gitignore:
 
-```
-# Secretos y credenciales
+```text
+# Las joyitas y contraseñas de producción
 .env
 .env.*
-!.env.ejemplo
+!.env.example
 *.pem
-*.clave
+*.key
 
-# Directorios privados
-secretos/
-privado/
+# Directorios blindados PII
+secrets/
+private/
 ```
 
-3. Abra **Configuración** (`Cmd+` en Mac o `Ctrl+` en Windows/Linux)
-4. Busque **Archivos ignorados por el agente** (configuración: `kiroAgent.agentIgnoreFiles`)
-5. Agregue `.kiroignore` a la matriz
+3. Abrí en tu editor la configuración nativa (`Cmd+,` en macOS / `Ctrl+,` en Windows y Linux).
+4. Buscá en el buscador general la opción **Agent Ignore Files** (o por su keyword interna `kiroAgent.agentIgnoreFiles`).
+5. Cerciorate de agregar explícitamente `.kiroignore` metiéndolo al *array* principal o dejándolo marcado.
 
-Kiro ahora omitirá cualquier archivo que coincida con sus patrones.
+A partir de acá, Kiro cierra sus ojos a cualquier archivo o carpeta que cruce este umbral.
 
-> **Consejo:** Comience con las credenciales y los secretos: estos son los archivos de mayor prioridad a proteger. Siempre puedes ampliar tus patrones a medida que evoluciona tu proyecto.
-
----
-
-### Opciones de configuración
-
-La configuración `kiroAgent.agentIgnoreFiles` acepta una variedad de nombres de archivos:
-
-- Utilice varios tipos de archivos ignorados simultáneamente: `[".gitignore", ".kiroignore"]`
-- Establezca en `[]` para deshabilitar los archivos ignorados a nivel del espacio de trabajo.
-
-### Subdirectorio Ignorar archivos
-
-Al igual que `.gitignore`, puedes colocar archivos `.kiroignore` en subdirectorios para anular o extender patrones de los directorios principales. **Los patrones en el subdirectorio ignoran los archivos tienen prioridad** para los archivos dentro de ese subdirectorio.
+> **Punta del Iceberg:** Arrancá por barrer tus credenciales sí o sí. Eso es ley vital hoy en día en desarrollo. Con el paso del tiempo siempre podés robustecer las reglas viendo que basura temporal se queja el agente o qué indexa.
 
 ---
 
-## Archivos de ignorar globalmente
+### Detalles técnicos avanzados (`kiroAgent.agentIgnoreFiles`)
 
-Kiro respeta automáticamente los archivos ignorados globales si existen; no se necesita configuración:
+Esta directiva oculta permite combinar escudos:
 
-- `~/.kiro/settings/kiroignore` — Tus patrones globales de ignorancia de Kiro (se aplica a todos los proyectos)
-- Archivo de ignoración global de Git (configurado a través de `core.excludesfile` en tu configuración de git): solo se aplica en repositorios de git
+- Juntá todas las ignorancias: Podés decirle a `kiroAgent.agentIgnoreFiles` que lea `[".gitignore", ".kiroignore"]` de golpe. Dos pájaros, un tiro.
+- Si le clavás el *array* liso de `[]`, rompés instantáneamente el escudo del workspace asumiendo plenos riesgos localmente.
+
+### Sub-ignorancias anidadas
+
+Tal cual lo harías con el mismísimo `.gitignore`, acá te pueden llover miles de archivos `.kiroignore` en varios cuartos o pasillos de tus directorios internos. **Los patrones escritos en un ignorador que se halle más enterrado en un sub-directorio ganan a los padres**, imponiendo una dictadura sobre esa carpeta puntual.
 
 ---
 
-## Sintaxis del patrón
+## Reglas Globales y supremas de rechazo
 
-`.kiroignore` usa **sintaxis estándar de gitignore**:
+Kiro no nace estúpido, e internamente acata órdenes ignoradoras de configuraciones superiores en su disco de pura vocación predefinida:
 
-| Patrón | Significado |
+- `~/.kiro/settings/kiroignore` — Tú mega patrón global para que aplique su dictadura oculta en todos y cada uno de los proyectos simultáneos donde abras tu IA (tus hábitos maestros).
+- Archivo "Global Git Excludes" (si tenés `core.excludesfile` configurado hermosamente en tu bash). Este *hack* le sirve pero solo funciona activado dentro de un ecosistema git.
+
+---
+
+## Entendiendo la sintaxis
+
+Si sabés `gitignore`, sentite cómodo acá. `.kiroignore` absorbe calcada su majestuosidad analítica:
+
+| Patrón salvaje | Interpretación |
 |---|---|
-| `archivo.txt` | Ignorar un archivo específico |
-| `*.log` | Ignore todos los archivos con extensión `.log` |
-| `carpeta/` | Ignorar un directorio completo |
-| `**/temp` | Ignore `temp` en cualquier directorio |
-| `! mantener.txt` | Volver a incluir un archivo previamente ignorado |
+| `clave.txt` | Dispara el bloqueo asesino exclusivamente a tu archivo. |
+| `*.log` | Cortale el rostro a todo rastro de debugeo insoportable que termine con punto log. |
+| `build/` | Volá del mapa del universo de la IA cualquier archivo que pase dentro del reino de dicha carpeta entera. |
+| `**/temp` | Le cerrás la cara a cualquier existencia llamada *temp*, escondida cuan profunda sea la madriguera del conejo. |
+| `!example.env` | La mágica regla condicional salvadora: el comodín inverso obliga legalmente a volver a incluir al archivo reborrado por sentencias superiores. |
 
-> **Nota:** No puede volver a incluir un archivo si se excluye un directorio principal. Por ejemplo, si ignora `secrets/`, agregar `!secrets/public.txt` no funcionará. Utilice patrones más específicos en lugar de excluir todo el directorio.
+> **Warning para despistados:** El motor de comodín inverso NO revivirá un muertito si le eliminaste en la lista a su directorio entero superior. Es decir, si volaste a `secrets/` en la jerarquía alta, la expresión mágica rebelde de poner `!secrets/pulicito_api.txt` no tiene validez legal alguna y muere ignorada en llanto. Sean quirúrgicos, mis amigos.
 
 ---
 
-## Ejemplos
+## Recetas para tu día a día
 
-### Protección de claves y secretos API
+### Escondiendo tu identidad frente al apocalipsis (Claves y API's)
 
-```gitignorar
-# Archivos de entorno con credenciales.
+```text
+# Mi corazón vital
 .env
 .env.local
-.env.producción
+.env.production
 
-# Mantenga la plantilla accesible
-!.env.ejemplo
+# Pero por favor dejenle leer cómo iniciar mi servidor
+!.env.example
 
-# Archivos de certificado y clave
+# Mis pasaportes digitales
 *.pem
-*.clave
+*.key
 *.p12
-credenciales/
+credentials/
 ```
 
-### Excluyendo artefactos de compilación y archivos de datos
+### Volando basura artificial y reliquias pesadas
 
-```gitignorar
-# Construir salidas
+```text
+# No es mágico, es RAM gastada
 dist/
-construir/
-.siguiente/
+build/
+.next/
 
-# Archivos de datos
+# Nadie quiere esto en Kiro (Datos crudos pesados o extensiones ridículas)
 *.sql
-*.volcado
-datos/exportaciones/
+*.dump
+data/exports/
 ```
 
-### Configuración de cumplimiento del equipo
+### Cumpliendo con el fisco y la ética (Datos puramente ilegales)
 
-```gitignorar
-# Directorios de datos de clientes
-datos-cliente/
-pii/
+```text
+# Todo está censurado
+client-data/
+pii-storage/
 
-# Documentos de auditoría y cumplimiento
-cumplimiento/interno/
-informes-de-auditoría/
+# Lo que toca a los inversores escondido
+legal/
+compliance/internal/
+audit-reports/
 ```
 
-> Utilice `.kiroignore` cuando necesite reglas diferentes para el acceso del agente frente al control de versiones, o para bloquear archivos que se rastrean en git pero que Kiro no debería leer.
+> **Consejo Sabio:** Usá este fichero a pura conciencia cuando exista la bifurcación enorme donde sí o sí, algo obligue a que un código le aplique subir a GitHub / Git remoto usando repositorios privados, pero no querés bajo ningun punto del planeta que el maldito modelo LLM lo procese cruzando la barrera de prompt/respuestas a la API.
 
 ---
 
-## Mejores prácticas
+## Buenas costumbres de experto (Best practices)
 
-- **Utilice comentarios** para documentar por qué se ignoran los archivos: útil para los miembros del equipo
-- **Patrones de prueba** pidiéndole a Kiro que lea un archivo ignorado; indicará que el acceso está bloqueado
-- **Revise los patrones periódicamente** a medida que evoluciona la estructura de su proyecto
-- **Coordine con su equipo** patrones globales para lograr un comportamiento coherente en todos los espacios de trabajo.
+- **Comentá tus patologías:** A un año o inclusive en colaboraciones gruesas con juniors, dejá en texto en forma de block nota `# Esto lo tapo para no romper todo` al lado del bloqueo para que les sirva de faro a tu grupo.
+- **Hackealo por la mala:** Probale la paciencia al Kiro Agente tirándole un prompt onda "¿Que dice el archivo secreto super mega loco.env?" a ver si tiene acceso y te jura que lo frenó un paredón invisible.
+- **Recuentos semanales:** Revisar dos o tres veces con el equipo entero a la hora de encarar el inicio de reingeniería si vale la pena o no seguir bloqueando paths de *legacy*.
+- **Paz mental corporativa:** Para arrancar parejo si arman una PyME o corporación interna, manden el global general idéntico emparejado en todos.

@@ -1,83 +1,82 @@
-# Indexación de base de código
+# Indexación del código base
 
 > **Fuente:** [kiro.dev/docs/editor/codebase-indexing/](https://kiro.dev/docs/editor/codebase-indexing/)
 
 ---
 
-Kiro indexa su código base para brindar asistencia de código inteligente y contextual. Comprender cómo funciona la indexación le ayudará a aprovechar al máximo las funciones de IA de Kiro.
+Kiro indexa tu código base para brindarte asistencia de código inteligente y contextual pura. Comprender cómo funciona la indexación por abajo te va a ayudar a exprimir las funciones de IA.
 
 ---
 
-## Cuando se produce la indexación
+## Cuándo ocurre la indexación
 
 ### Indexación automática
 
-Kiro realiza la indexación automáticamente en estos escenarios:
+Kiro arranca la indexación automáticamente en estos tres escenarios:
 
-1. **Importación de proyectos**: cuando abres un proyecto por primera vez en Kiro, automáticamente comienza a indexar todos los archivos en tu espacio de trabajo.
-2. **Cambios de archivos**: cuando se crean o agregan nuevos archivos a su proyecto, se indexan automáticamente.
-3. **Cambios externos**: cuando los archivos se modifican fuera de Kiro (por ejemplo, mediante operaciones de git), se vuelven a indexar.
+1. **Importación de proyectos:** Cuando abrís un proyecto por primera vez, Kiro comienza inmediatamente a indexar todos los archivos de tu *workspace*.
+2. **Cambios de archivos:** Cuando creás o agregás nuevos archivos a tu proyecto, son indexados automáticamente al instante.
+3. **Cambios externos:** Cuando los archivos se modifican por fuera del editor (por ejemplo, tirando un `git pull` en la consola), se vuelven a indexar.
 
 ### Indexación manual
 
-Puede activar la indexación manualmente cuando sea necesario usando la **Paleta de comandos**:
-- macOS: `Cmd+Mayús+P`
-- Windows/Linux: `Ctrl+Mayús+P`
+Podés disparar la indexación a mano cuando lo creas necesario abriendo la **Paleta de Comandos**:
+- macOS: `Cmd+Shift+P`
+- Windows/Linux: `Ctrl+Shift+P`
 
 ---
 
 ## Comandos de indexación disponibles
 
-![Indexación de Kiro](https://kiro.dev/images/kiro-indexing.png)
+![Kiro Indexing](https://kiro.dev/images/kiro-indexing.png)
 
-### Indexación de base de código
+### Indexación de la base de código
 
 | Comando | Cuándo utilizar |
 |---|---|
-| `Kiro: Reindexación de la fuerza del código base` | Fuerza una reindexación completa de todo el código base. Utilícelo cuando: el índice parezca corrupto o incompleto, se hayan realizado cambios estructurales importantes o las sugerencias parezcan obsoletas. |
-| `Kiro: Reconstruir el índice base del código` | Reconstruye completamente el índice de la base de código desde cero. Más completo que forzar la reindexación. Utilícelo cuando el índice parezca muy dañado o experimente problemas persistentes. |
+| `Kiro: Force Reindex Codebase` | Fuerza una reindexación completa de todo tu código base. Usalo cuando el índice parezca corrupto o incompleto, si hiciste cambios estructurales masivos de golpe, o si sentís que las sugerencias de la IA huelen a código viejo. |
+| `Kiro: Rebuild Codebase Index` | Destruye y reconstruye completamente el índice desde cero. Es más agresivo y destructivo que forzar la reindexación normal. Usalo cuando el índice esté roto a otro nivel o si tenés dolores de cabeza persistentes de contexto. |
 
-### Indexación de documentación
+### Indexación de la documentación
 
 | Comando | Descripción |
 |---|---|
-| `Kiro: Índice de documentos` | Inicia la indexación de archivos de documentación en su proyecto |
-| `Kiro: Docs fuerza la reindexación` | Fuerza una reindexación completa de todos los archivos de documentación |
+| `Kiro: Index Docs` | Inicia la indexación explícita de archivos de documentación. |
+| `Kiro: Force Reindex Docs` | Fuerza una reindexación completa solo de los archivos documentales. |
 
 ---
 
-## Monitoreo del progreso de la indexación
+## Cómo monitorear el progreso
 
-![Registros de indexación de Kiro](https://kiro.dev/images/kiro-indexing-logs.png)
+![Kiro Indexing Logs](https://kiro.dev/images/kiro-indexing-logs.png)
 
-Puedes monitorear el proceso de indexación a través del panel **Kiro Logs**:
+Podés monitorear en qué estado anda el indexador abriendo el panel de **Kiro Logs**:
 
-1. Accede al panel **Salida** en Kiro
-2. Seleccione **"Kiro Logs"** en el menú desplegable.
-3. Vea el progreso de la indexación y las actualizaciones de estado en tiempo real.
+1. Accedé a la pestaña **Output** (Salida) del editor.
+2. Seleccioná **"Kiro Logs"** en el menú desplegable de la pestaña.
+3. Ahí vas a ver el progreso y todo lo que la maquinita procesa en tiempo real.
 
-Los registros muestran:
-- Cuando comienza y finaliza la indexación.
-- Número de archivos encontrados y procesados.
-- Porcentaje de progreso para grandes bases de código
-- Tiempo de finalización de las operaciones de indexación.
+Los logs te detallan:
+- Cuándo arranca y termina de indexar.
+- Conteo de archivos encontrados y procesados vivos.
+- Porcentajes para bases de código gigantes.
+- Tiempos de latencia de las operaciones.
 
 ---
 
-## Contenido indexado
+## Qué contenido se indexa
 
-Kiro indexa varios tipos de contenido para brindar asistencia inteligente:
+Kiro examina varios tipos de contenido para hacerte la vida fácil:
 
 | Tipo de contenido | Ejemplos |
 |---|---|
-| **Código fuente** | Todos los archivos de lenguajes de programación en su espacio de trabajo |
-| **Documentación** | Markdown, MDX y otros formatos de documentación |
-| **Configuración** | Archivos de configuración del proyecto y manifiestos |
-| **Dependencias** | Definiciones de paquetes e información de dependencia |
+| **Código fuente** | Todos los lenguajes de programación en tu *workspace*. |
+| **Documentación** | Archivos de texto Markdown, MDX, etc. |
+| **Configuración** | Manifiestos, JSONs, y configuración global. |
+| **Dependencias** | Definiciones de tus paquetes y dependencias clave. |
 
-Los datos indexados permiten funciones como:
-- Finalización de código inteligente
-- Navegación entre archivos
-- Sugerencias contextuales
-- Búsqueda de documentación.
-- Asistencia de refactorización de código
+Toda esta data cruda alimenta:
+- El autocompletado inteligente.
+- La navegación veloz a través de todo tu árbol.
+- Sugerencias que toman cuenta de archivos ajenos.
+- Asistencia directa al encarar un *refactor* rudo de código.

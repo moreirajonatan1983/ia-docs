@@ -1,61 +1,61 @@
-# Espacios de trabajo multiraíz
+# Espacios de trabajo Multi-Raíz (Multi-root)
 
 > **Fuente:** [kiro.dev/docs/editor/multi-root-workspaces/](https://kiro.dev/docs/editor/multi-root-workspaces/)
 
 ---
 
-Los espacios de trabajo de múltiples raíces le permiten trabajar con múltiples carpetas de proyectos simultáneamente en una sola ventana de Kiro. Las funciones de IA de Kiro están diseñadas para funcionar sin problemas en todas las carpetas raíz.
+Los *workspaces* multi-raíz te permiten sostener 12 proyectos diferentes tirados sobre una única ventana de Kiro en modo Dios. Todas las funcionalidades y razonamientos impulsados por inteligencia artificial que ofrece la herramienta están preparados para sobrevivir sin fallos saltando de forma inteligente entre esos repositorios/carpetas raíz.
 
 ---
 
 ## Funcionalidad principal
 
-Kiro resolverá las rutas de los archivos de forma inteligente en todas las carpetas raíz mientras navega y actualiza su espacio de trabajo de múltiples raíces.
+Kiro resuelve las rutas locales e importaciones de manera automática cruzando carpetas raíz, permitiéndote navegar tu coloso Frankenstein sin problemas de dependencias engañosas.
 
-**[Codebase Indexing](https://kiro.dev/docs/editor/codebase-indexing/)** y Repository Maps funcionan perfectamente en espacios de trabajo de múltiples raíces: ambos índices contienen código de todas las carpetas raíz y se puede hacer referencia a ellos en las indicaciones exactamente como en escenarios de espacios de trabajo de una sola raíz.
+La **[Indexación inteligente](https://kiro.dev/docs/editor/codebase-indexing/)** y los *Repository Maps* logran convivir gloriosamente en escenarios muti-raíz: Ambos mapeos consolidados terminan conteniendo la mezcla de todas las raíces como un enorme bloque, dándote la libertad de pedirle a la IA algo como "#File1.tsx (raíz A) vinculate con #File2.py (raíz B)" tal como harías si solo tuvieras un proyectito.
 
-Al agregar un archivo usando el proveedor de contexto `#file`, si hay varios archivos con el mismo nombre en diferentes carpetas raíz, Kiro mostrará una lista de archivos coincidentes con sus rutas para que pueda seleccionar el correcto.
+Al vincular manualemente un archivo en el chat usando `#file`, y detectarse que existen 15 archivos "index.tsx" repartidos en cada raíz individual, Kiro te va a armar un desplegable visual mostrándote explícitamente el origen de cada uno para que piques el correcto y no le arruines la vida resolviendo.
 
 ---
 
-## Especificaciones
+## Specs (Especificaciones)
 
-Kiro recupera todos los archivos [spec](https://kiro.dev/docs/specs/) de la subcarpeta `.kiro` en **cada** de las carpetas raíz y los muestra como una lista unificada en la sección Especificaciones del panel Kiro. El nombre de la carpeta raíz que contiene se muestra junto a cada especificación.
+Kiro carga agresivamente todos los archivos de [Specs](https://kiro.dev/docs/specs/) desenterrándolos desde el submundo `.kiro` ubicado individualmente en **cada** raíz de tu espacio gigante, mostrando una lista unificada espectacular en el panel. Lado a lado de cada Spec dice a qué proyecto (carpeta raíz) pertenece la criatura.
 
-- Puedes pedirle a Kiro que trabaje en una especificación definida en cualquiera de las carpetas raíz.
-- Al crear una nueva especificación, Kiro determinará la carpeta raíz adecuada para colocarla.
+- Podés forzar sutilmente a Kiro a laburar en el Spec de una de las carpetas desde otra distinta.
+- Cuando trates de parir un Spec nuevo de 0, el menú te rogará gentilmente que escojas dónde pretendés guardarlo.
 
 ---
 
 ## Archivos de Steering
 
-Kiro recupera todos los archivos [dirección](https://kiro.dev/docs/steering/) de la subcarpeta `.kiro` debajo de cada carpeta raíz, mostrándolos como una lista unificada en la sección **Dirección del agente** del panel de Kiro bajo el grupo *Espacio de trabajo*. El nombre de la carpeta raíz se muestra junto a cada archivo de Steering del espacio de trabajo.
+Misma lógica: Kiro absorbe los archivos de [Steering](https://kiro.dev/docs/steering/) que habitan las carpetas `.kiro/` de cada módulo o proyecto, y las lista colapsadas bajo el título **Agent Steering** dentro de un bloque maestro llamado *Workspace*. De nuevo, visualmente te advierte de qué raíz salió cada regla.
 
-| Directiva | Comportamiento |
+| Comportamiento | Lógica |
 |---|---|
-| **Siempre incluido** | Los archivos de Steering siempre se cargan, independientemente de en qué carpeta raíz esté trabajando el agente |
-| **Inclusión condicional** | Se carga solo si el agente está trabajando en un archivo en esa misma raíz y el archivo coincide con el patrón de inclusión |
+| **Inclusión estricta** | El Steering se le inyecta al Agente obligatoriamente sin importar en qué carpeta ande modificando cosas. |
+| **Inclusión condicional** | Solo le impacta temporalmente al Agente si detecta que la víctima que está operando en su turno actual coincide con la carpeta dueña del archivo Steering. |
 
-Al crear un nuevo archivo de Steering del espacio de trabajo, se le pedirá que elija la carpeta raíz para guardarlo.
+A la hora de crear una regla de Steering grupal vos también serás apuntado por Kiro pidiéndote confirmar obligatoriamente dónde meter el script.
 
 ---
 
-## Hooks
+## Hooks (Ganchos de automatización)
 
-Kiro recupera todos los [hooks](https://kiro.dev/docs/hooks/) de la subcarpeta `.kiro` debajo de cada carpeta raíz, mostrándolos como una lista unificada en la sección **Agent Hooks**. El nombre de la carpeta raíz se muestra al lado de cada enlace.
+El rastreador se encarga de ubicar cada uno de los [hooks configurados](https://kiro.dev/docs/hooks/) bajo el capó de la subcarpeta `.kiro` en cada monstruo multi-proyecto que insertes en la UI, uniéndolo al panel **Agent Hooks**.
 
-> **Importante:** Los enlaces Crear archivo, Guardar archivo y Eliminar archivo se activan **solo** cuando el agente modifica archivos ubicados en la misma carpeta raíz donde se define el enlace.
+> **Importantísimo:** Los ganchos puristas como Crear, Eliminar o Guardar archivos **saltan al ataque (triggers) estrictamente** cuando el Agente Kiro osa manipular el terreno y los bits exclusivos de la raíz de la que partió ese hook. No se cruzan los cables con otras raíces vecinas de la ventana para evitar apocalipsis asíncronos en cadena.
 
-Al crear un nuevo enlace, se le pedirá que elija la carpeta raíz.
+A la de crear un trigger, se asume que debés asignarle una cama raíz obligada.
 
 ---
 
 ## Servidores MCP
 
-Kiro recupera todas las definiciones de [servidor MCP](https://kiro.dev/docs/mcp/) de la subcarpeta `.kiro` debajo de cada carpeta raíz, mostrándolas como una lista unificada en la sección **Servidores MCP**.
+Las configuraciones globales de [servidores MCP](https://kiro.dev/docs/mcp/) en cada micro-raíz en un multi-root se unen pacíficamente al levantar Kiro:
 
-- Todos los servidores MCP definidos en todas las raíces se inicializan al inicio.
-- Si dos carpetas raíz definen un servidor MCP con el mismo nombre, se utiliza la definición en la **última raíz de definición**.
-- Los servidores se inician con la **primera carpeta raíz** como directorio de trabajo actual.
+- Carga masiva paralela de todas las definiciones de MCP dispersas apenas inicia.
+- Regla letal por conflicto: si a los 2 proyectos se les ocurrió llamar "api-local" a un Server MCP, la que prevalece al invocar y aplasta a la otra es **la última configuración leída en orden alfabético**.
+- Los servers inicializados se arrancan asumiendo como origen de *working-directory* el camino maestro de la **primera carpeta raíz** que abriste.
 
-> Cuando hace clic en **Abrir configuración de MCP**, verá la configuración de MCP a nivel de usuario (global) de forma predeterminada. Haga clic en **Configuración del espacio de trabajo** para ver la configuración a nivel del espacio de trabajo. En un espacio de trabajo con múltiples raíces, se le pedirá que elija la carpeta raíz.
+> Si tenés ganitas de tocar el **Open MCP Settings**, la que abría de buenas a primeras es tu macro-configuración humana y no la del proyecto. Si apretás el botón de **Workspace settings** en un mega-proyecto, de vuelta el IDE se colgará gentilmente a preguntarte para quién creés que venís a cambiar cosas.
