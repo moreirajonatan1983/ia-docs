@@ -8,28 +8,22 @@
 
 ### Hook Not Triggering
 
-| Posible causa | Solución |
-|---|---|
-| El file pattern no coincide | Verificá que el pattern matchee los archivos objetivo |
-| Hook deshabilitado | Verificá que el hook esté habilitado (ícono de ojo en el panel) |
-| Tipo de evento incorrecto | Revisá que el Event seleccionado sea el correcto para tu caso |
+- **El file pattern no coincide:** Verificá que el pattern matchee los archivos objetivo
+- **Hook deshabilitado:** Verificá que el hook esté habilitado (ícono de ojo en el panel)
+- **Tipo de evento incorrecto:** Revisá que el Event seleccionado sea el correcto para tu caso
 
 ### Unexpected Hook Behavior
 
-| Posible causa | Solución |
-|---|---|
-| Instrucciones ambiguas | Revisá las instrucciones del hook para mayor claridad |
-| Hooks en conflicto | Verificá si hay otros hooks que se disparan en el mismo evento |
-| File patterns demasiado amplios | Acotá los patterns a archivos más específicos |
+- **Instrucciones ambiguas:** Revisá las instrucciones del hook para mayor claridad
+- **Hooks en conflicto:** Verificá si hay otros hooks que se disparan en el mismo evento
+- **File patterns demasiado amplios:** Acotá los patterns a archivos más específicos
 
 ### Performance Issues
 
-| Posible causa | Solución |
-|---|---|
-| File patterns muy amplios | Usá patterns más específicos para reducir el scope |
-| Instrucciones complejas (Agent Prompt) | Simplificá las instrucciones del hook |
-| Comando lento (Shell Command) | Asegurate de que el comando complete rápidamente |
-| Demasiados trigger events | Reducí la frecuencia de los eventos de disparo |
+- **File patterns muy amplios:** Usá patterns más específicos para reducir el scope
+- **Instrucciones complejas (Agent Prompt):** Simplificá las instrucciones del hook
+- **Comando lento (Shell Command):** Asegurate de que el comando complete rápidamente
+- **Demasiados trigger events:** Reducí la frecuencia de los eventos de disparo
 
 ---
 

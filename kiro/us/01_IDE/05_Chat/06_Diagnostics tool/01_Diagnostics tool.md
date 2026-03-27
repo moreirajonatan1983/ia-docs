@@ -44,12 +44,10 @@ La herramienta funciona automáticamente a partir de ese punto.
 
 Si el agente no detecta problemas de código:
 
-| Problema | Solución |
-|---|---|
-| Extensión no detectada | Verificar que la extensión está habilitada en el panel de Extensiones |
-| Language server inactivo | Output Panel → buscar mensajes de error de language servers |
-| Server no inicia | Command Palette → "Reload Window" |
-| Capacidades desactualizadas | Mantener extensiones actualizadas |
+- **Extensión no detectada:** Verificar que la extensión está habilitada en el panel de Extensiones
+- **Language server inactivo:** Output Panel → buscar mensajes de error de language servers
+- **Server no inicia:** Command Palette → "Reload Window"
+- **Capacidades desactualizadas:** Mantener extensiones actualizadas
 
 ---
 

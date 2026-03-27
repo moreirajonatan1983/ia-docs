@@ -20,12 +20,10 @@ Cuando Kiro trabaja en modo Autopilot ejecutando tareas complejas, las notificac
 
 ## Notification Types
 
-| Tipo | Cuándo ocurre |
-|---|---|
-| **Task complete** | El agente terminó un turno o tarea |
-| **Approval required** | El agente necesita tu aprobación para continuar |
-| **Error** | El agente encontró un error que no puede resolver solo |
-| **Background process** | Un dev server o proceso en segundo plano reporta estado |
+- **Task complete:** El agente terminó un turno o tarea
+- **Approval required:** El agente necesita tu aprobación para continuar
+- **Error:** El agente encontró un error que no puede resolver solo
+- **Background process:** Un dev server o proceso en segundo plano reporta estado
 
 ---
 

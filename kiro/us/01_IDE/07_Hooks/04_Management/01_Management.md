@@ -12,10 +12,8 @@ Accedé a todos tus hooks desde la sección **Agent Hooks** en el panel de Kiro.
 
 Activá o desactivá hooks sin eliminarlos:
 
-| Método | Cómo |
-|---|---|
-| **Quick toggle** | Click en el ícono de ojo (👁) junto al hook en el panel |
-| **Desde la vista del hook** | Seleccioná el hook → switch **Hook Enabled** en la esquina superior derecha |
+- **Quick toggle:** Click en el ícono de ojo (👁) junto al hook en el panel
+- **Desde la vista del hook:** Seleccioná el hook → switch **Hook Enabled** en la esquina superior derecha
 
 ---
 
@@ -43,10 +41,8 @@ Los hooks evolucionan con tu workflow. Actualizalos en cualquier momento:
 
 Para hooks con trigger de tipo **Manual**:
 
-| Método | Cómo |
-|---|---|
-| **Quick run** | Click en el botón ▷ junto al nombre del hook en el panel |
-| **Desde la vista del hook** | Seleccioná el hook → click **Start Hook** en la esquina superior derecha |
+- **Quick run:** Click en el botón ▷ junto al nombre del hook en el panel
+- **Desde la vista del hook:** Seleccioná el hook → click **Start Hook** en la esquina superior derecha
 
 ---
 

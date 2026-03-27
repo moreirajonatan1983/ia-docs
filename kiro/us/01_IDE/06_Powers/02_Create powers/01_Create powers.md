@@ -115,12 +115,10 @@ power-supabase/
 
 ## Examples
 
-| Tipo | Estructura |
-|---|---|
-| **Simple** (sin steering files) | `POWER.md` + `mcp.json` (opcional) |
-| **Single-tool con steering** | `POWER.md` + `mcp.json` + `steering/schema-patterns.md` |
-| **Multi-tool** | `POWER.md` + `mcp.json` + múltiples archivos en `steering/` |
-| **Documentation-only** | `POWER.md` + `steering/` (sin MCP servers) |
+- **Simple (sin steering files):** `POWER.md` + `mcp.json` (opcional)
+- **Single-tool con steering:** `POWER.md` + `mcp.json` + `steering/schema-patterns.md`
+- **Multi-tool:** `POWER.md` + `mcp.json` + múltiples archivos en `steering/`
+- **Documentation-only:** `POWER.md` + `steering/` (sin MCP servers)
 
 ---
 

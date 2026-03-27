@@ -10,11 +10,9 @@ Powers son bundles que combinan **MCP servers + steering + hooks**, activados di
 
 ### El problema: context overload
 
-| Sin Powers | Con Powers |
-|---|---|
-| Conectar 5 MCP servers carga 100+ tool definitions antes de tu primer prompt | Los tools se cargan **on-demand** basado en keywords de la conversación |
-| 5 servers pueden consumir 50,000+ tokens (40% del context window) | Solo se carga lo relevante al task actual |
-| Sin contexto del framework, el agente adivina | Acceso instantáneo a conocimiento especializado |
+- **Conectar 5 MCP servers carga 100+ tool definitions antes de tu primer prompt:** Los tools se cargan **on-demand** basado en keywords de la conversación
+- **5 servers pueden consumir 50,000+ tokens (40% del context window):** Solo se carga lo relevante al task actual
+- **Sin contexto del framework, el agente adivina:** Acceso instantáneo a conocimiento especializado
 
 ### How Powers Work
 
@@ -25,11 +23,9 @@ Cuando iniciás una tarea, Kiro:
 
 ### What's in a Power?
 
-| Componente | Descripción |
-|---|---|
-| `POWER.md` | Archivo de steering que describe al agente qué MCP tools tiene disponibles y cuándo usarlos |
-| MCP server config | Tools y detalles de conexión al MCP server |
-| Steering / Hooks | Tareas automatizadas en eventos del IDE o slash commands (opcional) |
+- **`POWER.md`:** Archivo de steering que describe al agente qué MCP tools tiene disponibles y cuándo usarlos
+- **MCP server config:** Tools y detalles de conexión al MCP server
+- **Steering / Hooks:** Tareas automatizadas en eventos del IDE o slash commands (opcional)
 
 **Ejemplo:** Instalás el Stripe power. Cuando mencionás "payment" o "checkout", el power se activa — cargando los MCP tools de Stripe y el `POWER.md`. Cuando pasás a trabajar con la base de datos, el Supabase power se activa y Stripe se desactiva.
 

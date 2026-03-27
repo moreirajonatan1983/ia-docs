@@ -63,9 +63,7 @@
 
 ## Quick Reference: Shell vs. Agent Prompt
 
-| Situación | Usar |
-|---|---|
-| Linting, formateo, scripts determinísticos | **Shell Command** (más rápido, sin créditos) |
-| Revisión, análisis, generación de contenido | **Agent Prompt** (contextual, consume créditos) |
-| Validación pre-commit | **Shell Command** |
+- **Linting, formateo, scripts determinísticos:** **Shell Command** (más rápido, sin créditos)
+- **Revisión, análisis, generación de contenido:** **Agent Prompt** (contextual, consume créditos)
+- **Validación pre-commit:** **Shell Command**
 | Sugerencias de código | **Agent Prompt** |

@@ -27,12 +27,10 @@ Define un prompt que se envía al agente cada vez que el hook se dispara. El age
 
 Define un comando de shell que se ejecuta cada vez que el hook se dispara.
 
-| Resultado del comando | Comportamiento |
-|---|---|
-| Exit code `0` (éxito) | El stdout se agrega al contexto del agente |
-| Cualquier otro exit code | El stderr se envía al agente con notificación de error |
-| Pre Tool Use hook + error | La invocación del tool es **bloqueada** |
-| Prompt Submit hook + error | El envío del prompt es **bloqueado** |
+- **Exit code `0` (éxito):** El stdout se agrega al contexto del agente
+- **Cualquier otro exit code:** El stderr se envía al agente con notificación de error
+- **Pre Tool Use hook + error:** La invocación del tool es **bloqueada**
+- **Prompt Submit hook + error:** El envío del prompt es **bloqueado**
 
 **Timeout:** Configurable por hook. El default es **60 segundos**. Seteá `0` para deshabilitar el timeout.
 
@@ -47,11 +45,9 @@ Define un comando de shell que se ejecuta cada vez que el hook se dispara.
 
 ## Selecting an Action Type
 
-| Criterio | Agent Prompt | Shell Command |
-|---|---|---|
-| Basado en contexto | ✅ | ❌ |
-| Lenguaje natural | ✅ | ❌ |
-| Determinístico | ❌ | ✅ |
-| Consume créditos | ✅ | ❌ |
-| Velocidad | Más lento (LLM) | Más rápido (local) |
+- **Basado en contexto:** ✅ — ❌
+- **Lenguaje natural:** ✅ — ❌
+- **Determinístico:** ❌ — ✅
+- **Consume créditos:** ✅ — ❌
+- **Velocidad:** Más lento (LLM) — Más rápido (local)
 | Ideal para | Revisión, análisis, generación | Linting, formateo, scripts |

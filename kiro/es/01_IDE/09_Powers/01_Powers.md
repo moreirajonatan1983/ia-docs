@@ -47,35 +47,29 @@ Cuando mencionas "pago" o "pago", el poder de Stripe se activa, cargando las her
 
 Un poder es un paquete unificado que incluye:
 
-| Componente | Descripción |
-|---|---|
-| `PODER.md` | Archivo de Steering que le indica al agente qué herramientas MCP tiene disponibles y cuándo usarlas |
-| **Configuración del servidor MCP** | Herramientas y detalles de conexión para el servidor MCP |
-| **Dirección/hooks** *(opcional)* | Tareas automatizadas que se ejecutan en eventos IDE o mediante comandos de barra diagonal |
+- **`PODER.md`:** Archivo de Steering que le indica al agente qué herramientas MCP tiene disponibles y cuándo usarlas
+- **Configuración del servidor MCP:** Herramientas y detalles de conexión para el servidor MCP
+- **Dirección/hooks *(opcional)*:** Tareas automatizadas que se ejecutan en eventos IDE o mediante comandos de barra diagonal
 
 ---
 
 ### ¿Qué hace que los Powers sean diferentes?
 
-| Característica | Descripción |
-|---|---|
-| **Carga dinámica de herramientas MCP** | Los servidores MCP tradicionales cargan todas las herramientas por adelantado. Potencia las herramientas de carga bajo demanda, lo que reduce el uso del contexto básico y al mismo tiempo brinda a su agente acceso a docenas de tecnologías |
-| **Ecosistema abierto** | Explore Powers seleccionados de socios de lanzamiento, incluidos Datadog, Dynatrace, Figma, Neon, Netlify, Postman, Supabase, Stripe, Strands SDK y AWS Aurora. Instale Powers creados por la comunidad desde las URL de GitHub o cree y comparta los suyos propios |
-| **Instalación con un clic** | Explora Powers directamente en Kiro o en kiro.dev. Hacé clic en "Instalar" y la energía se registrará automáticamente. Sin archivos de configuración JSON, sin configuración de línea de comandos |
+- **Carga dinámica de herramientas MCP:** Los servidores MCP tradicionales cargan todas las herramientas por adelantado. Potencia las herramientas de carga bajo demanda, lo que reduce el uso del contexto básico y al mismo tiempo brinda a su agente acceso a docenas de tecnologías
+- **Ecosistema abierto:** Explore Powers seleccionados de socios de lanzamiento, incluidos Datadog, Dynatrace, Figma, Neon, Netlify, Postman, Supabase, Stripe, Strands SDK y AWS Aurora. Instale Powers creados por la comunidad desde las URL de GitHub o cree y comparta los suyos propios
+- **Instalación con un clic:** Explora Powers directamente en Kiro o en kiro.dev. Hacé clic en "Instalar" y la energía se registrará automáticamente. Sin archivos de configuración JSON, sin configuración de línea de comandos
 
 ---
 
 ## Powers del socio de lanzamiento
 
-| Socio | Caso de uso |
-|---|---|
-| **Stripe** | Pagos, suscripciones, facturación |
-| **Supabase** | Base de datos PostgreSQL, autenticación, almacenamiento |
-| **Neon** | PostgreSQL sin servidor |
-| **Figma** | Tokens de diseño, Specs de componentes |
-| **AWS Aurora** | Base de datos relacional administrada |
-| **Netlify** | Implementación de frontend, funciones de borde |
-| **Postman** | Pruebas y documentación de API |
-| **Datadog** | Monitoreo, registros, APM |
-| **Dynatrace** | Plataforma de observabilidad |
+- **Stripe:** Pagos, suscripciones, facturación
+- **Supabase:** Base de datos PostgreSQL, autenticación, almacenamiento
+- **Neon:** PostgreSQL sin servidor
+- **Figma:** Tokens de diseño, Specs de componentes
+- **AWS Aurora:** Base de datos relacional administrada
+- **Netlify:** Implementación de frontend, funciones de borde
+- **Postman:** Pruebas y documentación de API
+- **Datadog:** Monitoreo, registros, APM
+- **Dynatrace:** Plataforma de observabilidad
 | **Strands SDK** | Desarrollo de agentes |

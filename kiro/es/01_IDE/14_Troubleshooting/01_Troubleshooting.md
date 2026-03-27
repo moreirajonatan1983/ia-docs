@@ -49,11 +49,9 @@ Este error es un falso positivo de las funciones de seguridad de macOS.
 
 ### Problemas del Centro de identidad de AWS IAM
 
-| Error | causa | Solución |
-|---|---|---|
-| `"Hubo un error al Sign in"` | No tienes una suscripción Q Developer Pro activa | [Ver cómo activar Q Developer Pro →](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html) |
-| No podés Sign in a pesar de tener credenciales válidas | Limitación regional — Kiro solo soporta Identity Center en US East (N. Virginia) | Utilizá Builder ID para Sign in en redes sociales (Google, GitHub) |
-| Sesión expira constantemente | Timeout por defecto de 8 horas | El administrador puede [configurar sesiones más largas →](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-session-duration-how-to-configure.html) |
+- **`"Hubo un error al Sign in"`:** No tienes una suscripción Q Developer Pro activa — [Ver cómo activar Q Developer Pro →](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html)
+- **No podés Sign in a pesar de tener credenciales válidas:** Limitación regional — Kiro solo soporta Identity Center en US East (N. Virginia) — Utilizá Builder ID para Sign in en redes sociales (Google, GitHub)
+- **Sesión expira constantemente:** Timeout por defecto de 8 horas — El administrador puede [configurar sesiones más largas →](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-session-duration-how-to-configure.html)
 
 ---
 

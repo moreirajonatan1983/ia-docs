@@ -47,35 +47,29 @@ When you mention "payment" or "checkout," the Stripe power activates — loading
 
 A power is a unified bundle that includes:
 
-| Component | Description |
-|---|---|
-| `POWER.md` | Steering file that tells the agent what MCP tools it has available and when to use them |
-| **MCP server configuration** | Tools and connection details for the MCP server |
-| **Steering/hooks** *(optional)* | Automated tasks that run on IDE events or via slash commands |
+- **`POWER.md`:** Steering file that tells the agent what MCP tools it has available and when to use them
+- **MCP server configuration:** Tools and connection details for the MCP server
+- **Steering/hooks *(optional)*:** Automated tasks that run on IDE events or via slash commands
 
 ---
 
 ### What Makes Powers Different
 
-| Feature | Description |
-|---|---|
-| **Dynamic MCP tool loading** | Traditional MCP servers load all tools upfront. Powers load tools on-demand, reducing baseline context usage while giving your agent access to dozens of technologies |
-| **Open ecosystem** | Browse curated powers from launch partners including Datadog, Dynatrace, Figma, Neon, Netlify, Postman, Supabase, Stripe, Strands SDK, and AWS Aurora. Install community-built powers from GitHub URLs, or create and share your own |
-| **One-click install** | Browse powers directly in Kiro or on kiro.dev. Click "Install" and the power registers automatically. No JSON configuration files, no command-line setup |
+- **Dynamic MCP tool loading:** Traditional MCP servers load all tools upfront. Powers load tools on-demand, reducing baseline context usage while giving your agent access to dozens of technologies
+- **Open ecosystem:** Browse curated powers from launch partners including Datadog, Dynatrace, Figma, Neon, Netlify, Postman, Supabase, Stripe, Strands SDK, and AWS Aurora. Install community-built powers from GitHub URLs, or create and share your own
+- **One-click install:** Browse powers directly in Kiro or on kiro.dev. Click "Install" and the power registers automatically. No JSON configuration files, no command-line setup
 
 ---
 
 ## Launch Partner Powers
 
-| Partner | Use Case |
-|---|---|
-| **Stripe** | Payments, subscriptions, billing |
-| **Supabase** | PostgreSQL database, auth, storage |
-| **Neon** | Serverless PostgreSQL |
-| **Figma** | Design tokens, component specs |
-| **AWS Aurora** | Managed relational database |
-| **Netlify** | Frontend deployment, edge functions |
-| **Postman** | API testing and documentation |
-| **Datadog** | Monitoring, logs, APM |
-| **Dynatrace** | Observability platform |
-| **Strands SDK** | Agent development |
+- **Stripe:** Payments, subscriptions, billing
+- **Supabase:** PostgreSQL database, auth, storage
+- **Neon:** Serverless PostgreSQL
+- **Figma:** Design tokens, component specs
+- **AWS Aurora:** Managed relational database
+- **Netlify:** Frontend deployment, edge functions
+- **Postman:** API testing and documentation
+- **Datadog:** Monitoring, logs, APM
+- **Dynatrace:** Observability platform
+- **Strands SDK:** Agent development

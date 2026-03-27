@@ -12,10 +12,8 @@ Ejemplos prácticos y templates listos para usar en tus proyectos.
 
 Previene leaks de seguridad escaneando archivos antes de ser commiteados.
 
-| Campo | Valor |
-|---|---|
-| **Trigger** | Agent Stop |
-| **Action** | Agent Prompt |
+- **Trigger:** Agent Stop
+- **Action:** Agent Prompt
 
 **Prompt:**
 ```
@@ -41,10 +39,8 @@ For each issue found:
 
 Loguea todos los prompts de usuario a un sistema centralizado para análisis y auditoría.
 
-| Campo | Valor |
-|---|---|
-| **Trigger** | Prompt Submit |
-| **Action** | Shell Command |
+- **Trigger:** Prompt Submit
+- **Action:** Shell Command
 
 **Command:**
 ```bash
@@ -60,11 +56,9 @@ curl -H "Content-Type: application/json" -XPOST \
 
 Mantiene las traducciones sincronizadas cuando se actualiza el archivo del idioma principal.
 
-| Campo | Valor |
-|---|---|
-| **Trigger** | File Save |
-| **Target** | `src/locales/en/*.json` |
-| **Action** | Agent Prompt |
+- **Trigger:** File Save
+- **Target:** `src/locales/en/*.json`
+- **Action:** Agent Prompt
 
 **Prompt:**
 ```
@@ -82,11 +76,9 @@ When an English locale file is updated:
 
 Asegura que la cobertura de tests se mantenga alta a medida que el código evoluciona.
 
-| Campo | Valor |
-|---|---|
-| **Trigger** | File Save |
-| **Target** | `src/**/*.{js,ts,jsx,tsx}` |
-| **Action** | Agent Prompt |
+- **Trigger:** File Save
+- **Target:** `src/**/*.{js,ts,jsx,tsx}`
+- **Action:** Agent Prompt
 
 **Prompt:**
 ```
@@ -104,10 +96,8 @@ When a source file is modified:
 
 Genera documentación completa bajo demanda para el archivo actual.
 
-| Campo | Valor |
-|---|---|
-| **Trigger** | Manual |
-| **Action** | Agent Prompt |
+- **Trigger:** Manual
+- **Action:** Agent Prompt
 
 **Prompt:**
 ```

@@ -53,11 +53,9 @@ De forma predeterminada, Kiro requiere **aprobación antes de ejecutar cualquier
 
 Kiro utiliza una coincidencia de prefijos de cadena simple:
 
-| Patrón | Comportamiento |
-|---|---|
-| `instalación npm` | Coincidencia exacta: confía únicamente en este comando exacto |
-| `npm *` | Comodín: confía en todos los comandos npm |
-| `*` | Universal: confía en **todos** los comandos *(úselo con extrema precaución)* |
+- **`instalación npm`:** Coincidencia exacta: confía únicamente en este comando exacto
+- **`npm *`:** Comodín: confía en todos los comandos npm
+- **`*`:** Universal: confía en **todos** los comandos *(úselo con extrema precaución)*
 
 > ⚠️ El sistema trata los comandos completos como cadenas individuales y solo verifica si comienzan con patrones confiables. **No** analiza la estructura de comandos, cadenas o caracteres especiales. Configure patrones confiables con cuidado.
 

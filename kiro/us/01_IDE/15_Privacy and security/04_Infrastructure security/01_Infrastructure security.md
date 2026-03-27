@@ -12,11 +12,9 @@ Como servicio gestionado, Kiro está protegido por la **seguridad de red global 
 
 Los clientes que acceden a Kiro deben soportar:
 
-| Requisito | Valor |
-|---|---|
-| **TLS mínimo** | TLS 1.2 |
-| **TLS recomendado** | TLS 1.3 |
-| **Cipher suites** | Perfect Forward Secrecy: DHE o ECDHE |
+- **TLS mínimo:** TLS 1.2
+- **TLS recomendado:** TLS 1.3
+- **Cipher suites:** Perfect Forward Secrecy: DHE o ECDHE
 
 > ℹ️ La mayoría de los sistemas modernos (Java 7 y posterior) soportan estos modos.
 

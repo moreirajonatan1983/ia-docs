@@ -53,11 +53,9 @@ By default, Kiro requires **approval before running any command**. You can confi
 
 Kiro uses simple string prefix matching:
 
-| Pattern | Behavior |
-|---|---|
-| `npm install` | Exact match — trusts only this exact command |
-| `npm *` | Wildcard — trusts all npm commands |
-| `*` | Universal — trusts **all** commands *(use with extreme caution)* |
+- **`npm install`:** Exact match — trusts only this exact command
+- **`npm *`:** Wildcard — trusts all npm commands
+- **`*`:** Universal — trusts **all** commands *(use with extreme caution)*
 
 > ⚠️ The system treats entire commands as single strings and only checks if they start with trusted patterns. It does **not** analyze command structure, chains, or special characters. Configure trusted patterns carefully.
 
