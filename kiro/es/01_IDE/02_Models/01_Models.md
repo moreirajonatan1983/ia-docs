@@ -17,9 +17,9 @@ El costo es relativo a **Automático (1,0 veces el valor de referencia)**. Por e
 | **Automático** *(recomendado)* | Uso general, mejor relación calidad/coste | 1,0x |
 | **Claude Opus 4.6** | Codificación agente compleja, depuración, grandes bases de código | ~2,2x |
 | **Claude Opus 4.5** | Razonamiento avanzado, desafíos sofisticados | ~2,2x |
-| **Claude Soneto 4.6** | Flujos de trabajo de desarrollo iterativos, canalizaciones multimodelo | ~1,0x |
-| **Claude Soneto 4.5** | Agentes complejos, funcionamiento autónomo ampliado | ~1,0x |
-| **Claude Soneto 4.0** | Selección de modelo consistente y predecible | ~1,0x |
+| **Claude Sonnet 4.6** | Flujos de trabajo de desarrollo iterativos, canalizaciones multimodelo | ~1,0x |
+| **Claude Sonnet 4.5** | Agentes complejos, funcionamiento autónomo ampliado | ~1,0x |
+| **Claude Sonnet 4.0** | Selección de modelo consistente y predecible | ~1,0x |
 | **Claude Haiku 4.5** | Iteraciones rápidas, correcciones simples, ahorro de crédito | ~0,4x |
 | **MiniMax M2.5** | Ciclo de vida completo del desarrollo, revisión del código | 0,25x |
 | **DeepSeek 3.2** | Flujos de trabajo agentes, generación de código | 0,25x |
@@ -48,19 +48,19 @@ El modelo más inteligente de Anthropic, que combina la máxima capacidad con un
 
 ---
 
-### Claude Soneto 4.6
+### Claude Sonnet 4.6
 
 Una actualización completa de Sonnet 4.5 que se acerca a la inteligencia de Opus 4.6 y al mismo tiempo es más eficiente en términos de token. Destaca en flujos de trabajo de desarrollo iterativos y mantiene el contexto durante sesiones largas. Maneja funciones de agente principal y subagente en procesos multimodelo, lo que lo hace ideal para equipos que utilizan Powers de Kiro y subagentes personalizados. [Más información →](https://www.anthropic.com/news/claude-sonnet-4-6)
 
 ---
 
-### Claude Soneto 4.5
+### Claude Sonnet 4.5
 
 El mejor modelo de Anthropic para codificación y agentes complejos, con la mayor inteligencia en la mayoría de las tareas. Lo último en tecnología SWE-bench Verificado con operación autónoma extendida durante horas con uso efectivo de herramientas. Mejora de la planificación, el diseño de sistemas y la ingeniería de seguridad. [Más información →](https://www.anthropic.com/news/claude-sonnet-4-5)
 
 ---
 
-### Claude Soneto 4.0
+### Claude Sonnet 4.0
 
 Acceso directo a Claude Sonnet 4.0 de Anthropic para usuarios que prefieren una selección de modelos consistente. Mismo modelo para todas las interacciones sin capas de enrutamiento ni optimización. Control total y transparencia total, con comportamiento predecible para flujos de trabajo que dependen de características específicas del modelo. [Más información →](https://www.anthropic.com/news/claude-4)
 
@@ -94,7 +94,7 @@ Modelo de peso abierto más adecuado para programación multilingüe y generaci�
 
 No todos los modelos funcionan de la misma manera. Comprender estas diferencias le ayudará a elegir la correcta:
 
-| Dimensión | Obra | Soneto | haikus |
+| Dimensión | Obra | Sonnet | haikus |
 |---|---|---|---|
 | **Profundidad de planificación** | Piensa más, considera casos extremos, revisa el razonamiento | Más directo, empieza a funcionar antes | Planificación inicial más rápida y mínima |
 | **Autocorrección** | Opus 4.6 detecta sus propios errores durante su revisión | Estándar | Estándar |

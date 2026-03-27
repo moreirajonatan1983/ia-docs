@@ -69,13 +69,13 @@ Un poder es un paquete unificado que incluye:
 
 | Socio | Caso de uso |
 |---|---|
-| **Raya** | Pagos, suscripciones, facturación |
+| **Stripe** | Pagos, suscripciones, facturación |
 | **Supabase** | Base de datos PostgreSQL, autenticación, almacenamiento |
-| **Neón** | PostgreSQL sin servidor |
-| **Figura** | Tokens de diseño, especificaciones de componentes |
+| **Neon** | PostgreSQL sin servidor |
+| **Figma** | Tokens de diseño, especificaciones de componentes |
 | **AWS Aurora** | Base de datos relacional administrada |
-| **Netlificar** | Implementación de frontend, funciones de borde |
-| **Cartero** | Pruebas y documentación de API |
-| **Perro de datos** | Monitoreo, registros, APM |
-| **Dinatrace** | Plataforma de observabilidad |
-| **SDK de hilos** | Desarrollo de agentes |
+| **Netlify** | Implementación de frontend, funciones de borde |
+| **Postman** | Pruebas y documentación de API |
+| **Datadog** | Monitoreo, registros, APM |
+| **Dynatrace** | Plataforma de observabilidad |
+| **Strands SDK** | Desarrollo de agentes |

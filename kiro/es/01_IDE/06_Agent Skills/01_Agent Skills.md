@@ -78,7 +78,7 @@ my-skill/
 ```markdown
 ---
 nombre: pr-revisión
-Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar relaciones públicas o preparar código para revisión.
+Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar Pull Requests o preparar código para revisión.
 ---
 
 ## Proceso de revisión

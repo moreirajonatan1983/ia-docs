@@ -379,9 +379,9 @@ El costo es relativo a **Automático (1,0 veces el valor de referencia)**. Por e
 | **Automático** *(recomendado)* | Uso general, mejor relación calidad/coste | 1,0x |
 | **Claude Opus 4.6** | Codificación agente compleja, depuración, grandes bases de código | ~2,2x |
 | **Claude Opus 4.5** | Razonamiento avanzado, desafíos sofisticados | ~2,2x |
-| **Claude Soneto 4.6** | Flujos de trabajo de desarrollo iterativos, canalizaciones multimodelo | ~1,0x |
-| **Claude Soneto 4.5** | Agentes complejos, funcionamiento autónomo ampliado | ~1,0x |
-| **Claude Soneto 4.0** | Selección de modelo consistente y predecible | ~1,0x |
+| **Claude Sonnet 4.6** | Flujos de trabajo de desarrollo iterativos, canalizaciones multimodelo | ~1,0x |
+| **Claude Sonnet 4.5** | Agentes complejos, funcionamiento autónomo ampliado | ~1,0x |
+| **Claude Sonnet 4.0** | Selección de modelo consistente y predecible | ~1,0x |
 | **Claude Haiku 4.5** | Iteraciones rápidas, correcciones simples, ahorro de crédito | ~0,4x |
 | **MiniMax M2.5** | Ciclo de vida completo del desarrollo, revisión del código | 0,25x |
 | **DeepSeek 3.2** | Flujos de trabajo agentes, generación de código | 0,25x |
@@ -410,19 +410,19 @@ El modelo más inteligente de Anthropic, que combina la máxima capacidad con un
 
 ---
 
-#### Claude Soneto 4.6
+#### Claude Sonnet 4.6
 
 Una actualización completa de Sonnet 4.5 que se acerca a la inteligencia de Opus 4.6 y al mismo tiempo es más eficiente en términos de token. Destaca en flujos de trabajo de desarrollo iterativos y mantiene el contexto durante sesiones largas. Maneja funciones de agente principal y subagente en procesos multimodelo, lo que lo hace ideal para equipos que utilizan Powers de Kiro y subagentes personalizados. [Más información →](https://www.anthropic.com/news/claude-sonnet-4-6)
 
 ---
 
-#### Claude Soneto 4.5
+#### Claude Sonnet 4.5
 
 El mejor modelo de Anthropic para codificación y agentes complejos, con la mayor inteligencia en la mayoría de las tareas. Lo último en tecnología SWE-bench Verificado con operación autónoma extendida durante horas con uso efectivo de herramientas. Mejora de la planificación, el diseño de sistemas y la ingeniería de seguridad. [Más información →](https://www.anthropic.com/news/claude-sonnet-4-5)
 
 ---
 
-#### Claude Soneto 4.0
+#### Claude Sonnet 4.0
 
 Acceso directo a Claude Sonnet 4.0 de Anthropic para usuarios que prefieren una selección de modelos consistente. Mismo modelo para todas las interacciones sin capas de enrutamiento ni optimización. Control total y transparencia total, con comportamiento predecible para flujos de trabajo que dependen de características específicas del modelo. [Más información →](https://www.anthropic.com/news/claude-4)
 
@@ -456,7 +456,7 @@ Modelo de peso abierto más adecuado para programación multilingüe y generaci�
 
 No todos los modelos funcionan de la misma manera. Comprender estas diferencias le ayudará a elegir la correcta:
 
-| Dimensión | Obra | Soneto | haikus |
+| Dimensión | Obra | Sonnet | haikus |
 |---|---|---|---|
 | **Profundidad de planificación** | Piensa más, considera casos extremos, revisa el razonamiento | Más directo, empieza a funcionar antes | Planificación inicial más rápida y mínima |
 | **Autocorrección** | Opus 4.6 detecta sus propios errores durante su revisión | Estándar | Estándar |
@@ -2467,7 +2467,7 @@ my-skill/
 ```markdown
 ---
 nombre: pr-revisión
-Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar relaciones públicas o preparar código para revisión.
+Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar Pull Requests o preparar código para revisión.
 ---
 
 ### Proceso de revisión
@@ -3401,7 +3401,7 @@ Ejemplos:
 | Archivo | Contenido |
 |---|---|
 | `api-estándares.md` | Convenciones REST, formatos de respuesta de error, flujos de autenticación, estrategias de control de versiones |
-| `testing-standards.md` | Patrones de pruebas unitarias, estrategias de integración, burlas, expectativas de cobertura |
+| `testing-standards.md` | Patrones de pruebas unitarias, estrategias de integración, mocks, expectativas de cobertura |
 | `código-convenciones.md` | Patrones de nombres, organización de archivos, ordenamiento de importaciones, decisiones arquitectónicas |
 | `políticas-de-seguridad.md` | Requisitos de autenticación, validación de datos, desinfección de entradas, prevención de vulnerabilidades |
 | `despliegue-flujo de trabajo.md` | Procedimientos de compilación, configuraciones del entorno, detalles de la canalización de CI/CD |
@@ -3493,7 +3493,7 @@ my-skill/
 ---
 nombre: pr-revisión
 Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas.
-             Úselo al revisar relaciones públicas o preparar código para revisión.
+             Úselo al revisar Pull Requests o preparar código para revisión.
 ---
 
 ### Proceso de revisión
@@ -3620,16 +3620,16 @@ Un poder es un paquete unificado que incluye:
 
 | Socio | Caso de uso |
 |---|---|
-| **Raya** | Pagos, suscripciones, facturación |
+| **Stripe** | Pagos, suscripciones, facturación |
 | **Supabase** | Base de datos PostgreSQL, autenticación, almacenamiento |
-| **Neón** | PostgreSQL sin servidor |
-| **Figura** | Tokens de diseño, especificaciones de componentes |
+| **Neon** | PostgreSQL sin servidor |
+| **Figma** | Tokens de diseño, especificaciones de componentes |
 | **AWS Aurora** | Base de datos relacional administrada |
-| **Netlificar** | Implementación de frontend, funciones de borde |
-| **Cartero** | Pruebas y documentación de API |
-| **Perro de datos** | Monitoreo, registros, APM |
-| **Dinatrace** | Plataforma de observabilidad |
-| **SDK de hilos** | Desarrollo de agentes |
+| **Netlify** | Implementación de frontend, funciones de borde |
+| **Postman** | Pruebas y documentación de API |
+| **Datadog** | Monitoreo, registros, APM |
+| **Dynatrace** | Plataforma de observabilidad |
+| **Strands SDK** | Desarrollo de agentes |
 
 ---
 
@@ -3872,10 +3872,10 @@ Kiro incluye un directorio curador de servidores MCP con instalación con un cli
 | **Sistema de archivos** | `npx -y @modelcontextprotocol/server-filesystem` | Nodo |
 | **Azul** | `npx -y @modelcontextprotocol/server-azure` | Nodo + suscripción |
 | **GCloud** | `npx -y @google-cloud/gcloud-mcp` | Nodo |
-| **Perro de datos** | URL: `https://mcp.datadoghq.com/...` | Clave API |
+| **Datadog** | URL: `https://mcp.datadoghq.com/...` | Clave API |
 | **Amplitud** | URL: `https://mcp.amplitude.com/mcp` | — |
 | **Herramientas de desarrollo de Chrome** | `npx -y chrome-devtools-mcp@latest` | Nodo |
-| **Dinatrace** | `npx -y @dynatrace-oss/dynatrace-mcp-server@latest` | Nodo + URL |
+| **Dynatrace** | `npx -y @dynatrace-oss/dynatrace-mcp-server@latest` | Nodo + URL |
 
 ---
 
@@ -5023,7 +5023,7 @@ Un crédito es una unidad de trabajo en respuesta a avisos de usuario. Los créd
 | Indicaciones simples | Menos de 1 crédito |
 | Tareas complejas (Ejecución Spec) | Más de 1 crédito |
 | Auto (modelo predeterminado) | Base X |
-| Soneto 4 | 1.3X (30% más que Auto) |
+| Sonnet 4 | 1.3X (30% más que Auto) |
 
 ---
 

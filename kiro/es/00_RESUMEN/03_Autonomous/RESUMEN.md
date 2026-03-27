@@ -540,7 +540,7 @@ Después de completar el trabajo, se abren pull request con una descripción det
 
 ---
 
-### Abordar los comentarios de relaciones públicas
+### Abordar los comentarios de Pull Requests
 
 Kiro proporciona dos comandos para manejar comentarios de pull request:
 
@@ -599,7 +599,7 @@ Cada usuario solo puede trabajar con repositorios donde se cumplen ambas condici
 - Cheques — Cheques sobre el código
 - Contenidos — Contenidos del repositorio, commits, Branches, Releases y merges
 - Issues — Issues y comentarios relacionados, asignados, etiquetas e hitos
-- Pull requests: relaciones públicas y comentarios relacionados, asignados, etiquetas, hitos y fusiones
+- Pull requests: Pull Requests y comentarios relacionados, asignados, etiquetas, hitos y fusiones
 - Flujos de trabajo — Actualizar archivos de flujo de trabajo de GitHub Action
 
 **Solo lectura:**

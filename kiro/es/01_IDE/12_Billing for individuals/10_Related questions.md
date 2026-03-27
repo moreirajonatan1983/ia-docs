@@ -13,7 +13,7 @@ Un crédito es una unidad de trabajo en respuesta a avisos de usuario. Los créd
 | Indicaciones simples | Menos de 1 crédito |
 | Tareas complejas (Ejecución Spec) | Más de 1 crédito |
 | Auto (modelo predeterminado) | Base X |
-| Soneto 4 | 1.3X (30% más que Auto) |
+| Sonnet 4 | 1.3X (30% más que Auto) |
 
 ---
 

@@ -20,10 +20,10 @@ Kiro incluye un directorio curador de servidores MCP con instalación con un cli
 | **Sistema de archivos** | `npx -y @modelcontextprotocol/server-filesystem` | Nodo |
 | **Azul** | `npx -y @modelcontextprotocol/server-azure` | Nodo + suscripción |
 | **GCloud** | `npx -y @google-cloud/gcloud-mcp` | Nodo |
-| **Perro de datos** | URL: `https://mcp.datadoghq.com/...` | Clave API |
+| **Datadog** | URL: `https://mcp.datadoghq.com/...` | Clave API |
 | **Amplitud** | URL: `https://mcp.amplitude.com/mcp` | — |
 | **Herramientas de desarrollo de Chrome** | `npx -y chrome-devtools-mcp@latest` | Nodo |
-| **Dinatrace** | `npx -y @dynatrace-oss/dynatrace-mcp-server@latest` | Nodo + URL |
+| **Dynatrace** | `npx -y @dynatrace-oss/dynatrace-mcp-server@latest` | Nodo + URL |
 
 ---
 

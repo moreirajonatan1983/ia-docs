@@ -96,7 +96,7 @@ Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGEN
 | Archivo | Contenido |
 |---|---|
 | `api-estándares.md` | Convenciones REST, formatos de respuesta de error, flujos de autenticación |
-| `testing-standards.md` | Patrones de pruebas unitarias, estrategias de integración, burlas, cobertura |
+| `testing-standards.md` | Patrones de pruebas unitarias, estrategias de integración, mocks, cobertura |
 | `código-convenciones.md` | Patrones de nombres, organización de archivos, decisiones arquitectónicas |
 | `políticas-de-seguridad.md` | Requisitos de autenticación, validación de datos, codificación segura |
 | `despliegue-flujo de trabajo.md` | Procedimientos de compilación, configuraciones del entorno, detalles de CI/CD |

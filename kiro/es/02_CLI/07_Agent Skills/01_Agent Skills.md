@@ -73,7 +73,7 @@ El archivo empieza con **YAML frontmatter** seguido de instrucciones en Markdown
 ```markdown
 ---
 nombre: pr-revisión
-Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar relaciones públicas o preparar código para revisión.
+Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar Pull Requests o preparar código para revisión.
 ---
 
 ## Revisar la lista de verificación
@@ -164,7 +164,7 @@ Seguiré el flujo de trabajo de implementación. Primero, déjame sintetizar las
 ## Mejores prácticas
 
 - **Descripciones precisas** — La descripción determina la activación. Ejemplos:
-  - ✅ `Revisar las pull requests para detectar vulnerabilidades de seguridad. Úselo al revisar las relaciones públicas.`
+  - ✅ `Revisar las pull requests para detectar vulnerabilidades de seguridad. Úselo al revisar las Pull Requests.`
   - ❌ `Ayuda con la revisión del código`
 - **SKILL.md accionable** — Poné el material de referencia detallado en `references/`
 - **Elegí el alcance correcto** — Skills globales para flujos de trabajo personales; espacio de trabajo para procedimientos de equipo

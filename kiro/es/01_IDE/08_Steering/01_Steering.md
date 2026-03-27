@@ -149,7 +149,7 @@ Ejemplos:
 | Archivo | Contenido |
 |---|---|
 | `api-estándares.md` | Convenciones REST, formatos de respuesta de error, flujos de autenticación, estrategias de control de versiones |
-| `testing-standards.md` | Patrones de pruebas unitarias, estrategias de integración, burlas, expectativas de cobertura |
+| `testing-standards.md` | Patrones de pruebas unitarias, estrategias de integración, mocks, expectativas de cobertura |
 | `código-convenciones.md` | Patrones de nombres, organización de archivos, ordenamiento de importaciones, decisiones arquitectónicas |
 | `políticas-de-seguridad.md` | Requisitos de autenticación, validación de datos, desinfección de entradas, prevención de vulnerabilidades |
 | `despliegue-flujo de trabajo.md` | Procedimientos de compilación, configuraciones del entorno, detalles de la canalización de CI/CD |

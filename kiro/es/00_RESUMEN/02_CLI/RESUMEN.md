@@ -322,7 +322,7 @@ El costo es relativo a **Automático (1,0 veces el valor de referencia)**. Por e
 |---|---|---|
 | **Automático** *(recomendado)* | Uso general, mejor relación calidad/coste | 1,0x |
 | **Claude Opus 4.6** | Codificación agente compleja, grandes bases de código | ~2,2x |
-| **Claude Soneto 4.6** | Flujos de trabajo de desarrollo iterativos, canalizaciones multimodelo | ~1,0x |
+| **Claude Sonnet 4.6** | Flujos de trabajo de desarrollo iterativos, canalizaciones multimodelo | ~1,0x |
 | **Claude Haiku 4.5** | Iteraciones rápidas, conservación del crédito | ~0,4x |
 | **MiniMax M2.5** | Ciclo de vida de desarrollo completo a bajo costo | 0,25x |
 | **DeepSeek 3.2** | Flujos de trabajo agentes, generación de código | 0,25x |
@@ -2960,7 +2960,7 @@ Kiro admite el estándar [AGENTS.md](https://agents.md/). Agregue archivos `AGEN
 | Archivo | Contenido |
 |---|---|
 | `api-estándares.md` | Convenciones REST, formatos de respuesta de error, flujos de autenticación |
-| `testing-standards.md` | Patrones de pruebas unitarias, estrategias de integración, burlas, cobertura |
+| `testing-standards.md` | Patrones de pruebas unitarias, estrategias de integración, mocks, cobertura |
 | `código-convenciones.md` | Patrones de nombres, organización de archivos, decisiones arquitectónicas |
 | `políticas-de-seguridad.md` | Requisitos de autenticación, validación de datos, codificación segura |
 | `despliegue-flujo de trabajo.md` | Procedimientos de compilación, configuraciones del entorno, detalles de CI/CD |
@@ -3044,7 +3044,7 @@ El archivo empieza con **YAML frontmatter** seguido de instrucciones en Markdown
 ```markdown
 ---
 nombre: pr-revisión
-Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar relaciones públicas o preparar código para revisión.
+Descripción: revise las pull requests para determinar la calidad del código, los problemas de seguridad y la cobertura de las pruebas. Úselo al revisar Pull Requests o preparar código para revisión.
 ---
 
 ### Revisar la lista de verificación
@@ -3135,7 +3135,7 @@ Seguiré el flujo de trabajo de implementación. Primero, déjame sintetizar las
 ### Mejores prácticas
 
 - **Descripciones precisas** — La descripción determina la activación. Ejemplos:
-  - ✅ `Revisar las pull requests para detectar vulnerabilidades de seguridad. Úselo al revisar las relaciones públicas.`
+  - ✅ `Revisar las pull requests para detectar vulnerabilidades de seguridad. Úselo al revisar las Pull Requests.`
   - ❌ `Ayuda con la revisión del código`
 - **SKILL.md accionable** — Poné el material de referencia detallado en `references/`
 - **Elegí el alcance correcto** — Skills globales para flujos de trabajo personales; espacio de trabajo para procedimientos de equipo
