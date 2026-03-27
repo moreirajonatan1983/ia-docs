@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiro Workflow Cheatsheet — Edición 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: A4;
+    margin: 2cm 2.5cm;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.7;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 40px 50px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* HEADER - Title */
+  h1 {
+    font-size: 28pt;
+    font-weight: 800;
+    color: #0f0f23;
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+    border-bottom: 4px solid #FF6B35;
+    padding-bottom: 12px;
+  }
+
+  /* Subtitle blockquote */
+  body > blockquote:first-of-type {
+    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border-left: none;
+    font-weight: 500;
+    font-size: 10pt;
+    margin-bottom: 30px;
+    margin-top: 12px;
+  }
+
+  /* Section Headings */
+  h2 {
+    font-size: 16pt;
+    font-weight: 700;
+    color: #0f0f23;
+    margin-top: 36px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e8e8f0;
+    page-break-after: avoid;
+  }
+
+  h2::before {
+    content: "◆ ";
+    color: #FF6B35;
+    font-size: 12pt;
+  }
+
+  h3 {
+    font-size: 12pt;
+    font-weight: 600;
+    color: #2d2d5e;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  /* Paragraphs */
+  p {
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  /* Bold labels */
+  strong {
+    color: #0f0f23;
+    font-weight: 600;
+  }
+
+  /* Lists */
+  ul, ol {
+    margin-left: 22px;
+    margin-bottom: 12px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* Code blocks */
+  pre {
+    background: #1e1e3f;
+    color: #e4e4fc;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 14px 0;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+    border-left: 4px solid #FF6B35;
+    page-break-inside: avoid;
+  }
+
+  code {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 9pt;
+    background: #f0f0f8;
+    color: #d63384;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  pre code {
+    background: transparent;
+    color: #e4e4fc;
+    padding: 0;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    background: linear-gradient(135deg, #0f0f23, #1a1a3e);
+  }
+
+  th {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 9.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e8e8f0;
+    vertical-align: top;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f8f8fc;
+  }
+
+  tbody tr:hover {
+    background-color: #fff3eb;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    background: #f8f8fc;
+    border-left: 4px solid #FF6B35;
+    padding: 12px 18px;
+    margin: 14px 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #444466;
+  }
+
+  /* Horizontal rules */
+  hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d0d0e0, transparent);
+    margin: 30px 0;
+  }
+
+  /* Links */
+  a {
+    color: #FF6B35;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Last blockquote (footer) */
+  blockquote:last-of-type {
+    background: linear-gradient(135deg, #0f0f23, #1a1a3e);
+    color: #ffffff;
+    border-left: none;
+    border-radius: 8px;
+    padding: 16px 22px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  /* Page break hints */
+  h2 { page-break-before: auto; }
+
+  /* Print specifics */
+  @media print {
+    body {
+      padding: 0;
+      max-width: 100%;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  }
+</style>
+</head>
+<body>
+<h1 id="kiro-workflow-cheatsheet">Kiro Workflow Cheatsheet</h1>
+<blockquote>
+<p>Primeros Pasos • Setup del Proyecto • Estructura • Skills • Hooks • Specs • Flujos de Trabajo • Edición 2026</p>
+</blockquote>
+<hr />
+<h2 id="1-introduccion-a-la-inteligencia-artificial-estructural">1. Introducción a la Inteligencia Artificial Estructural</h2>
+<p>Kiro no es un autocompletador de código (como los copilotos tradicionales de 2023). Es un <strong>Agente de Ingeniería Estructural Autónoma</strong> que vive sincrónicamente en tu Terminal (CLI) y en tu Editor (IDE). Su propósito es planificar arquitecturas, leer tu repositorio matemáticamente usando Vectores (Embeddings), y editar archivos directamente asumiendo la responsabilidad end-to-end de una funcionalidad. Kiro razona <strong>antes</strong> de codificar.</p>
+<hr />
+<h2 id="2-setup-instalacion-y-entornos">2. Setup, Instalación y Entornos</h2>
+<p>Kiro opera en dos frentes simultáneos que comparten el mismo "cerebro" local:
+- <strong>CLI (Terminal):</strong> Ideal para servidores CI/CD, o desarrollo hardcodeado. Se instala vía <code>curl -fsSL https://kiro.dev/install.sh | bash</code>.
+- <strong>IDE Extensión:</strong> Ideal para refactors visuales y manejo de UI gráfica.</p>
+<p><strong>Puesta a punto inicial:</strong> Al entrar a tu repositorio limpio, ejecutás <code>kiro .</code> (o presionás <code>"Generate Steering Docs"</code> en la UI). Kiro descargará el AST (Abstract Syntax Tree), analizará tu Stack detectando librerías y armará la matriz de conocimiento en la carpeta oculta <code>.kiro/steering/</code>.</p>
+<hr />
+<h2 id="3-el-cerebro-del-sistema-steering-files">3. El Cerebro del Sistema: Steering Files</h2>
+<p>Los <strong>Steering Files</strong> (archivos <code>.md</code> alojados en <code>.kiro/steering/</code>) son la "Constitución" inquebrantable de tu proyecto. Filtran las alucinaciones de la IA prohibiéndole tomar decisiones arquitectónicas ajenas a tu negocio.</p>
+<p>Todo proyecto debe tener al menos estos 3 pilares fundacionales:</p>
+<p><strong><code>tech.md</code> (El Qué — Stack Tecnológico):</strong></p>
+<pre><code class="language-markdown"># Stack Tecnológico
+- Frontend: React 18 con Next.js 14 App Router (nunca Pages Router).
+- Estado global: Zustand. Prohibido Redux o Context API.
+- Estilos: Tailwind CSS v3. No usar CSS Modules.
+- Backend: FastAPI con Python 3.11.
+- ORM: Prisma. Todas las queries pasan por /src/services.
+- Testing: Jest + React Testing Library. Cobertura mínima: 80%.
+</code></pre>
+<p><strong><code>product.md</code> (El Por Qué — Core Business):</strong></p>
+<pre><code class="language-markdown"># Producto: Sistema de Turnos Médicos
+- Tipo de app: B2B SaaS para clínicas privadas.
+- Usuarios finales: Médicos, secretarias y pacientes.
+- Prioridades críticas: Privacidad de datos (HIPAA), accesibilidad AAA.
+- Performance: Tiempo de carga &lt; 2 segundos en 3G.
+- El sistema NO debe exponer datos de un paciente a otro usuario bajo
+  ninguna circunstancia.
+</code></pre>
+<p><strong><code>structure.md</code> (El Cómo — Convenciones de Arquitectura):</strong></p>
+<pre><code class="language-markdown"># Estructura del Proyecto
+- /src/app → Rutas y páginas (Next.js App Router).
+- /src/components → Componentes UI reutilizables.
+- /src/services → Lógica de negocio y acceso a DB via Prisma.
+- /src/lib → Utilidades compartidas (helpers, formatters).
+- /prisma → Schema de base de datos y migraciones.
+- Naming: camelCase para variables, PascalCase para componentes.
+- Imports: Siempre usar alias '@/' en vez de rutas relativas '../'.
+</code></pre>
+<p><strong>Steering Files Personalizados (Avanzado):</strong>
+No estás limitado a los 3 archivos base. Podés crear tantos Steerings como tu proyecto necesite. Ejemplo: un <code>api-design.md</code> que solo se cargue cuando editas archivos en <code>/src/api/</code>, o un <code>security-policy.md</code> que se active manualmente cuando hagas auditorías. Kiro leerá el Frontmatter YAML de cada uno para decidir cuándo inyectarlo.</p>
+<p><strong>Auto-Generación Inteligente:</strong>
+Si tu proyecto ya existe y tiene código escrito, no necesitás redactar estos archivos a mano. Kiro puede escanear tu repositorio completo y auto-generar los Steerings fundacionales analizando tu <code>package.json</code>, tus imports, tu estructura de carpetas y tus patrones de naming. Solo presioná <strong>"Generate Steering Docs"</strong> y revisá lo que propone.</p>
+<hr />
+<h2 id="4-gestion-sensible-inclusion-y-ceguera-kiroignore">4. Gestión Sensible, Inclusión y Ceguera (<code>.kiroignore</code>)</h2>
+<p>No todo el contexto debe enviarse en cada Prompt. Hacerlo quema Tokens y marea al Agente.</p>
+<p><strong>Inclusion Modes (YAML Frontmatter):</strong>
+Podés determinar dinámicamente qué manual lee el bot agregando un encabezado a tus archivos <code>.md</code>:</p>
+<pre><code class="language-yaml">---
+inclusion: fileMatch
+fileMatchPattern: [&quot;src/api/**/*.ts&quot;]
+---
+</code></pre>
+<p><em>(Tipos de inclusión: <code>always</code> [Permanentemente atado], <code>auto</code> [Invocado vía NLP], <code>fileMatch</code> [Activado dinámicamente por la ruta editada], <code>manual</code> [Activado por tag #]).</em></p>
+<p><strong>El Escudo de Ceguera (<code>.kiroignore</code>):</strong>
+A diferencia de <code>.gitignore</code>, <code>.kiroignore</code> bloquea el acceso en <strong>tiempo de lectura</strong> del Agente. Si el bot intenta leer un certificado <code>.pem</code> o llaves AWS ocultas allí, recibirá un <code>HTTP 403 Access Denied</code> nativo, garantizando niveles de seguridad Enterprise inquebrantables.
+Por otro lado, <code>AGENTS.md</code> funciona como el estándar open-source de "Reglas pasivas" colocado en la raíz del repo para compartir contexto con agentes de terceros.</p>
+<p><strong>El Árbol de Estructura Visual del Proyecto:</strong>
+Para entender todas estas capas, así debe lucir el esqueleto maestro de un repositorio Kiro:</p>
+<pre><code class="language-text">tu-proyecto/
+├── .kiroignore             # Reglas para cegar al Agente (Ocultar .env y secrets)
+├── AGENTS.md               # Standard Open-Source para agentes IA
+├── .kiro/
+│   ├── steering/           # El Cerebro Semántico
+│   │   ├── product.md
+│   │   ├── tech.md
+│   │   └── structure.md
+│   ├── skills/             # Workflows On-demand (Guías MD + Scripts CLI)
+│   ├── hooks.json          # Callbacks en background y seguridad 
+│   └── mcp-servers.json    # Conexiones externas (Bases de datos, AWS, Github)
+├── requirements.md         # Specs (Fase 1: Negocio y Aceptación con EARS)
+├── design.md               # Specs (Fase 2: Arquitectura y Modelos DB)
+└── tasks.md                # Specs (Fase 3: Ejecución atómica de Tareas visual)
+</code></pre>
+<hr />
+<h2 id="5-metodologias-de-ejecucion-vibe-mode-vs-specs">5. Metodologías de Ejecución: Vibe Mode vs Specs</h2>
+<p>Existen dos pedales de aceleración radicalmente opuestos para operar el Agente. Elegir el incorrecto puede resultar en código brillante pero desconectado de tu arquitectura, o en un sobrecosto de tokens inmanejable.</p>
+<p><strong>A. Vibe Mode (Modo Danza / Libre):</strong>
+Abris el chat de la extensión y charlás. Es un flujo puramente iterativo.
+- <strong>Caso de Uso de Oro:</strong> Prototipado rápido, dudas teóricas ("¿Me armás una RegEx rápida para un email?"), exploración de librerías nuevas o el scaffolding de un script aislado (Ej: un scraper en Python de 100 líneas).
+- <strong>El Riesgo Oculto (Context Drift):</strong> El Vibe Mode es un túnel de chat continuo. Si debatís un monolito durante 300 mensajes, el Agente comenzará a "alucinar" por deriva de contexto (olvidará las reglas de tu primer prompt, quemará enormes cuotas de tokens re-evaluando toda la charla histórica, y podría escupir código que rompa integraciones críticas). </p>
+<p><strong>B. Spec Mode (Desarrollo Quirúrgico Obligatorio):</strong>
+Este es el motor industrial de Kiro. Utilizado para interactuar con bases de código Enterprise existentes donde romper un contrato JSON cuesta horas de Debugging. Existen tres tipos de Specs:
+- <strong>Feature Specs:</strong> Construcción de piezas desde cero (Ej: "Módulo de Facturación").
+- <strong>Bugfix Specs:</strong> Órdenes restrictivas para parchar problemas de producción. (El agente asume una personalidad cautelosa; tiene prohibido rediseñar o refactorizar código subyacente que funcione, enfocándose sólo en el arreglo aséptico del Bug).
+- <strong>Correctness Specs:</strong> Orientados a validar y mejorar código existente sin agregar funcionalidades nuevas. Kiro analiza la lógica actual y verifica que cumpla con los contratos definidos, detectando edge cases no cubiertos, errores silenciosos y regresiones potenciales.</p>
+<p><strong>Estrategias de Arranque (Por Dónde Empezar):</strong>
+Kiro no te fuerza a un solo flujo lineal. Podés arrancar el Spec desde dos puntos de entrada según tu nivel de claridad sobre el problema:</p>
+<ul>
+<li>
+<p><strong>Requirements-First (Top-Down):</strong> El enfoque clásico. Arrancás definiendo <em>qué</em> necesita el negocio en <code>requirements.md</code> usando notación EARS. Kiro desciende desde la intención humana hacia la técnica: primero las historias de usuario, después la arquitectura, y finalmente las tareas de código. <em>Ideal cuando tenés claro el objetivo de negocio pero no sabés cómo implementarlo técnicamente.</em></p>
+</li>
+<li>
+<p><strong>Design-First (Bottom-Up):</strong> El enfoque del Arquitecto. Si ya sabés exactamente cómo debería verse la solución técnica (qué endpoints crear, qué tablas SQL agregar), podés arrancar directamente por <code>design.md</code>. Kiro toma tu plano arquitectónico y genera en reversa los Requerimientos y las Tareas. <em>Ideal cuando tenés el blueprint técnico pero necesitás que el bot atomice las balas de ejecución.</em></p>
+</li>
+</ul>
+<h2 id="la-magia-del-spec-mode-muta-la-conversacion-fluida-hacia-documentos-congelados-y-aislados-md-el-agente-tiene-bloqueado-tocar-codigo-fuente-hasta-que-el-ingeniero-pre-apruebe-el-diseno-en-fase-de-texto-puro-al-hacer-esto-la-ia-descarga-de-su-memoria-todo-el-debate-basura-previo-conservando-unicamente-las-directivas-estaticas-puras-eliminando-las-alucinaciones-al-100"><em>¿La Magia del Spec Mode?</em> Muta la conversación fluida hacia <strong>Documentos Congelados y Aislados</strong> (.md). El Agente tiene bloqueado tocar código fuente hasta que el Ingeniero pre-apruebe el diseño en fase de texto puro. Al hacer esto, la IA descarga de su memoria todo el debate basura previo, conservando únicamente las directivas estáticas puras, eliminando las alucinaciones al 100%.</h2>
+<h2 id="6-el-protocolo-ears-requirements-fase-1">6. El Protocolo EARS (Requirements Fase 1)</h2>
+<p>La primera fase de un Spec es el archivo <code>requirements.md</code>. En vez de dejar que el Dev escriba un párrafo ambiguo como "necesito un login", Kiro fuerza la redacción bajo <strong>Notación EARS</strong> (<em>Easy Approach to Requirements Syntax</em>), un estándar de ingeniería de software diseñado para eliminar huecos cognitivos y ambigüedades que generan bugs.</p>
+<p><strong>La Taxonomía Completa de EARS:</strong>
+EARS define 5 patrones concretos para redactar requerimientos inequívocos. Kiro los usa como plantilla interna:</p>
+<ul>
+<li>
+<p><strong>Ubiquitous (Universal):</strong> Reglas que aplican siempre, sin condiciones.</p>
+<blockquote>
+<p><em>"El sistema debe cifrar todas las contraseñas usando bcrypt con un mínimo de 12 salt rounds."</em></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Event-Driven (Por Evento / Trigger):</strong> Se activan cuando ocurre algo específico.</p>
+<blockquote>
+<p><em>"Cuando el usuario efectúa el pago, entonces el sistema debe encolar la factura en el servicio de billing y enviar un email de confirmación."</em></p>
+</blockquote>
+</li>
+<li>
+<p><strong>State-Driven (Por Estado):</strong> Aplican mientras se mantiene una condición.</p>
+<blockquote>
+<p><em>"Mientras el carrito de compras esté vacío, el sistema debe desactivar el botón de Checkout y ocultar el resumen de costos."</em></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Unwanted Behavior (Comportamiento No Deseado):</strong> Definen qué debe pasar ante fallas o excepciones.</p>
+<blockquote>
+<p><em>"Si el proveedor externo Stripe se cae por Timeout, entonces el sistema debe rechazar la transacción con HTTP 424, registrar el incidente en el log de errores y notificar al equipo de soporte vía Slack."</em></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Optional (Condicional por Feature Flag):</strong> Aplican solo si una funcionalidad opcional está activa.</p>
+<blockquote>
+<p><em>"Donde el módulo de analytics premium esté habilitado, el sistema debe trackear cada click del usuario en el dashboard y enviarlo a Mixpanel."</em></p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Criterios de Aceptación (Acceptance Criteria):</strong>
+Dentro del <code>requirements.md</code>, Kiro no solo lista las historias. Para cada requerimiento, genera automáticamente <strong>criterios de aceptación</strong> verificables que sirven como contrato entre el Dev y el QA:
+- <em>"Given [contexto], When [acción], Then [resultado esperado]."</em>
+- Estos criterios son la fuente de verdad que Kiro usa después para auto-validar su propio código en la fase de Tasks.</p>
+<p><em>El ingeniero siempre aprueba el Requirement antes de continuar a la fase de Design.</em></p>
+<hr />
+<h2 id="7-diseno-arquitectonico-y-task-engine-fases-2-y-3">7. Diseño Arquitectónico y Task Engine (Fases 2 y 3)</h2>
+<p>Aprobado el requerimiento, pasamos al diseño:
+- <strong><code>design.md</code>:</strong> Kiro dibuja la arquitectura interna, modelos SQL de base de datos y flujos de red.
+- <strong><code>tasks.md</code>:</strong> La fase final. Kiro desglosa la funcionalidad entera en pequeñas "Balas atómicas" visuales (Checkbox).</p>
+<p><strong>El Ejecutor (▷):</strong> 
+Dentro de <code>tasks.md</code>, verás cajas interactivas <code>[ ]</code>. Presionás Play. Kiro, trabajando en background asincrónico, abre el archivo fuente real, edita el código usando diffs semánticos, valida la sintaxis, y marca la tarea cómo <code>[X] Done</code>. </p>
+<hr />
+<h2 id="8-agent-skills-workflows-on-demand">8. Agent Skills (Workflows On-Demand)</h2>
+<p>Las <strong>Skills</strong> no son simples prompts guardados. Adoptan el estándar abierto <code>agentskills.io</code>, permitiendo empaquetar flujos complejos de ingeniería (Instrucciones Markdown + Ejemplos de Código + Scripts Ejecutables) en módulos ultra-portables que Kiro invoca al vuelo.</p>
+<p><strong>La Anatomía de una Skill (<code>~/.kiro/skills/qa-auditor/</code>):</strong></p>
+<pre><code class="language-text">qa-auditor/
+├── SKILL.md                 # Archivo mandatorio. Contiene el ADN del Workflow.
+├── examples/                # Tu carpeta con plantillas 'Good_code.ts / Bad_code.ts'.
+└── scripts/
+    └── validate_jwt.py      # Lógica ejecutable que la IA puede correr en bash.
+</code></pre>
+<p><strong>Auto-Invocación (Mecánica de NLP en Background):</strong>
+Kiro lee milisegundo a milisegundo el campo <code>description</code> alojado en el YAML basal de todas tus skills instaladas. Si le decís al agente: <em>"Necesito que lintees este código nuevo"</em>, Kiro puntúa tu necesidad mediante NLP (Natural Language Processing), detecta el <em>Match</em> con la skill <code>qa-auditor</code> y la <strong>auto-activa</strong> en las sombras anexando su <code>SKILL.md</code> entero al contexto antes de escribir una sola línea.</p>
+<pre><code class="language-yaml">---
+name: qa-auditor
+description: Validaciones TypeScript estrictas (OBLIGATORIA al tocar APIs).
+---
+# Directriz de Auditoría
+Prohibido usar tipos `ANY`. Usar Interfaces genéricas T obligatoriamente.
+Tirar el script interno `python ./scripts/validate_jwt.py` luego de refactorizar.
+</code></pre>
+<p><strong>Ejemplo 2 — Skill de Containerización (<code>.kiro/skills/docker-deploy/SKILL.md</code>):</strong></p>
+<pre><code class="language-yaml">---
+name: docker-deploy
+description: Reglas para containerizar servicios Node.js y optimizar imágenes Docker.
+---
+# Directrices Docker
+- Usar multi-stage builds siempre. Etapa 1: build con node:20-alpine. Etapa 2: runtime con node:20-slim.
+- Nunca copiar node_modules al contenedor. Ejecutar `npm ci --only=production` en la etapa de runtime.
+- Exponer puertos explícitamente con EXPOSE. No hardcodear env vars: usar ARG o --env-file.
+- Incluir HEALTHCHECK con curl al endpoint /health cada 30s.
+</code></pre>
+<p><strong>Ejemplo 3 — Skill de Commits Estandarizados (<code>.kiro/skills/commit-messages/SKILL.md</code>):</strong></p>
+<pre><code class="language-yaml">---
+name: commit-messages
+description: Conventional Commits obligatorio. Invocar antes de commitear.
+---
+# Formato Requerido
+Todos los commits deben seguir Conventional Commits:
+- `feat(scope): descripción` para funcionalidades nuevas.
+- `fix(scope): descripción` para correcciones de bugs.
+- `refactor(scope): descripción` para cambios internos sin impacto funcional.
+- `docs(scope): descripción` para cambios en documentación.
+- El scope debe coincidir con el módulo afectado (auth, billing, ui).
+- El cuerpo del commit debe explicar el &quot;por qué&quot;, no el &quot;qué&quot;.
+</code></pre>
+<p><strong>Modos de Llamado Manual e Importación:</strong>
+- <strong>Invocación Quirúrgica:</strong> Podés forzarlas obligatoriamente desde la barra de Chat tipeando su nombre con Slash (<code>/qa-auditor</code>).
+- <strong>Importación Global desde GitHub:</strong> Las skills son compartibles. Todo tu equipo puede clonar el Cerebro del Arquitecto Cloud usando CLI:
+<code>kiro skill import https://github.com/my-org/skills/tree/main/docker-master</code></p>
+<hr />
+<h2 id="9-seguridad-defensiva-local-agent-hooks">9. Seguridad Defensiva Local: Agent Hooks</h2>
+<p>Los <strong>Hooks</strong> (<code>.kiro/hooks.json</code>) son llamas a la acción (<em>Callbacks</em>) deterministas que interceptan el ciclo de vida de la Inteligencia Artificial. <strong>Actúan como Guardias de Seguridad invisibles.</strong></p>
+<p>Interceptan Triggers (Ej: <code>FileSave</code> o <code>PreToolUse</code>).</p>
+<pre><code class="language-json">&quot;hooks&quot;: {
+  &quot;PreToolUse&quot;: [
+    {
+      &quot;matcher&quot;: &quot;Bash&quot;,
+      &quot;action&quot;: { &quot;type&quot;: &quot;command&quot;, &quot;command&quot;: &quot;scripts/security_check.sh&quot;, &quot;timeout&quot;: 5 }
+    }
+  ]
+}
+</code></pre>
+<p>Si Kiro intenta ejecutar un borrado de disco en bash a ciegas, el Hook despierta y ejecuta <code>security_check.sh</code>. Si el Shell Script devuelve <code>Exit code: 0</code> (Sano), Kiro avanza. Si devuelve <code>Exit code: 2</code> (Pánico), la acción de la IA es violentamente bloqueada, protegiendo tu código local de estupideces.</p>
+<hr />
+<h2 id="10-conectividad-externa-mcp-model-context-protocol">10. Conectividad Externa: MCP (Model Context Protocol)</h2>
+<p>Por naturaleza, las IAs operan en una caja de contención y están ciegas a internet. El estándar abierto <strong>MCP</strong> le da a Kiro <em>"Ojos y Manos"</em> fuera del entorno de tu Editor.
+Configurando endpoints en <code>mcp-servers.json</code>, el Agente puede:
+- Leer ramas remotas completas usando la API oficial de GitHub.
+- Googlear la documentación de Prisma que salió hace 3 días usando la Search API de Brave.
+- Ejecutar queries lógicos SQL a tu base local PostgreSQL para entender la data <em>real</em> antes de codear.</p>
+<hr />
+<h2 id="11-powers-inyeccion-de-sabiduria-sobre-mcp">11. Powers: Inyección de Sabiduría sobre MCP</h2>
+<p>Un servidor MCP te otorga "el botón ciego" (Ej: Conexión a Base de Datos). Pero un <strong>POWER</strong> encapsula esa herramienta <em>junto con un extenso Manual Subjetivo de Instrucciones</em> de tu empresa.
+En vez de tirarle el MCP a Kiro para que opere (arriesgándote a un <em>Drop Table</em>), instalás un Power. El Power le indica dinámicamente al agente la anatomía estricta de tu esquema particular, qué consultas GraphQL le tenés prohibidas usar en local y qué lógicas de paginación tenés documentadas corporativamente para ese MCP exacto.</p>
+<p><strong>Install Powers vs Create Powers:</strong>
+Existen dos flujos para incorporar Powers en tu proyecto:
+- <strong>Install Powers (Preconstruidos):</strong> Kiro trae un directorio integrado de Powers verificados y listos para usar. Podés explorarlos desde el panel lateral del IDE o vía CLI. Son paquetes cerrados y auditados (Ej: <code>GitHub Power</code>, <code>PostgreSQL Power</code>, <code>Brave Search Power</code>) que ya contienen la configuración MCP + las instrucciones humanas optimizadas. Solo necesitás proveer tus credenciales o tokens de acceso.
+- <strong>Create Powers (Personalizados):</strong> Si tu equipo opera con una API interna o un SaaS propietario (Ej: tu propio microservicio de facturación), podés crear un Power custom desde cero. Esto implica definir la conexión MCP manualmente y redactar el archivo de instrucciones que le enseña a Kiro cómo comportarse con esa herramienta específica.</p>
+<p><strong>Anatomía de un Power:</strong>
+Un Power tiene dos componentes indivisibles:
+1. <strong>Servidor MCP configurado:</strong> El endpoint técnico (URL, puerto, token Auth) que abre el canal de comunicación real.
+2. <strong>Archivo de Instrucciones (<code>.md</code>):</strong> El cerebro operativo. Un manifiesto Markdown que le enseña al Agente:
+   - Qué datos puede leer y cuáles NO.
+   - Qué operaciones destructivas tiene estrictamente prohibidas.
+   - Cómo paginar resultados grandes para no saturar el contexto.
+   - Qué convenciones de naming o schemas respetar.</p>
+<p><strong>¿Por qué no alcanza con MCP solo?</strong>
+Conectar un MCP desnudo es como darle las llaves de tu casa a un desconocido. El Power actúa como el contrato legal que acompaña esas llaves: le dice exactamente qué habitaciones puede entrar, qué cajones tiene prohibido abrir, y bajo qué circunstancias debe pedir autorización explícita antes de actuar.</p>
+<hr />
+<h2 id="12-contexto-multihilo-subagentes-tangents-y-checkpoints">12. Contexto Multihilo: Subagentes, Tangents y Checkpoints</h2>
+<p>Para no destruir el chat o llenarlo de basura conceptual, Kiro emplea 3 mecánicas multihilo:
+- <strong>Tangent Mode:</strong> Si en pleno diseño arquitectónico tenés la duda rápida <em>"¿Por qué Promise.all falla rápido?"</em>, abrís una burbuja tangencial (Sub-Chat), discutís la teoría pura en aislamiento, la cerrás, y tu chat principal queda limpio sin haberse contaminado de contexto basura ajeno a tu funcionalidad.
+- <strong>Checkpoints:</strong> Kiro guarda snapshots mentales en árbol. Si el bot rompió 5 archivos, abrís el registro temporal cognitivo del Chat, hacés <em>"Rewind"</em> hacia el punto previo, y Kiro deshace silenciosamente y a nivel atómico todos los códigos arruinados.
+- <strong>Subagentes:</strong> Kiro paraleliza tareas en <code>tasks.md</code> spawneando hilos ("mentes secundarias") que clonan el AST, trabajando de fondo con contextos propios separados de tu chat visual.</p>
+<hr />
+<h2 id="13-auto-diagnosticos-copilot-terminal-language-server">13. Auto-Diagnósticos: Copilot Terminal &amp; Language Server</h2>
+<ul>
+<li><strong>Language Server nativo:</strong> Si usás TypeScript, Pylance, o GoPLs, los subrayados rojos (Squigglies) viajan silenciosas por un túnel directo hacia el cerebro Kiro. No hace falta copiar los errores jamás: Kiro ya sabe exactamente dónde te equivocaste con el Typo.</li>
+<li><strong>Terminal Copilot:</strong> Ejecutaste un build (<code>npm run lint</code>). La consola de Linux escupe un muro gigante rojo horrendo de errores de dependencias. Presionás "Autopilot" y Kiro analiza matemáticamente el <code>stderr</code> detectando por red neuronal <em>exactamente</em> el driver de Webpack fallido para instalarte la solución de parche por vos.</li>
+</ul>
+<hr />
+<h2 id="14-seleccion-de-modelos-cognitivos-inteligentes-model-agnostic">14. Selección de Modelos Cognitivos Inteligentes (Model Agnostic)</h2>
+<p>Kiro no depende de un único proveedor de IA. Su arquitectura "Model Agnostic" soporta Switching dinámico mid-flight para optimizar respuestas, tokens y performance según la dificultad temporal de la tarea.</p>
+<p><strong>La Familia Claude:</strong>
+- <strong>Claude 3.5 Opus:</strong> Elevada lógica temporal y amplitud analítica. Altamente recomendado para iniciar el Feature Spec y crear Requerimientos (donde equivocarse duele mucho).
+- <strong>Claude 3.5 Sonnet:</strong> La bestia hiper-veloz. Recomendada cuando le das el Play (▷) en <code>tasks.md</code> para vomitar código iterativo (Vibe Mode).</p>
+<p><strong>Otras Alternativas de Inteligencia Soportadas:</strong>
+- <strong>OpenAI (GPT-4o / GPT-4.5):</strong> Opciones robustas para razonamiento matemático avanzado, scripting complejo o cuando tu ecosistema empresarial ya cuenta con SLAs y límites definidos junto a Microsoft/OpenAI.
+- <strong>Google Gemini (1.5 Pro):</strong> Insuperable para absorber ventanas de contexto colosales (hasta 2 millones de tokens). Ideal si necesitás que el Agente procese de un solo golpe documentaciones enteras en PDF, bases de datos masivas o logs de producción infinitos.
+- <strong>Modelos Locales / Open-Source:</strong> Kiro también permite integraciones hacia endpoints customizados para operar con modelos como <em>DeepSeek</em> o <em>Llama 3</em>, garantizando compliance militar donde el código jamás abandona tus servidores.</p>
+<hr />
+<h2 id="15-referencia-rapida-proveedores-dinamicos-y-atajos">15. Referencia Rápida: Proveedores Dinámicos y Atajos</h2>
+<p>Inyectá flechas semánticas en vez de copiar/pegar documentos al chat Kiro.</p>
+<table>
+<thead>
+<tr>
+<th>SINTAXIS</th>
+<th>IMPACTO EN EL AST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>#codebase</code></strong></td>
+<td>Manda Inteligencia Vectorial RAG (Embeddings) a rastrear cruces de dependencias crudas en los miles de archivos de tu repositorio y los indexa.</td>
+</tr>
+<tr>
+<td><strong><code>#file</code></strong> o <strong><code>@</code></strong></td>
+<td>Inyecta un documento texto puntual (<code>@src/main.ts</code>) para focalización láser inmersiva de contexto.</td>
+</tr>
+<tr>
+<td><strong><code>#terminal</code></strong></td>
+<td>Inyecta todo el último bloque log asqueroso que escupió BASH en tu stdout para auto-corregimiento IA.</td>
+</tr>
+<tr>
+<td><strong><code>#[[file:...]]</code></strong></td>
+<td>Inyecta y hardcodea enlaces vivos de código dentro de tus Steering Docs ocultos. Siempre leen la versión actualizada en disco de tu archivo para que los manuales no queden obsoletos.</td>
+</tr>
+<tr>
+<td><strong><code>/mi-skill</code></strong></td>
+<td>Manda Auto-Evaluar a Kiro bajo los comandos paramétricos predescritos de algún paquete YAML específico tuyo.</td>
+</tr>
+<tr>
+<td><strong><code>Cmd + Shift + P</code></strong></td>
+<td>Abrir la UI Visual de Hooks en la paleta de comandos.</td>
+</tr>
+<tr>
+<td><strong><code>kiro task run</code></strong></td>
+<td>Correr el pipeline interactivo y automático de Specs desde CLI.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="16-billing-y-planes-de-suscripcion">16. Billing y Planes de Suscripción</h2>
+<p>Kiro ofrece distintos niveles de acceso según las necesidades del desarrollador o la organización:</p>
+<p><strong>Plan Gratuito (Free Tier):</strong>
+- Acceso completo al IDE y CLI con funcionalidades core (Steering, Specs, Chat).
+- Límite mensual de interacciones con el Agente (tokens consumidos).
+- Ideal para desarrolladores individuales explorando la plataforma o en proyectos personales.</p>
+<p><strong>Plan Pro (Individual):</strong>
+- Límites expandidos de uso mensual.
+- Acceso prioritario a modelos de mayor capacidad (Opus).
+- Soporte para múltiples workspaces simultáneos.
+- Powers y Skills premium del directorio oficial.</p>
+<p><strong>Plan Enterprise / Organizaciones:</strong>
+- Administración centralizada de licencias para equipos.
+- Controles de seguridad avanzados (VPC Endpoints, SSO corporativo vía SAML/Okta).
+- SLAs de disponibilidad garantizados.
+- Auditoría y compliance de uso de tokens por usuario.
+- Soporte técnico dedicado.</p>
+<p><strong>Upgrade y Downgrade:</strong>
+Podés escalar o reducir tu plan en cualquier momento desde la configuración de tu cuenta en el IDE (<code>Settings &gt; Billing</code>) o vía el portal web de Kiro. Los cambios se aplican en el próximo ciclo de facturación. Si hacés un downgrade, conservás el acceso Pro hasta que termine tu período actual sin perder ninguno de tus Steerings, Skills o Hooks configurados.</p>
+<hr />
+<h2 id="17-troubleshooting-resolucion-de-problemas-comunes">17. Troubleshooting (Resolución de Problemas Comunes)</h2>
+<p><strong>macOS: "Kiro is damaged and can't be opened":</strong>
+Este pop-up es un <strong>falso positivo</strong> del Gatekeeper de macOS. Solución rápida:
+1. Andá a <strong>System Settings → Privacy &amp; Security</strong> y presioná <strong>Allow</strong> o <strong>Open Anyway</strong>.
+2. Si persiste, ejecutá en la Terminal:</p>
+<pre><code class="language-bash">sudo xattr -d com.apple.quarantine /Applications/Kiro.app
+</code></pre>
+<p><strong>Falla de Redirect en el Login (Autenticación):</strong>
+Si Kiro no abre el navegador al intentar loguearte:
+- <strong>macOS:</strong> Abrí <code>Help → Toggle Developer Tools → Console</code> y verificá que <code>ioreg</code> esté accesible en tu <code>$PATH</code>.
+- <strong>Windows:</strong> Corré Kiro con <code>--enable-logging</code> desde consola y verificar permisos de Administrador.</p>
+<p><strong>AWS IAM Identity Center:</strong>
+- Requiere una suscripción activa de <strong>Q Developer Pro</strong>. Si ves <em>"There was an error signing you in"</em>, verificalo.
+- Kiro usa <strong>US East (N. Virginia)</strong> por defecto. Si tu perfil está en otra región, usá Builder ID, Google o GitHub.
+- Las sesiones expiran por defecto a las 8 horas (configurable por Admin).</p>
+<p><strong>Shell Integration Unavailable:</strong>
+1. <strong>Actualizá Kiro:</strong> <code>Cmd+Shift+P</code> → <code>Kiro: Check for Updates</code>.
+2. <strong>Habilitá la integración:</strong> <code>Cmd+Shift+P</code> → <code>Kiro: Enable Shell Integration</code>.
+3. <strong>Si falla,</strong> agregá manualmente a tu <code>~/.zshrc</code>:</p>
+<pre><code class="language-bash">[[ &quot;$TERM_PROGRAM&quot; == &quot;kiro&quot; ]] &amp;&amp; . &quot;$(kiro --locate-shell-integration-path zsh)&quot;
+</code></pre>
+<p><strong>Kiro se queda en "Working..." (Powerlevel10k / Oh My Posh):</strong>
+Si usás Powerlevel10k, agregá a <code>~/.p10k.zsh</code>:</p>
+<pre><code class="language-bash">typeset -g POWERLEVEL9K_TERM_SHELL_INTEGRATION=true
+</code></pre>
+<p><strong>Servidores MCP que no Conectan:</strong>
+1. Verificá el estado del servidor en el panel lateral de Kiro (icono de estado).
+2. Validá que <code>mcp.json</code> tenga sintaxis JSON correcta y que los comandos de arranque existan.
+3. Revisá los logs en <code>Output Panel → "Kiro - MCP Logs"</code>.</p>
+<p><strong>Windows: Updates Disabled / OneDrive Path Issue:</strong>
+- Si Kiro fue instalado por un Admin, reinstalá como usuario normal para restaurar auto-updates.
+- Si tu perfil vive en OneDrive, mové el workspace de Kiro a una ruta local fuera de OneDrive.</p>
+<p><strong>Ayuda Adicional:</strong>
+- <a href="https://github.com/kirodotdev">GitHub Issues →</a>
+- <a href="https://kiro.dev/docs/">Documentación Oficial →</a></p>
+<blockquote>
+<p>Bienvenido al futuro. Bienvenido a Kiro.</p>
+</blockquote>
+<hr />
+<h2 id="indice-general">Índice General</h2>
+<ol>
+<li><a href="#1-introducción-a-la-inteligencia-artificial-estructural">Introducción a la Inteligencia Artificial Estructural</a></li>
+<li><a href="#2-setup-instalación-y-entornos">Setup, Instalación y Entornos</a></li>
+<li><a href="#3-el-cerebro-del-sistema-steering-files">El Cerebro del Sistema: Steering Files</a></li>
+<li><a href="#4-gestión-sensible-inclusión-y-ceguera-kiroignore">Gestión Sensible, Inclusión y Ceguera (<code>.kiroignore</code>)</a></li>
+<li><a href="#5-metodologías-de-ejecución-vibe-mode-vs-specs">Metodologías de Ejecución: Vibe Mode vs Specs</a></li>
+<li><a href="#6-el-protocolo-ears-requirements-fase-1">El Protocolo EARS (Requirements Fase 1)</a></li>
+<li><a href="#7-diseño-arquitectónico-y-task-engine-fases-2-y-3">Diseño Arquitectónico y Task Engine (Fases 2 y 3)</a></li>
+<li><a href="#8-agent-skills-workflows-on-demand">Agent Skills (Workflows On-Demand)</a></li>
+<li><a href="#9-seguridad-defensiva-local-agent-hooks">Seguridad Defensiva Local: Agent Hooks</a></li>
+<li><a href="#10-conectividad-externa-mcp-model-context-protocol">Conectividad Externa: MCP (Model Context Protocol)</a></li>
+<li><a href="#11-powers-inyección-de-sabiduría-sobre-mcp">Powers: Inyección de Sabiduría sobre MCP</a></li>
+<li><a href="#12-contexto-multihilo-subagentes-tangents-y-checkpoints">Contexto Multihilo: Subagentes, Tangents y Checkpoints</a></li>
+<li><a href="#13-auto-diagnósticos-copilot-terminal--language-server">Auto-Diagnósticos: Copilot Terminal &amp; Language Server</a></li>
+<li><a href="#14-selección-de-modelos-cognitivos-inteligentes-model-agnostic">Selección de Modelos Cognitivos Inteligentes (Model Agnostic)</a></li>
+<li><a href="#15-referencia-rápida-proveedores-dinámicos-y-atajos">Referencia Rápida: Proveedores Dinámicos y Atajos</a></li>
+<li><a href="#16-billing-y-planes-de-suscripción">Billing y Planes de Suscripción</a></li>
+<li><a href="#17-troubleshooting-resolución-de-problemas-comunes">Troubleshooting (Resolución de Problemas Comunes)</a></li>
+</ol>
+</body>
+</html>
