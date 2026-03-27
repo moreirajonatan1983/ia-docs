@@ -7,17 +7,15 @@
 
 Kiro admite los siguientes proveedores de autenticación:
 
-| Proveedor | Descripción |
-|---|---|
-| **GitHub** | Integración perfecta con su cuenta de GitHub |
-| **Google** | Inicia sesión con tus credenciales de Google |
-| **ID del creador de AWS** | Configuración rápida para desarrolladores individuales |
-| **Centro de identidad de AWS IAM** | Autenticación de nivel empresarial |
-| **Proveedor de identidad externo** | Conéctese a través del IdP de su organización (por ejemplo, Microsoft Entra ID u Okta) |
+- **GitHub:** Integración perfecta con tu cuenta de GitHub.
+- **Google:** Iniciá sesión con tus credenciales de Google.
+- **AWS Builder ID:** Configuración rápida para desarrolladores individuales.
+- **AWS IAM Identity Center:** Autenticación de nivel empresarial.
+- **Proveedor de identidad externo:** Conectate a través del proveedor de identidad de tu organización (por ejemplo, Microsoft Entra ID u Okta).
 
-> **Información:** Los usuarios que tienen una suscripción paga de Kiro y acceden a ella a través de un proveedor de inicio de sesión social (como GitHub o Google) o mediante AWS Builder ID se consideran **suscriptores individuales**. Podemos utilizar cierto contenido de Kiro Free Tier y de suscriptores individuales de Kiro para mejorar el servicio. Para obtener más información sobre la mejora del servicio y cómo darse de baja, consulte [Mejora del servicio](https://kiro.dev/docs/privacy-and-security/).
+> **Información:** Los usuarios que tienen una suscripción paga de Kiro y acceden a ella a través de un proveedor de inicio de sesión social (como GitHub o Google) o mediante AWS Builder ID se consideran **suscriptores individuales**. Podemos utilizar cierto contenido de Kiro Free Tier y de suscriptores individuales de Kiro para mejorar el servicio. Para obtener más información sobre la mejora del servicio y cómo darse de baja, consultá [Mejora del servicio](https://kiro.dev/docs/privacy-and-security/data-protection/#service-improvement).
 
-Kiro es una aplicación de AWS que funciona como un IDE agente independiente **sin necesidad de configurar una cuenta de AWS**. Puede descargar y usar Kiro inmediatamente sin ninguna configuración de cuenta externa: maneja las interacciones de IA y la asistencia de código directamente a través de la propia aplicación.
+Kiro es una aplicación de AWS que funciona como un IDE agente independiente **sin necesidad de configurar una cuenta de AWS**. Podés descargar y usar Kiro inmediatamente sin ninguna configuración de cuenta externa: maneja las interacciones de IA y la asistencia de código directamente a través de la propia aplicación. Ya sea que estés desarrollando con otros servicios de AWS o no, podés aprovechar todas las capacidades de Kiro para mejorar tu flujo de trabajo de desarrollo.
 
 ---
 
@@ -25,77 +23,77 @@ Kiro es una aplicación de AWS que funciona como un IDE agente independiente **s
 
 ### GitHub
 
-Utilice las siguientes instrucciones para iniciar sesión en Kiro usando GitHub.
+Utilizá las siguientes instrucciones para iniciar sesión en Kiro usando GitHub.
 
 **Para iniciar sesión con GitHub:**
 
-1. En Kiro, elija **Iniciar sesión con GitHub**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
-2. Ingrese su nombre de usuario o dirección de correo electrónico y su contraseña y luego elija **Iniciar sesión**.
-3. Elija **Autorizar kirodotdev** para autorizar la aplicación Kiro con su cuenta de GitHub.
+1. En Kiro, elegí **Sign in with GitHub**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
+2. Ingresá tu nombre de usuario o dirección de correo electrónico y tu contraseña y luego elegí **Sign in**.
+3. Elegí **Authorize kirodotdev** para autorizar la aplicación de Kiro con tu cuenta de GitHub.
 
 ---
 
 ### Google
 
-Utilice las siguientes instrucciones para iniciar sesión en Kiro mediante Google.
+Utilizá las siguientes instrucciones para iniciar sesión en Kiro mediante Google.
 
 **Para iniciar sesión con Google:**
 
-1. En Kiro, elija **Iniciar sesión con Google**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
-2. Elige una cuenta de Google que quieras usar con Kiro.
-3. Elija **Continuar** para autorizar la aplicación Kiro con su cuenta de Google.
+1. En Kiro, elegí **Sign in with Google**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
+2. Elegí una cuenta de Google que quieras usar con Kiro.
+3. Elegí **Continue** para autorizar la aplicación de Kiro con tu cuenta de Google.
 
 ---
 
-### ID del creador de AWS
+### AWS Builder ID
 
-Utilice las siguientes instrucciones para iniciar sesión en Kiro utilizando AWS Builder ID.
+Utilizá las siguientes instrucciones para iniciar sesión en Kiro usando AWS Builder ID.
 
 **Para iniciar sesión con AWS Builder ID:**
 
-1. En Kiro, elija **Iniciar sesión con AWS Builder ID**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
-2. Ingrese su dirección de correo electrónico y luego elija **Siguiente**.
-3. Ingrese su contraseña y luego elija **Iniciar sesión**.
-4. Elija **Permitir acceso** para autorizar la aplicación Kiro.
+1. En Kiro, elegí **Login with AWS Builder ID**. Serás redirigido a tu navegador web predeterminado para completar el proceso de inicio de sesión.
+2. Ingresá tu dirección de correo electrónico y luego elegí **Next**.
+3. Ingresá tu contraseña y luego elegí **Sign in**.
+4. Elegí **Allow access** para autorizar la aplicación de Kiro.
 
 ---
 
-### Centro de identidad de AWS IAM
+### AWS IAM Identity Center
 
-Utilice las siguientes instrucciones para iniciar sesión en Kiro en su organización, incluido AWS GovCloud (EE. UU.), mediante AWS IAM Identity Center.
+Utilizá las siguientes instrucciones para iniciar sesión en Kiro en tu organización, incluyendo AWS GovCloud (Estados Unidos), mediante AWS IAM Identity Center.
 
 **Para iniciar sesión con AWS IAM Identity Center:**
 
-1. En Kiro, elija **Iniciar sesión con AWS IAM Identity Center**.
-2. En **URL de inicio**, ingrese la URL de inicio proporcionada por su administrador o servicio de asistencia.
-3. En **Región**, ingrese la región de AWS que aloja el directorio de identidad y luego elija **Continuar**.
+1. En Kiro, elegí **Sign in with AWS IAM Identity Center**.
+2. En **Start URL**, ingresá la URL de inicio proporcionada por tu administrador o mesa de ayuda.
+3. En **Region**, ingresá la región de AWS que aloja el directorio de identidad y luego elegí **Continue**.
 
-> **Información:** Los métodos de autenticación admitidos en las regiones de AWS GovCloud (EE. UU.) son **AWS IAM Identity Center** y **proveedores de identidad externos**. Los métodos de inicio de sesión individuales, como GitHub, Google y AWS Builder ID **no están disponibles** en las regiones de AWS GovCloud (EE. UU.).
+> **Información:** Los métodos de autenticación admitidos en las regiones de AWS GovCloud (US) son **AWS IAM Identity Center** y **proveedores de identidad externos**. Los métodos de inicio de sesión individuales, como GitHub, Google y AWS Builder ID **no están disponibles** en las regiones de AWS GovCloud (US).
 >
-> Los usuarios saben que usarán Kiro con AWS GovCloud (EE. UU.) asegurándose de que la URL de inicio utilizada durante la autenticación contenga `"us-gov-home"`, por ejemplo:
+> Los usuarios saben que usarán Kiro con AWS GovCloud (US) asegurándose de que la URL de inicio utilizada durante la autenticación contenga `"us-gov-home"`, por ejemplo:
 > ```
 > https://start.us-gov-home.awsapps.com/directory/d-XXXXXXXXXX
 > ```
 >
-> Kiro utiliza la misma descarga/instalador para las regiones comerciales y AWS GovCloud (EE. UU.). La autenticación de IAM Identity Center enruta automáticamente el tráfico a la región adecuada de AWS GovCloud (EE. UU.). **Kiro IDE versión 0.9.2+** y **Kiro CLI versión 1.25.0+** son necesarios para la compatibilidad con las regiones de AWS GovCloud (EE. UU.).
+> Kiro utiliza la misma descarga/instalador para las regiones comerciales y AWS GovCloud (US). La autenticación del IAM Identity Center enruta automáticamente el tráfico a la región adecuada de AWS GovCloud (US). Son necesarias las versiones **Kiro IDE 0.9.2+** y **Kiro CLI 1.25.0+** para la compatibilidad con las regiones de AWS GovCloud (US).
 
 ---
 
 ### Proveedor de identidad externo
 
-Utilice las siguientes instrucciones para iniciar sesión en Kiro utilizando el proveedor de identidad externo de su organización, como Microsoft Entra ID u Okta.
+Utilizá las siguientes instrucciones para iniciar sesión en Kiro utilizando el proveedor de identidad externo de tu organización, como Microsoft Entra ID u Okta.
 
-**Para iniciar sesión con el proveedor de identidad de su organización:**
+**Para iniciar sesión con el proveedor de identidad de tu organización:**
 
-1. En Kiro, elige **Tu organización**.
-2. Ingrese su correo electrónico de trabajo para encontrar su organización y luego elija **Continuar**.
-3. Complete el proceso de inicio de sesión con el proveedor de identidad de su organización.
+1. En Kiro, elegí **Your organization**.
+2. Ingresá tu correo electrónico de trabajo para encontrar tu organización y luego elegí **Continue**.
+3. Completá el proceso de inicio de sesión con el proveedor de identidad de tu organización.
 
 ---
 
-## Solución de problemas de autenticación
+## Solucionar problemas de autenticación
 
-Si encuentra problemas durante el proceso de autenticación, como fallas de redireccionamiento del navegador o errores de inicio de sesión, consulte nuestra [guía de solución de problemas](https://kiro.dev/docs/troubleshooting/#authentication-issues) para obtener soluciones específicas de la plataforma y correcciones comunes.
+Si encontrás problemas durante el proceso de autenticación, como fallos de redireccionamiento del navegador o errores de inicio de sesión, consultá nuestra [guía de solución de problemas](https://kiro.dev/docs/getting-started/authentication/#troubleshooting-authentication-issues) para obtener resoluciones específicas a tu plataforma y correcciones comunes.
 
 ---
 
