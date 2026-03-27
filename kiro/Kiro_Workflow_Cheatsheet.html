@@ -8,7 +8,13 @@
 <style>
   @page {
     size: A4;
-    margin: 2cm 2.5cm;
+    margin: 2cm 2.5cm 2.5cm 2.5cm;
+    @bottom-center {
+      content: counter(page);
+      font-family: 'Inter', sans-serif;
+      font-size: 9pt;
+      color: #888;
+    }
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -24,6 +30,7 @@
     padding: 40px 50px;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
+    counter-reset: page;
   }
 
   /* HEADER - Title */
@@ -46,8 +53,20 @@
     border-left: none;
     font-weight: 500;
     font-size: 10pt;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top: 12px;
+  }
+
+  /* Source reference (second blockquote) */
+  body > blockquote:nth-of-type(2) {
+    background: #f0f4ff;
+    border-left: 4px solid #3366cc;
+    padding: 10px 16px;
+    border-radius: 0 8px 8px 0;
+    font-style: normal;
+    font-size: 9.5pt;
+    color: #2d2d5e;
+    margin-bottom: 30px;
   }
 
   /* Section Headings */
@@ -195,7 +214,7 @@
     text-decoration: underline;
   }
 
-  /* Last blockquote (footer) */
+  /* Footer blockquote (Bienvenido a Kiro) */
   blockquote:last-of-type {
     background: linear-gradient(135deg, #0f0f23, #1a1a3e);
     color: #ffffff;
@@ -229,6 +248,7 @@
 <blockquote>
 <p>Primeros Pasos • Setup del Proyecto • Estructura • Skills • Hooks • Specs • Flujos de Trabajo • Edición 2026</p>
 </blockquote>
+<p><strong>Fuente:</strong> Este documento fue elaborado en base a la documentación oficial de Kiro disponible en <a href="https://kiro.dev/docs/">kiro.dev/docs</a>. Para información actualizada, consultar siempre la fuente oficial.</p>
 <hr />
 <h2 id="1-introduccion-a-la-inteligencia-artificial-estructural">1. Introducción a la Inteligencia Artificial Estructural</h2>
 <p>Kiro no es un autocompletador de código (como los copilotos tradicionales de 2023). Es un <strong>Agente de Ingeniería Estructural Autónoma</strong> que vive sincrónicamente en tu Terminal (CLI) y en tu Editor (IDE). Su propósito es planificar arquitecturas, leer tu repositorio matemáticamente usando Vectores (Embeddings), y editar archivos directamente asumiendo la responsabilidad end-to-end de una funcionalidad. Kiro razona <strong>antes</strong> de codificar.</p>
