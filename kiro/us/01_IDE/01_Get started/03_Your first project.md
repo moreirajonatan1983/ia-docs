@@ -90,7 +90,6 @@ Once your spec is complete:
 2. **Execute Tasks** by clicking on individual task items
 3. **Track Progress** as tasks automatically update to *"In Progress"* and *"Done"*
 
-![Execute Spec Tasks](https://kiro.dev/videos/spec-task.gif)
 
 ---
 
@@ -119,7 +118,6 @@ Agent Hooks eliminate manual work by automatically executing predefined actions 
    - **File Pattern:** Specify which files should trigger the hook (e.g., `src/**/*.tsx`)
    - **Instructions:** Define the specific actions to perform
 
-![Automate Workflows with Hooks](https://kiro.dev/videos/hooks.gif)
 
 ---
 
