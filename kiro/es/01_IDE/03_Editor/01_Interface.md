@@ -6,82 +6,82 @@
 
 ## Componentes de la interfaz principal
 
-![Interfaz Kiro](https://kiro.dev/images/kiro-interface.png)
+![Kiro Interface](https://kiro.dev/images/kiro-interface.png)
 
 ### Editor
 
-El espacio de trabajo central donde escribes y editas código. Las características incluyen:
+Es tu espacio de trabajo central, donde escribís y editás tu código. Sus funcionalidades incluyen:
 
-- Resaltado de sintaxis para múltiples idiomas.
-- Números de línea e indicadores de error.
-- Plegado de código para una mejor organización
-- Múltiples pestañas para trabajar entre archivos
-- Soporte de vista dividida para edición en paralelo
-
----
-
-### Panel de chat
-
-Puedes utilizar el panel de chat para:
-
-- Haga preguntas sobre su código
-- Solicitar generación o modificaciones de código.
-- Obtenga ayuda con la depuración y la resolución de problemas
-- Solicite revisiones de código y sugerencias de optimización.
-- Incluir contexto con comandos `#` (por ejemplo, `#Archivo`, `#Carpeta`)
-- Generar código repetitivo y plantillas.
-
-> **Consejo:** Para mover el panel de chat al lado opuesto del IDE, vaya a **Ver > Apariencia > Mover la barra lateral principal a la derecha** en la barra de menú superior.
+- Resaltado de sintaxis nativo para múltiples lenguajes.
+- Números de línea e indicadores visuales de error.
+- Plegado de código (`code folding`) para una mejor organización.
+- Múltiples pestañas para trabajar saltando entre archivos.
+- Soporte para vista dividida (*split view*) permitiéndote la edición en paralelo.
 
 ---
 
-### Vistas
+### Panel de Chat
 
-La barra lateral contiene varias vistas especializadas:
+Podés utilizar el panel de chat para:
 
-| Ver | Descripción |
+- Hacer preguntas sobre tu base de código.
+- Pedir que te genere código nuevo o modifique el existente.
+- Obtener ayuda para debuggear (depuración) y resolver problemas.
+- Solicitar revisiones de código y sugerencias avanzadas de optimización.
+- Incluir contexto a la fuerza utilizando los comandos con arroba `#` (por ejemplo, `#File`, `#Folder`).
+- Generar código *boilerplate* y templates de arranque.
+
+> **Tip:** Para mover el panel del chat hacia el lado opuesto del IDE, andá a **View > Appearance > Move Primary Side Bar Right** en la barra superior del menú.
+
+---
+
+### Vistas (Views)
+
+La barra lateral de Kiro (activity bar) contiene varias vistas especializadas:
+
+| Vista | Descripción |
 |---|---|
-| **Explorador** | Navegue por la estructura de archivos de su proyecto, consulte los indicadores de estado de Git y acceda a secciones especiales para especificaciones y servidores MCP |
-| **Buscar** | Realice operaciones globales de búsqueda y reemplazo en todo su proyecto |
-| **Control de fuente** | Administre operaciones de Git, vea cambios y maneje commits con [mensajes de commit generados por IA](https://kiro.dev/docs/editor/source-control) |
-| **Ejecutar y depurar** | Ver variables, pilas de llamadas y gestionar puntos de interrupción durante las sesiones de depuración |
-| **Extensiones** | Instalar y administrar extensiones IDE |
-| **Kiro** | Una vista dedicada a funciones específicas de IA: administración de especificaciones, enlaces de agentes, dirección de agentes y servidores MCP |
+| **Explorer** | Navegá por el árbol de archivos de tu proyecto, mirá los estados y colores de Git, y accedé velozmente a las secciones donde tenés guardados tus Specs y Servidores MCP. |
+| **Search** | Realizá búsquedas globales o reemplazos automáticos en todo tu proyecto. |
+| **Source Control** | Administrá tus tareas de Git: revisá los diffs, controlá tus ramas y prepará tus commits usando [mensajes de commit generados por IA](https://kiro.dev/docs/editor/source-control). |
+| **Run and Debug** | Inspeccioná variables, call stacks, y manipulá *breakpoints* paso a paso durante tus sesiones de depuración. |
+| **Extensions** | Instalá y administrá cualquier extensión de VS Code u otro entorno. |
+| **Kiro** | Una sección dedicada 100% al "cerebro": desde acá administrás Specs, Agent Hooks, el Steering principal del Agente y los Servidores MCP asociados. |
 
 ---
 
-### Barra de estado
+### Barra de estado (Status bar)
 
-Ubicada en la parte inferior de la interfaz, la barra de estado proporciona:
+Ubicada abajo de todo en la interfaz, la barra de estado te cuenta qué está pasando:
 
-- Información del archivo actual
-- Rama de Git y estado de sincronización
-- Recuentos de errores y advertencias.
-- Indicadores de estado del agente.
+- Detalles e información del archivo actual abierto.
+- La rama de Git en la que estás y su estado de sincronización (push/pull).
+- Contadores silenciosos de errores y advertencias en el proyecto.
+- Indicadores visuales que te avisan el estado o disponibilidad del agente (IA).
 
 ---
 
-### Paleta de comandos
+### Paleta de Comandos (Command Palette)
 
-Accede rápidamente a los comandos de Kiro pulsando:
-- **macOS:** `Cmd+Mayús+P`
-- **Windows/Linux:** `Ctrl+Mayús+P`
+Llegá rápidisimo a los comandos de Kiro ejecutando:
+- **macOS:** `Cmd+Shift+P`
+- **Windows / Linux:** `Ctrl+Shift+P`
 
-Utilice la paleta de comandos para:
-- Ejecutar acciones comunes
-- Acceder a herramientas MCP
-- Configurar ajustes
-- Ejecutar hooks de agente
+Podés usar tu Paleta de Comandos para:
+- Ejecutar comandos rutinarios y acciones comunes.
+- Llamar de frente a una herramienta MCP.
+- Modificar configuraciones ocultas.
+- Disparar *Agent Hooks* (ganchos automáticos).
 
 ---
 
 ## Consejos de navegación
 
-- Utilice [atajos de teclado](https://kiro.dev/docs/editor/keyboard-shortcuts/) para una navegación más rápida
-- Aproveche la paleta de comandos para acceder rápidamente a las funciones
-- Anclar archivos de uso frecuente para facilitar el acceso
-- Utilice vistas divididas para comparar o hacer referencia al código
-- Configurar los ajustes del espacio de trabajo para una experiencia personalizada
+- Usá los [Atajos de teclado](https://kiro.dev/docs/editor/keyboard-shortcuts/) para moverte como pez en el agua.
+- Explotá la Paleta de Comandos para acceder a opciones sin tocar el mouse.
+- Pineá (anclá) las pestañas de los archivos que uses más frecuente.
+- Partí la pantalla con las "Vistas divididas" (*split view*) para comparar tu código o tener referencias a la vista.
+- Ajustá la Configuración del Workspace de Kiro para adaptarlo 100% a tus gustos.
 
 ---
 

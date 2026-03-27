@@ -4,71 +4,71 @@
 
 ---
 
-## General
+## Generales
 
-| Acción | MacOS | Ventanas/Linux |
+| Acción | macOS | Windows / Linux |
 |---|---|---|
-| Paleta de comandos | `Cmd+Mayús+P` | `Ctrl+Mayús+P` |
+| Paleta de comandos | `Cmd+Shift+P` | `Ctrl+Shift+P` |
 | Atajos de teclado | `Cmd+K Cmd+S` | `Ctrl+K Ctrl+S` |
-| Terminal de alternancia | `Ctrl+\`` | `Ctrl+\`` |
+| Alternar terminal | `Ctrl+\`` | `Ctrl+\`` |
 | Nuevo archivo | `Cmd+N` | `Ctrl+N` |
 | Cerrar archivo | `Cmd+W` | `Ctrl+W` |
 | Guardar | `Cmd+S` | `Ctrl+S` |
-| Guardar todo | `Cmd+Mayús+S` | `Ctrl+Mayús+S` |
+| Guardar todo | `Cmd+Option+S` | `Ctrl+Shift+S` |
 | Deshacer | `Cmd+Z` | `Ctrl+Z` |
-| Rehacer | `Cmd+Mayús+Z` | `Ctrl+Mayús+Z` |
+| Rehacer | `Cmd+Shift+Z` | `Ctrl+Shift+Z` |
 
 ---
 
 ## Navegación
 
-| Acción | MacOS | Ventanas/Linux |
+| Acción | macOS | Windows / Linux |
 |---|---|---|
-| Archivo de apertura rápida | `Cmd+P` | `Ctrl+P` |
-| Abrir archivo | `Cmd+O` | `Ctrl+O` |
-| Abrir carpeta | `Cmd+K Cmd+O` | `Ctrl+K Ctrl+O` |
-| Ir a Símbolo | `Cmd+Mayús+O` | `Ctrl+Mayús+O` |
-| Ir a Línea | `Ctrl+G` | `Ctrl+G` |
-| Buscar en Archivo | `Cmd+F` | `Ctrl+F` |
-| Buscar en el espacio de trabajo | `Cmd+Mayús+F` | `Ctrl+Mayús+F` |
+| Búsqueda rápida de archivos | `Cmd+P` | `Ctrl+P` |
+| Abrir archivo... | `Cmd+O` | `Ctrl+O` |
+| Abrir carpeta... | `Cmd+K Cmd+O` | `Ctrl+K Ctrl+O` |
+| Ir al Símbolo | `Cmd+Shift+O` | `Ctrl+Shift+O` |
+| Ir a la Línea | `Ctrl+G` | `Ctrl+G` |
+| Buscar en el archivo | `Cmd+F` | `Ctrl+F` |
+| Buscar en todo el proyecto | `Cmd+Shift+F` | `Ctrl+Shift+F` |
 | Alternar barra lateral | `Cmd+B` | `Ctrl+B` |
-| Editor dividido | `Cmd+\` | `Ctrl+\` |
-| Grupo de editores de enfoque | `Cmd+1/2/3` | `Ctrl+1/2/3` |
-| Control de fuente | `Ctrl+Mayús+G` | `Ctrl+Mayús+G` |
+| Dividir el editor | `Cmd+\` | `Ctrl+\` |
+| Enfocar grupo de editores | `Cmd+1/2/3` | `Ctrl+1/2/3` |
+| Panel de control de versiones | `Ctrl+Shift+G` | `Ctrl+Shift+G` |
 
 ---
 
 ## Edición
 
-| Acción | MacOS | Ventanas/Linux |
+| Acción | macOS | Windows / Linux |
 |---|---|---|
-| Línea de corte | `Cmd+X` | `Ctrl+X` |
+| Cortar línea | `Cmd+X` | `Ctrl+X` |
 | Copiar línea | `Cmd+C` | `Ctrl+C` |
 | Pegar | `Cmd+V` | `Ctrl+V` |
 | Alternar comentario | `Cmd+/` | `Ctrl+/` |
-| Mover línea arriba/abajo | `Opción+Arriba/Abajo` | `Alt+Arriba/Abajo` |
-| Eliminar línea | `Cmd+Mayús+K` | `Ctrl+Mayús+K` |
+| Mover línea arriba/abajo | `Option+Arriba/Abajo` | `Alt+Arriba/Abajo` |
+| Borrar línea | `Cmd+Shift+K` | `Ctrl+Shift+K` |
 
 ---
 
-## Funciones de IA
+## Funcionalidades de IA
 
-| Acción | MacOS | Ventanas/Linux |
+| Acción | macOS | Windows / Linux |
 |---|---|---|
-| Abrir chat de IA | `Cmd+L` | `Ctrl+L` |
-| Edición de IA en línea | `Cmd+I` | `Ctrl+I` |
-| Ejecutar/depurar | `F5` | `F5` |
+| Abrir Chat de IA | `Cmd+L` | `Ctrl+L` |
+| Edición Inline con IA | `Cmd+I` | `Ctrl+I` |
+| Ejecutar/Depurar | `F5` | `F5` |
 
 ---
 
 ## Atajos personalizados
 
-Puedes personalizar los atajos de teclado en Kiro:
+Podés personalizar libremente los atajos de teclado en Kiro a tu gusto:
 
-1. Abra la paleta de comandos (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-2. Busque **Atajos de teclado**
-3. Seleccione **Preferencias: Abrir atajos de teclado**
-4. Seleccione el comando que desea modificar.
-5. Elija el **ícono de lápiz** e ingrese su acceso directo preferido
+1. Abrí la Paleta de Comandos (`Cmd+Shift+P` / `Ctrl+Shift+P`).
+2. Buscá **Keyboard Shortcuts**.
+3. Seleccioná **Preferences: Open Keyboard Shortcuts**.
+4. Buscá o seleccioná en la lista el comando que querés modificar.
+5. Hacé clic en el **ícono de lápiz** a la izquierda e ingresá en tu teclado la nueva combinación preferida.
 
-Esto le permite crear un flujo de trabajo personalizado que coincida con sus preferencias y hábitos de otros editores.
+Esto te permite emular el flujo de trabajo de otros editores a los que estés acostumbrado (como Vim, Emacs, o Sublime) o simplemente crear atajos que se adapten mejor a vos.
