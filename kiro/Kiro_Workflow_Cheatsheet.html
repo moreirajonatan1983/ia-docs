@@ -259,9 +259,11 @@
 - <strong>CLI (Terminal):</strong> Ideal para servidores CI/CD, o desarrollo hardcodeado. Se instala vía <code>curl -fsSL https://kiro.dev/install.sh | bash</code>.
 - <strong>IDE Extensión:</strong> Ideal para refactors visuales y manejo de UI gráfica.</p>
 <p><strong>Puesta a punto inicial:</strong> Al entrar a tu repositorio limpio, ejecutás <code>kiro .</code> (o presionás <code>"Generate Steering Docs"</code> en la UI). Kiro descargará el AST (Abstract Syntax Tree), analizará tu Stack detectando librerías y armará la matriz de conocimiento en la carpeta oculta <code>.kiro/steering/</code>.</p>
+<p>🎬 <strong>Video Demo:</strong> <a href="https://kiro.dev/videos/kiro-pane.mp4">Panel de Kiro en acción</a></p>
 <hr />
 <h2 id="3-el-cerebro-del-sistema-steering-files">3. El Cerebro del Sistema: Steering Files</h2>
 <p>Los <strong>Steering Files</strong> (archivos <code>.md</code> alojados en <code>.kiro/steering/</code>) son la "Constitución" inquebrantable de tu proyecto. Filtran las alucinaciones de la IA prohibiéndole tomar decisiones arquitectónicas ajenas a tu negocio.</p>
+<p>🎬 <strong>Video Demo:</strong> <a href="https://kiro.dev/videos/kiro-steering.mp4">Configuración de Steering Files</a></p>
 <p>Todo proyecto debe tener al menos estos 3 pilares fundacionales:</p>
 <p><strong><code>tech.md</code> (El Qué — Stack Tecnológico):</strong></p>
 <pre><code class="language-markdown"># Stack Tecnológico
@@ -329,6 +331,7 @@ Para entender todas estas capas, así debe lucir el esqueleto maestro de un repo
 <hr />
 <h2 id="5-metodologias-de-ejecucion-vibe-mode-vs-specs">5. Metodologías de Ejecución: Vibe Mode vs Specs</h2>
 <p>Existen dos pedales de aceleración radicalmente opuestos para operar el Agente. Elegir el incorrecto puede resultar en código brillante pero desconectado de tu arquitectura, o en un sobrecosto de tokens inmanejable.</p>
+<p>🎬 <strong>Video Demo:</strong> <a href="https://kiro.dev/videos/specs-start.mp4">Spec Mode en acción</a></p>
 <p><strong>A. Vibe Mode (Modo Danza / Libre):</strong>
 Abris el chat de la extensión y charlás. Es un flujo puramente iterativo.
 - <strong>Caso de Uso de Oro:</strong> Prototipado rápido, dudas teóricas ("¿Me armás una RegEx rápida para un email?"), exploración de librerías nuevas o el scaffolding de un script aislado (Ej: un scraper en Python de 100 líneas).
@@ -450,6 +453,7 @@ Todos los commits deben seguir Conventional Commits:
 <hr />
 <h2 id="9-seguridad-defensiva-local-agent-hooks">9. Seguridad Defensiva Local: Agent Hooks</h2>
 <p>Los <strong>Hooks</strong> (<code>.kiro/hooks.json</code>) son llamas a la acción (<em>Callbacks</em>) deterministas que interceptan el ciclo de vida de la Inteligencia Artificial. <strong>Actúan como Guardias de Seguridad invisibles.</strong></p>
+<p>🎬 <strong>Video Demo:</strong> <a href="https://kiro.dev/videos/kiro-hook.mp4">Agent Hooks en acción</a></p>
 <p>Interceptan Triggers (Ej: <code>FileSave</code> o <code>PreToolUse</code>).</p>
 <pre><code class="language-json">&quot;hooks&quot;: {
   &quot;PreToolUse&quot;: [
