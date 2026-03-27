@@ -73,7 +73,7 @@ my-skill/
 └── assets/         # Optional templates
 ```
 
-### Formato HABILIDAD.md
+### Formato SKILL.md
 
 ```markdown
 ---

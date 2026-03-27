@@ -3037,7 +3037,7 @@ pr-review/
     └── checklist.md
 ```
 
-#### Formato HABILIDAD.md
+#### Formato SKILL.md
 
 El archivo empieza con **YAML frontmatter** seguido de instrucciones en Markdown:
 
@@ -3099,7 +3099,7 @@ cdk-deploy/
     └── stack-patterns.md
 ```
 
-**HABILIDAD.md:**
+**SKILL.md:**
 ```markdown
 ---
 nombre: implementación de cdk
