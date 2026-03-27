@@ -6,14 +6,11 @@
 ---
 
 Kiro supports the following authentication providers:
-
-| Provider | Description |
-|---|---|
-| **GitHub** | Seamless integration with your GitHub account |
-| **Google** | Sign in with your Google credentials |
-| **AWS Builder ID** | Quick setup for individual developers |
-| **AWS IAM Identity Center** | Enterprise-grade authentication |
-| **External identity provider** | Connect through your organization's IdP (e.g., Microsoft Entra ID or Okta) |
+- **GitHub**
+- **Google**
+- **AWS Builder ID**
+- **AWS IAM Identity Center**
+- **External identity provider** (e.g., Microsoft Entra ID or Okta)
 
 > **Info:** Users that have a paid Kiro subscription and access it through a social login provider (like GitHub or Google) or through AWS Builder ID are considered **individual subscribers**. We may use certain content from Kiro Free Tier and Kiro individual subscribers for service improvement. For more information on service improvement and how to opt out, see [Service improvement](https://kiro.dev/docs/privacy-and-security/).
 

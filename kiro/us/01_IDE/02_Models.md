@@ -94,12 +94,10 @@ Open weight model best suited for multilingual programming and UI generation. De
 
 Not all models work the same way. Understanding these differences helps you pick the right one:
 
-| Dimension | Opus | Sonnet | Haiku |
-|---|---|---|---|
-| **Planning depth** | Thinks longer, considers edge cases, revisits reasoning | More direct, starts working sooner | Fastest, minimal upfront planning |
-| **Self-correction** | Opus 4.6 catches its own mistakes during review | Standard | Standard |
-| **Session endurance** | Maintains focus over long multi-file sessions | Good for medium sessions | Best for short, focused interactions |
-| **Initiative level** | Takes more initiative, broader changes | Conservative, sticks to what was asked | Conservative |
+- **Planning depth:** Opus models think longer before acting. They plan multi-step approaches, consider edge cases, and revisit their reasoning. Sonnet and Haiku are more direct: they start working sooner and iterate faster.
+- **Self-correction:** Opus 4.6 in particular is better at catching its own mistakes during code review and debugging. If you're seeing bugs in generated code, switching to Opus can help.
+- **Session endurance:** For long-running tasks (like working through a spec), Opus models maintain focus better over extended sessions. Haiku and Sonnet are better suited for shorter, focused interactions.
+- **Initiative level:** Opus models tend to take more initiative, making broader changes when they see opportunities. Sonnet is more conservative and sticks closer to what you asked for. Choose based on whether you want the model to lead or follow.
 
 ---
 

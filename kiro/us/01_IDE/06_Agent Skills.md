@@ -105,13 +105,9 @@ See the [full specification →](https://agentskills.io/specification)
 
 ## How Skills Differ from Steering and Powers
 
-| Feature | Skills | Steering | Powers |
-|---|---|---|---|
-| **Standard** | Open (Agent Skills spec) | Kiro-specific | Kiro-specific |
-| **Loading** | On-demand | always/auto/fileMatch/manual | Dynamic based on context |
-| **Scripts** | ✅ Yes | ✗ No | ✅ Yes |
-| **MCP tools** | ✗ No | ✗ No | ✅ Yes |
-| **Best for** | Reusable workflows to share or import | Project standards and conventions | MCP integrations with bundled knowledge |
+- **Skills** are portable packages following an open standard. They load on-demand and can include scripts. Use for reusable workflows you want to share or import from others.
+- **Steering** is Kiro-specific context that shapes agent behavior. It supports `always`, `auto`, `fileMatch`, and `manual` modes. Use for project standards and conventions.
+- **Powers** bundle MCP tools with knowledge and workflows. They activate dynamically based on context. Use for integrations where you need both tools and guidance.
 
 > For MCP integrations, [Powers](https://kiro.dev/docs/powers) are usually a better fit — they bundle tools with built-in guidance and activate automatically.
 
