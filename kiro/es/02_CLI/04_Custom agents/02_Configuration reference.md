@@ -102,7 +102,7 @@ Recursos locales disponibles para el agente.
   "recursos": [
     "archivo://README.md",
     "archivo://.kiro/steering/**/*.md",
-    "habilidad://.kiro/skills/**/SKILL.md"
+    "skill://.kiro/skills/**/SKILL.md"
   ]
 }
 ```

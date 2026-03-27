@@ -34,7 +34,7 @@ La forma recomendada de configurar el contexto es a través del campo "recursos"
 
 **Esquemas de URI de recursos:**
 - `file://` — Archivos cargados directamente en contexto al inicio
-- `skill://` — Habilidades con metadatos cargados al inicio, contenido completo bajo demanda
+- `skill://` — Skills con metadatos cargados al inicio, contenido completo bajo demanda
 - `knowledgeBase` — Contenido indexado buscado bajo demanda (configurado como objetos)
 
 ### Contexto de sesión temporal

@@ -1,60 +1,60 @@
-# Habilidades del agente
+# Skills del agente
 
 > **Fuente:** [kiro.dev/docs/skills/](https://kiro.dev/docs/skills/)
 
 ---
 
-## ¿Qué son las habilidades?
+## ¿Qué son las skills?
 
 Las **Skills** son paquetes de instrucciones portátiles que siguen el estándar abierto [Agent Skills](https://agentskills.io). Agrupan instrucciones, scripts y plantillas en paquetes reutilizables que Kiro puede activar cuando son relevantes para tu tarea.
 
 Kiro soporta el estándar Agent Skills, por lo que podés:
-- Importar habilidades de la comunidad o de otras herramientas de IA compatibles
-- Comparte tus propias habilidades en el ecosistema.
+- Importar skills de la comunidad o de otras herramientas de IA compatibles
+- Comparte tus propias skills en el ecosistema.
 
 ---
 
-## Cómo funcionan las habilidades
+## Cómo funcionan las skills
 
 Las skills resuelven el problema del contexto excesivo usando **divulgación progresiva**:
 
 | Etapa | Descripción |
 |---|---|
-| **1. Descubrimiento** | Al inicio, Kiro carga solo el nombre y descripción de cada habilidad |
-| **2. Activación** | Cuando tu solicitud coincide con la descripción de una habilidad, Kiro carga las instrucciones completas |
+| **1. Descubrimiento** | Al inicio, Kiro carga solo el nombre y descripción de cada skill |
+| **2. Activación** | Cuando tu solicitud coincide con la descripción de una skill, Kiro carga las instrucciones completas |
 | **3. Ejecución** | Kiro sigue las instrucciones, cargando scripts o archivos de referencia solo cuando es necesario |
 
 Esto mantiene el contexto enfocado mientras da a Kiro acceso a conocimiento especializado extenso bajo demanda.
 
 ---
 
-## Usando habilidades
+## Usando skills
 
-Kiro activa automáticamente las habilidades cuando tu solicitud coincide con su descripción.
+Kiro activa automáticamente las skills cuando tu solicitud coincide con su descripción.
 
-También podés invocar una habilidad directamente:
-- Escribí `/` en el chat → las habilidades disponibles aparecen como comandos de barra diagonal
+También podés invocar una skill directamente:
+- Escribí `/` en el chat → las skills disponibles aparecen como comandos de barra diagonal
 - Seleccioná un comando de barra diagonal → carga las instrucciones completas del Skill
 
-Gestioná tus habilidades desde la sección **Steering y habilidades del agente** en el panel de Kiro.
+Gestioná tus skills desde la sección **Steering y skills del agente** en el panel de Kiro.
 
 ---
 
-## Alcance de la habilidad
+## Alcance de la skill
 
 | Alcance | Ubicación | Uso |
 |---|---|---|
 | **Espacio de trabajo** | `.kiro/skills/` | Solo el proyecto actual. Skills para flujos de trabajo específicos del proyecto (implementación, convenciones del equipo) |
-| **Global** | `~/.kiro/skills/` | Disponible en todos los espacios de trabajo. Habilidades personales utilizadas en cualquier proyecto (revisión de código, documentación) |
+| **Global** | `~/.kiro/skills/` | Disponible en todos los espacios de trabajo. Skills personales utilizadas en cualquier proyecto (revisión de código, documentación) |
 
-> En caso de conflicto de nombres entre skills global y workspace, Kiro **prioriza el workspace skills**. Esto permite definir habilidades globales con posibilidad de sobreescribirlas por proyecto.
+> En caso de conflicto de nombres entre skills global y workspace, Kiro **prioriza el workspace skills**. Esto permite definir skills globales con posibilidad de sobreescribirlas por proyecto.
 
 ---
 
-## Importación de habilidades
+## Importación de skills
 
-1. Abra la sección **Steering y habilidades del agente** en el panel de Kiro
-2. Haga clic en **+** y seleccione **Importar una habilidad**
+1. Abra la sección **Steering y skills del agente** en el panel de Kiro
+2. Haga clic en **+** y seleccione **Importar una skill**
 3. Elegí el origen:
    - **GitHub** — Importará desde una URL de repositorio público (apuntando a la carpeta del Skill o directamente al `SKILL.md`). La URL debe apuntar a un subdirectorio, no a la raíz del repositorio.
    - **Carpeta local** — Importá desde tu sistema de archivos
@@ -63,9 +63,9 @@ Gestioná tus habilidades desde la sección **Steering y habilidades del agente*
 
 ---
 
-## Creando una habilidad
+## Creando una skill
 
-Una habilidad es una carpeta que contiene un archivo `SKILL.md`:
+Una skill es una carpeta que contiene un archivo `SKILL.md`:
 
 ```
 my-skill/
@@ -96,7 +96,7 @@ Descripción: revise las pull requests para determinar la calidad del código, l
 | Campo | Descripción |
 |---|---|
 | `nombre` | Identificador del Skill (usado como comando de barra diagonal) |
-| `descripción` | Cuándo activar la habilidad — debe ser precisa y específica |
+| `descripción` | Cuándo activar la skill — debe ser precisa y específica |
 | `licencia` | Licencia del Skill (para distribución) |
 | `compatibilidad` | Herramientas compatibles con IA |
 | `metadatos` | Metadatos adicionales |
@@ -105,9 +105,9 @@ Ver la [especificación completa →](https://agentskills.io/specification)
 
 ---
 
-## En qué se diferencian las habilidades de la dirección y los poderes
+## En qué se diferencian las skills de la dirección y los poderes
 
-| Característica | Habilidades | Dirección | Poderes |
+| Característica | Skills | Dirección | Poderes |
 |---|---|---|---|
 | **Portabilidad** | ✅ Estándar abierto, compatibles | ❌ Específico de Kiro | ❌ Específico de Kiro |
 | **Activación** | Bajo demanda (por descripción / comando de barra diagonal) | Siempre, automático, fileMatch, manual | Dinámica por contexto |
@@ -131,4 +131,4 @@ Ver la [especificación completa →](https://agentskills.io/specification)
 
 - [Dirección →](./03_Steering.md)
 - [Poderes →](./06_Powers/01_Install%20powers.md)
-- [Especificación de habilidades del agente →](https://agentskills.io/specification)
+- [Especificación de skills del agente →](https://agentskills.io/specification)

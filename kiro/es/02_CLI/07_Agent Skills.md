@@ -1,4 +1,4 @@
-# Habilidades del agente
+# Skills del agente
 
 > **Fuente:** [kiro.dev/docs/cli/skills/](https://kiro.dev/docs/cli/skills/)
 
@@ -8,9 +8,9 @@ Los Agent Skills son paquetes portátiles de instrucciones que se activan autom�
 
 ---
 
-## Cómo funcionan las habilidades
+## Cómo funcionan las skills
 
-Al iniciar una sesión de chat, Kiro descubre las habilidades disponibles leyendo sus nombres y descripciones. Cuando tu solicitud coincide con la descripción de una habilidad, Kiro carga automáticamente las instrucciones completas y las sigue.
+Al iniciar una sesión de chat, Kiro descubre las skills disponibles leyendo sus nombres y descripciones. Cuando tu solicitud coincide con la descripción de una skill, Kiro carga automáticamente las instrucciones completas y las sigue.
 
 ```
 > Review this PR for security issues
@@ -18,9 +18,9 @@ Al iniciar una sesión de chat, Kiro descubre las habilidades disponibles leyend
 I'll review the PR using the security checklist...
 ```
 
-Las habilidades **se activan automáticamente** según tu solicitud. No hay comando de barra diagonal para invocarlos: Kiro decide cuándo una habilidad es relevante comparando tu solicitud contra las descripciones de las habilidades.
+Las skills **se activan automáticamente** según tu solicitud. No hay comando de barra diagonal para invocarlos: Kiro decide cuándo una skill es relevante comparando tu solicitud contra las descripciones de las skills.
 
-Para ver qué habilidades están disponibles en tu sesión actual:
+Para ver qué skills están disponibles en tu sesión actual:
 
 ```
 > /context show
@@ -28,16 +28,16 @@ Para ver qué habilidades están disponibles en tu sesión actual:
 
 ---
 
-## Ubicaciones de habilidades
+## Ubicaciones de skills
 
-Las habilidades pueden almacenarse en dos lugares:
+Las skills pueden almacenarse en dos lugares:
 
 | Ubicación | Alcance |
 |---|---|
 | `.kiro/skills/` | **Espacio de trabajo** — Solo para ese proyecto |
 | `~/.kiro/skills/` | **Global** — Disponible en todos los espacios de trabajo |
 
-Cuando las habilidades comparten el mismo nombre, **las habilidades del espacio de trabajo tienen prioridad** sobre los globales.
+Cuando las skills comparten el mismo nombre, **las skills del espacio de trabajo tienen prioridad** sobre los globales.
 
 ### Agente predeterminado
 
@@ -55,7 +55,7 @@ Los agentes personalizados requieren que especifiques explícitamente las skills
 
 ---
 
-## Creando una habilidad
+## Creando una skill
 
 Un Skill es una **carpeta** que contiene un archivo `SKILL.md`:
 
@@ -119,7 +119,7 @@ Kiro carga los archivos de referencia **solo cuando las instrucciones lo indican
 
 ---
 
-## Ejemplo completo: habilidad de implementación de CDK
+## Ejemplo completo: skill de implementación de CDK
 
 ```
 cdk-deploy/
@@ -155,7 +155,7 @@ Si la implementación falla:
 **Uso:**
 ```
 > Implementar mi pila CDK en preparación
-[habilidad: cdk-deploy activado]
+[skill: cdk-deploy activado]
 Seguiré el flujo de trabajo de implementación. Primero, déjame sintetizar las plantillas...
 ```
 

@@ -1,46 +1,46 @@
-# Habilidades del agente
+# Skills del agente
 
 > **Fuente:** [kiro.dev/docs/skills/](https://kiro.dev/docs/skills/)
 
 ---
 
-Las habilidades son paquetes de instrucciones portátiles que siguen el estándar abierto [Agent Skills](https://agentskills.io). Incluyen instrucciones, scripts y plantillas en paquetes reutilizables que Kiro puede activar cuando sea relevante para su tarea.
+Las skills son paquetes de instrucciones portátiles que siguen el estándar abierto [Agent Skills](https://agentskills.io). Incluyen instrucciones, scripts y plantillas en paquetes reutilizables que Kiro puede activar cuando sea relevante para su tarea.
 
-Kiro admite el estándar Agent Skills, por lo que puedes importar habilidades de la comunidad u otras herramientas de IA compatibles y compartir tus propias habilidades en todo el ecosistema.
+Kiro admite el estándar Agent Skills, por lo que puedes importar skills de la comunidad u otras herramientas de IA compatibles y compartir tus propias skills en todo el ecosistema.
 
 ---
 
-## ¿Qué son las habilidades?
+## ¿Qué son las skills?
 
-Las habilidades resuelven la tensión entre **muy poco contexto** (los agentes adivinan) y **demasiado contexto** (los agentes disminuyen la velocidad) a través de la **divulgación progresiva**:
+Las skills resuelven la tensión entre **muy poco contexto** (los agentes adivinan) y **demasiado contexto** (los agentes disminuyen la velocidad) a través de la **divulgación progresiva**:
 
-1. **Descubrimiento**: al inicio, Kiro carga solo el nombre y la descripción de cada habilidad.
-2. **Activación**: cuando tu solicitud coincide con la descripción de una habilidad, Kiro carga las instrucciones completas.
+1. **Descubrimiento**: al inicio, Kiro carga solo el nombre y la descripción de cada skill.
+2. **Activación**: cuando tu solicitud coincide con la descripción de una skill, Kiro carga las instrucciones completas.
 3. **Ejecución**: Kiro sigue las instrucciones y carga scripts o archivos de referencia solo según sea necesario.
 
 Esto mantiene el contexto enfocado y al mismo tiempo le brinda a Kiro acceso a un amplio conocimiento especializado bajo demanda.
 
 ---
 
-## Cómo funcionan las habilidades
+## Cómo funcionan las skills
 
 Sin conocimiento del proceso de implementación de su equipo, los estándares de revisión de código de su empresa o el proceso de análisis de datos de su proyecto, los agentes adivinan e iteran, tal como lo haría usted cuando aprende algo nuevo. Cargar todo este contexto por adelantado no es práctico.
 
-Las habilidades resuelven esto cargando las instrucciones completas de las habilidades solo cuando Kiro determina que tu solicitud coincide con el propósito de una habilidad.
+Las skills resuelven esto cargando las instrucciones completas de las skills solo cuando Kiro determina que tu solicitud coincide con el propósito de una skill.
 
 ---
 
-## Usando habilidades
+## Usando skills
 
-Kiro **activa habilidades automáticamente** cuando tu solicitud coincide con la descripción de una habilidad.
+Kiro **activa skills automáticamente** cuando tu solicitud coincide con la descripción de una skill.
 
-También puedes invocar una habilidad directamente: escribe `/` en la entrada del chat para ver las habilidades disponibles como **comandos de barra diagonal**. Al seleccionar un comando de barra diagonal se cargan las instrucciones de habilidad completas.
+También puedes invocar una skill directamente: escribe `/` en la entrada del chat para ver las skills disponibles como **comandos de barra diagonal**. Al seleccionar un comando de barra diagonal se cargan las instrucciones de skill completas.
 
-Vea y administre habilidades en la sección **Steering y habilidades del agente** en el panel de Kiro.
+Vea y administre skills en la sección **Steering y skills del agente** en el panel de Kiro.
 
 ---
 
-## Alcance de la habilidad
+## Alcance de la skill
 
 | Alcance | Ubicación | Mejor para |
 |---|---|---|
@@ -49,21 +49,21 @@ Vea y administre habilidades en la sección **Steering y habilidades del agente*
 
 ---
 
-## Importación de habilidades
+## Importación de skills
 
-1. Abra la sección **Steering y habilidades del agente** en el panel de Kiro.
-2. Haga clic en **+** y seleccione **Importar una habilidad**
+1. Abra la sección **Steering y skills del agente** en el panel de Kiro.
+2. Haga clic en **+** y seleccione **Importar una skill**
 3. Elige tu fuente:
-   - **GitHub** — Importar desde una URL de repositorio público (pegue la URL que apunta a la carpeta de habilidades o directamente al archivo `SKILL.md`). La URL debe apuntar a un subdirectorio, no a la raíz del repositorio.
+   - **GitHub** — Importar desde una URL de repositorio público (pegue la URL que apunta a la carpeta de skills o directamente al archivo `SKILL.md`). La URL debe apuntar a un subdirectorio, no a la raíz del repositorio.
    - **Carpeta local** — Importar desde su sistema de archivos
 
-Las habilidades importadas se copian en su directorio de habilidades y funcionan inmediatamente.
+Las skills importadas se copian en su directorio de skills y funcionan inmediatamente.
 
 ---
 
-## Creando una habilidad
+## Creando una skill
 
-Una habilidad es una carpeta que contiene un archivo `SKILL.md`:
+Una skill es una carpeta que contiene un archivo `SKILL.md`:
 
 ```
 my-skill/
@@ -93,7 +93,7 @@ Descripción: revise las pull requests para determinar la calidad del código, l
 
 | Campo | Requerido | Descripción |
 |---|---|---|
-| `nombre` | ✅ | Identificador de habilidad (usado como comando de barra diagonal) |
+| `nombre` | ✅ | Identificador de skill (usado como comando de barra diagonal) |
 | `descripción` | ✅ | Utilizado por Kiro para decidir cuándo activar |
 | `licencia` | ✗ | Identificador de licencia SPDX |
 | `compatibilidad` | ✗ | Herramientas de IA compatibles |
@@ -103,11 +103,11 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 
 ---
 
-## En qué se diferencian las habilidades de la dirección y los poderes
+## En qué se diferencian las skills de la dirección y los poderes
 
-| Característica | Habilidades | Dirección | Poderes |
+| Característica | Skills | Dirección | Poderes |
 |---|---|---|---|
-| **Estándar** | Abierto (especificación de habilidades del agente) | Específico de Kiro | Específico de Kiro |
+| **Estándar** | Abierto (especificación de skills del agente) | Específico de Kiro | Específico de Kiro |
 | **Cargando** | Bajo demanda | siempre/auto/fileMatch/manual | Dinámico basado en el contexto |
 | **Guiones** | ✅ Sí | ✗ No | ✅ Sí |
 | **Herramientas MCP** | ✗ No | ✗ No | ✅ Sí |
@@ -130,4 +130,4 @@ Consulte la [especificación completa →](https://agentskills.io/specification)
 
 - [Dirección →](https://kiro.dev/docs/steering) — Contexto y estándares específicos del proyecto
 - [Poderes →](https://kiro.dev/docs/powers) — Integraciones de MCP con conocimientos incluidos
-- [Especificación de habilidades del agente →](https://agentskills.io/specification)
+- [Especificación de skills del agente →](https://agentskills.io/specification)
