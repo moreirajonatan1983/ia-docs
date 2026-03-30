@@ -130,6 +130,64 @@ public class AwsTraceIdFilter implements Filter {
 
 ---
 
+## FASE 3: Despliegue en AWS ECS (Fargate o EC2)
+
+Al ejecutar la aplicación en contenedores de ECS, la forma en que los logs viajan hacia CloudWatch y cómo el Agente de Datadog reside junto a la aplicación requiere consideraciones especiales.
+
+Existen dos estrategias principales para desplegar el **Datadog Agent** en ECS:
+1. **ECS con instancias EC2 (Daemon Service):** El agente de Datadog corre como un servicio daemon (una instancia por cada nodo EC2). Todos los contenedores de Spring Boot envían sus trazas allí.
+2. **ECS Fargate (Patrón Sidecar):** Al ser "serverless", cada tarea (*Task Definition*) de Fargate no comparte un sistema operativo host con otras. Por lo tanto, el contenedor de Datadog debe declararse como un contenedor *Sidecar* junto al contenedor de tu app Java dentro de la misma definición.
+
+### 3.1 Configuración de Task Definition en ECS Fargate (JSON)
+
+Para que todo funcione, este JSON de ejemplo muestra la configuración de ambos contenedores y cómo se envían los logs de la app de Spring Boot directo a CloudWatch a través del controlador `awslogs`.
+
+```json
+{
+  "family": "spring-boot-fargate-task",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "spring-boot-app",
+      "image": "tu-registro-aws.dkr.ecr.region.amazonaws.com/mi-app:latest",
+      "essential": true,
+      "environment": [
+        { "name": "DD_ENV", "value": "produccion" },
+        { "name": "DD_SERVICE", "value": "mi-app-backend" },
+        { "name": "DD_LOGS_INJECTION", "value": "true" },
+        { "name": "DD_TRACE_HEADER_TAGS", "value": "X-Amzn-Trace-Id:aws.trace_id" },
+        { "name": "DD_AGENT_HOST", "value": "127.0.0.1" }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/mi-app-backend-logs",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "java"
+        }
+      }
+    },
+    {
+      "name": "datadog-agent",
+      "image": "public.ecr.aws/datadog/agent:latest",
+      "essential": true,
+      "environment": [
+        { "name": "DD_API_KEY", "value": "TU_API_KEY_AQUI" },
+        { "name": "DD_SITE", "value": "datadoghq.com" },
+        { "name": "DD_APM_ENABLED", "value": "true" },
+        { "name": "DD_APM_NON_LOCAL_TRAFFIC", "value": "true" }
+      ]
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "2048"
+}
+```
+*💡 **Mecanismo:** Dado que ambos contenedores comparten la misma red interna de la Task, tu contenedor Java envía las trazas mediante APM al Agente Sidecar de Datadog sencillamente invocando al `127.0.0.1:8126` (`DD_AGENT_HOST`). A su vez, el contenedor de Spring Boot manda por `awslogs` el Log al Grupo en CloudWatch para luego correlacionarlo.*
+
+---
+
 ## ✅ Resumen del Flujo de Trabajo
 
 1. El usuario de tu app o cliente llama al Endpoint HTTPS.
